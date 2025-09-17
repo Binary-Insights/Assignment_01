@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+.env*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# VS Code
+.vscode/
+
+# Data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.parquet
+*.h5
+*.db
+*.sqlite
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Node
+node_modules/

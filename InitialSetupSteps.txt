@@ -1,0 +1,11 @@
+Step 1
+#Initialize the uv 
+uv init
+
+Step 2:
+# Create a virtual environment
+uv venv
+
+Step 3: 
+# Activate virtual environment
+.venv\Scripts\Activate.ps1

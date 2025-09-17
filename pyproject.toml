@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "camelot>=12.6.29",
+    "pdfplumber>=0.11.7",
+    "sec-edgar-downloader>=5.0.3",
+]

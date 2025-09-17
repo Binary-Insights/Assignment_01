@@ -2,10 +2,18 @@ Step 1
 #Initialize the uv 
 uv init
 
-Step 2:
+Step 2: (If virtual environment is not present)
 # Create a virtual environment
 uv venv
 
-Step 3: 
+Step 3:  (If virtual environment is already present then use the below command directly)
 # Activate virtual environment
 .venv\Scripts\Activate.ps1
+
+Step 4: 
+# Install necessary libraries using uv
+uv pip install sec-edgar-downloader pdfplumber camelot
+
+Step 5:
+# Use the below command to update the toml file
+uv add sec-edgar-downloader pdfplumber camelot

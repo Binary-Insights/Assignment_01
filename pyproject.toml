@@ -19,6 +19,7 @@ dependencies = [
     "pytesseract",
     "requests",
     "sec-edgar-downloader",
+
     # Essential Docling dependencies
     "docling==1.20.0",
     "pypdfium2",
@@ -26,6 +27,7 @@ dependencies = [
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
+    
     # AI/ML dependencies for Docling
     "transformers",
     "torch",

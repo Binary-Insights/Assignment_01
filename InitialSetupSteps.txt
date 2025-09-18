@@ -34,10 +34,10 @@ Step 1
 wsl -d ubuntu 
 
 Step 2
-uv venv .venv_wsl
+uv venv .venv
 
 Step 3
-source .venv_wsl/bin/activate
+source .venv/bin/activate
 
 Step 4
 uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling

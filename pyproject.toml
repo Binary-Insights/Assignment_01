@@ -3,23 +3,33 @@ name = "assignment-01"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
-    "camelot>=12.6.29",
-    "camelot-py==0.11.0",
-    "ghostscript>=0.8.1",
-    "layoutparser>=0.3.4",
-    "numpy>=2.2.6",
-    "opencv-python>=4.12.0.88",
-    "pandas>=2.3.2",
-    "pdfplumber>=0.11.7",
-    "pillow>=11.3.0",
-    "playwright>=1.55.0",
-    "pytesseract>=0.3.13",
-    "requests>=2.32.5",
-    "sec-edgar-downloader>=5.0.3",
+    # Your existing dependencies
+    "camelot",
+    "camelot-py",
+    "ghostscript",
+    "layoutparser",
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "pdfplumber",
+    "pillow",
+    "playwright",
+    "pytesseract",
+    "requests",
+    "sec-edgar-downloader",
+    # Essential Docling dependencies
+    "docling==1.20.0",
+    "pypdfium2",
+    "python-magic",
+    "pydantic>=2.0.0",
+    "beautifulsoup4",
+    "lxml",
+    # AI/ML dependencies for Docling
+    "transformers",
+    "torch",
+    "torchvision",
+    "accelerate",
+    "sentencepiece",
 ]
-
-[tool.uv]
-# Use the WSL virtual environment
-virtual-env = ".venv_wsl"

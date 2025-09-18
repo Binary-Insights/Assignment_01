@@ -13,10 +13,11 @@ that go beyond traditional text extraction methods.
 """
 
 try:
-    from docling.document_converter import DocumentConverter, PdfFormatOption
-    from docling.datamodel.base_models import InputFormat, DocumentStream
-    from docling.datamodel.pipeline_options import PdfPipelineOptions
-    from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
+    from docling.document_converter import DocumentConverter
+    # , PdfFormatOption
+    # from docling.datamodel.base_models import InputFormat
+    # from docling.datamodel.pipeline_options import PdfPipelineOptions
+    # from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
     DOCLING_AVAILABLE = True
 except ImportError:
     DOCLING_AVAILABLE = False
@@ -96,37 +97,12 @@ class DoclingExtractor:
         return logger
     
     def _initialize_converter(self):
-        """Initialize Docling document converter with advanced options."""
+        """Initialize Docling document converter with basic configuration for v1.20.0."""
         try:
-            # Configure PDF pipeline options
-            pdf_options = PdfPipelineOptions(
-                do_ocr=True,  # Enable OCR for scanned documents
-                do_table_structure=True,  # Advanced table structure recognition
-                table_structure_options={
-                    "do_cell_matching": True,  # Match table cells
-                    "mode": "accurate"  # Use accurate mode for better results
-                },
-                do_picture_extract=True,  # Extract figures and images
-                picture_extract_options={
-                    "path": str(self.output_dir / "figures"),
-                    "format": "png"
-                }
-            )
+            # Simple initialization compatible with Docling v1.20.0
+            converter = DocumentConverter()
             
-            # Create format options
-            format_options = {
-                InputFormat.PDF: PdfFormatOption(
-                    pipeline_options=pdf_options,
-                    backend=PyPdfiumDocumentBackend
-                )
-            }
-            
-            # Initialize converter
-            converter = DocumentConverter(
-                format_options=format_options
-            )
-            
-            self.logger.info("Docling DocumentConverter initialized with advanced options")
+            self.logger.info("Docling DocumentConverter initialized successfully")
             return converter
         
         except Exception as e:
@@ -169,10 +145,11 @@ class DoclingExtractor:
         try:
             # Convert document using Docling
             self.logger.info("Converting document with Docling...")
-            result = self.converter.convert(pdf_path)
+            # Use convert_single for single documents (v1.20.0 API)
+            result = self.converter.convert_single(str(pdf_path))
             
-            # Extract DoclingDocument
-            docling_doc = result.document
+            # Extract DoclingDocument - result is the document itself in v1.20.0
+            docling_doc = result
             
             # Analyze document structure
             extraction_results['document_analysis'] = self._analyze_document_structure(docling_doc)
@@ -337,10 +314,12 @@ class DoclingExtractor:
         return structure
     
     def _extract_structured_text(self, docling_doc) -> str:
-        """Extract text content with proper structure preservation."""
+        """Extract text content with proper structure preservation using Docling v1.20.0 API."""
         try:
-            # Use Docling's text extraction with structure
-            if hasattr(docling_doc, 'export_to_text'):
+            # Use Docling v1.20.0 API methods
+            if hasattr(docling_doc, 'render_as_markdown'):
+                return docling_doc.render_as_markdown()
+            elif hasattr(docling_doc, 'export_to_text'):
                 return docling_doc.export_to_text()
             elif hasattr(docling_doc, 'text'):
                 return docling_doc.text
@@ -539,8 +518,15 @@ class DoclingExtractor:
         export_files = {}
         
         try:
-            # Export to Markdown
-            if hasattr(docling_doc, 'export_to_markdown'):
+            # Export to Markdown using v1.20.0 API
+            if hasattr(docling_doc, 'render_as_markdown'):
+                markdown_content = docling_doc.render_as_markdown()
+                markdown_file = output_dir / 'markdown' / 'document.md'
+                with open(markdown_file, 'w', encoding='utf-8') as f:
+                    f.write(markdown_content)
+                export_files['markdown'] = str(markdown_file)
+                self.stats['export_formats'].append('markdown')
+            elif hasattr(docling_doc, 'export_to_markdown'):
                 markdown_content = docling_doc.export_to_markdown()
                 markdown_file = output_dir / 'markdown' / 'document.md'
                 with open(markdown_file, 'w', encoding='utf-8') as f:
@@ -548,7 +534,16 @@ class DoclingExtractor:
                 export_files['markdown'] = str(markdown_file)
                 self.stats['export_formats'].append('markdown')
             
-            # Export to JSON
+            # Export to JSON/DocTags using v1.20.0 API
+            if hasattr(docling_doc, 'render_as_doctags'):
+                doctags_content = docling_doc.render_as_doctags()
+                doctags_file = output_dir / 'json' / 'document_doctags.xml'
+                with open(doctags_file, 'w', encoding='utf-8') as f:
+                    f.write(doctags_content)
+                export_files['doctags'] = str(doctags_file)
+                self.stats['export_formats'].append('doctags')
+            
+            # Export to JSON (fallback)
             if hasattr(docling_doc, 'export_to_dict'):
                 json_content = docling_doc.export_to_dict()
                 json_file = output_dir / 'json' / 'document.json'

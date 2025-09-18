@@ -29,6 +29,8 @@ from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Tuple, Optional, Any
 import pandas as pd
+import base64
+import pandas as pd
 
 
 class DoclingExtractor:
@@ -346,8 +348,8 @@ class DoclingExtractor:
         try:
             tables = []
             
-            # Extract tables using Docling's table detection
-            if hasattr(docling_doc, 'tables'):
+            # Method 1: Extract tables using Docling's direct table detection
+            if hasattr(docling_doc, 'tables') and docling_doc.tables:
                 for table_idx, table in enumerate(docling_doc.tables):
                     table_data = {
                         'table_id': f"docling_table_{table_idx:03d}",
@@ -377,13 +379,34 @@ class DoclingExtractor:
                         # Handle raw table data
                         raw_data = table.data
                         if raw_data:
-                            df = pd.DataFrame(raw_data)
-                            table_data['content'] = df.to_dict('records')
-                            
-                            # Save as CSV
-                            csv_file = output_dir / 'tables' / f"{table_data['table_id']}.csv"
-                            df.to_csv(csv_file, index=False, encoding='utf-8')
-                            table_data['csv_file'] = str(csv_file)
+                            try:
+                                df = pd.DataFrame(raw_data)
+                                table_data['content'] = df.to_dict('records')
+                                table_data['structure'] = {
+                                    'rows': len(df),
+                                    'columns': len(df.columns),
+                                    'headers': list(df.columns)
+                                }
+                                
+                                # Save as CSV
+                                csv_file = output_dir / 'tables' / f"{table_data['table_id']}.csv"
+                                df.to_csv(csv_file, index=False, encoding='utf-8')
+                                table_data['csv_file'] = str(csv_file)
+                            except Exception as e:
+                                self.logger.warning(f"Failed to process table data: {e}")
+                                table_data['content'] = raw_data
+                                table_data['error'] = str(e)
+                    
+                    elif hasattr(table, 'text') or hasattr(table, 'content'):
+                        # Handle text-based table content
+                        table_text = getattr(table, 'text', None) or getattr(table, 'content', str(table))
+                        if table_text:
+                            # Save as text file
+                            text_file = output_dir / 'tables' / f"{table_data['table_id']}.txt"
+                            with open(text_file, 'w', encoding='utf-8') as f:
+                                f.write(table_text)
+                            table_data['text_file'] = str(text_file)
+                            table_data['content'] = table_text
                     
                     tables.append(table_data)
                     
@@ -391,6 +414,43 @@ class DoclingExtractor:
                     table_json = output_dir / 'tables' / f"{table_data['table_id']}_metadata.json"
                     with open(table_json, 'w', encoding='utf-8') as f:
                         json.dump(table_data, f, indent=2, ensure_ascii=False, default=str)
+            
+            # Method 2: Extract tables from document structure if no direct tables found
+            if not tables and hasattr(docling_doc, 'iterate_items'):
+                table_idx = 0
+                for item in docling_doc.iterate_items():
+                    # Look for table-like structures
+                    if (hasattr(item, 'label') and item.label and 
+                        ('table' in item.label.lower() or 'grid' in item.label.lower())):
+                        
+                        table_data = {
+                            'table_id': f"doc_table_{table_idx:03d}",
+                            'page': getattr(item, 'page', None),
+                            'bbox': item.bbox.model_dump() if hasattr(item, 'bbox') else None,
+                            'structure': None,
+                            'content': getattr(item, 'text', str(item)),
+                            'source': 'document_structure'
+                        }
+                        
+                        # Save table as text file
+                        text_file = output_dir / 'tables' / f"{table_data['table_id']}.txt"
+                        with open(text_file, 'w', encoding='utf-8') as f:
+                            f.write(table_data['content'])
+                        table_data['text_file'] = str(text_file)
+                        
+                        # Save table metadata
+                        table_json = output_dir / 'tables' / f"{table_data['table_id']}_metadata.json"
+                        with open(table_json, 'w', encoding='utf-8') as f:
+                            json.dump(table_data, f, indent=2, ensure_ascii=False, default=str)
+                        
+                        tables.append(table_data)
+                        table_idx += 1
+            
+            # Method 3: Look for table-like patterns in markdown text
+            if not tables:
+                markdown_text = self._extract_structured_text(docling_doc)
+                table_patterns = self._extract_tables_from_markdown(markdown_text, output_dir)
+                tables.extend(table_patterns)
             
             tables_info['count'] = len(tables)
             tables_info['tables'] = tables
@@ -404,6 +464,89 @@ class DoclingExtractor:
         
         return tables_info
     
+    def _extract_tables_from_markdown(self, markdown_text: str, output_dir: Path) -> List[Dict[str, Any]]:
+        """Extract tables from markdown text using table patterns."""
+        tables = []
+        if not markdown_text:
+            return tables
+        
+        lines = markdown_text.split('\n')
+        table_idx = 0
+        current_table = []
+        in_table = False
+        
+        for line in lines:
+            line = line.strip()
+            # Check if line looks like a table row (contains |)
+            if '|' in line and line.count('|') >= 2:
+                current_table.append(line)
+                in_table = True
+            elif in_table and current_table:
+                # End of table, process it
+                if len(current_table) >= 2:  # At least header and one row
+                    table_data = {
+                        'table_id': f"markdown_table_{table_idx:03d}",
+                        'page': None,
+                        'bbox': None,
+                        'content': current_table,
+                        'source': 'markdown_pattern'
+                    }
+                    
+                    # Save table as text file
+                    text_file = output_dir / 'tables' / f"{table_data['table_id']}.txt"
+                    with open(text_file, 'w', encoding='utf-8') as f:
+                        f.write('\n'.join(current_table))
+                    table_data['text_file'] = str(text_file)
+                    
+                    # Try to parse as CSV
+                    try:
+                        # Convert markdown table to CSV format
+                        csv_lines = []
+                        for table_line in current_table:
+                            if '|' in table_line:
+                                # Remove leading/trailing |, split by |, and clean
+                                cells = [cell.strip() for cell in table_line.split('|')[1:-1]]
+                                if cells and not all(cell.replace('-', '').strip() == '' for cell in cells):
+                                    csv_lines.append(','.join(f'"{cell}"' for cell in cells))
+                        
+                        if csv_lines:
+                            csv_file = output_dir / 'tables' / f"{table_data['table_id']}.csv"
+                            with open(csv_file, 'w', encoding='utf-8') as f:
+                                f.write('\n'.join(csv_lines))
+                            table_data['csv_file'] = str(csv_file)
+                    except Exception as e:
+                        self.logger.warning(f"Failed to convert markdown table to CSV: {e}")
+                    
+                    # Save metadata
+                    table_json = output_dir / 'tables' / f"{table_data['table_id']}_metadata.json"
+                    with open(table_json, 'w', encoding='utf-8') as f:
+                        json.dump(table_data, f, indent=2, ensure_ascii=False, default=str)
+                    
+                    tables.append(table_data)
+                    table_idx += 1
+                
+                current_table = []
+                in_table = False
+        
+        # Handle last table if file ends while in table
+        if in_table and current_table and len(current_table) >= 2:
+            table_data = {
+                'table_id': f"markdown_table_{table_idx:03d}",
+                'page': None,
+                'bbox': None,
+                'content': current_table,
+                'source': 'markdown_pattern'
+            }
+            
+            text_file = output_dir / 'tables' / f"{table_data['table_id']}.txt"
+            with open(text_file, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(current_table))
+            table_data['text_file'] = str(text_file)
+            
+            tables.append(table_data)
+        
+        return tables
+    
     def _extract_formulas(self, docling_doc, output_dir: Path) -> Dict[str, Any]:
         """Extract mathematical formulas and equations."""
         formulas_info = {
@@ -415,14 +558,14 @@ class DoclingExtractor:
         try:
             formulas = []
             
-            # Look for mathematical content
+            # Method 1: Look for direct formula elements
             if hasattr(docling_doc, 'iterate_items'):
                 formula_idx = 0
                 for item in docling_doc.iterate_items():
                     # Check if item is a formula or contains mathematical notation
-                    if (hasattr(item, 'label') and 
-                        item.label in ['formula', 'equation', 'math'] or
-                        (hasattr(item, 'text') and self._contains_math_notation(item.text))):
+                    if (hasattr(item, 'label') and item.label and
+                        any(math_term in item.label.lower() for math_term in ['formula', 'equation', 'math']) or
+                        (hasattr(item, 'text') and item.text and self._contains_math_notation(item.text))):
                         
                         formula_data = {
                             'formula_id': f"formula_{formula_idx:03d}",
@@ -432,9 +575,44 @@ class DoclingExtractor:
                             'type': getattr(item, 'label', 'mathematical_expression')
                         }
                         
-                        formulas.append(formula_data)
-                        
                         # Save formula content
+                        formula_file = output_dir / 'formulas' / f"{formula_data['formula_id']}.txt"
+                        with open(formula_file, 'w', encoding='utf-8') as f:
+                            f.write(f"Formula ID: {formula_data['formula_id']}\n")
+                            f.write(f"Type: {formula_data['type']}\n")
+                            f.write(f"Page: {formula_data['page']}\n")
+                            f.write(f"Content: {formula_data['content']}\n")
+                        formula_data['file'] = str(formula_file)
+                        
+                        formulas.append(formula_data)
+                        formula_idx += 1
+            
+            # Method 2: Scan text content for mathematical expressions
+            if not formulas:
+                markdown_text = self._extract_structured_text(docling_doc)
+                if markdown_text:
+                    lines = markdown_text.split('\n')
+                    formula_idx = 0
+                    for line_idx, line in enumerate(lines):
+                        if self._contains_math_notation(line):
+                            formula_data = {
+                                'formula_id': f"text_formula_{formula_idx:03d}",
+                                'content': line.strip(),
+                                'line_number': line_idx + 1,
+                                'type': 'text_mathematical_expression',
+                                'source': 'text_scan'
+                            }
+                            
+                            # Save formula content
+                            formula_file = output_dir / 'formulas' / f"{formula_data['formula_id']}.txt"
+                            with open(formula_file, 'w', encoding='utf-8') as f:
+                                f.write(f"Formula ID: {formula_data['formula_id']}\n")
+                                f.write(f"Line: {formula_data['line_number']}\n")
+                                f.write(f"Content: {formula_data['content']}\n")
+                            formula_data['file'] = str(formula_file)
+                            
+                            formulas.append(formula_data)
+                            formula_idx += 1
                         formula_file = output_dir / 'formulas' / f"{formula_data['formula_id']}.txt"
                         with open(formula_file, 'w', encoding='utf-8') as f:
                             f.write(formula_data['content'])
@@ -480,26 +658,65 @@ class DoclingExtractor:
         try:
             figures = []
             
-            # Extract figures using Docling's figure detection
-            if hasattr(docling_doc, 'pictures') or hasattr(docling_doc, 'figures'):
-                pictures = getattr(docling_doc, 'pictures', []) or getattr(docling_doc, 'figures', [])
-                
-                for fig_idx, figure in enumerate(pictures):
-                    figure_data = {
-                        'figure_id': f"figure_{fig_idx:03d}",
-                        'bbox': figure.bbox.model_dump() if hasattr(figure, 'bbox') else None,
-                        'page': getattr(figure, 'page', None),
-                        'caption': getattr(figure, 'caption', None),
-                        'image_file': None
-                    }
-                    
-                    # Save figure image if available
-                    if hasattr(figure, 'image') or hasattr(figure, 'data'):
-                        image_file = output_dir / 'figures' / f"{figure_data['figure_id']}.png"
-                        # Image saving logic would go here
-                        figure_data['image_file'] = str(image_file)
-                    
-                    figures.append(figure_data)
+            # Method 1: Extract figures using Docling's figure detection
+            figure_attributes = ['pictures', 'figures', 'images']
+            
+            for attr in figure_attributes:
+                if hasattr(docling_doc, attr):
+                    pictures = getattr(docling_doc, attr, [])
+                    if pictures:
+                        for fig_idx, figure in enumerate(pictures):
+                            figure_data = {
+                                'figure_id': f"figure_{fig_idx:03d}",
+                                'bbox': figure.bbox.model_dump() if hasattr(figure, 'bbox') else None,
+                                'page': getattr(figure, 'page', None),
+                                'caption': getattr(figure, 'caption', None) or getattr(figure, 'text', None),
+                                'image_file': None,
+                                'source': attr
+                            }
+                            
+                            # Save figure image if available
+                            if hasattr(figure, 'image'):
+                                try:
+                                    image_file = output_dir / 'figures' / f"{figure_data['figure_id']}.png"
+                                    # Save the image data
+                                    with open(image_file, 'wb') as f:
+                                        if hasattr(figure.image, 'data'):
+                                            f.write(figure.image.data)
+                                        elif isinstance(figure.image, bytes):
+                                            f.write(figure.image)
+                                    figure_data['image_file'] = str(image_file)
+                                except Exception as e:
+                                    self.logger.warning(f"Failed to save figure image: {e}")
+                            
+                            figures.append(figure_data)
+                        break  # Found figures, no need to check other attributes
+            
+            # Method 2: Extract figures from document structure (iterate through elements)
+            if not figures and hasattr(docling_doc, 'iterate_items'):
+                fig_idx = 0
+                for item in docling_doc.iterate_items():
+                    if hasattr(item, 'label') and item.label and 'figure' in item.label.lower():
+                        figure_data = {
+                            'figure_id': f"doc_figure_{fig_idx:03d}",
+                            'bbox': item.bbox.model_dump() if hasattr(item, 'bbox') else None,
+                            'page': getattr(item, 'page', None),
+                            'caption': getattr(item, 'text', None),
+                            'content': str(item),
+                            'source': 'document_structure'
+                        }
+                        
+                        # Save figure metadata as text
+                        text_file = output_dir / 'figures' / f"{figure_data['figure_id']}_info.txt"
+                        with open(text_file, 'w', encoding='utf-8') as f:
+                            f.write(f"Figure ID: {figure_data['figure_id']}\n")
+                            f.write(f"Page: {figure_data['page']}\n")
+                            f.write(f"Caption: {figure_data['caption']}\n")
+                            f.write(f"BBox: {figure_data['bbox']}\n")
+                            f.write(f"Content: {figure_data['content']}\n")
+                        
+                        figures.append(figure_data)
+                        fig_idx += 1
             
             figures_info['count'] = len(figures)
             figures_info['figures'] = figures

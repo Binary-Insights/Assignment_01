@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Content Block Schema",
+  "type": "object", 
+  "required": [
+    "doc_id",
+    "block_id",
+    "extraction_method",
+    "page_number",
+    "block_type",
+    "confidence",
+    "content",
+    "provenance",
+    "semantic_tags",
+    "quality_metrics"
+  ],
+  "properties": {
+    "doc_id": {
+      "type": "string",
+      "description": "Document identifier linking to parent document"
+    },
+    "block_id": {
+      "type": "string",
+      "description": "Unique block identifier within the document"
+    },
+    "extraction_method": {
+      "type": "string",
+      "enum": ["docling", "layout_parser", "traditional", "unified"],
+      "description": "Method used to extract this block"
+    },
+    "page_number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Page number (1-based)"
+    },
+    "block_type": {
+      "type": "string",
+      "enum": ["text", "table", "figure", "title", "list", "formula", "header", "footer"],
+      "description": "Type of content block"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Extraction confidence score"
+    },
+    "bounding_box": {
+      "type": ["object", "null"],
+      "properties": {
+        "x1": {"type": "number"},
+        "y1": {"type": "number"},
+        "x2": {"type": "number"},
+        "y2": {"type": "number"},
+        "width": {"type": "number", "minimum": 0},
+        "height": {"type": "number", "minimum": 0}
+      },
+      "required": ["x1", "y1", "x2", "y2", "width", "height"],
+      "description": "Bounding box coordinates in page space"
+    },
+    "content": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Raw text content of the block"
+        },
+        "structured": {
+          "description": "Structured representation (varies by block type)"
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Type-specific metadata"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_file", "extraction_config"],
+      "properties": {
+        "source_file": {
+          "type": "string",
+          "description": "Path to source file for this block"
+        },
+        "extraction_config": {
+          "type": "object",
+          "description": "Configuration used for extraction"
+        },
+        "parent_blocks": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Parent block IDs (for hierarchical content)"
+        },
+        "child_blocks": {
+          "type": "array", 
+          "items": {"type": "string"},
+          "description": "Child block IDs (for hierarchical content)"
+        }
+      }
+    },
+    "semantic_tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Semantic tags for content classification"
+    },
+    "quality_metrics": {
+      "type": "object",
+      "required": ["text_length", "word_count", "completeness"],
+      "properties": {
+        "text_length": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Length of text content in characters"
+        },
+        "word_count": {
+          "type": "integer", 
+          "minimum": 0,
+          "description": "Number of words in text content"
+        },
+        "readability_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Readability score (0-1)"
+        },
+        "completeness": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Estimated completeness of extraction (0-1)"
+        }
+      }
+    }
+  }
+}

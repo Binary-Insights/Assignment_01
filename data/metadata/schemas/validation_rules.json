@@ -1,0 +1,152 @@
+{
+  "validation_rules": {
+    "document_level": {
+      "required_fields": [
+        "doc_id",
+        "doc_name",
+        "processing_timestamp",
+        "extraction_methods"
+      ],
+      "checksum_validation": {
+        "algorithm": "SHA-256",
+        "format": "hexadecimal",
+        "length": 64
+      },
+      "extraction_methods": {
+        "allowed_values": ["docling", "layout_parser", "traditional"],
+        "min_methods": 1,
+        "max_methods": 3
+      }
+    },
+    "block_level": {
+      "required_fields": [
+        "doc_id",
+        "block_id",
+        "extraction_method",
+        "block_type",
+        "content"
+      ],
+      "block_id_format": {
+        "pattern": "^[a-zA-Z0-9_]+_[a-zA-Z0-9_]+$",
+        "description": "Format: {method}_{identifier}"
+      },
+      "confidence_range": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "block_types": {
+        "allowed_values": [
+          "text",
+          "table", 
+          "figure",
+          "title",
+          "list",
+          "formula",
+          "header",
+          "footer"
+        ]
+      },
+      "bounding_box": {
+        "coordinate_system": "page_space",
+        "origin": "top_left",
+        "units": "points",
+        "required_fields": ["x1", "y1", "x2", "y2", "width", "height"],
+        "validation": {
+          "x2_greater_than_x1": true,
+          "y2_greater_than_y1": true,
+          "width_equals_x2_minus_x1": true,
+          "height_equals_y2_minus_y1": true
+        }
+      }
+    },
+    "content_validation": {
+      "text_content": {
+        "min_length": 1,
+        "encoding": "utf-8",
+        "strip_whitespace": true
+      },
+      "structured_content": {
+        "table": {
+          "format": "array_of_objects",
+          "required_keys": ["rows", "columns"],
+          "validation": "non_empty_cells"
+        },
+        "figure": {
+          "required_keys": ["image_path", "format"],
+          "allowed_formats": ["png", "jpg", "jpeg", "svg", "pdf"]
+        },
+        "formula": {
+          "notation_types": ["latex", "mathml", "text"],
+          "complexity_levels": ["simple", "medium", "complex"]
+        }
+      }
+    },
+    "quality_metrics": {
+      "text_length": {
+        "min": 0,
+        "max": 1000000
+      },
+      "word_count": {
+        "min": 0,
+        "calculation": "split_by_whitespace"
+      },
+      "completeness": {
+        "min": 0.0,
+        "max": 1.0,
+        "calculation": "extraction_success_ratio"
+      },
+      "readability_score": {
+        "min": 0.0,
+        "max": 1.0,
+        "algorithm": "flesch_reading_ease_normalized"
+      }
+    },
+    "provenance_validation": {
+      "source_file": {
+        "format": "absolute_path",
+        "existence_check": false,
+        "encoding": "utf-8"
+      },
+      "extraction_config": {
+        "required_fields": ["method"],
+        "method_specific_validation": true
+      },
+      "parent_child_relationships": {
+        "circular_reference_check": true,
+        "depth_limit": 10
+      }
+    }
+  },
+  "data_consistency": {
+    "cross_method_validation": {
+      "doc_id_consistency": "all_blocks_must_reference_valid_document",
+      "page_number_consistency": "page_numbers_must_be_within_document_range",
+      "bounding_box_consistency": "boxes_must_be_within_page_bounds"
+    },
+    "unified_blocks": {
+      "consolidation_rules": {
+        "deduplication": "content_similarity_threshold_0.8",
+        "confidence_weighting": "highest_confidence_wins",
+        "method_priority": ["docling", "layout_parser", "traditional"]
+      }
+    }
+  },
+  "file_format_validation": {
+    "jsonl_format": {
+      "encoding": "utf-8",
+      "line_terminator": "\\n",
+      "json_per_line": true,
+      "schema_validation": "per_line"
+    },
+    "json_format": {
+      "encoding": "utf-8",
+      "indentation": 2,
+      "schema_validation": "full_document"
+    },
+    "markdown_format": {
+      "encoding": "utf-8",
+      "metadata_comments": "html_comments",
+      "provenance_embedding": "required"
+    }
+  }
+}

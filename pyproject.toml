@@ -6,8 +6,20 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "camelot>=12.6.29",
+    "camelot-py==0.11.0",
+    "ghostscript>=0.8.1",
+    "layoutparser>=0.3.4",
+    "numpy>=2.2.6",
+    "opencv-python>=4.12.0.88",
+    "pandas>=2.3.2",
     "pdfplumber>=0.11.7",
+    "pillow>=11.3.0",
     "playwright>=1.55.0",
+    "pytesseract>=0.3.13",
     "requests>=2.32.5",
     "sec-edgar-downloader>=5.0.3",
 ]
+
+[tool.uv]
+# Use the WSL virtual environment
+virtual-env = ".venv_wsl"

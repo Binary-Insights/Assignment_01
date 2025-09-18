@@ -39,4 +39,7 @@ Thumbs.db
 node_modules/
 
 
-raw
+data/raw/pdf/sec-edgar-filings
+data/parsed/docling
+data/parsed/trial_01
+data/raw/*.zip

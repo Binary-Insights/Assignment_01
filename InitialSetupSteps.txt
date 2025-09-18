@@ -16,4 +16,47 @@ uv pip install sec-edgar-downloader pdfplumber camelot
 
 Step 5:
 # Use the below command to update the toml file
-uv add sec-edgar-downloader pdfplumber camelot
+uv add sec-edgar-downloader pdfplumber camelot pytesseract pillow camelot-py opencv-python
+
+
+Step 6: 
+cd Assignment_01
+
+Step 7:
+# This is a trial for Part :1
+python .\src\pdf_text_extractor.py
+
+
+
+---------------------- Steps to do in windows subsystem for linux -----------------------------------------
+
+Step 1
+wsl -d ubuntu 
+
+Step 2
+uv venv .venv_wsl
+
+Step 3
+source .venv_wsl/bin/activate
+
+Step 4
+uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling
+
+Step 5
+# Lab 2
+# Uses Camelot and pdf Plumber
+python src/enhanced_pdf_extractor.py
+
+Step 6
+# Lab 3
+# Layout parser example
+python src/layout_parser_extractor.py
+
+Step 7
+# Lab 4
+# Docling 
+python src/docling_extractor.py
+
+Step 8
+# Compare All Methods
+python src/extraction_comparator.py

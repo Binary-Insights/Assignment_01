@@ -1,0 +1,20 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+approximately 7 million shares for a total value of $2.8 billion through net share settlements. Refer to Note 4 of the Notes to the
+Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion regarding our equity
+incentive plans.
+Stock Performance Graphs
+The following graph compares the cumulative total shareholder return for our common stock, the S&P 500 Index, and the Nasdaq 100
+Index for the five years ended January 28, 2024. The graph assumes that $100 was invested on January 27, 2019 in our common stock
+and in each of the S&P 500 Index and the Nasdaq 100 Index. Our common stock is a component of each of the presented indices. Total
+return assumes reinvestment of dividends in each of the indices indicated. Total return is based on historical results and is not intended
+to indicate future performance.
+*$100 invested on 1/27/19 in stock and in indices, including reinvestment of dividends.
+Source: FactSet financial data and analytics.
+1/27/2019 1/26/2020 1/31/2021 1/30/2022 1/29/2023 1/28/2024
+NVIDIA Corporation $ 100.00 $ 157.02 $ 326.26 $ 574.15 $ 512.40 $ 1,536.28
+S&P 500 $ 100.00 $ 126.17 $ 144.83 $ 175.25 $ 163.63 $ 199.83
+Nasdaq 100 $ 100.00 $ 136.15 $ 194.20 $ 218.68 $ 185.67 $ 268.13
+Item 6. [Reserved]
+33
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 53/118

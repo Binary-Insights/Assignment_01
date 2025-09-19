@@ -651,3 +651,329 @@
 2025-09-17 15:47:54,828 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 58 to pdfplumber_page_114_table_001.csv
 2025-09-17 15:48:10,641 - EnhancedPDFExtractor - INFO - Table extraction completed. Found 199 tables total.
 2025-09-17 15:48:10,743 - EnhancedPDFExtractor - ERROR - Error during extraction: Object of type int64 is not JSON serializable
+2025-09-19 10:33:32,145 - EnhancedPDFExtractor - INFO - Starting extraction from: nvda-20240128.pdf
+2025-09-19 10:33:32,145 - EnhancedPDFExtractor - INFO - Starting text extraction...
+2025-09-19 10:33:32,212 - EnhancedPDFExtractor - INFO - Processing text from page 1/118
+2025-09-19 10:33:32,420 - EnhancedPDFExtractor - INFO - Processing text from page 2/118
+2025-09-19 10:33:32,530 - EnhancedPDFExtractor - INFO - Processing text from page 3/118
+2025-09-19 10:33:32,629 - EnhancedPDFExtractor - INFO - Processing text from page 4/118
+2025-09-19 10:33:32,761 - EnhancedPDFExtractor - INFO - Processing text from page 5/118
+2025-09-19 10:33:32,761 - EnhancedPDFExtractor - INFO - Processing text from page 6/118
+2025-09-19 10:33:32,919 - EnhancedPDFExtractor - INFO - Processing text from page 7/118
+2025-09-19 10:33:33,029 - EnhancedPDFExtractor - INFO - Processing text from page 8/118
+2025-09-19 10:33:33,228 - EnhancedPDFExtractor - INFO - Processing text from page 9/118
+2025-09-19 10:33:33,228 - EnhancedPDFExtractor - INFO - Processing text from page 10/118
+2025-09-19 10:33:33,362 - EnhancedPDFExtractor - INFO - Processing text from page 11/118
+2025-09-19 10:33:33,528 - EnhancedPDFExtractor - INFO - Processing text from page 12/118
+2025-09-19 10:33:33,528 - EnhancedPDFExtractor - INFO - Processing text from page 13/118
+2025-09-19 10:33:33,661 - EnhancedPDFExtractor - INFO - Processing text from page 14/118
+2025-09-19 10:33:33,661 - EnhancedPDFExtractor - INFO - Processing text from page 15/118
+2025-09-19 10:33:33,860 - EnhancedPDFExtractor - INFO - Processing text from page 16/118
+2025-09-19 10:33:33,862 - EnhancedPDFExtractor - INFO - Processing text from page 17/118
+2025-09-19 10:33:33,956 - EnhancedPDFExtractor - INFO - Processing text from page 18/118
+2025-09-19 10:33:34,056 - EnhancedPDFExtractor - INFO - Processing text from page 19/118
+2025-09-19 10:33:34,134 - EnhancedPDFExtractor - INFO - Processing text from page 20/118
+2025-09-19 10:33:34,146 - EnhancedPDFExtractor - INFO - Processing text from page 21/118
+2025-09-19 10:33:34,351 - EnhancedPDFExtractor - INFO - Processing text from page 22/118
+2025-09-19 10:33:34,367 - EnhancedPDFExtractor - INFO - Processing text from page 23/118
+2025-09-19 10:33:34,496 - EnhancedPDFExtractor - INFO - Processing text from page 24/118
+2025-09-19 10:33:34,497 - EnhancedPDFExtractor - INFO - Processing text from page 25/118
+2025-09-19 10:33:34,684 - EnhancedPDFExtractor - INFO - Processing text from page 26/118
+2025-09-19 10:33:34,698 - EnhancedPDFExtractor - INFO - Processing text from page 27/118
+2025-09-19 10:33:34,895 - EnhancedPDFExtractor - INFO - Processing text from page 28/118
+2025-09-19 10:33:34,895 - EnhancedPDFExtractor - INFO - Processing text from page 29/118
+2025-09-19 10:33:35,031 - EnhancedPDFExtractor - INFO - Processing text from page 30/118
+2025-09-19 10:33:35,051 - EnhancedPDFExtractor - INFO - Processing text from page 31/118
+2025-09-19 10:33:35,212 - EnhancedPDFExtractor - INFO - Processing text from page 32/118
+2025-09-19 10:33:35,384 - EnhancedPDFExtractor - INFO - Processing text from page 33/118
+2025-09-19 10:33:35,648 - EnhancedPDFExtractor - INFO - Processing text from page 34/118
+2025-09-19 10:33:35,648 - EnhancedPDFExtractor - INFO - Processing text from page 35/118
+2025-09-19 10:33:35,795 - EnhancedPDFExtractor - INFO - Processing text from page 36/118
+2025-09-19 10:33:35,810 - EnhancedPDFExtractor - INFO - Processing text from page 37/118
+2025-09-19 10:33:35,950 - EnhancedPDFExtractor - INFO - Processing text from page 38/118
+2025-09-19 10:33:35,961 - EnhancedPDFExtractor - INFO - Processing text from page 39/118
+2025-09-19 10:33:36,112 - EnhancedPDFExtractor - INFO - Processing text from page 40/118
+2025-09-19 10:33:36,116 - EnhancedPDFExtractor - INFO - Processing text from page 41/118
+2025-09-19 10:33:36,405 - EnhancedPDFExtractor - INFO - Processing text from page 42/118
+2025-09-19 10:33:36,415 - EnhancedPDFExtractor - INFO - Processing text from page 43/118
+2025-09-19 10:33:36,583 - EnhancedPDFExtractor - INFO - Processing text from page 44/118
+2025-09-19 10:33:36,600 - EnhancedPDFExtractor - INFO - Processing text from page 45/118
+2025-09-19 10:33:36,781 - EnhancedPDFExtractor - INFO - Processing text from page 46/118
+2025-09-19 10:33:36,975 - EnhancedPDFExtractor - INFO - Processing text from page 47/118
+2025-09-19 10:33:37,163 - EnhancedPDFExtractor - INFO - Processing text from page 48/118
+2025-09-19 10:33:37,179 - EnhancedPDFExtractor - INFO - Processing text from page 49/118
+2025-09-19 10:33:37,529 - EnhancedPDFExtractor - INFO - Processing text from page 50/118
+2025-09-19 10:33:37,529 - EnhancedPDFExtractor - INFO - Processing text from page 51/118
+2025-09-19 10:33:37,644 - EnhancedPDFExtractor - INFO - Processing text from page 52/118
+2025-09-19 10:33:37,660 - EnhancedPDFExtractor - INFO - Processing text from page 53/118
+2025-09-19 10:33:37,707 - EnhancedPDFExtractor - INFO - Processing text from page 54/118
+2025-09-19 10:33:37,849 - EnhancedPDFExtractor - INFO - Processing text from page 55/118
+2025-09-19 10:33:37,989 - EnhancedPDFExtractor - INFO - Processing text from page 56/118
+2025-09-19 10:33:38,114 - EnhancedPDFExtractor - INFO - Processing text from page 57/118
+2025-09-19 10:33:38,123 - EnhancedPDFExtractor - INFO - Processing text from page 58/118
+2025-09-19 10:33:38,270 - EnhancedPDFExtractor - INFO - Processing text from page 59/118
+2025-09-19 10:33:38,400 - EnhancedPDFExtractor - INFO - Processing text from page 60/118
+2025-09-19 10:33:38,684 - EnhancedPDFExtractor - INFO - Processing text from page 61/118
+2025-09-19 10:33:38,791 - EnhancedPDFExtractor - INFO - Processing text from page 62/118
+2025-09-19 10:33:38,806 - EnhancedPDFExtractor - INFO - Processing text from page 63/118
+2025-09-19 10:33:38,902 - EnhancedPDFExtractor - INFO - Processing text from page 64/118
+2025-09-19 10:33:39,020 - EnhancedPDFExtractor - INFO - Processing text from page 65/118
+2025-09-19 10:33:39,030 - EnhancedPDFExtractor - INFO - Processing text from page 66/118
+2025-09-19 10:33:39,153 - EnhancedPDFExtractor - INFO - Processing text from page 67/118
+2025-09-19 10:33:39,162 - EnhancedPDFExtractor - INFO - Processing text from page 68/118
+2025-09-19 10:33:39,273 - EnhancedPDFExtractor - INFO - Processing text from page 69/118
+2025-09-19 10:33:39,291 - EnhancedPDFExtractor - INFO - Processing text from page 70/118
+2025-09-19 10:33:39,399 - EnhancedPDFExtractor - INFO - Processing text from page 71/118
+2025-09-19 10:33:39,414 - EnhancedPDFExtractor - INFO - Processing text from page 72/118
+2025-09-19 10:33:39,463 - EnhancedPDFExtractor - INFO - Processing text from page 73/118
+2025-09-19 10:33:39,549 - EnhancedPDFExtractor - INFO - Processing text from page 74/118
+2025-09-19 10:33:39,683 - EnhancedPDFExtractor - INFO - Processing text from page 75/118
+2025-09-19 10:33:39,777 - EnhancedPDFExtractor - INFO - Processing text from page 76/118
+2025-09-19 10:33:39,849 - EnhancedPDFExtractor - INFO - Processing text from page 77/118
+2025-09-19 10:33:39,908 - EnhancedPDFExtractor - INFO - Processing text from page 78/118
+2025-09-19 10:33:40,260 - EnhancedPDFExtractor - INFO - Processing text from page 79/118
+2025-09-19 10:33:40,422 - EnhancedPDFExtractor - INFO - Processing text from page 80/118
+2025-09-19 10:33:40,550 - EnhancedPDFExtractor - INFO - Processing text from page 81/118
+2025-09-19 10:33:40,663 - EnhancedPDFExtractor - INFO - Processing text from page 82/118
+2025-09-19 10:33:40,685 - EnhancedPDFExtractor - INFO - Processing text from page 83/118
+2025-09-19 10:33:40,813 - EnhancedPDFExtractor - INFO - Processing text from page 84/118
+2025-09-19 10:33:40,813 - EnhancedPDFExtractor - INFO - Processing text from page 85/118
+2025-09-19 10:33:40,956 - EnhancedPDFExtractor - INFO - Processing text from page 86/118
+2025-09-19 10:33:40,964 - EnhancedPDFExtractor - INFO - Processing text from page 87/118
+2025-09-19 10:33:41,077 - EnhancedPDFExtractor - INFO - Processing text from page 88/118
+2025-09-19 10:33:41,093 - EnhancedPDFExtractor - INFO - Processing text from page 89/118
+2025-09-19 10:33:41,211 - EnhancedPDFExtractor - INFO - Processing text from page 90/118
+2025-09-19 10:33:41,226 - EnhancedPDFExtractor - INFO - Processing text from page 91/118
+2025-09-19 10:33:41,311 - EnhancedPDFExtractor - INFO - Processing text from page 92/118
+2025-09-19 10:33:41,396 - EnhancedPDFExtractor - INFO - Processing text from page 93/118
+2025-09-19 10:33:41,566 - EnhancedPDFExtractor - INFO - Processing text from page 94/118
+2025-09-19 10:33:41,665 - EnhancedPDFExtractor - INFO - Processing text from page 95/118
+2025-09-19 10:33:41,671 - EnhancedPDFExtractor - INFO - Processing text from page 96/118
+2025-09-19 10:33:41,732 - EnhancedPDFExtractor - INFO - Processing text from page 97/118
+2025-09-19 10:33:42,048 - EnhancedPDFExtractor - INFO - Processing text from page 98/118
+2025-09-19 10:33:42,148 - EnhancedPDFExtractor - INFO - Processing text from page 99/118
+2025-09-19 10:33:42,248 - EnhancedPDFExtractor - INFO - Processing text from page 100/118
+2025-09-19 10:33:42,320 - EnhancedPDFExtractor - INFO - Processing text from page 101/118
+2025-09-19 10:33:42,402 - EnhancedPDFExtractor - INFO - Processing text from page 102/118
+2025-09-19 10:33:42,515 - EnhancedPDFExtractor - INFO - Processing text from page 103/118
+2025-09-19 10:33:42,586 - EnhancedPDFExtractor - INFO - Processing text from page 104/118
+2025-09-19 10:33:42,698 - EnhancedPDFExtractor - INFO - Processing text from page 105/118
+2025-09-19 10:33:42,806 - EnhancedPDFExtractor - INFO - Processing text from page 106/118
+2025-09-19 10:33:42,927 - EnhancedPDFExtractor - INFO - Processing text from page 107/118
+2025-09-19 10:33:43,064 - EnhancedPDFExtractor - INFO - Processing text from page 108/118
+2025-09-19 10:33:43,199 - EnhancedPDFExtractor - INFO - Processing text from page 109/118
+2025-09-19 10:33:43,341 - EnhancedPDFExtractor - INFO - Processing text from page 110/118
+2025-09-19 10:33:43,357 - EnhancedPDFExtractor - INFO - Processing text from page 111/118
+2025-09-19 10:33:43,458 - EnhancedPDFExtractor - INFO - Processing text from page 112/118
+2025-09-19 10:33:43,553 - EnhancedPDFExtractor - INFO - Processing text from page 113/118
+2025-09-19 10:33:43,588 - EnhancedPDFExtractor - INFO - Processing text from page 114/118
+2025-09-19 10:33:43,685 - EnhancedPDFExtractor - INFO - Processing text from page 115/118
+2025-09-19 10:33:43,796 - EnhancedPDFExtractor - INFO - Processing text from page 116/118
+2025-09-19 10:33:43,910 - EnhancedPDFExtractor - INFO - Processing text from page 117/118
+2025-09-19 10:33:43,942 - EnhancedPDFExtractor - INFO - Processing text from page 118/118
+2025-09-19 10:33:44,841 - EnhancedPDFExtractor - INFO - Word bounding boxes saved to data\parsed\nvda-20240128\text\word_boxes.json
+2025-09-19 10:33:44,841 - EnhancedPDFExtractor - INFO - Starting table extraction...
+2025-09-19 10:33:44,841 - EnhancedPDFExtractor - INFO - Extracting tables with Camelot lattice mode...
+2025-09-19 10:34:59,284 - EnhancedPDFExtractor - INFO - Saved lattice table 1 to camelot_lattice_table_001.csv
+2025-09-19 10:34:59,284 - EnhancedPDFExtractor - INFO - Extracting tables with Camelot stream mode...
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 1 to camelot_stream_table_001.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 2 to camelot_stream_table_002.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 3 to camelot_stream_table_003.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 4 to camelot_stream_table_004.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 5 to camelot_stream_table_005.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 6 to camelot_stream_table_006.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 7 to camelot_stream_table_007.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 8 to camelot_stream_table_008.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 9 to camelot_stream_table_009.csv
+2025-09-19 10:35:15,277 - EnhancedPDFExtractor - INFO - Saved stream table 10 to camelot_stream_table_010.csv
+2025-09-19 10:35:15,289 - EnhancedPDFExtractor - INFO - Saved stream table 11 to camelot_stream_table_011.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 12 to camelot_stream_table_012.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 13 to camelot_stream_table_013.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 14 to camelot_stream_table_014.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 15 to camelot_stream_table_015.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 16 to camelot_stream_table_016.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 17 to camelot_stream_table_017.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 18 to camelot_stream_table_018.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 19 to camelot_stream_table_019.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 20 to camelot_stream_table_020.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 21 to camelot_stream_table_021.csv
+2025-09-19 10:35:15,291 - EnhancedPDFExtractor - INFO - Saved stream table 22 to camelot_stream_table_022.csv
+2025-09-19 10:35:15,304 - EnhancedPDFExtractor - INFO - Saved stream table 23 to camelot_stream_table_023.csv
+2025-09-19 10:35:15,307 - EnhancedPDFExtractor - INFO - Saved stream table 24 to camelot_stream_table_024.csv
+2025-09-19 10:35:15,310 - EnhancedPDFExtractor - INFO - Saved stream table 25 to camelot_stream_table_025.csv
+2025-09-19 10:35:15,311 - EnhancedPDFExtractor - INFO - Saved stream table 26 to camelot_stream_table_026.csv
+2025-09-19 10:35:15,312 - EnhancedPDFExtractor - INFO - Saved stream table 27 to camelot_stream_table_027.csv
+2025-09-19 10:35:15,313 - EnhancedPDFExtractor - INFO - Saved stream table 28 to camelot_stream_table_028.csv
+2025-09-19 10:35:15,314 - EnhancedPDFExtractor - INFO - Saved stream table 29 to camelot_stream_table_029.csv
+2025-09-19 10:35:15,316 - EnhancedPDFExtractor - INFO - Saved stream table 30 to camelot_stream_table_030.csv
+2025-09-19 10:35:15,317 - EnhancedPDFExtractor - INFO - Saved stream table 31 to camelot_stream_table_031.csv
+2025-09-19 10:35:15,319 - EnhancedPDFExtractor - INFO - Saved stream table 32 to camelot_stream_table_032.csv
+2025-09-19 10:35:15,320 - EnhancedPDFExtractor - INFO - Saved stream table 33 to camelot_stream_table_033.csv
+2025-09-19 10:35:15,321 - EnhancedPDFExtractor - INFO - Saved stream table 34 to camelot_stream_table_034.csv
+2025-09-19 10:35:15,322 - EnhancedPDFExtractor - INFO - Saved stream table 35 to camelot_stream_table_035.csv
+2025-09-19 10:35:15,324 - EnhancedPDFExtractor - INFO - Saved stream table 36 to camelot_stream_table_036.csv
+2025-09-19 10:35:15,326 - EnhancedPDFExtractor - INFO - Saved stream table 37 to camelot_stream_table_037.csv
+2025-09-19 10:35:15,327 - EnhancedPDFExtractor - INFO - Saved stream table 38 to camelot_stream_table_038.csv
+2025-09-19 10:35:15,328 - EnhancedPDFExtractor - INFO - Saved stream table 39 to camelot_stream_table_039.csv
+2025-09-19 10:35:15,330 - EnhancedPDFExtractor - INFO - Saved stream table 40 to camelot_stream_table_040.csv
+2025-09-19 10:35:15,331 - EnhancedPDFExtractor - INFO - Saved stream table 41 to camelot_stream_table_041.csv
+2025-09-19 10:35:15,332 - EnhancedPDFExtractor - INFO - Saved stream table 42 to camelot_stream_table_042.csv
+2025-09-19 10:35:15,333 - EnhancedPDFExtractor - INFO - Saved stream table 43 to camelot_stream_table_043.csv
+2025-09-19 10:35:15,335 - EnhancedPDFExtractor - INFO - Saved stream table 44 to camelot_stream_table_044.csv
+2025-09-19 10:35:15,335 - EnhancedPDFExtractor - INFO - Saved stream table 45 to camelot_stream_table_045.csv
+2025-09-19 10:35:15,336 - EnhancedPDFExtractor - INFO - Saved stream table 46 to camelot_stream_table_046.csv
+2025-09-19 10:35:15,338 - EnhancedPDFExtractor - INFO - Saved stream table 47 to camelot_stream_table_047.csv
+2025-09-19 10:35:15,341 - EnhancedPDFExtractor - INFO - Saved stream table 48 to camelot_stream_table_048.csv
+2025-09-19 10:35:15,342 - EnhancedPDFExtractor - INFO - Saved stream table 49 to camelot_stream_table_049.csv
+2025-09-19 10:35:15,344 - EnhancedPDFExtractor - INFO - Saved stream table 50 to camelot_stream_table_050.csv
+2025-09-19 10:35:15,345 - EnhancedPDFExtractor - INFO - Saved stream table 51 to camelot_stream_table_051.csv
+2025-09-19 10:35:15,346 - EnhancedPDFExtractor - INFO - Saved stream table 52 to camelot_stream_table_052.csv
+2025-09-19 10:35:15,347 - EnhancedPDFExtractor - INFO - Saved stream table 53 to camelot_stream_table_053.csv
+2025-09-19 10:35:15,348 - EnhancedPDFExtractor - INFO - Saved stream table 54 to camelot_stream_table_054.csv
+2025-09-19 10:35:15,350 - EnhancedPDFExtractor - INFO - Saved stream table 55 to camelot_stream_table_055.csv
+2025-09-19 10:35:15,352 - EnhancedPDFExtractor - INFO - Saved stream table 56 to camelot_stream_table_056.csv
+2025-09-19 10:35:15,353 - EnhancedPDFExtractor - INFO - Saved stream table 57 to camelot_stream_table_057.csv
+2025-09-19 10:35:15,354 - EnhancedPDFExtractor - INFO - Saved stream table 58 to camelot_stream_table_058.csv
+2025-09-19 10:35:15,355 - EnhancedPDFExtractor - INFO - Saved stream table 59 to camelot_stream_table_059.csv
+2025-09-19 10:35:15,358 - EnhancedPDFExtractor - INFO - Saved stream table 60 to camelot_stream_table_060.csv
+2025-09-19 10:35:15,360 - EnhancedPDFExtractor - INFO - Saved stream table 61 to camelot_stream_table_061.csv
+2025-09-19 10:35:15,361 - EnhancedPDFExtractor - INFO - Saved stream table 62 to camelot_stream_table_062.csv
+2025-09-19 10:35:15,362 - EnhancedPDFExtractor - INFO - Saved stream table 63 to camelot_stream_table_063.csv
+2025-09-19 10:35:15,364 - EnhancedPDFExtractor - INFO - Saved stream table 64 to camelot_stream_table_064.csv
+2025-09-19 10:35:15,365 - EnhancedPDFExtractor - INFO - Saved stream table 65 to camelot_stream_table_065.csv
+2025-09-19 10:35:15,366 - EnhancedPDFExtractor - INFO - Saved stream table 66 to camelot_stream_table_066.csv
+2025-09-19 10:35:15,367 - EnhancedPDFExtractor - INFO - Saved stream table 67 to camelot_stream_table_067.csv
+2025-09-19 10:35:15,368 - EnhancedPDFExtractor - INFO - Saved stream table 68 to camelot_stream_table_068.csv
+2025-09-19 10:35:15,369 - EnhancedPDFExtractor - INFO - Saved stream table 69 to camelot_stream_table_069.csv
+2025-09-19 10:35:15,371 - EnhancedPDFExtractor - INFO - Saved stream table 70 to camelot_stream_table_070.csv
+2025-09-19 10:35:15,373 - EnhancedPDFExtractor - INFO - Saved stream table 71 to camelot_stream_table_071.csv
+2025-09-19 10:35:15,375 - EnhancedPDFExtractor - INFO - Saved stream table 72 to camelot_stream_table_072.csv
+2025-09-19 10:35:15,376 - EnhancedPDFExtractor - INFO - Saved stream table 73 to camelot_stream_table_073.csv
+2025-09-19 10:35:15,378 - EnhancedPDFExtractor - INFO - Saved stream table 74 to camelot_stream_table_074.csv
+2025-09-19 10:35:15,379 - EnhancedPDFExtractor - INFO - Saved stream table 75 to camelot_stream_table_075.csv
+2025-09-19 10:35:15,381 - EnhancedPDFExtractor - INFO - Saved stream table 76 to camelot_stream_table_076.csv
+2025-09-19 10:35:15,382 - EnhancedPDFExtractor - INFO - Saved stream table 77 to camelot_stream_table_077.csv
+2025-09-19 10:35:15,382 - EnhancedPDFExtractor - INFO - Saved stream table 78 to camelot_stream_table_078.csv
+2025-09-19 10:35:15,383 - EnhancedPDFExtractor - INFO - Saved stream table 79 to camelot_stream_table_079.csv
+2025-09-19 10:35:15,385 - EnhancedPDFExtractor - INFO - Saved stream table 80 to camelot_stream_table_080.csv
+2025-09-19 10:35:15,386 - EnhancedPDFExtractor - INFO - Saved stream table 81 to camelot_stream_table_081.csv
+2025-09-19 10:35:15,387 - EnhancedPDFExtractor - INFO - Saved stream table 82 to camelot_stream_table_082.csv
+2025-09-19 10:35:15,388 - EnhancedPDFExtractor - INFO - Saved stream table 83 to camelot_stream_table_083.csv
+2025-09-19 10:35:15,391 - EnhancedPDFExtractor - INFO - Saved stream table 84 to camelot_stream_table_084.csv
+2025-09-19 10:35:15,393 - EnhancedPDFExtractor - INFO - Saved stream table 85 to camelot_stream_table_085.csv
+2025-09-19 10:35:15,394 - EnhancedPDFExtractor - INFO - Saved stream table 86 to camelot_stream_table_086.csv
+2025-09-19 10:35:15,395 - EnhancedPDFExtractor - INFO - Saved stream table 87 to camelot_stream_table_087.csv
+2025-09-19 10:35:15,397 - EnhancedPDFExtractor - INFO - Saved stream table 88 to camelot_stream_table_088.csv
+2025-09-19 10:35:15,398 - EnhancedPDFExtractor - INFO - Saved stream table 89 to camelot_stream_table_089.csv
+2025-09-19 10:35:15,398 - EnhancedPDFExtractor - INFO - Saved stream table 90 to camelot_stream_table_090.csv
+2025-09-19 10:35:15,399 - EnhancedPDFExtractor - INFO - Saved stream table 91 to camelot_stream_table_091.csv
+2025-09-19 10:35:15,401 - EnhancedPDFExtractor - INFO - Saved stream table 92 to camelot_stream_table_092.csv
+2025-09-19 10:35:15,402 - EnhancedPDFExtractor - INFO - Saved stream table 93 to camelot_stream_table_093.csv
+2025-09-19 10:35:15,403 - EnhancedPDFExtractor - INFO - Saved stream table 94 to camelot_stream_table_094.csv
+2025-09-19 10:35:15,404 - EnhancedPDFExtractor - INFO - Saved stream table 95 to camelot_stream_table_095.csv
+2025-09-19 10:35:15,405 - EnhancedPDFExtractor - INFO - Saved stream table 96 to camelot_stream_table_096.csv
+2025-09-19 10:35:15,406 - EnhancedPDFExtractor - INFO - Saved stream table 97 to camelot_stream_table_097.csv
+2025-09-19 10:35:15,408 - EnhancedPDFExtractor - INFO - Saved stream table 98 to camelot_stream_table_098.csv
+2025-09-19 10:35:15,409 - EnhancedPDFExtractor - INFO - Saved stream table 99 to camelot_stream_table_099.csv
+2025-09-19 10:35:15,411 - EnhancedPDFExtractor - INFO - Saved stream table 100 to camelot_stream_table_100.csv
+2025-09-19 10:35:15,413 - EnhancedPDFExtractor - INFO - Saved stream table 101 to camelot_stream_table_101.csv
+2025-09-19 10:35:15,415 - EnhancedPDFExtractor - INFO - Saved stream table 102 to camelot_stream_table_102.csv
+2025-09-19 10:35:15,416 - EnhancedPDFExtractor - INFO - Saved stream table 103 to camelot_stream_table_103.csv
+2025-09-19 10:35:15,418 - EnhancedPDFExtractor - INFO - Saved stream table 104 to camelot_stream_table_104.csv
+2025-09-19 10:35:15,420 - EnhancedPDFExtractor - INFO - Saved stream table 105 to camelot_stream_table_105.csv
+2025-09-19 10:35:15,423 - EnhancedPDFExtractor - INFO - Saved stream table 106 to camelot_stream_table_106.csv
+2025-09-19 10:35:15,425 - EnhancedPDFExtractor - INFO - Saved stream table 107 to camelot_stream_table_107.csv
+2025-09-19 10:35:15,428 - EnhancedPDFExtractor - INFO - Saved stream table 108 to camelot_stream_table_108.csv
+2025-09-19 10:35:15,429 - EnhancedPDFExtractor - INFO - Saved stream table 109 to camelot_stream_table_109.csv
+2025-09-19 10:35:15,430 - EnhancedPDFExtractor - INFO - Saved stream table 110 to camelot_stream_table_110.csv
+2025-09-19 10:35:15,432 - EnhancedPDFExtractor - INFO - Saved stream table 111 to camelot_stream_table_111.csv
+2025-09-19 10:35:15,434 - EnhancedPDFExtractor - INFO - Saved stream table 112 to camelot_stream_table_112.csv
+2025-09-19 10:35:15,436 - EnhancedPDFExtractor - INFO - Saved stream table 113 to camelot_stream_table_113.csv
+2025-09-19 10:35:15,437 - EnhancedPDFExtractor - INFO - Saved stream table 114 to camelot_stream_table_114.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 115 to camelot_stream_table_115.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 116 to camelot_stream_table_116.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 117 to camelot_stream_table_117.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 118 to camelot_stream_table_118.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 119 to camelot_stream_table_119.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 120 to camelot_stream_table_120.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 121 to camelot_stream_table_121.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 122 to camelot_stream_table_122.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 123 to camelot_stream_table_123.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 124 to camelot_stream_table_124.csv
+2025-09-19 10:35:15,439 - EnhancedPDFExtractor - INFO - Saved stream table 125 to camelot_stream_table_125.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 126 to camelot_stream_table_126.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 127 to camelot_stream_table_127.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 128 to camelot_stream_table_128.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 129 to camelot_stream_table_129.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 130 to camelot_stream_table_130.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 131 to camelot_stream_table_131.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 132 to camelot_stream_table_132.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 133 to camelot_stream_table_133.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 134 to camelot_stream_table_134.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 135 to camelot_stream_table_135.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 136 to camelot_stream_table_136.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 137 to camelot_stream_table_137.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 138 to camelot_stream_table_138.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 139 to camelot_stream_table_139.csv
+2025-09-19 10:35:15,454 - EnhancedPDFExtractor - INFO - Saved stream table 140 to camelot_stream_table_140.csv
+2025-09-19 10:35:15,470 - EnhancedPDFExtractor - INFO - Saved stream table 141 to camelot_stream_table_141.csv
+2025-09-19 10:35:15,470 - EnhancedPDFExtractor - INFO - Saved stream table 142 to camelot_stream_table_142.csv
+2025-09-19 10:35:15,470 - EnhancedPDFExtractor - INFO - Extracting tables with pdfplumber...
+2025-09-19 10:35:17,418 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 1 to pdfplumber_page_017_table_001.csv
+2025-09-19 10:35:20,899 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 2 to pdfplumber_page_051_table_001.csv
+2025-09-19 10:35:21,032 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 3 to pdfplumber_page_053_table_001.csv
+2025-09-19 10:35:21,573 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 4 to pdfplumber_page_056_table_001.csv
+2025-09-19 10:35:22,208 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 5 to pdfplumber_page_060_table_001.csv
+2025-09-19 10:35:22,220 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 6 to pdfplumber_page_060_table_002.csv
+2025-09-19 10:35:22,220 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 7 to pdfplumber_page_060_table_003.csv
+2025-09-19 10:35:22,343 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 8 to pdfplumber_page_061_table_001.csv
+2025-09-19 10:35:22,452 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 9 to pdfplumber_page_063_table_001.csv
+2025-09-19 10:35:22,550 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 10 to pdfplumber_page_064_table_001.csv
+2025-09-19 10:35:22,550 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 11 to pdfplumber_page_064_table_002.csv
+2025-09-19 10:35:22,678 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 12 to pdfplumber_page_066_table_001.csv
+2025-09-19 10:35:23,463 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 13 to pdfplumber_page_076_table_001.csv
+2025-09-19 10:35:23,531 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 14 to pdfplumber_page_077_table_001.csv
+2025-09-19 10:35:23,647 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 15 to pdfplumber_page_078_table_001.csv
+2025-09-19 10:35:23,865 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 16 to pdfplumber_page_079_table_001.csv
+2025-09-19 10:35:24,068 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 17 to pdfplumber_page_080_table_001.csv
+2025-09-19 10:35:25,325 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 18 to pdfplumber_page_091_table_001.csv
+2025-09-19 10:35:25,436 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 19 to pdfplumber_page_092_table_001.csv
+2025-09-19 10:35:25,436 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 20 to pdfplumber_page_092_table_002.csv
+2025-09-19 10:35:25,436 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 21 to pdfplumber_page_092_table_003.csv
+2025-09-19 10:35:25,572 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 22 to pdfplumber_page_093_table_001.csv
+2025-09-19 10:35:25,707 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 23 to pdfplumber_page_094_table_001.csv
+2025-09-19 10:35:25,707 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 24 to pdfplumber_page_094_table_002.csv
+2025-09-19 10:35:25,815 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 25 to pdfplumber_page_096_table_001.csv
+2025-09-19 10:35:25,817 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 26 to pdfplumber_page_096_table_002.csv
+2025-09-19 10:35:25,937 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 27 to pdfplumber_page_097_table_001.csv
+2025-09-19 10:35:25,937 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 28 to pdfplumber_page_097_table_002.csv
+2025-09-19 10:35:26,063 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 29 to pdfplumber_page_098_table_001.csv
+2025-09-19 10:35:26,063 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 30 to pdfplumber_page_098_table_002.csv
+2025-09-19 10:35:26,063 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 31 to pdfplumber_page_098_table_003.csv
+2025-09-19 10:35:26,326 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 32 to pdfplumber_page_099_table_001.csv
+2025-09-19 10:35:26,423 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 33 to pdfplumber_page_100_table_001.csv
+2025-09-19 10:35:26,425 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 34 to pdfplumber_page_100_table_002.csv
+2025-09-19 10:35:26,427 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 35 to pdfplumber_page_100_table_003.csv
+2025-09-19 10:35:26,533 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 36 to pdfplumber_page_101_table_001.csv
+2025-09-19 10:35:26,534 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 37 to pdfplumber_page_101_table_002.csv
+2025-09-19 10:35:26,684 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 38 to pdfplumber_page_102_table_001.csv
+2025-09-19 10:35:26,688 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 39 to pdfplumber_page_102_table_002.csv
+2025-09-19 10:35:26,691 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 40 to pdfplumber_page_102_table_003.csv
+2025-09-19 10:35:26,772 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 41 to pdfplumber_page_103_table_001.csv
+2025-09-19 10:35:26,909 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 42 to pdfplumber_page_104_table_001.csv
+2025-09-19 10:35:27,022 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 43 to pdfplumber_page_105_table_001.csv
+2025-09-19 10:35:27,022 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 44 to pdfplumber_page_105_table_002.csv
+2025-09-19 10:35:27,022 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 45 to pdfplumber_page_105_table_003.csv
+2025-09-19 10:35:27,304 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 46 to pdfplumber_page_107_table_001.csv
+2025-09-19 10:35:27,312 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 47 to pdfplumber_page_107_table_002.csv
+2025-09-19 10:35:27,312 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 48 to pdfplumber_page_107_table_003.csv
+2025-09-19 10:35:27,474 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 49 to pdfplumber_page_108_table_001.csv
+2025-09-19 10:35:27,619 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 50 to pdfplumber_page_109_table_001.csv
+2025-09-19 10:35:27,744 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 51 to pdfplumber_page_111_table_001.csv
+2025-09-19 10:35:27,880 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 52 to pdfplumber_page_112_table_001.csv
+2025-09-19 10:35:27,886 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 53 to pdfplumber_page_112_table_002.csv
+2025-09-19 10:35:27,886 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 54 to pdfplumber_page_112_table_003.csv
+2025-09-19 10:35:27,918 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 55 to pdfplumber_page_113_table_001.csv
+2025-09-19 10:35:28,028 - EnhancedPDFExtractor - INFO - Saved pdfplumber table 56 to pdfplumber_page_114_table_001.csv
+2025-09-19 10:35:40,700 - EnhancedPDFExtractor - INFO - Table extraction completed. Found 199 tables total.
+2025-09-19 10:35:40,780 - EnhancedPDFExtractor - ERROR - Error during extraction: Object of type int64 is not JSON serializable

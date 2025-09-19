@@ -1,0 +1,52 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+At the foundation of the NVIDIA accelerated computing platform are our GPUs, which excel at parallel workloads such as the training
+and inferencing of neural networks. They are available in the NVIDIA accelerated computing platform and in industry standard servers
+from every major cloud provider and server maker. Beyond GPUs, our data center platform expanded to include DPUs in fiscal year
+2022 and CPUs in fiscal year 2024. We can optimize across the entire computing, networking and storage stack to deliver data center-
+scale computing solutions.
+While our approach starts with powerful chips, what makes it a full-stack computing platform is our large body of software, including the
+CUDA parallel programming model, the CUDA-X collection of acceleration libraries, APIs, SDKs, and domain-specific application
+frameworks.
+In addition to software delivered to customers as an integral part of our data center computing platform, we offer paid licenses to NVIDIA
+AI Enterprise, a comprehensive suite of enterprise-grade AI software and NVIDIA vGPU software for graphics-rich virtual desktops and
+workstations.
+In fiscal year 2024, we launched the NVIDIA DGX Cloud, an AI-training-as-a-service platform which includes cloud-based infrastructure
+and software for AI, customizable pretrained AI models, and access to NVIDIA experts. We have partnered with leading cloud service
+providers to host this service in their data centers.
+Gaming
+Gaming is the largest entertainment industry, with PC gaming as the predominant platform. Many factors propel its growth, including new
+high production value games and franchises, the continued rise of competitive gaming, or eSports, social connectivity and the increasing
+popularity of game streamers, modders, or gamers who remaster games, and creators.
+Our gaming platforms leverage our GPUs and sophisticated software to enhance the gaming experience with smoother, higher quality
+graphics. We developed NVIDIA RTX to bring next generation graphics and AI to games. NVIDIA RTX features ray tracing technology for
+real-time, cinematic-quality rendering. Ray tracing, which has long been used for special effects in the movie industry, is a
+computationally intensive technique that simulates the physical behavior of light to achieve greater realism in computer-generated
+scenes. NVIDIA RTX also features deep learning super sampling, or NVIDIA DLSS, our AI technology that boosts frame rates while
+generating beautiful, sharp images for games. RTX GPUs will also accelerate a new generation of AI applications. With an installed base
+of over 100 million AI capable PCs, more than 500 RTX AI-enabled applications and games, and a robust suite of development tools,
+RTX is already the AI PC leader.
+Our products for the gaming market include GeForce RTX and GeForce GTX GPUs for gaming desktop and laptop PCs, GeForce NOW
+cloud gaming for playing PC games on underpowered devices, as well as SoCs and development services for game consoles.
+Professional Visualization
+We serve the Professional Visualization market by working closely with independent software vendors, or ISVs, to optimize their
+offerings for NVIDIA GPUs. Our GPU computing platform enhances productivity and introduces new capabilities for critical workflows in
+many fields, such as design and manufacturing and digital content creation. Design and manufacturing encompass computer-aided
+design, architectural design, consumer-products manufacturing, medical instrumentation, and aerospace. Digital content creation
+includes professional video editing and post-production, special effects for films, and broadcast-television graphics.
+The NVIDIA RTX platform makes it possible to render film-quality, photorealistic objects and environments with physically accurate
+shadows, reflections and refractions using ray tracing in real-time. Many leading 3D design and content creation applications developed
+by our ecosystem partners now support RTX, allowing professionals to accelerate and transform their workflows with NVIDIA RTX GPUs
+and software.
+We offer NVIDIA Omniverse as a development platform and operating system for building virtual world simulation applications, available
+as a software subscription for enterprise use and free for individual use. Industrial enterprises are adopting Omniverse’s 3D and
+simulation technologies to digitalize their complex physical assets, processes, and environments – building digital twins of factories, real
+time 3D product configurators, testing and validating autonomous robots and vehicles, powered by NVIDIA accelerated computing
+infrastructure on-premises and in the cloud.
+Automotive
+Automotive market is comprised of platform solutions for automated driving and in-vehicle cockpit computing. Leveraging our technology
+leadership in AI and building on our long-standing automotive relationships, we are delivering a complete end-to-end solution for the AV
+market under the DRIVE Hyperion brand. We have demonstrated multiple applications of AI within the car: AI can drive the car itself as a
+pilot in fully autonomous mode or it can also be a co-pilot, assisting the human driver while creating a safer driving experience.
+6
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 7/118

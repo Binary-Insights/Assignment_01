@@ -1,0 +1,43 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+The following tables provide the breakdown of unrealized losses, aggregated by investment category and length of time that individual
+securities have been in a continuous loss position:
+Jan 28, 2024
+Less than 12 Months 12 Months or Greater Total
+Gross Gross Gross
+Estimated Unrealized Estimated Unrealized Estimated Unrealized
+Fair Value Loss Fair Value Loss Fair Value Loss
+(In millions)
+Debt securities issued by the
+U.S. Treasury $ 3,343 $ (5) $ 1,078 $ (5) $ 4,421 $ (10)
+Corporate debt securities 1,306 (3) 618 (2) 1,924 (5)
+Debt securities issued by U.S.
+government agencies 670 (1) — — 670 (1)
+Total $ 5,319 $ (9) $ 1,696 $ (7) $ 7,015 $ (16)
+Jan 29, 2023
+Less than 12 Months 12 Months or Greater Total
+Gross Gross Gross
+Estimated Unrealized Estimated Unrealized Estimated Unrealized
+Fair Value Loss Fair Value Loss Fair Value Loss
+(In millions)
+Debt securities issued by the
+U.S. Treasury $ 2,444 $ (21) $ 1,172 $ (23) $ 3,616 $ (44)
+Corporate debt securities 1,188 (7) 696 (5) 1,884 (12)
+Debt securities issued by U.S.
+government agencies 1,307 (2) — — 1,307 (2)
+Total $ 4,939 $ (30) $ 1,868 $ (28) $ 6,807 $ (58)
+The gross unrealized losses are related to fixed income securities, driven primarily by changes in interest rates. Net realized gains and
+losses were not significant for all periods presented.
+The amortized cost and estimated fair value of cash equivalents and marketable securities are shown below by contractual maturity.
+Jan 28, 2024 Jan 29, 2023
+Amortized Estimated Amortized Estimated
+Cost Fair Value Cost Fair Value
+(In millions)
+Less than one year $ 16,336 $ 16,329 $ 9,738 $ 9,708
+Due in 1 - 5 years 9,348 9,395 3,374 3,347
+Total $ 25,684 $ 25,724 $ 13,112 $ 13,055
+66
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 98/118

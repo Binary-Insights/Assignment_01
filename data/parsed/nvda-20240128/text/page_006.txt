@@ -1,0 +1,51 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+Researchers and developers use our computing solutions to accelerate a wide range of important applications, from simulating
+molecular dynamics to climate forecasting. With support for more than 3,500 applications, NVIDIA computing enables some of the most
+promising areas of discovery, from climate prediction to materials science and from wind tunnel simulation to genomics. Including GPUs
+and networking, NVIDIA powers over 75% of the supercomputers on the global TOP500 list, including 24 of the top 30 systems on the
+Green500 list.
+Gamers choose NVIDIA GPUs to enjoy immersive, increasingly cinematic virtual worlds. In addition to serving the growing number of
+gamers, the market for PC GPUs is expanding because of the burgeoning population of live streamers, broadcasters, artists, and
+creators. With the advent of generative AI, we expect a broader set of PC users to choose NVIDIA GPUs for running generative AI
+applications locally on their PC, which is critical for privacy, latency, and cost-sensitive AI applications.
+Professional artists, architects and designers use NVIDIA partner products accelerated with our GPUs and software platform for a range
+of creative and design use cases, such as creating visual effects in movies or designing buildings and products. In addition, generative
+AI is expanding the market for our workstation-class GPUs, as more enterprise customers develop and deploy AI applications with their
+data on-premises.
+Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorporated in Delaware in April
+1998.
+Our Businesses
+We report our business results in two segments.
+The Compute & Networking segment is comprised of our Data Center accelerated computing platforms and end-to-end networking
+platforms including Quantum for InfiniBand and Spectrum for Ethernet; our NVIDIA DRIVE automated-driving platform and automotive
+development agreements; Jetson robotics and other embedded platforms; NVIDIA AI Enterprise and other software; and DGX Cloud
+software and services.
+The Graphics segment includes GeForce GPUs for gaming and PCs, the GeForce NOW game streaming service and related
+infrastructure; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics; virtual GPU, or vGPU, software for cloud-based visual and
+virtual computing; automotive platforms for infotainment systems; and Omniverse Enterprise software for building and operating
+metaverse and 3D internet applications.
+Our Markets
+We specialize in markets where our computing platforms can provide tremendous acceleration for applications. These platforms
+incorporate processors, interconnects, software, algorithms, systems, and services to deliver unique value. Our platforms address four
+large markets where our expertise is critical: Data Center, Gaming, Professional Visualization, and Automotive.
+Data Center
+The NVIDIA Data Center platform is focused on accelerating the most compute-intensive workloads, such as AI, data analytics, graphics
+and scientific computing, delivering significantly better performance and power efficiency relative to conventional CPU-only approaches.
+It is deployed in cloud, hyperscale, on-premises and edge data centers. The platform consists of compute and networking offerings
+typically delivered to customers as systems, subsystems, or modules, along with software and services.
+Our compute offerings include supercomputing platforms and servers, bringing together our energy efficient GPUs, DPUs, interconnects,
+and fully optimized AI and high-performance computing, or HPC, software stacks. In addition, they include NVIDIA AI Enterprise
+software; our DGX Cloud service; and a growing body of acceleration libraries, APIs, SDKs, and domain-specific application frameworks.
+Our networking offerings include end-to-end platforms for InfiniBand and Ethernet, consisting of network adapters, cables, DPUs, and
+switch systems, as well as a full software stack. This has enabled us to architect data center-scale computing platforms that can
+interconnect thousands of compute nodes with high-performance networking. While historically the server was the unit of computing, as
+AI and HPC workloads have become extremely large spanning thousands of compute nodes, the data center has become the new unit
+of computing, with networking as an integral part.
+Our end customers include the world’s leading public cloud and consumer internet companies, thousands of enterprises and startups,
+and public sector entities. We work with industry leaders to help build or transform their applications and data center infrastructure. Our
+direct customers include original equipment manufacturers, or OEMs, original device manufacturers, or ODMs, system integrators and
+distributors which we partner with to help bring our products to market. We also have partnerships in automotive, healthcare, financial
+services, manufacturing, and retail among others, to accelerate the adoption of AI.
+5
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 6/118

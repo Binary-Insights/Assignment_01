@@ -1,0 +1,55 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+or generate enough renewable energy to match 100% of our global electricity usage for our offices and data centers. In fiscal year 2023,
+we increased the percentage of our total electricity use matched by renewable energy purchases to 44%. By fiscal year 2026, we aim to
+engage manufacturing suppliers comprising at least 67% of NVIDIA’s scope 3 category 1 GHG emissions with goal of effecting supplier
+adoption of science-based targets.
+Whether it is creation of technology to power next-generation laptops or designs to support high-performance supercomputers,
+improving energy efficiency is important in our research, development, and design processes. GPU-accelerated computing is inherently
+more energy efficient than traditional computing for many workloads because it is optimized for throughput, performance per watt, and
+certain AI workloads. The energy efficiency of our products is evidenced by our continued strong presence on the Green500 list of the
+most energy-efficient systems. We powered 24 of the top 30 most energy efficient systems, including the top supercomputer, on the
+Green500 list.
+We plan to build Earth-2, a digital twin of the Earth on NVIDIA AI and NVIDIA Omniverse platforms. Earth-2 will enable scientists,
+companies, and policy makers to do ultra-high-resolution predictions of the impact of climate change and explore mitigation and
+adaptation strategies.
+Human Capital Management
+We believe that our employees are our greatest assets, and they play a key role in creating long-term value for our stakeholders. As of
+the end of fiscal year 2024, we had approximately 29,600 employees in 36 countries, 22,200 were engaged in research and
+development and 7,400 were engaged in sales, marketing, operations, and administrative positions. The Compensation Committee of
+our Board of Directors assists in the oversight of policies and strategies relating to human capital management.
+To be competitive and execute our business strategy successfully, we must recruit, develop, and retain talented employees, including
+qualified executives, scientists, engineers, and technical and non-technical staff.
+Recruitment
+As the demand for global technical talent continues to be competitive, we have grown our technical workforce and have been successful
+in attracting top talent to NVIDIA. We have attracted talent globally through our strong employer brand and differentiated hiring strategies
+for college, professional, and leadership talent. Our workforce is 83% technical and 49% hold advanced degrees. Additionally, we have
+increased focus on diversity recruiting, resulting in an increase in global female hiring in each channel. Our own employees help to
+surface top talent, with over 40% of our new hires in fiscal year 2024 coming from employee referrals.
+Development and Retention
+To support employee development, we provide opportunities to learn on-the-job through training courses, targeted development
+programs, mentoring and peer coaching and ongoing feedback. We have a library of live and on-demand learning experiences that
+include workshops, panel discussions, and speaker forums. We create learning paths focused on our most common development needs
+and constantly upgrade our offerings to ensure that our employees are exposed to the most current content and technologies available.
+We offer tuition reimbursement programs to subsidize educational programs and advanced certifications. We implemented a career
+coaching service to provide one-on-one guidance to employees, and encourage internal job mobility. We have implemented specifically
+designed mentoring and development programs for women and employees from traditionally underrepresented groups to ensure
+widespread readiness for future advancement.
+To evaluate employee sentiment and engagement, we use pulse surveys, a suggestion box, and an anonymous third-party platform.
+Pulse surveys help us gain insight into employee experience and provides employee-generated ideas so that we can take targeted
+action. The suggestion box is an always-on, interactive tool where employees share their thoughts about making our company a better
+place to work. The anonymous third-party platform is designed to protect the identity of the reporter and provide a mechanism for
+reporters to follow an investigation and receive responses.
+We want NVIDIA to be a place where people can build their careers over their lifetime. Our employees tend to come and stay. In fiscal
+year 2024, our overall turnover rate was 2.7%.
+Compensation, Benefits, and Well-Being
+Our compensation program rewards performance and is structured to encourage employees to invest in the Company’s future.
+Employees receive equity, except where unavailable due to local regulations, that is tied to the value of our stock price and vests over
+time to retain employees while simultaneously aligning their interests with those of our shareholders.
+We offer comprehensive benefits to support our employees’ and their families’ physical health, well-being, and financial health. Programs
+include 401(k) programs in the U.S., statutory and supplemental pension programs outside the U.S., our employee stock purchase
+program, flexible work hours, and time off policies to address mental health, stress, and time-management challenges. We evaluate our
+benefit offerings globally and aim to provide comparable support across the regions where we operate. We are committed to providing
+tailored benefits based on the needs of our Community Resource Groups and continuing our support for parents, both new birth parents
+and those who wish to become parents.
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 15/118

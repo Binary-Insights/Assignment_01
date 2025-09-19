@@ -1,0 +1,51 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+The fair value of shares issued under our ESPP have been estimated with the following assumptions:
+Year Ended
+Jan 28, 2024 Jan 29, 2023 Jan 30, 2022
+(Using the Black-Scholes model)
+ESPP
+Weighted average expected life (in years) 0.1-2.0 0.1-2.0 0.1-2.0
+Risk-free interest rate 3.9%-5.5% —%-4.6% —%-0.5%
+Volatility 31%-67% 43%-72% 20%-58%
+Dividend yield 0.1% 0.1% 0.1%
+For ESPP shares, the expected term represents the average term from the first day of the offering period to the purchase date. The risk-
+free interest rate assumption used to value ESPP shares is based upon observed interest rates on Treasury bills appropriate for the
+expected term. Our expected stock price volatility assumption for ESPP is estimated using historical volatility. For awards granted, we
+use the dividend yield at grant date. Our RSU, PSU, and market-based PSU awards are not eligible for cash dividends prior to vesting;
+therefore, the fair values of RSUs, PSUs, and market-based PSUs are discounted for the dividend yield.
+Additionally, for RSU, PSU, and market-based PSU awards, we estimate forfeitures semi-annually and revise the estimates of forfeiture
+in subsequent periods if actual forfeitures differ from those estimates. Forfeitures are estimated based on historical experience.
+Equity Incentive Program
+We grant or have granted stock options, RSUs, PSUs, market-based PSUs, and stock purchase rights under the following equity
+incentive plans. In addition, in connection with our acquisitions of various companies, we have assumed certain stock-based awards
+granted under their stock incentive plans and converted them into our RSUs.
+Amended and Restated 2007 Equity Incentive Plan
+In 2007, our shareholders approved the NVIDIA Corporation 2007 Equity Incentive Plan, or as most recently amended and restated, the
+2007 Plan.
+The 2007 Plan authorizes the issuance of incentive stock options, non-statutory stock options, restricted stock, RSUs, stock appreciation
+rights, performance stock awards, performance cash awards, and other stock-based awards to employees, directors and consultants.
+Only our employees may receive incentive stock options. As of January 28, 2024, up to 37 million shares of our common stock could be
+issued pursuant to stock awards granted under the 2007 Plan. Currently, we grant RSUs, PSUs and market-based PSUs under the 2007
+Plan, under which, as of January 28, 2024, there were 147 million shares available for future grants.
+Subject to certain exceptions, RSUs granted to employees vest (A) over a four-year period, subject to continued service, with 25%
+vesting on a pre-determined date that is close to the anniversary of the date of grant and 6.25% vesting quarterly thereafter, (B) over a
+three-year period, subject to continued service, with 40% vesting on a pre-determined date that is close to the anniversary of the date of
+grant and 7.5% vesting quarterly thereafter, or (C) over a four-year period, subject to continued service, with 6.25% vesting quarterly.
+PSUs vest over a four-year period, subject to continued service, with 25% vesting on a pre-determined date that is close to the
+anniversary of the date of grant and 6.25% vesting quarterly thereafter. Market-based PSUs vest 100% on about the three-year
+anniversary of the date of grant. However, the number of shares subject to both PSUs and market-based PSUs that are eligible to vest is
+determined by the Compensation Committee based on achievement of pre-determined criteria.
+Amended and Restated 2012 Employee Stock Purchase Plan
+In 2012, our shareholders approved the NVIDIA Corporation 2012 Employee Stock Purchase Plan, or as most recently amended and
+restated, the 2012 Plan.
+Employees who participate in the 2012 Plan may have up to 15% of their earnings withheld to purchase shares of common stock. The
+Board may decrease this percentage at its discretion. Each offering period is about 24 months, divided into four purchase periods of six
+months. The price of common stock purchased under our 2012 Plan will be equal to 85% of the lower of the fair market value of the
+common stock on the commencement date of each offering period or the fair market value of the common stock on each purchase date
+within the offering. As of January 28, 2024, we had 227 million shares reserved for future issuance under the 2012 Plan.
+62
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 93/118

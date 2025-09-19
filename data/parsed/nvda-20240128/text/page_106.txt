@@ -1,0 +1,40 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+resolution of the matter. On December 5, 2023, the Ninth Circuit granted NVIDIA’s motion to stay the mandate. NVIDIA’s deadline to file
+a petition for a writ of certiorari is March 4, 2024.
+The putative derivative lawsuit pending in the United States District Court for the Northern District of California, captioned 4:19-cv-
+00341-HSG, initially filed January 18, 2019 and titled In re NVIDIA Corporation Consolidated Derivative Litigation, was stayed pending
+resolution of the plaintiffs’ appeal in the In Re NVIDIA Corporation Securities Litigation action. On February 22, 2022, the court
+administratively closed the case, but stated that it would reopen the case once the appeal in the In Re NVIDIA Corporation Securities
+Litigation action is resolved. Following the Ninth Circuit’s denial of NVIDIA’s petition for rehearing on November 15, 2023, the parties are
+conferring regarding the next steps in this derivative matter. The lawsuit asserts claims, purportedly on behalf of us, against certain
+officers and directors of the Company for breach of fiduciary duty, unjust enrichment, waste of corporate assets, and violations of
+Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false and misleading statements related to
+channel inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs are seeking unspecified damages and other
+relief, including reforms and improvements to NVIDIA’s corporate governance and internal procedures.
+The putative derivative actions initially filed September 24, 2019 and pending in the United States District Court for the District of
+Delaware, Lipchitz v. Huang, et al. (Case No. 1:19-cv-01795-UNA) and Nelson v. Huang, et. al. (Case No. 1:19-cv-01798- UNA), remain
+stayed pending resolution of the plaintiffs’ appeal in the In Re NVIDIA Corporation Securities Litigation action. Following the Ninth
+Circuit’s denial of NVIDIA’s petition for rehearing on November 15, 2023, the parties are conferring regarding the next steps in these
+derivative matters. The lawsuits assert claims, purportedly on behalf of us, against certain officers and directors of the Company for
+breach of fiduciary duty, unjust enrichment, insider trading, misappropriation of information, corporate waste and violations of Sections
+14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false, and misleading statements related to channel
+inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs seek unspecified damages and other relief, including
+disgorgement of profits from the sale of NVIDIA stock and unspecified corporate governance measures.
+Another putative derivative action was filed on October 30, 2023 in the Court of Chancery of the State of Delaware, captioned Horanic v.
+Huang, et al. (Case No. 2023-1096-KSJM). This lawsuit asserts claims, purportedly on behalf of us, against certain officers and directors
+of the Company for breach of fiduciary duty and insider trading based on the dissemination of allegedly false and misleading statements
+related to channel inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs seek unspecified damages and
+other relief, including disgorgement of profits from the sale of NVIDIA stock and reform of unspecified corporate governance measures.
+This derivative matter is stayed pending the final resolution of In Re NVIDIA Corporation Securities Litigation action.
+Accounting for Loss Contingencies
+As of January 28, 2024, we have not recorded any accrual for contingent liabilities associated with the legal proceedings described
+above based on our belief that liabilities, while possible, are not probable. Further, except as specifically described above, any possible
+loss or range of loss in these matters cannot be reasonably estimated at this time. We are engaged in legal actions not described above
+arising in the ordinary course of business and, while there can be no assurance of favorable outcomes, we believe that the ultimate
+outcome of these actions will not have a material adverse effect on our operating results, liquidity or financial position.
+74
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 106/118

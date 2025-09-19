@@ -16,8 +16,9 @@ os.chdir(download_dir)
 
 try:
     # Initialize downloader (it will create files in current working directory)
-    dl = Downloader("YourCompany", "your_email@example.com")
-    dl.get("10-K", "0001045810")
+    dl = Downloader("BinaryInsights", "copilot@binaryinsights.dev")
+    # Download the latest 10-K filing for NVIDIA (CIK: 0001045810)
+    dl.get("10-K", "0001045810", amount=1)
 finally:
     # Change back to original directory
     os.chdir(original_cwd)

@@ -1,0 +1,25 @@
+camelot-py[all]
+opencv-python
+ghostscript
+layoutparser
+numpy
+pandas
+pdfplumber
+pillow
+playwright
+pytesseract
+requests
+sec-edgar-downloader
+docling
+pypdfium2
+python-magic
+pydantic
+beautifulsoup4
+lxml
+transformers
+torch
+torchvision
+accelerate
+sentencepiece
+dvc
+detectron2@ git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2

@@ -1,0 +1,50 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+Competition
+The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.
+We believe that the principal competitive factors in this market are performance, breadth of product offerings, access to customers and
+partners and distribution channels, software support, conformity to industry standard APIs, manufacturing capabilities, processor pricing,
+and total system costs. We believe that our ability to remain competitive will depend on how well we are able to anticipate the features
+and functions that customers and partners will demand and whether we are able to deliver consistent volumes of our products at
+acceptable levels of quality and at competitive prices. We expect competition to increase from both existing competitors and new market
+entrants with products that may be lower priced than ours or may provide better performance or additional features not provided by our
+products. In addition, it is possible that new competitors or alliances among competitors could emerge and acquire significant market
+share.
+A significant source of competition comes from companies that provide or intend to provide GPUs, CPUs, DPUs, embedded SoCs, and
+other accelerated, AI computing processor products, and providers of semiconductor-based high-performance interconnect products
+based on InfiniBand, Ethernet, Fibre Channel, and proprietary technologies. Some of our competitors may have greater marketing,
+financial, distribution and manufacturing resources than we do and may be more able to adapt to customers or technological changes.
+We expect an increasingly competitive environment in the future.
+Our current competitors include:
+• suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated
+computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies
+Co. Ltd., or Huawei, and Intel Corporation, or Intel;
+• large cloud services companies with internal teams designing hardware and software that incorporate accelerated or AI
+computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet Inc., Amazon, Inc., or
+Amazon, Baidu, Inc., Huawei, and Microsoft Corporation, or Microsoft;
+• suppliers of Arm-based CPUs and companies that incorporate hardware and software for CPUs as part of their internal
+solutions or platforms, such as Amazon, Huawei, and Microsoft;
+• suppliers of hardware and software for SoC products that are used in servers or embedded into automobiles, autonomous
+machines, and gaming devices, such as Ambarella, Inc., AMD, Broadcom Inc., or Broadcom, Intel, Qualcomm Incorporated,
+Renesas Electronics Corporation, and Samsung, or companies with internal teams designing SoC products for their own
+products and services, such as Tesla, Inc.; and
+• networking products consisting of switches, network adapters (including DPUs), and cable solutions (including optical modules)
+include such as AMD, Arista Networks, Broadcom, Cisco Systems, Inc., Hewlett Packard Enterprise Company, Huawei, Intel,
+Lumentum Holdings, and Marvell Technology Group as well as internal teams of system vendors and large cloud services
+companies.
+Patents and Proprietary Rights
+We rely primarily on a combination of patents, trademarks, trade secrets, employee and third-party nondisclosure agreements, and
+licensing arrangements to protect our IP in the United States and internationally. Our currently issued patents have expiration dates from
+February 2024 to August 2043. We have numerous patents issued, allowed, and pending in the United States and in foreign
+jurisdictions. Our patents and pending patent applications primarily relate to our products and the technology used in connection with our
+products. We also rely on international treaties, organizations, and foreign laws to protect our IP. The laws of certain foreign countries in
+which our products are or may be manufactured or sold, including various countries in Asia, may not protect our products or IP rights to
+the same extent as the laws of the United States. This decreased protection makes the possibility of piracy of our technology and
+products more likely. We continuously assess whether and where to seek formal protection for innovations and technologies based on
+such factors as:
+• the location in which our products are manufactured;
+• our strategic technology or product directions in different countries;
+• the degree to which IP laws exist and are meaningfully enforced in different jurisdictions; and
+• the commercial significance of our operations and our competitors' operations in particular countries and regions.
+We have licensed technology from third parties and expect to continue entering such license agreements.
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 11/118

@@ -1,0 +1,48 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+existing core financial systems. The ERP system is designed to accurately maintain our financial records used to report operating
+results. The upgrade will occur in phases. We will continue to evaluate each quarter whether there are changes that materially affect our
+internal control over financial reporting.
+Inherent Limitations on Effectiveness of Controls
+Our management, including our Chief Executive Officer and Chief Financial Officer, does not expect that our disclosure controls and
+procedures or our internal controls, will prevent all error and all fraud. A control system, no matter how well conceived and operated, can
+provide only reasonable, not absolute, assurance that the objectives of the control system are met. Further, the design of a control
+system must reflect the fact that there are resource constraints, and the benefits of controls must be considered relative to their costs.
+Because of the inherent limitations in all control systems, no evaluation of controls can provide absolute assurance that all control issues
+and instances of fraud, if any, within NVIDIA have been detected.
+Item 9B. Other Information
+On December 18, 2023, John O. Dabiri, a member of our Board of Directors, adopted a trading arrangement that is intended to satisfy
+the affirmative defense conditions of Rule 10b5-1(c) for the sale through December 2, 2024 of an estimated 553 shares of our common
+stock, assuming our closing stock price as of January 26, 2024. The number of shares is based on an estimate because the plan
+specifies a formulaic dollar amount of shares to be sold.
+Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+Not Applicable.
+Part III
+Certain information required by Part III is omitted from this report because we will file with the SEC a definitive proxy statement pursuant
+to Regulation 14A, or the 2024 Proxy Statement, no later than 120 days after the end of fiscal year 2024, and certain information
+included therein is incorporated herein by reference.
+Item 10. Directors, Executive Officers and Corporate Governance
+Identification of Directors
+Information regarding directors required by this item will be contained in our 2024 Proxy Statement under the caption “Proposal 1 -
+Election of Directors,” and is hereby incorporated by reference.
+Identification of Executive Officers
+Reference is made to the information regarding executive officers appearing under the heading “Information About Our Executive
+Officers” in Part I of this Annual Report on Form 10-K, which information is hereby incorporated by reference.
+Identification of Audit Committee and Financial Experts
+Information regarding our Audit Committee required by this item will be contained in our 2024 Proxy Statement under the captions
+“Report of the Audit Committee of the Board of Directors” and “Information About the Board of Directors and Corporate Governance,”
+and is hereby incorporated by reference.
+Material Changes to Procedures for Recommending Directors
+Information regarding procedures for recommending directors required by this item will be contained in our 2024 Proxy Statement under
+the caption “Information About the Board of Directors and Corporate Governance,” and is hereby incorporated by reference.
+Delinquent Section 16(a) Reports
+Information regarding compliance with Section 16(a) of the Exchange Act required by this item will be contained in our 2024 Proxy
+Statement under the caption “Delinquent Section 16(a) Reports,” and is hereby incorporated by reference.
+Code of Conduct
+Information regarding our Code of Conduct required by this item will be contained in our 2024 Proxy Statement under the caption
+“Information About the Board of Directors and Corporate Governance - Code of Conduct,” and is hereby incorporated by reference. The
+full text of our Code of Conduct and Financial Team Code of Conduct are published on the Investor Relations portion of our website,
+under Governance, at www.nvidia.com. If we make any amendments to either code, or grant any waiver from a provision of either code
+to any executive officer or director, we will promptly disclose the nature of the amendment or waiver on our website or in a report on
+Form 8-K. The contents of our website are not a part of this Annual Report on Form 10-K.
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 70/118

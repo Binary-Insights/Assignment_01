@@ -1,0 +1,49 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+All Other operating loss - The year-on-year decrease was due to the $1.4 billion Arm acquisition termination cost in fiscal year 2023,
+partially offset by a $839 million increase in stock-based compensation expense in fiscal year 2024.
+Concentration of Revenue
+Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to end customers,
+such as enterprises and gamers in a different location. Revenue from sales to customers outside of the United States accounted for 56%
+and 69% of total revenue for fiscal years 2024 and 2023, respectively.
+Our direct and indirect customers include public cloud, consumer internet companies, enterprises, startups, public sector entities, OEMs,
+ODMs, system integrators, AIB, and distributors.
+Sales to one customer, Customer A, represented 13% of total revenue for fiscal year 2024, which was attributable to the Compute &
+Networking segment.
+One indirect customer which primarily purchases our products through system integrators and distributors, including through Customer
+A, is estimated to have represented approximately 19% of total revenue for fiscal year 2024, attributable to the Compute & Networking
+segment.
+Our estimated Compute & Networking demand is expected to remain concentrated.
+There were no customers with 10% or more of total revenue for fiscal years 2023 and 2022.
+Gross Profit and Gross Margin
+Gross profit consists of total revenue, net of allowances, less cost of revenue. Cost of revenue consists primarily of the cost of
+semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs,
+including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and
+component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related costs, development costs for license and
+service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.
+Our overall gross margin increased to 72.7% in fiscal year 2024 from 56.9% in fiscal year 2023. The year over year increase was
+primarily due to strong Data Center revenue growth of 217% and lower net inventory provisions as a percentage of revenue.
+Provisions for inventory and excess inventory purchase obligations totaled $2.2 billion for both fiscal years 2024 and 2023. Sales of
+previously reserved inventory or settlements of excess inventory purchase obligations resulted in a provision release of $540 million and
+$137 million for fiscal years 2024 and 2023, respectively. The net effect on our gross margin was an unfavorable impact of 2.7% and
+7.5% in fiscal years 2024 and 2023, respectively.
+Operating Expenses
+Year Ended
+$ %
+Jan 28, 2024 Jan 29, 2023 Change Change
+($ in millions)
+Research and development expenses $ 8,675 $ 7,339 $ 1,336 18 %
+% of net revenue 14.2 % 27.2 %
+Sales, general and administrative expenses 2,654 2,440 214 9 %
+% of net revenue 4.4 % 9.1 %
+Acquisition termination cost — 1,353 (1,353) (100)%
+% of net revenue — % 5.0 %
+Total operating expenses $ 11,329 $ 11,132 $ 197 2 %
+% of net revenue 18.6 % 41.3 %
+The increase in research and development expenses and sales, general and administrative expenses for fiscal year 2024 was primarily
+driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.
+Acquisition Termination Cost
+We recorded an acquisition termination cost related to the Arm transaction of $1.4 billion in fiscal year 2023 reflecting the write-off of the
+prepayment provided at signing.
+40
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 61/118

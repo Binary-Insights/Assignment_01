@@ -1,0 +1,50 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+Fiscal Year 2024 Summary
+Year Ended
+Jan 28, 2024 Jan 29, 2023 Change
+($ in millions, except per share data)
+Revenue $ 60,922 $ 26,974 Up 126%
+Gross margin 72.7 % 56.9 % Up 15.8 pts
+Operating expenses $ 11,329 $ 11,132 Up 2%
+Operating income $ 32,972 $ 4,224 Up 681%
+Net income $ 29,760 $ 4,368 Up 581%
+Net income per diluted share $ 11.93 $ 1.74 Up 586%
+We specialize in markets where our computing platforms can provide tremendous acceleration for applications. These platforms
+incorporate processors, interconnects, software, algorithms, systems, and services to deliver unique value. Our platforms address four
+large markets where our expertise is critical: Data Center, Gaming, Professional Visualization, and Automotive.
+Revenue for fiscal year 2024 was $60.9 billion, up 126% from a year ago.
+Data Center revenue for fiscal year 2024 was up 217%. Strong demand was driven by enterprise software and consumer internet
+applications, and multiple industry verticals including automotive, financial services, and healthcare. Customers across industry verticals
+access NVIDIA AI infrastructure both through the cloud and on-premises. Data Center compute revenue was up 244% in the fiscal year.
+Networking revenue was up 133% in the fiscal year.
+Gaming revenue for fiscal year 2024 was up 15%. The increase reflects higher sell-in to partners following the normalization of channel
+inventory levels and growing demand.
+Professional Visualization revenue for fiscal year 2024 was up 1%.
+Automotive revenue for the fiscal year 2024 was up 21%. The increase primarily reflected growth in self-driving platforms.
+Gross margin increased in fiscal year 2024, primarily driven by Data Center revenue growth and lower net inventory provisions as a
+percentage of revenue.
+Operating expenses increased for fiscal year 2024, driven by growth in employees and compensation increases. Fiscal year 2023 also
+included a $1.4 billion acquisition termination charge related to the proposed Arm transaction.
+Market Platform Highlights
+Data Center revenue for fiscal year 2024 was $47.5 billion, up 217% from fiscal year 2023. In Data Center, we launched AI inference
+platforms that combine our full-stack inference software with NVIDIA Ada, NVIDIA Hopper and NVIDIA Grace Hopper processors
+optimized for generative AI, LLMs and other AI workloads. We introduced NVIDIA DGX Cloud and AI Foundations to help businesses
+create and operate custom large language models and generative AI models. As AV algorithms move to video transformers, and more
+cars are equipped with cameras, we expect NVIDIA’s automotive data center processing demand to grow significantly. We estimate that
+in fiscal year 2024, approximately 40% of Data Center revenue was for AI inference. In the fourth quarter of fiscal year 2024, large cloud
+providers represented more than half of our Data Center revenue, supporting both internal workloads and external customers. We
+announced NVIDIA Spectrum-X, an accelerated networking platform for AI.
+Gaming revenue for fiscal year 2024 was $10.4 billion, up 15% from fiscal year 2023. In Gaming, we launched the GeForce RTX 4060
+and 4070 GPUs based on the NVIDIA Ada Lovelace architecture. We announced NVIDIA Avatar Cloud Engine for Games, a custom AI
+model foundry service using AI-powered natural language interactions to transform games and launched DLSS 3.5 Ray Reconstruction.
+Additionally, we released TensorRT-LLM for Windows and launched GeForce RTX 40-Series SUPER GPUs. Gaming reached a
+milestone of 500 AI-powered RTX games and applications utilizing NVIDIA DLSS, ray tracing and other NVIDIA RTX technologies.
+Professional Visualization revenue for fiscal year 2024 was $1.6 billion, up 1% from fiscal year 2023. In Professional Visualization, we
+announced new GPUs based on the NVIDIA RTX Ada Lovelace architecture, and announced NVIDIA Omniverse Cloud, a fully managed
+service running in Microsoft Azure, for the development and deployment of industrial metaverse applications.
+Automotive revenue for fiscal year 2024 was $1.1 billion, up 21% from fiscal year 2023. In Automotive, we announced a partnership with
+MediaTek, which will develop mainstream automotive systems on chips for global OEMs integrating a new NVIDIA GPU chiplet IP for AI
+and graphics. We furthered our collaboration with Foxconn to develop next-generation
+36
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 56/118

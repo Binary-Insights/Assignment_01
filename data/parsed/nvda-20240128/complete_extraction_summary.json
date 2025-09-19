@@ -1,0 +1,2698 @@
+{
+  "extraction_timestamp": "2025-09-19T10:35:40.778994",
+  "pdf_info": {
+    "name": "nvda-20240128.pdf",
+    "processing_time_seconds": 128.633948
+  },
+  "text_extraction": {
+    "total_pages": 118,
+    "pages": [
+      {
+        "page_number": 1,
+        "text_length": 5036,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_001.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 2,
+        "text_length": 1459,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_002.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 3,
+        "text_length": 4089,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_003.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 4,
+        "text_length": 5804,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_004.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 5,
+        "text_length": 121,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_005.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 6,
+        "text_length": 5107,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_006.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 7,
+        "text_length": 5326,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_007.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 8,
+        "text_length": 6772,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_008.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 9,
+        "text_length": 123,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_009.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 10,
+        "text_length": 5690,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_010.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 11,
+        "text_length": 4992,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_011.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 12,
+        "text_length": 124,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_012.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 13,
+        "text_length": 5877,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_013.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 14,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_014.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 15,
+        "text_length": 5749,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_015.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 16,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_016.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 17,
+        "text_length": 4013,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_017.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 18,
+        "text_length": 4883,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_018.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 19,
+        "text_length": 3670,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_019.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 20,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_020.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 21,
+        "text_length": 5906,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_021.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 22,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_022.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 23,
+        "text_length": 5123,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_023.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 24,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_024.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 25,
+        "text_length": 6855,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_025.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 26,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_026.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 27,
+        "text_length": 4944,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_027.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 28,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_028.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 29,
+        "text_length": 5748,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_029.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 30,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_030.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 31,
+        "text_length": 6854,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_031.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 32,
+        "text_length": 7330,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_032.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 33,
+        "text_length": 6708,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_033.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 34,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_034.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 35,
+        "text_length": 5634,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_035.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 36,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_036.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 37,
+        "text_length": 5927,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_037.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 38,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_038.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 39,
+        "text_length": 6832,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_039.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 40,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_040.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 41,
+        "text_length": 7247,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_041.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 42,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_042.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 43,
+        "text_length": 6807,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_043.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 44,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_044.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 45,
+        "text_length": 6672,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_045.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 46,
+        "text_length": 7132,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_046.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 47,
+        "text_length": 6630,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_047.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 48,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_048.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 49,
+        "text_length": 5457,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_049.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 50,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_050.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 51,
+        "text_length": 4008,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_051.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 52,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_052.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 53,
+        "text_length": 1426,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_053.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 54,
+        "text_length": 5428,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_054.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 55,
+        "text_length": 5531,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_055.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 56,
+        "text_length": 4484,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_056.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 57,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_057.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 58,
+        "text_length": 5225,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_058.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 59,
+        "text_length": 4433,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_059.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 60,
+        "text_length": 1989,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_060.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 61,
+        "text_length": 3823,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_061.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 62,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_062.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 63,
+        "text_length": 3585,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_063.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 64,
+        "text_length": 4064,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_064.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 65,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_065.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 66,
+        "text_length": 3777,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_066.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 67,
+        "text_length": 122,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_067.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 68,
+        "text_length": 4772,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_068.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 69,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_069.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 70,
+        "text_length": 4420,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_070.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 71,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_071.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 72,
+        "text_length": 1888,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_072.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 73,
+        "text_length": 1239,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_073.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 74,
+        "text_length": 5673,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_074.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 75,
+        "text_length": 3764,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_075.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 76,
+        "text_length": 1144,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_076.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 77,
+        "text_length": 964,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_077.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 78,
+        "text_length": 1706,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_078.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 79,
+        "text_length": 2093,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_079.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 80,
+        "text_length": 2536,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_080.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 81,
+        "text_length": 4824,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_081.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 82,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_082.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 83,
+        "text_length": 5397,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_083.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 84,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_084.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 85,
+        "text_length": 5750,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_085.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 86,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_086.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 87,
+        "text_length": 5717,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_087.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 88,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_088.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 89,
+        "text_length": 5873,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_089.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 90,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_090.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 91,
+        "text_length": 2947,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_091.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 92,
+        "text_length": 2349,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_092.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 93,
+        "text_length": 4564,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_093.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 94,
+        "text_length": 2719,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_094.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 95,
+        "text_length": 125,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_095.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 96,
+        "text_length": 1379,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_096.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 97,
+        "text_length": 1595,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_097.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 98,
+        "text_length": 1935,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_098.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 99,
+        "text_length": 2921,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_099.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 100,
+        "text_length": 2049,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_100.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 101,
+        "text_length": 1998,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_101.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 102,
+        "text_length": 2632,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_102.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 103,
+        "text_length": 2650,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_103.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 104,
+        "text_length": 2757,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_104.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 105,
+        "text_length": 3576,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_105.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 106,
+        "text_length": 4412,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_106.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 107,
+        "text_length": 1879,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_107.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 108,
+        "text_length": 3941,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_108.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 109,
+        "text_length": 4655,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_109.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 110,
+        "text_length": 123,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_110.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 111,
+        "text_length": 3364,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_111.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 112,
+        "text_length": 2117,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_112.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 113,
+        "text_length": 643,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_113.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 114,
+        "text_length": 1580,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_114.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 115,
+        "text_length": 2867,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_115.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 116,
+        "text_length": 3256,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_116.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 117,
+        "text_length": 1472,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_117.txt",
+        "extraction_method": "pdfplumber"
+      },
+      {
+        "page_number": 118,
+        "text_length": 1532,
+        "used_ocr": false,
+        "success": true,
+        "text_file": "page_118.txt",
+        "extraction_method": "pdfplumber"
+      }
+    ],
+    "ocr_pages": [],
+    "failed_pages": [],
+    "word_boxes_saved": true
+  },
+  "table_extraction": {
+    "total_tables": 199,
+    "camelot_lattice": {
+      "tables": [
+        {
+          "table_id": 1,
+          "method": "camelot_lattice",
+          "filename": "camelot_lattice_table_001.csv",
+          "page": 53,
+          "accuracy": 0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 100.0
+        }
+      ],
+      "success_count": 1
+    },
+    "camelot_stream": {
+      "tables": [
+        {
+          "table_id": 1,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_001.csv",
+          "page": 1,
+          "accuracy": 100.00000000000001,
+          "shape": [
+            12,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 2,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_002.csv",
+          "page": 1,
+          "accuracy": 93.05712635071541,
+          "shape": [
+            8,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 3,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_003.csv",
+          "page": 2,
+          "accuracy": 99.99356203760536,
+          "shape": [
+            31,
+            3
+          ],
+          "whitespace": 16.129032258064516
+        },
+        {
+          "table_id": 4,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_004.csv",
+          "page": 3,
+          "accuracy": 79.29333574379112,
+          "shape": [
+            7,
+            2
+          ],
+          "whitespace": 42.857142857142854
+        },
+        {
+          "table_id": 5,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_005.csv",
+          "page": 3,
+          "accuracy": 100.0,
+          "shape": [
+            8,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 6,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_006.csv",
+          "page": 4,
+          "accuracy": 99.99999999999993,
+          "shape": [
+            47,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 7,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_007.csv",
+          "page": 5,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 8,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_008.csv",
+          "page": 6,
+          "accuracy": 100.0000000000001,
+          "shape": [
+            49,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 9,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_009.csv",
+          "page": 7,
+          "accuracy": 100.00000000000007,
+          "shape": [
+            50,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 10,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_010.csv",
+          "page": 8,
+          "accuracy": 23.22515800374624,
+          "shape": [
+            57,
+            2
+          ],
+          "whitespace": 49.122807017543856
+        },
+        {
+          "table_id": 11,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_011.csv",
+          "page": 9,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 12,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_012.csv",
+          "page": 10,
+          "accuracy": 32.10388726587505,
+          "shape": [
+            50,
+            4
+          ],
+          "whitespace": 73.0
+        },
+        {
+          "table_id": 13,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_013.csv",
+          "page": 11,
+          "accuracy": 100.00000000000001,
+          "shape": [
+            15,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 14,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_014.csv",
+          "page": 11,
+          "accuracy": 89.10528033612815,
+          "shape": [
+            19,
+            2
+          ],
+          "whitespace": 36.84210526315789
+        },
+        {
+          "table_id": 15,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_015.csv",
+          "page": 12,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 16,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_016.csv",
+          "page": 13,
+          "accuracy": 99.99999999999996,
+          "shape": [
+            50,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 17,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_017.csv",
+          "page": 14,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 18,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_018.csv",
+          "page": 15,
+          "accuracy": 55.702355028960305,
+          "shape": [
+            54,
+            8
+          ],
+          "whitespace": 83.33333333333334
+        },
+        {
+          "table_id": 19,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_019.csv",
+          "page": 16,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 20,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_020.csv",
+          "page": 17,
+          "accuracy": 80.73593445659112,
+          "shape": [
+            9,
+            2
+          ],
+          "whitespace": 44.44444444444444
+        },
+        {
+          "table_id": 21,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_021.csv",
+          "page": 17,
+          "accuracy": 85.44318467362184,
+          "shape": [
+            11,
+            2
+          ],
+          "whitespace": 18.181818181818183
+        },
+        {
+          "table_id": 22,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_022.csv",
+          "page": 17,
+          "accuracy": 96.81100361878954,
+          "shape": [
+            8,
+            3
+          ],
+          "whitespace": 16.666666666666664
+        },
+        {
+          "table_id": 23,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_023.csv",
+          "page": 18,
+          "accuracy": 100.00000000000004,
+          "shape": [
+            38,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 24,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_024.csv",
+          "page": 18,
+          "accuracy": 81.75787913759876,
+          "shape": [
+            12,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 25,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_025.csv",
+          "page": 19,
+          "accuracy": 97.43056426785247,
+          "shape": [
+            33,
+            2
+          ],
+          "whitespace": 22.727272727272727
+        },
+        {
+          "table_id": 26,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_026.csv",
+          "page": 20,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 27,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_027.csv",
+          "page": 21,
+          "accuracy": 97.28774735581064,
+          "shape": [
+            11,
+            2
+          ],
+          "whitespace": 18.181818181818183
+        },
+        {
+          "table_id": 28,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_028.csv",
+          "page": 22,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 29,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_029.csv",
+          "page": 23,
+          "accuracy": 78.09495267752156,
+          "shape": [
+            15,
+            2
+          ],
+          "whitespace": 46.666666666666664
+        },
+        {
+          "table_id": 30,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_030.csv",
+          "page": 23,
+          "accuracy": 91.35309394761252,
+          "shape": [
+            17,
+            2
+          ],
+          "whitespace": 8.823529411764707
+        },
+        {
+          "table_id": 31,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_031.csv",
+          "page": 24,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 32,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_032.csv",
+          "page": 25,
+          "accuracy": 71.67584751459533,
+          "shape": [
+            57,
+            2
+          ],
+          "whitespace": 49.122807017543856
+        },
+        {
+          "table_id": 33,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_033.csv",
+          "page": 26,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 34,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_034.csv",
+          "page": 27,
+          "accuracy": 70.45618309981687,
+          "shape": [
+            18,
+            2
+          ],
+          "whitespace": 47.22222222222222
+        },
+        {
+          "table_id": 35,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_035.csv",
+          "page": 27,
+          "accuracy": 94.09596798290002,
+          "shape": [
+            26,
+            2
+          ],
+          "whitespace": 26.923076923076923
+        },
+        {
+          "table_id": 36,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_036.csv",
+          "page": 28,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 37,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_037.csv",
+          "page": 29,
+          "accuracy": 70.98332328549898,
+          "shape": [
+            35,
+            2
+          ],
+          "whitespace": 48.57142857142857
+        },
+        {
+          "table_id": 38,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_038.csv",
+          "page": 29,
+          "accuracy": 89.5099623216778,
+          "shape": [
+            19,
+            2
+          ],
+          "whitespace": 28.947368421052634
+        },
+        {
+          "table_id": 39,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_039.csv",
+          "page": 30,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 40,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_040.csv",
+          "page": 31,
+          "accuracy": 51.911706787814346,
+          "shape": [
+            55,
+            4
+          ],
+          "whitespace": 73.18181818181819
+        },
+        {
+          "table_id": 41,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_041.csv",
+          "page": 32,
+          "accuracy": 45.407750312379704,
+          "shape": [
+            57,
+            5
+          ],
+          "whitespace": 78.24561403508771
+        },
+        {
+          "table_id": 42,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_042.csv",
+          "page": 33,
+          "accuracy": 71.12362192121854,
+          "shape": [
+            56,
+            2
+          ],
+          "whitespace": 49.107142857142854
+        },
+        {
+          "table_id": 43,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_043.csv",
+          "page": 34,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 44,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_044.csv",
+          "page": 35,
+          "accuracy": 72.12845051911762,
+          "shape": [
+            15,
+            2
+          ],
+          "whitespace": 46.666666666666664
+        },
+        {
+          "table_id": 45,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_045.csv",
+          "page": 35,
+          "accuracy": 90.05670870460526,
+          "shape": [
+            17,
+            2
+          ],
+          "whitespace": 17.647058823529413
+        },
+        {
+          "table_id": 46,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_046.csv",
+          "page": 36,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 47,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_047.csv",
+          "page": 37,
+          "accuracy": 70.62659001782067,
+          "shape": [
+            38,
+            2
+          ],
+          "whitespace": 48.68421052631579
+        },
+        {
+          "table_id": 48,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_048.csv",
+          "page": 37,
+          "accuracy": 82.72591662848959,
+          "shape": [
+            10,
+            2
+          ],
+          "whitespace": 20.0
+        },
+        {
+          "table_id": 49,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_049.csv",
+          "page": 38,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 50,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_050.csv",
+          "page": 39,
+          "accuracy": 99.99999999999996,
+          "shape": [
+            54,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 51,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_051.csv",
+          "page": 40,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 52,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_052.csv",
+          "page": 41,
+          "accuracy": 29.759559293211442,
+          "shape": [
+            59,
+            5
+          ],
+          "whitespace": 78.30508474576271
+        },
+        {
+          "table_id": 53,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_053.csv",
+          "page": 42,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 54,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_054.csv",
+          "page": 43,
+          "accuracy": 73.69950931196587,
+          "shape": [
+            57,
+            2
+          ],
+          "whitespace": 49.122807017543856
+        },
+        {
+          "table_id": 55,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_055.csv",
+          "page": 44,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 56,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_056.csv",
+          "page": 45,
+          "accuracy": 69.11460978926804,
+          "shape": [
+            54,
+            2
+          ],
+          "whitespace": 49.074074074074076
+        },
+        {
+          "table_id": 57,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_057.csv",
+          "page": 46,
+          "accuracy": 70.37828552554816,
+          "shape": [
+            57,
+            2
+          ],
+          "whitespace": 49.122807017543856
+        },
+        {
+          "table_id": 58,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_058.csv",
+          "page": 47,
+          "accuracy": 99.99999999999991,
+          "shape": [
+            57,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 59,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_059.csv",
+          "page": 48,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 60,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_060.csv",
+          "page": 49,
+          "accuracy": 48.21545823651044,
+          "shape": [
+            52,
+            6
+          ],
+          "whitespace": 80.76923076923077
+        },
+        {
+          "table_id": 61,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_061.csv",
+          "page": 50,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 62,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_062.csv",
+          "page": 51,
+          "accuracy": 100.0,
+          "shape": [
+            8,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 63,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_063.csv",
+          "page": 51,
+          "accuracy": 93.60175982998992,
+          "shape": [
+            8,
+            6
+          ],
+          "whitespace": 47.91666666666667
+        },
+        {
+          "table_id": 64,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_064.csv",
+          "page": 52,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 65,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_065.csv",
+          "page": 53,
+          "accuracy": 100.00000000000001,
+          "shape": [
+            9,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 66,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_066.csv",
+          "page": 54,
+          "accuracy": 49.09147751661921,
+          "shape": [
+            51,
+            3
+          ],
+          "whitespace": 64.70588235294117
+        },
+        {
+          "table_id": 67,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_067.csv",
+          "page": 55,
+          "accuracy": 74.5478339878858,
+          "shape": [
+            48,
+            2
+          ],
+          "whitespace": 48.95833333333333
+        },
+        {
+          "table_id": 68,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_068.csv",
+          "page": 56,
+          "accuracy": 96.77237284501676,
+          "shape": [
+            9,
+            6
+          ],
+          "whitespace": 27.77777777777778
+        },
+        {
+          "table_id": 69,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_069.csv",
+          "page": 57,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 70,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_070.csv",
+          "page": 58,
+          "accuracy": 53.601760002714386,
+          "shape": [
+            46,
+            5
+          ],
+          "whitespace": 77.82608695652173
+        },
+        {
+          "table_id": 71,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_071.csv",
+          "page": 59,
+          "accuracy": 74.74482360899694,
+          "shape": [
+            35,
+            3
+          ],
+          "whitespace": 64.76190476190476
+        },
+        {
+          "table_id": 72,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_072.csv",
+          "page": 60,
+          "accuracy": 99.8064973533286,
+          "shape": [
+            18,
+            3
+          ],
+          "whitespace": 9.25925925925926
+        },
+        {
+          "table_id": 73,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_073.csv",
+          "page": 61,
+          "accuracy": 59.54882859200511,
+          "shape": [
+            31,
+            3
+          ],
+          "whitespace": 65.59139784946237
+        },
+        {
+          "table_id": 74,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_074.csv",
+          "page": 61,
+          "accuracy": 97.20189455554055,
+          "shape": [
+            11,
+            8
+          ],
+          "whitespace": 51.13636363636363
+        },
+        {
+          "table_id": 75,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_075.csv",
+          "page": 62,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 76,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_076.csv",
+          "page": 63,
+          "accuracy": 67.99748001694985,
+          "shape": [
+            43,
+            5
+          ],
+          "whitespace": 73.0232558139535
+        },
+        {
+          "table_id": 77,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_077.csv",
+          "page": 64,
+          "accuracy": 79.49839866698066,
+          "shape": [
+            27,
+            5
+          ],
+          "whitespace": 71.11111111111111
+        },
+        {
+          "table_id": 78,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_078.csv",
+          "page": 65,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 79,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_079.csv",
+          "page": 66,
+          "accuracy": 76.26503131110505,
+          "shape": [
+            10,
+            2
+          ],
+          "whitespace": 45.0
+        },
+        {
+          "table_id": 80,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_080.csv",
+          "page": 66,
+          "accuracy": 97.46006818889433,
+          "shape": [
+            11,
+            3
+          ],
+          "whitespace": 36.36363636363637
+        },
+        {
+          "table_id": 81,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_081.csv",
+          "page": 67,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 82,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_082.csv",
+          "page": 68,
+          "accuracy": 73.43825469765348,
+          "shape": [
+            49,
+            2
+          ],
+          "whitespace": 48.97959183673469
+        },
+        {
+          "table_id": 83,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_083.csv",
+          "page": 69,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 84,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_084.csv",
+          "page": 70,
+          "accuracy": 73.25708382431145,
+          "shape": [
+            47,
+            2
+          ],
+          "whitespace": 48.93617021276596
+        },
+        {
+          "table_id": 85,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_085.csv",
+          "page": 71,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 86,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_086.csv",
+          "page": 72,
+          "accuracy": 92.59321236140912,
+          "shape": [
+            22,
+            2
+          ],
+          "whitespace": 47.72727272727273
+        },
+        {
+          "table_id": 87,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_087.csv",
+          "page": 73,
+          "accuracy": 96.02256495646003,
+          "shape": [
+            20,
+            5
+          ],
+          "whitespace": 67.0
+        },
+        {
+          "table_id": 88,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_088.csv",
+          "page": 74,
+          "accuracy": 99.99999999999999,
+          "shape": [
+            14,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 89,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_089.csv",
+          "page": 75,
+          "accuracy": 59.0469738162235,
+          "shape": [
+            36,
+            5
+          ],
+          "whitespace": 73.33333333333333
+        },
+        {
+          "table_id": 90,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_090.csv",
+          "page": 76,
+          "accuracy": 98.63591900802606,
+          "shape": [
+            25,
+            7
+          ],
+          "whitespace": 45.14285714285714
+        },
+        {
+          "table_id": 91,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_091.csv",
+          "page": 77,
+          "accuracy": 96.88539393701944,
+          "shape": [
+            15,
+            7
+          ],
+          "whitespace": 52.38095238095239
+        },
+        {
+          "table_id": 92,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_092.csv",
+          "page": 78,
+          "accuracy": 97.71108474648973,
+          "shape": [
+            17,
+            5
+          ],
+          "whitespace": 43.529411764705884
+        },
+        {
+          "table_id": 93,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_093.csv",
+          "page": 79,
+          "accuracy": 97.83408528054487,
+          "shape": [
+            33,
+            14
+          ],
+          "whitespace": 48.268398268398265
+        },
+        {
+          "table_id": 94,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_094.csv",
+          "page": 80,
+          "accuracy": 99.46200559591614,
+          "shape": [
+            45,
+            7
+          ],
+          "whitespace": 48.25396825396825
+        },
+        {
+          "table_id": 95,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_095.csv",
+          "page": 81,
+          "accuracy": 59.928951222264665,
+          "shape": [
+            50,
+            4
+          ],
+          "whitespace": 72.0
+        },
+        {
+          "table_id": 96,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_096.csv",
+          "page": 82,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 97,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_097.csv",
+          "page": 83,
+          "accuracy": 99.99999999999994,
+          "shape": [
+            26,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 98,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_098.csv",
+          "page": 84,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 99,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_099.csv",
+          "page": 85,
+          "accuracy": 75.63039362470303,
+          "shape": [
+            54,
+            2
+          ],
+          "whitespace": 49.074074074074076
+        },
+        {
+          "table_id": 100,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_100.csv",
+          "page": 86,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 101,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_101.csv",
+          "page": 87,
+          "accuracy": 41.81823911460706,
+          "shape": [
+            53,
+            8
+          ],
+          "whitespace": 84.66981132075472
+        },
+        {
+          "table_id": 102,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_102.csv",
+          "page": 88,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 103,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_103.csv",
+          "page": 89,
+          "accuracy": 99.99999999999993,
+          "shape": [
+            34,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 104,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_104.csv",
+          "page": 90,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 105,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_105.csv",
+          "page": 91,
+          "accuracy": 100.00000000000001,
+          "shape": [
+            11,
+            1
+          ],
+          "whitespace": 0.0
+        },
+        {
+          "table_id": 106,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_106.csv",
+          "page": 91,
+          "accuracy": 99.56353181299293,
+          "shape": [
+            15,
+            4
+          ],
+          "whitespace": 53.333333333333336
+        },
+        {
+          "table_id": 107,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_107.csv",
+          "page": 92,
+          "accuracy": 85.06325432690815,
+          "shape": [
+            44,
+            12
+          ],
+          "whitespace": 78.4090909090909
+        },
+        {
+          "table_id": 108,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_108.csv",
+          "page": 93,
+          "accuracy": 63.08757377164958,
+          "shape": [
+            38,
+            4
+          ],
+          "whitespace": 69.07894736842105
+        },
+        {
+          "table_id": 109,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_109.csv",
+          "page": 94,
+          "accuracy": 91.97446024875428,
+          "shape": [
+            10,
+            5
+          ],
+          "whitespace": 42.0
+        },
+        {
+          "table_id": 110,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_110.csv",
+          "page": 94,
+          "accuracy": 96.5658025208543,
+          "shape": [
+            14,
+            7
+          ],
+          "whitespace": 54.08163265306123
+        },
+        {
+          "table_id": 111,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_111.csv",
+          "page": 95,
+          "accuracy": 100.0,
+          "shape": [
+            3,
+            2
+          ],
+          "whitespace": 33.33333333333333
+        },
+        {
+          "table_id": 112,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_112.csv",
+          "page": 96,
+          "accuracy": 98.6447067260275,
+          "shape": [
+            10,
+            4
+          ],
+          "whitespace": 52.5
+        },
+        {
+          "table_id": 113,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_113.csv",
+          "page": 97,
+          "accuracy": 95.45342804567997,
+          "shape": [
+            12,
+            13
+          ],
+          "whitespace": 51.28205128205128
+        },
+        {
+          "table_id": 114,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_114.csv",
+          "page": 97,
+          "accuracy": 95.40641421156968,
+          "shape": [
+            12,
+            13
+          ],
+          "whitespace": 51.28205128205128
+        },
+        {
+          "table_id": 115,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_115.csv",
+          "page": 98,
+          "accuracy": 94.39533162411601,
+          "shape": [
+            10,
+            16
+          ],
+          "whitespace": 63.74999999999999
+        },
+        {
+          "table_id": 116,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_116.csv",
+          "page": 99,
+          "accuracy": 99.50967917142744,
+          "shape": [
+            21,
+            6
+          ],
+          "whitespace": 19.841269841269842
+        },
+        {
+          "table_id": 117,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_117.csv",
+          "page": 99,
+          "accuracy": 99.50967917142744,
+          "shape": [
+            21,
+            6
+          ],
+          "whitespace": 19.841269841269842
+        },
+        {
+          "table_id": 118,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_118.csv",
+          "page": 100,
+          "accuracy": 99.11571449471457,
+          "shape": [
+            9,
+            4
+          ],
+          "whitespace": 55.55555555555556
+        },
+        {
+          "table_id": 119,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_119.csv",
+          "page": 101,
+          "accuracy": 94.03332134815655,
+          "shape": [
+            10,
+            6
+          ],
+          "whitespace": 41.66666666666667
+        },
+        {
+          "table_id": 120,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_120.csv",
+          "page": 101,
+          "accuracy": 95.28879687789505,
+          "shape": [
+            8,
+            5
+          ],
+          "whitespace": 40.0
+        },
+        {
+          "table_id": 121,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_121.csv",
+          "page": 102,
+          "accuracy": 97.1951864210484,
+          "shape": [
+            14,
+            5
+          ],
+          "whitespace": 41.42857142857143
+        },
+        {
+          "table_id": 122,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_122.csv",
+          "page": 102,
+          "accuracy": 95.37551857383687,
+          "shape": [
+            9,
+            5
+          ],
+          "whitespace": 42.22222222222222
+        },
+        {
+          "table_id": 123,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_123.csv",
+          "page": 103,
+          "accuracy": 86.69319782560555,
+          "shape": [
+            9,
+            2
+          ],
+          "whitespace": 44.44444444444444
+        },
+        {
+          "table_id": 124,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_124.csv",
+          "page": 104,
+          "accuracy": 97.85462174445132,
+          "shape": [
+            19,
+            7
+          ],
+          "whitespace": 45.86466165413533
+        },
+        {
+          "table_id": 125,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_125.csv",
+          "page": 105,
+          "accuracy": 97.68757055179212,
+          "shape": [
+            10,
+            4
+          ],
+          "whitespace": 55.00000000000001
+        },
+        {
+          "table_id": 126,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_126.csv",
+          "page": 106,
+          "accuracy": 72.42123032530287,
+          "shape": [
+            32,
+            2
+          ],
+          "whitespace": 48.4375
+        },
+        {
+          "table_id": 127,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_127.csv",
+          "page": 107,
+          "accuracy": 97.97841053488072,
+          "shape": [
+            13,
+            7
+          ],
+          "whitespace": 47.25274725274725
+        },
+        {
+          "table_id": 128,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_128.csv",
+          "page": 107,
+          "accuracy": 97.51032033025184,
+          "shape": [
+            14,
+            8
+          ],
+          "whitespace": 30.357142857142854
+        },
+        {
+          "table_id": 129,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_129.csv",
+          "page": 108,
+          "accuracy": 98.39781182340029,
+          "shape": [
+            21,
+            5
+          ],
+          "whitespace": 42.857142857142854
+        },
+        {
+          "table_id": 130,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_130.csv",
+          "page": 109,
+          "accuracy": 96.35644181070793,
+          "shape": [
+            10,
+            7
+          ],
+          "whitespace": 44.285714285714285
+        },
+        {
+          "table_id": 131,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_131.csv",
+          "page": 109,
+          "accuracy": 71.56389176062463,
+          "shape": [
+            22,
+            7
+          ],
+          "whitespace": 77.92207792207793
+        },
+        {
+          "table_id": 132,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_132.csv",
+          "page": 110,
+          "accuracy": 100.0,
+          "shape": [
+            2,
+            2
+          ],
+          "whitespace": 25.0
+        },
+        {
+          "table_id": 133,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_133.csv",
+          "page": 111,
+          "accuracy": 97.83168151682024,
+          "shape": [
+            12,
+            9
+          ],
+          "whitespace": 41.66666666666667
+        },
+        {
+          "table_id": 134,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_134.csv",
+          "page": 112,
+          "accuracy": 97.20802937132461,
+          "shape": [
+            11,
+            7
+          ],
+          "whitespace": 44.15584415584416
+        },
+        {
+          "table_id": 135,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_135.csv",
+          "page": 112,
+          "accuracy": 95.7689836573878,
+          "shape": [
+            8,
+            7
+          ],
+          "whitespace": 42.857142857142854
+        },
+        {
+          "table_id": 136,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_136.csv",
+          "page": 113,
+          "accuracy": 93.5605671551698,
+          "shape": [
+            8,
+            5
+          ],
+          "whitespace": 40.0
+        },
+        {
+          "table_id": 137,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_137.csv",
+          "page": 114,
+          "accuracy": 98.04893557498694,
+          "shape": [
+            15,
+            9
+          ],
+          "whitespace": 31.851851851851855
+        },
+        {
+          "table_id": 138,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_138.csv",
+          "page": 115,
+          "accuracy": 99.71385398402096,
+          "shape": [
+            55,
+            5
+          ],
+          "whitespace": 40.36363636363636
+        },
+        {
+          "table_id": 139,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_139.csv",
+          "page": 116,
+          "accuracy": 100.00000000000001,
+          "shape": [
+            30,
+            2
+          ],
+          "whitespace": 13.333333333333334
+        },
+        {
+          "table_id": 140,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_140.csv",
+          "page": 116,
+          "accuracy": 64.89267833022906,
+          "shape": [
+            14,
+            2
+          ],
+          "whitespace": 42.857142857142854
+        },
+        {
+          "table_id": 141,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_141.csv",
+          "page": 117,
+          "accuracy": 93.34908474373246,
+          "shape": [
+            19,
+            2
+          ],
+          "whitespace": 47.368421052631575
+        },
+        {
+          "table_id": 142,
+          "method": "camelot_stream",
+          "filename": "camelot_stream_table_142.csv",
+          "page": 118,
+          "accuracy": 98.35772379543378,
+          "shape": [
+            38,
+            3
+          ],
+          "whitespace": 36.84210526315789
+        }
+      ],
+      "success_count": 142
+    },
+    "pdfplumber": {
+      "tables": [
+        {
+          "table_id": 1,
+          "method": "pdfplumber",
+          "filename": "pdfplumber_page_017_table_001.csv",
+          "page": 17,
+          "shape": [
+            4,
+            5
+          ],
+          "non_empty_cells": 

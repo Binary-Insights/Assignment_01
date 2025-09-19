@@ -1,0 +1,53 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+training data that may originate from third parties and new training methods, and the resulting products may contain unknown or
+undetected defects and errors, or reflect unintended bias. Although arrangements with component providers may contain provisions for
+product defect expense reimbursement, we generally remain responsible to the customer for warranty product defects that may occur
+from time to time. Some failures in our products or services have been in the past and may in the future be only discovered after a
+product or service has been shipped or used. Undiscovered vulnerabilities in our products or services could result in loss of data or
+intangible property, or expose our customers to unscrupulous third parties who develop and deploy malicious software programs that
+could attack our products or services. Defects or failure of our offerings to perform to specifications could lead to substantial damage to
+the products in which our offerings have been integrated by OEMs, ODMs, AIBs and automotive manufacturers and tier 1 automotive
+suppliers, and to the user of such end product. Any such defect may cause us to incur significant warranty, support and repair or
+replacement costs as part of a product recall or otherwise, write-off the value of related inventory, and divert the attention of our
+engineering and management personnel from our product development efforts to find and correct the issue. Our efforts to remedy these
+issues may not be timely or satisfactory to our customers. An error or defect in new products, releases or related software drivers after
+commencement of commercial shipments could result in failure to achieve market acceptance, loss of design wins, temporary or
+permanent withdrawal from a product or market and harm to our relationships with existing and prospective customers and partners and
+consumers’ perceptions of our brand, which would in turn negatively impact our business operations, gross margin, revenue and/or
+financial results. We may be required to reimburse our customers, partners or consumers, including for costs to repair or replace
+products in the field or in connection with indemnification obligations, or pay fines imposed by regulatory agencies.
+For example, in fiscal year 2023, a defect was identified in a third-party component embedded in certain Data Center products. This
+defect has had, and other defects may in the future have, an adverse effect on our cost and supply of components and finished goods.
+These costs could be significant in future periods. We recorded a net warranty liability during fiscal year 2023 primarily in connection with
+this defect. While we believe we have accurately recorded for warranty obligations, we may need to record additional amounts in the
+future if our estimate proves to be incorrect. In general, if a product liability claim regarding any of our products is brought against us,
+even if the alleged damage is due to the actions or inactions of a third party, such as within our supply chain, the cost of defending the
+claim could be significant and would divert the efforts of our technical and management personnel and harm our business. Further, our
+business liability insurance may be inadequate or future coverage may be unavailable on acceptable terms, which could adversely
+impact our financial results.
+Risks Related to Our Global Operating Business
+Adverse economic conditions may harm our business.
+Economic and industry uncertainty or changes, including recession or slowing growth, inflation, changes or uncertainty in fiscal,
+monetary or trade policy, disruptions to capital markets and the banking system, currency fluctuations, higher interest rates, tighter
+credit, lower capital expenditures by businesses, including on IT infrastructure, increases in unemployment, labor shortages, and lower
+consumer confidence and spending, global supply chain constraints and global economic and geopolitical developments have in the
+past and/or could in the future have adverse, wide-ranging effects on our business and financial results, including:
+• increased costs for wafers, components, logistics, and other supply chain expenses, which have negatively impacted our gross
+margin in the past and may do so in the future;
+• increased supply, employee, facilities and infrastructure costs and volatility in the financial markets, which have reduced and
+may in the future reduce our margins;
+• decrease in demand for our products, services and technologies and those of our customers, partners or licensees;
+• the inability of our suppliers to deliver on their supply commitments to us and our customers’ or our licensees’ inability to supply
+products to customers and/or end users;
+• limits on our ability to forecast operating results and make business decisions;
+• the insolvency of key suppliers, distributors, customers, cloud service providers, data center providers, licensing parties or other
+third parties we rely on;
+• reduced profitability of customers, which may cause them to scale back operations, exit businesses, file for bankruptcy
+protection and potentially cease operations, or lead to mergers, consolidations or strategic alliances among other companies,
+which could adversely affect our ability to compete effectively; and
+• increased credit and collectability risks, higher borrowing costs or reduced availability of capital markets, reduced liquidity,
+adverse impacts on our customers and suppliers, failures of counterparties, including financial institutions and insurers, asset
+impairments, and declines in the value of our financial instruments.
+19
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 29/118

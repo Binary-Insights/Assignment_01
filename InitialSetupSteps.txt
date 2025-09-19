@@ -50,7 +50,13 @@ python src/enhanced_pdf_extractor.py
 Step 6
 # Lab 3
 # Layout parser example
+
 python src/layout_parser_extractor.py
+
+# This is needed to make detectron model to work !!!
+uv pip install 'git+https://github.com/facebookresearch/detectron2.git' --no-build-isolation
+wget -O models/layoutparser/model_final.pth "https://www.dropbox.com/s/dgy9c10wykk4lq4/model_final.pth?dl=1"
+sudo apt update && sudo apt install -y poppler-utils
 
 Step 7
 # Lab 4
@@ -60,3 +66,9 @@ python src/docling_extractor.py
 Step 8
 # Compare All Methods
 python src/extraction_comparator.py
+
+Step 9
+# Metadata extractor 
+python src/metadata_extractor.py
+
+

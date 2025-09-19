@@ -38,6 +38,12 @@ Thumbs.db
 # Node
 node_modules/
 
+# Models
+*.pth
+
+#Data
+*.png
+*.jpg
 
 data/raw/pdf/sec-edgar-filings
 data/parsed/docling

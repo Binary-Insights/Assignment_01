@@ -1,0 +1,57 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+Risks Related to Regulatory, Legal, Our Stock and Other Matters
+Our operations could be affected by the complex laws, rules and regulations to which our business is subject, and political
+and other actions may adversely impact our business.
+We are subject to laws and regulations domestically and worldwide, affecting our operations in areas including, but not limited to, IP
+ownership and infringement; taxes; import and export requirements and tariffs; anti-corruption, including the Foreign Corrupt Practices
+Act; business acquisitions; foreign exchange controls and cash repatriation restrictions; data privacy requirements; competition and
+antitrust; advertising; employment; product regulations; cybersecurity; environmental, health, and safety requirements; the responsible
+use of AI; sustainability; cryptocurrency; and consumer laws. Compliance with such requirements can be onerous and expensive, could
+impact our competitive position, and may negatively impact our business operations and ability to manufacture and ship our products.
+There can be no assurance that our employees, contractors, suppliers, customers or agents will not violate applicable laws or the
+policies, controls, and procedures that we have designed to help ensure compliance with such laws, and violations could result in fines,
+criminal sanctions against us, our officers, or our employees, prohibitions on the conduct of our business, and damage to our reputation.
+Changes to the laws, rules and regulations to which we are subject, or changes to their interpretation and enforcement, could lead to
+materially greater compliance and other costs and/or further restrictions on our ability to manufacture and supply our products and
+operate our business. For example, we may face increased compliance costs as a result of changes or increases in antitrust legislation,
+regulation, administrative rule making, increased focus from regulators on cybersecurity vulnerabilities and risks. Our position in markets
+relating to AI has led to increased interest in our business from regulators worldwide, including the European Union, the United States,
+the United Kingdom and China. For example, the French Competition Authority collected information from us regarding our business and
+competition in the graphics card and cloud service provider market as part of an ongoing inquiry into competition in those markets. We
+have also received requests for information from regulators in the European Union, the United Kingdom, and China regarding our sales
+of GPUs, our efforts to allocate supply, foundation models and our investments, partnerships and other agreements with companies
+developing foundation models, and we expect to receive additional requests for information in the future. Governments and regulators
+are considering imposing restrictions on the hardware, software, and systems used to develop frontier foundation models and generative
+AI. If implemented, such restrictions could increase the costs and burdens to us and our customers, delay or halt deployment of new
+systems using our products, and reduce the number of new entrants and customers, negatively impacting our business and financial
+results. Revisions to laws or regulations or their interpretation and enforcement could also result in increased taxation, trade sanctions,
+the imposition of or increase to import duties or tariffs, restrictions and controls on imports or exports, or other retaliatory actions, which
+could have an adverse effect on our business plans or impact the timing of our shipments. Additionally, changes in the public perception
+of governments in the regions where we operate or plan to operate could negatively impact our business and results of operations.
+Government actions, including trade protection and national and economic security policies of U.S. and foreign government bodies, such
+as tariffs, import or export regulations, including deemed export restrictions and restrictions on the activities of U.S. persons, trade and
+economic sanctions, decrees, quotas or other trade barriers and restrictions could affect our ability to ship products, provide services to
+our customers and employees, do business without an export license with entities on the U.S. Department of Commerce’s U.S. Entity
+List or other USG restricted parties lists (which is expected to change from time to time), and generally fulfill our contractual obligations
+and have a material adverse effect on our business. If we were ever found to have violated export control laws or sanctions of the U.S.
+or similar applicable non-U.S. laws, even if the violation occurred without our knowledge, we may be subject to various penalties
+available under the laws, any of which could have a material and adverse impact on our business, operating results and financial
+condition.
+For example, in response to the war in Ukraine, the United States and other jurisdictions imposed economic sanctions and export control
+measures which blocked the passage of our products, services and support into Russia, Belarus, and certain regions of Ukraine. In
+fiscal year 2023, we stopped direct sales to Russia and closed business operations in Russia. Concurrently, the war in Ukraine has
+impacted sales in EMEA and may continue to do so in the future.
+The increasing focus on the risks and strategic importance of AI technologies has resulted in regulatory restrictions that target products
+and services capable of enabling or facilitating AI and may in the future result in additional restrictions impacting some or all of our
+product and service offerings.
+Concerns regarding third-party use of AI for purposes contrary to local governmental interests, including concerns relating to the misuse
+of AI applications, models, and solutions, has resulted in and could in the future result in unilateral or multilateral restrictions on products
+that can be used for training, modifying, tuning, and deploying LLMs. Such restrictions have limited and could in the future limit the ability
+of downstream customers and users worldwide to acquire, deploy and use systems that include our products, software, and services,
+and negatively impact our business and financial results.
+Such restrictions could include additional unilateral or multilateral export controls on certain products or technology, including but not
+limited to AI technologies. As geopolitical tensions have increased, semiconductors associated with AI, including GPUs and associated
+products, are increasingly the focus of export control restrictions proposed by stakeholders in the U.S. and its allies. The United States
+has imposed unilateral controls restricting GPUs and associated
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 39/118

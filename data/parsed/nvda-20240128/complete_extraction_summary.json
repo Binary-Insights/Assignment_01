@@ -1,8 +1,8 @@
 {
-  "extraction_timestamp": "2025-09-19T10:35:40.778994",
+  "extraction_timestamp": "2025-09-19T14:13:47.990530",
   "pdf_info": {
     "name": "nvda-20240128.pdf",
-    "processing_time_seconds": 128.633948
+    "processing_time_seconds": 183.076449
   },
   "text_extraction": {
     "total_pages": 118,

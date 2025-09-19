@@ -1,0 +1,49 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+The following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a
+percentage of revenue.
+Year Ended
+Jan 28, 2024 Jan 29, 2023
+Revenue 100.0 % 100.0 %
+Cost of revenue 27.3 43.1
+Gross profit 72.7 56.9
+Operating expenses
+Research and development 14.2 27.2
+Sales, general and administrative 4.4 9.1
+Acquisition termination cost — 5.0
+Total operating expenses 18.6 41.3
+Operating income 54.1 15.6
+Interest income 1.4 1.0
+Interest expense (0.4) (1.0)
+Other, net 0.4 (0.1)
+Other income (expense), net 1.4 (0.1)
+Income before income tax 55.5 15.5
+Income tax expense (benefit) 6.6 (0.7)
+Net income 48.9 % 16.2 %
+Reportable Segments
+Revenue by Reportable Segments
+Year Ended
+$ %
+Jan 28, 2024 Jan 29, 2023 Change Change
+($ in millions)
+Compute & Networking $ 47,405 $ 15,068 $ 32,337 215 %
+Graphics 13,517 11,906 1,611 14 %
+Total $ 60,922 $ 26,974 $ 33,948 126 %
+Operating Income by Reportable Segments
+Year Ended
+$ %
+Jan 28, 2024 Jan 29, 2023 Change Change
+($ in millions)
+Compute & Networking $ 32,016 $ 5,083 $ 26,933 530 %
+Graphics 5,846 4,552 1,294 28 %
+All Other (4,890) (5,411) 521 (10)%
+Total $ 32,972 $ 4,224 $ 28,748 681 %
+Compute & Networking revenue – The year-on-year increase was due to higher Data Center revenue. Compute grew 266% due to
+higher shipments of the NVIDIA Hopper GPU computing platform for the training and inference of LLMs, recommendation engines and
+generative AI applications. Networking was up 133% due to higher shipments of InfiniBand.
+Graphics revenue – The year-on-year increase was led by growth in Gaming of 15% driven by higher sell-in to partners following the
+normalization of channel inventory levels.
+Reportable segment operating income – The year-on-year increase in Compute & Networking and Graphics operating income was
+driven by higher revenue.
+39
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 60/118

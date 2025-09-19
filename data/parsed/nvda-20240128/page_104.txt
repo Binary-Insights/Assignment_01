@@ -1,0 +1,46 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+Note 12 - Debt
+Long-Term Debt
+The carrying value of our outstanding notes, the calendar year of maturity, and the associated interest rates were as follows:
+Expected Effective
+Remaining Term Interest
+(years) Rate Jan 28, 2024 Jan 29, 2023
+(In millions)
+0.309% Notes Due 2023 (1) — 0.41% $ — $ 1,250
+0.584% Notes Due 2024 0.4 0.66% 1,250 1,250
+3.20% Notes Due 2026 2.6 3.31% 1,000 1,000
+1.55% Notes Due 2028 4.4 1.64% 1,250 1,250
+2.85% Notes Due 2030 6.2 2.93% 1,500 1,500
+2.00% Notes Due 2031 7.4 2.09% 1,250 1,250
+3.50% Notes Due 2040 16.2 3.54% 1,000 1,000
+3.50% Notes Due 2050 26.2 3.54% 2,000 2,000
+3.70% Notes Due 2060 36.2 3.73% 500 500
+Unamortized debt discount and issuance costs (41) (47)
+Net carrying amount 9,709 10,953
+Less short-term portion (1,250) (1,250)
+Total long-term portion $ 8,459 $ 9,703
+(1) In fiscal year 2024, we repaid the 0.309% Notes Due 2023.
+All our notes are unsecured senior obligations. All existing and future liabilities of our subsidiaries will be effectively senior to the notes.
+Our notes pay interest semi-annually. We may redeem each of our notes prior to maturity, subject to a make-whole premium as defined
+in the applicable form of note.
+As of January 28, 2024, we were in compliance with the required covenants, which are non-financial in nature, under the outstanding
+notes.
+Commercial Paper
+We have a $575 million commercial paper program to support general corporate purposes. As of January 28, 2024, we had no
+commercial paper outstanding.
+Note 13 - Commitments and Contingencies
+Purchase Obligations
+Our purchase obligations reflect our commitments to purchase components used to manufacture our products, including long-term
+supply and capacity agreements, certain software and technology licenses, other goods and services and long-lived assets.
+As of January 28, 2024, we had outstanding inventory purchase and long-term supply and capacity obligations totaling $16.1 billion. We
+enter into agreements with contract manufacturers that allow them to procure inventory based upon criteria as defined by us, and in
+certain instances, these agreements allow us the option to cancel, reschedule, and adjust our requirements based on our business
+needs prior to firm orders being placed, but these changes may result in the payment of costs incurred through the date of cancellation.
+Other non-inventory purchase obligations were $4.6 billion, which includes $3.5 billion of multi-year cloud service agreements, primarily
+to support our research and development efforts.
+72
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 104/118

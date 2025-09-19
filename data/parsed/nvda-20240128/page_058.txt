@@ -1,0 +1,48 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+electric vehicles, and announced further adoption of NVIDIA DRIVE platform with BYD, XPENG, GWM, Li Auto, ZEEKR and Xiaomi.
+Critical Accounting Estimates
+Our consolidated financial statements are prepared in accordance with accounting principles generally accepted in the United States, or
+U.S. GAAP. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts
+of assets, liabilities, revenue, cost of revenue, expenses and related disclosure of contingencies. Critical accounting estimates are those
+estimates that involve a significant level of estimation uncertainty and could have a material impact on our financial condition or results
+of operations. We have critical accounting estimates in the areas of inventories, revenue recognition, and income taxes. Refer to Note 1
+of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for a summary of
+significant accounting policies.
+Inventories
+We charge cost of sales for inventory provisions to write-down our inventory to the lower of cost or net realizable value or for obsolete or
+excess inventory, and for excess product purchase commitments. Most of our inventory provisions relate to excess quantities of products
+or components, based on our inventory levels and future product purchase commitments compared to assumptions about future
+demand and market conditions, which requires management judgment.
+Situations that may result in excess or obsolete inventory or excess product purchase commitments include changes in business and
+economic conditions, changes in market conditions, sudden and significant decreases in demand for our products, inventory
+obsolescence because of changing technology and customer requirements, new product introductions resulting in less demand for
+existing products or inconsistent spikes in demand, failure to estimate customer demand properly, ordering in advance of historical lead-
+times, government regulations and the impact of changes in future demand, or increase in demand for competitive products, including
+competitive actions. Cancellation or deferral of customer purchase orders could result in our holding excess inventory.
+The net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of
+2.7% in fiscal year 2024 and 7.5% in fiscal year 2023. Our inventory and capacity purchase commitments are based on forecasts of
+future customer demand. We account for our third-party manufacturers' lead times and constraints. Our manufacturing lead times can be
+and have been long, and in some cases, extended beyond twelve months for some products. We may place non-cancellable inventory
+orders for certain product components in advance of our historical lead times, pay premiums and provide deposits to secure future
+supply and capacity. We also adjust to other market factors, such as product offerings and pricing actions by our competitors, new
+product transitions, and macroeconomic conditions - all of which may impact demand for our products.
+Refer to the Gross Profit and Gross Margin discussion below in this Management's Discussion and Analysis for further discussion.
+Income Taxes
+We are subject to income taxes in the U.S. and foreign jurisdictions. Our calculation of deferred tax assets and liabilities is based on
+certain estimates and judgments and involves dealing with uncertainties in the application of complex tax laws. Our estimates of
+deferred tax assets and liabilities may change based, in part, on added certainty or finality to an anticipated outcome, changes in
+accounting standards or tax laws in the U.S. or foreign jurisdictions where we operate, or changes in other facts or circumstances. In
+addition, we recognize liabilities for potential U.S. and foreign income tax contingencies based on our estimate of whether, and the
+extent to which, additional taxes may be due. If we determine that payment of these amounts is unnecessary or if the recorded tax
+liability is less than our current assessment, we may be required to recognize an income tax benefit or additional income tax expense in
+our financial statements accordingly.
+As of the end of fiscal years 2024 and 2023, we had a valuation allowance of $1.6 billion and $1.5 billion, respectively, related to capital
+loss carryforwards, and certain state and other deferred tax assets that management determined are not likely to be realized due, in
+part, to jurisdictional projections of future taxable income, including capital gains. To the extent realization of the deferred tax assets
+becomes more-likely-than-not, we would recognize such deferred tax assets as income tax benefits during the period.
+We recognize the benefit from a tax position only if it is more-likely-than-not that the position would be sustained upon audit based solely
+on the technical merits of the tax position. Our policy is to include interest and penalties related to unrecognized tax benefits as a
+component of income tax expense.
+37
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 58/118

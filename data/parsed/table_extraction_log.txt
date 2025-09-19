@@ -261,3 +261,134 @@
 2025-09-17 15:19:53,777 - PDFTableExtractor - INFO - Table extraction completed. Found 0 tables total.
 2025-09-17 15:19:53,780 - PDFTableExtractor - INFO - Table extraction summary saved to data\parsed\nvda-20250126\table_extraction_summary.json
 2025-09-17 15:19:53,781 - PDFTableExtractor - INFO - Complete extraction finished in 32.09 seconds
+2025-09-19 14:42:35,188 - PDFTableExtractor - INFO - Starting extraction from: nvda-20240128.pdf
+2025-09-19 14:42:35,188 - PDFTableExtractor - INFO - Starting text extraction...
+2025-09-19 14:42:35,267 - PDFTableExtractor - INFO - Processing text from page 1/118
+2025-09-19 14:42:35,637 - PDFTableExtractor - INFO - Processing text from page 2/118
+2025-09-19 14:42:35,768 - PDFTableExtractor - INFO - Processing text from page 3/118
+2025-09-19 14:42:35,896 - PDFTableExtractor - INFO - Processing text from page 4/118
+2025-09-19 14:42:36,153 - PDFTableExtractor - INFO - Processing text from page 5/118
+2025-09-19 14:42:36,167 - PDFTableExtractor - INFO - Processing text from page 6/118
+2025-09-19 14:42:36,357 - PDFTableExtractor - INFO - Processing text from page 7/118
+2025-09-19 14:42:36,594 - PDFTableExtractor - INFO - Processing text from page 8/118
+2025-09-19 14:42:36,833 - PDFTableExtractor - INFO - Processing text from page 9/118
+2025-09-19 14:42:36,848 - PDFTableExtractor - INFO - Processing text from page 10/118
+2025-09-19 14:42:37,086 - PDFTableExtractor - INFO - Processing text from page 11/118
+2025-09-19 14:42:37,275 - PDFTableExtractor - INFO - Processing text from page 12/118
+2025-09-19 14:42:37,286 - PDFTableExtractor - INFO - Processing text from page 13/118
+2025-09-19 14:42:37,570 - PDFTableExtractor - INFO - Processing text from page 14/118
+2025-09-19 14:42:37,586 - PDFTableExtractor - INFO - Processing text from page 15/118
+2025-09-19 14:42:37,824 - PDFTableExtractor - INFO - Processing text from page 16/118
+2025-09-19 14:42:37,840 - PDFTableExtractor - INFO - Processing text from page 17/118
+2025-09-19 14:42:38,026 - PDFTableExtractor - INFO - Processing text from page 18/118
+2025-09-19 14:42:38,287 - PDFTableExtractor - INFO - Processing text from page 19/118
+2025-09-19 14:42:38,451 - PDFTableExtractor - INFO - Processing text from page 20/118
+2025-09-19 14:42:38,464 - PDFTableExtractor - INFO - Processing text from page 21/118
+2025-09-19 14:42:38,719 - PDFTableExtractor - INFO - Processing text from page 22/118
+2025-09-19 14:42:38,731 - PDFTableExtractor - INFO - Processing text from page 23/118
+2025-09-19 14:42:38,945 - PDFTableExtractor - INFO - Processing text from page 24/118
+2025-09-19 14:42:38,969 - PDFTableExtractor - INFO - Processing text from page 25/118
+2025-09-19 14:42:39,277 - PDFTableExtractor - INFO - Processing text from page 26/118
+2025-09-19 14:42:39,288 - PDFTableExtractor - INFO - Processing text from page 27/118
+2025-09-19 14:42:39,461 - PDFTableExtractor - INFO - Processing text from page 28/118
+2025-09-19 14:42:39,480 - PDFTableExtractor - INFO - Processing text from page 29/118
+2025-09-19 14:42:39,818 - PDFTableExtractor - INFO - Processing text from page 30/118
+2025-09-19 14:42:39,830 - PDFTableExtractor - INFO - Processing text from page 31/118
+2025-09-19 14:42:40,368 - PDFTableExtractor - INFO - Processing text from page 32/118
+2025-09-19 14:42:40,828 - PDFTableExtractor - INFO - Processing text from page 33/118
+2025-09-19 14:42:41,266 - PDFTableExtractor - INFO - Processing text from page 34/118
+2025-09-19 14:42:41,314 - PDFTableExtractor - INFO - Processing text from page 35/118
+2025-09-19 14:42:41,525 - PDFTableExtractor - INFO - Processing text from page 36/118
+2025-09-19 14:42:41,540 - PDFTableExtractor - INFO - Processing text from page 37/118
+2025-09-19 14:42:41,768 - PDFTableExtractor - INFO - Processing text from page 38/118
+2025-09-19 14:42:41,790 - PDFTableExtractor - INFO - Processing text from page 39/118
+2025-09-19 14:42:42,041 - PDFTableExtractor - INFO - Processing text from page 40/118
+2025-09-19 14:42:42,055 - PDFTableExtractor - INFO - Processing text from page 41/118
+2025-09-19 14:42:42,485 - PDFTableExtractor - INFO - Processing text from page 42/118
+2025-09-19 14:42:42,490 - PDFTableExtractor - INFO - Processing text from page 43/118
+2025-09-19 14:42:42,722 - PDFTableExtractor - INFO - Processing text from page 44/118
+2025-09-19 14:42:42,726 - PDFTableExtractor - INFO - Processing text from page 45/118
+2025-09-19 14:42:42,956 - PDFTableExtractor - INFO - Processing text from page 46/118
+2025-09-19 14:42:43,211 - PDFTableExtractor - INFO - Processing text from page 47/118
+2025-09-19 14:42:43,601 - PDFTableExtractor - INFO - Processing text from page 48/118
+2025-09-19 14:42:43,613 - PDFTableExtractor - INFO - Processing text from page 49/118
+2025-09-19 14:42:43,834 - PDFTableExtractor - INFO - Processing text from page 50/118
+2025-09-19 14:42:43,837 - PDFTableExtractor - INFO - Processing text from page 51/118
+2025-09-19 14:42:44,018 - PDFTableExtractor - INFO - Processing text from page 52/118
+2025-09-19 14:42:44,023 - PDFTableExtractor - INFO - Processing text from page 53/118
+2025-09-19 14:42:44,125 - PDFTableExtractor - INFO - Processing text from page 54/118
+2025-09-19 14:42:44,380 - PDFTableExtractor - INFO - Processing text from page 55/118
+2025-09-19 14:42:44,584 - PDFTableExtractor - INFO - Processing text from page 56/118
+2025-09-19 14:42:44,758 - PDFTableExtractor - INFO - Processing text from page 57/118
+2025-09-19 14:42:44,758 - PDFTableExtractor - INFO - Processing text from page 58/118
+2025-09-19 14:42:45,134 - PDFTableExtractor - INFO - Processing text from page 59/118
+2025-09-19 14:42:45,289 - PDFTableExtractor - INFO - Processing text from page 60/118
+2025-09-19 14:42:45,395 - PDFTableExtractor - INFO - Processing text from page 61/118
+2025-09-19 14:42:45,589 - PDFTableExtractor - INFO - Processing text from page 62/118
+2025-09-19 14:42:45,601 - PDFTableExtractor - INFO - Processing text from page 63/118
+2025-09-19 14:42:45,729 - PDFTableExtractor - INFO - Processing text from page 64/118
+2025-09-19 14:42:45,875 - PDFTableExtractor - INFO - Processing text from page 65/118
+2025-09-19 14:42:45,882 - PDFTableExtractor - INFO - Processing text from page 66/118
+2025-09-19 14:42:46,053 - PDFTableExtractor - INFO - Processing text from page 67/118
+2025-09-19 14:42:46,071 - PDFTableExtractor - INFO - Processing text from page 68/118
+2025-09-19 14:42:46,267 - PDFTableExtractor - INFO - Processing text from page 69/118
+2025-09-19 14:42:46,281 - PDFTableExtractor - INFO - Processing text from page 70/118
+2025-09-19 14:42:46,433 - PDFTableExtractor - INFO - Processing text from page 71/118
+2025-09-19 14:42:46,449 - PDFTableExtractor - INFO - Processing text from page 72/118
+2025-09-19 14:42:46,520 - PDFTableExtractor - INFO - Processing text from page 73/118
+2025-09-19 14:42:46,616 - PDFTableExtractor - INFO - Processing text from page 74/118
+2025-09-19 14:42:47,064 - PDFTableExtractor - INFO - Processing text from page 75/118
+2025-09-19 14:42:47,183 - PDFTableExtractor - INFO - Processing text from page 76/118
+2025-09-19 14:42:47,300 - PDFTableExtractor - INFO - Processing text from page 77/118
+2025-09-19 14:42:47,367 - PDFTableExtractor - INFO - Processing text from page 78/118
+2025-09-19 14:42:47,478 - PDFTableExtractor - INFO - Processing text from page 79/118
+2025-09-19 14:42:47,701 - PDFTableExtractor - INFO - Processing text from page 80/118
+2025-09-19 14:42:47,907 - PDFTableExtractor - INFO - Processing text from page 81/118
+2025-09-19 14:42:48,097 - PDFTableExtractor - INFO - Processing text from page 82/118
+2025-09-19 14:42:48,107 - PDFTableExtractor - INFO - Processing text from page 83/118
+2025-09-19 14:42:48,332 - PDFTableExtractor - INFO - Processing text from page 84/118
+2025-09-19 14:42:48,332 - PDFTableExtractor - INFO - Processing text from page 85/118
+2025-09-19 14:42:48,533 - PDFTableExtractor - INFO - Processing text from page 86/118
+2025-09-19 14:42:48,539 - PDFTableExtractor - INFO - Processing text from page 87/118
+2025-09-19 14:42:48,748 - PDFTableExtractor - INFO - Processing text from page 88/118
+2025-09-19 14:42:48,751 - PDFTableExtractor - INFO - Processing text from page 89/118
+2025-09-19 14:42:49,219 - PDFTableExtractor - INFO - Processing text from page 90/118
+2025-09-19 14:42:49,227 - PDFTableExtractor - INFO - Processing text from page 91/118
+2025-09-19 14:42:49,358 - PDFTableExtractor - INFO - Processing text from page 92/118
+2025-09-19 14:42:49,474 - PDFTableExtractor - INFO - Processing text from page 93/118
+2025-09-19 14:42:49,647 - PDFTableExtractor - INFO - Processing text from page 94/118
+2025-09-19 14:42:49,789 - PDFTableExtractor - INFO - Processing text from page 95/118
+2025-09-19 14:42:49,807 - PDFTableExtractor - INFO - Processing text from page 96/118
+2025-09-19 14:42:49,896 - PDFTableExtractor - INFO - Processing text from page 97/118
+2025-09-19 14:42:50,055 - PDFTableExtractor - INFO - Processing text from page 98/118
+2025-09-19 14:42:50,219 - PDFTableExtractor - INFO - Processing text from page 99/118
+2025-09-19 14:42:50,373 - PDFTableExtractor - INFO - Processing text from page 100/118
+2025-09-19 14:42:50,467 - PDFTableExtractor - INFO - Processing text from page 101/118
+2025-09-19 14:42:50,583 - PDFTableExtractor - INFO - Processing text from page 102/118
+2025-09-19 14:42:50,750 - PDFTableExtractor - INFO - Processing text from page 103/118
+2025-09-19 14:42:50,842 - PDFTableExtractor - INFO - Processing text from page 104/118
+2025-09-19 14:42:50,967 - PDFTableExtractor - INFO - Processing text from page 105/118
+2025-09-19 14:42:51,109 - PDFTableExtractor - INFO - Processing text from page 106/118
+2025-09-19 14:42:51,281 - PDFTableExtractor - INFO - Processing text from page 107/118
+2025-09-19 14:42:51,459 - PDFTableExtractor - INFO - Processing text from page 108/118
+2025-09-19 14:42:51,689 - PDFTableExtractor - INFO - Processing text from page 109/118
+2025-09-19 14:42:52,217 - PDFTableExtractor - INFO - Processing text from page 110/118
+2025-09-19 14:42:52,233 - PDFTableExtractor - INFO - Processing text from page 111/118
+2025-09-19 14:42:52,393 - PDFTableExtractor - INFO - Processing text from page 112/118
+2025-09-19 14:42:52,534 - PDFTableExtractor - INFO - Processing text from page 113/118
+2025-09-19 14:42:52,580 - PDFTableExtractor - INFO - Processing text from page 114/118
+2025-09-19 14:42:52,878 - PDFTableExtractor - INFO - Processing text from page 115/118
+2025-09-19 14:42:53,093 - PDFTableExtractor - INFO - Processing text from page 116/118
+2025-09-19 14:42:53,247 - PDFTableExtractor - INFO - Processing text from page 117/118
+2025-09-19 14:42:53,303 - PDFTableExtractor - INFO - Processing text from page 118/118
+2025-09-19 14:42:53,943 - PDFTableExtractor - INFO - Word bounding boxes saved to data\parsed\nvda-20240128\text\word_boxes.json
+2025-09-19 14:42:53,945 - PDFTableExtractor - INFO - Starting table extraction...
+2025-09-19 14:42:53,945 - PDFTableExtractor - INFO - Extracting tables with standard pdfplumber settings...
+2025-09-19 14:42:57,236 - PDFTableExtractor - ERROR - Error in standard table extraction: 'DataFrame' object has no attribute 'dtype'
+2025-09-19 14:42:57,236 - PDFTableExtractor - INFO - Extracting tables with custom settings...
+2025-09-19 14:42:57,349 - PDFTableExtractor - ERROR - Error in custom table extraction: TableSettings.__init__() got an unexpected keyword argument 'keep_blank_chars'
+2025-09-19 14:42:57,349 - PDFTableExtractor - INFO - Extracting tables with financial statement focus...
+2025-09-19 14:43:01,461 - PDFTableExtractor - ERROR - Error in financial table extraction: 'DataFrame' object has no attribute 'dtype'
+2025-09-19 14:43:01,461 - PDFTableExtractor - INFO - Table extraction completed. Found 0 tables total.
+2025-09-19 14:43:01,461 - PDFTableExtractor - INFO - Table extraction summary saved to data\parsed\nvda-20240128\table_extraction_summary.json
+2025-09-19 14:43:01,461 - PDFTableExtractor - INFO - Complete extraction finished in 26.27 seconds

@@ -1,0 +1,48 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+common stock up to $22.5 billion. From January 29, 2024 through February 16, 2024, we repurchased 2.8 million shares for $1.9 billion
+pursuant to a Rule 10b5-1 trading plan. Our share repurchase program aims to offset dilution from shares issued to employees. We may
+pursue additional share repurchases as we weigh market factors and other investment opportunities. We plan to continue share
+repurchases this fiscal year.
+The U.S. Inflation Reduction Act of 2022 requires a 1% excise tax on certain share repurchases in excess of shares issued for employee
+compensation made after December 31, 2022 which was not material for fiscal year 2024.
+Outstanding Indebtedness and Commercial Paper Program
+Our aggregate debt maturities as of January 28, 2024, by year payable, are as follows:
+Jan 28, 2024
+(In millions)
+Due in one year $ 1,250
+Due in one to five years 2,250
+Due in five to ten years 2,750
+Due in greater than ten years 3,500
+Unamortized debt discount and issuance costs (41)
+Net carrying amount 9,709
+Less short-term portion (1,250)
+Total long-term portion $ 8,459
+We have a $575 million commercial paper program to support general corporate purposes. As of the end of fiscal year 2024, we had no
+commercial paper outstanding.
+Refer to Note 12 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further
+discussion.
+Material Cash Requirements and Other Obligations
+For a description of our long-term debt, purchase obligations, and operating lease obligations, refer to Note 12, Note 13, and Note 3 of
+the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K, respectively.
+We have unrecognized tax benefits of $1.3 billion, which includes related interest and penalties of $140 million, recorded in non-current
+income tax payable at the end of fiscal year 2024. We are unable to estimate the timing of any potential tax liability, interest payments, or
+penalties in individual years due to uncertainties in the underlying income tax positions and the timing of the effective settlement of such
+tax positions. Refer to Note 14 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form
+10-K for further information.
+Climate Change
+To date, there has been no material impact to our results of operations associated with global sustainability regulations, compliance,
+costs from sourcing renewable energy or climate-related business trends.
+Adoption of New and Recently Issued Accounting Pronouncements
+Refer to Note 1 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for a
+discussion of adoption of new and recently issued accounting pronouncements.
+Item 7A. Quantitative and Qualitative Disclosures about Market Risk
+Investment and Interest Rate Risk
+We are exposed to interest rate risk related to our fixed-rate investment portfolio and outstanding debt. The investment portfolio is
+managed consistent with our overall liquidity strategy in support of both working capital needs and growth of our businesses.
+As of the end of fiscal year 2024, we performed a sensitivity analysis on our investment portfolio. According to our analysis, parallel
+shifts in the yield curve of plus or minus 0.5% would result in a change in fair value for these investments of $93 million.
+As of the end of fiscal year 2024, we had $9.7 billion of senior Notes net outstanding. We carry the Notes at face value less unamortized
+discount on our Consolidated Balance Sheets. As the Notes bear interest at a fixed rate, we have no
+43
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 66/118

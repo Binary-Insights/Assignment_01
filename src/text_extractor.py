@@ -30,7 +30,7 @@ class PDFTextExtractor:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
-        # Setup logging
+        # Setup logging with UTF-8 encoding
         self.logger = self._setup_logging(log_level)
         
         # OCR configuration
@@ -46,57 +46,54 @@ class PDFTextExtractor:
         }
     
     def _setup_logging(self, log_level):
-        """Setup logging configuration."""
+        """Setup logging configuration with UTF-8 encoding for Windows compatibility."""
         logger = logging.getLogger('PDFTextExtractor')
         logger.setLevel(log_level)
         
-        # Create file handler
-        log_file = self.output_dir / 'extraction_log.txt'
-        handler = logging.FileHandler(log_file)
-        handler.setLevel(log_level)
-        
-        # Create formatter
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-        )
-        handler.setFormatter(formatter)
-        
-        # Add handler to logger
         if not logger.handlers:
+            # Create console handler with proper encoding
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
             logger.addHandler(handler)
+            # Ensure encoding is set for the console
+            import sys
+            if sys.platform == 'win32':
+                import codecs
+                sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
         
         return logger
     
     def extract_text_from_pdf(self, pdf_path, use_layout_params=True):
         """
-        Extract text from PDF with OCR fallback for scanned pages.
+        Extract text from PDF with OCR fallback.
         
         Args:
-            pdf_path (str): Path to the PDF file
-            use_layout_params (bool): Use experimental layout parameters
+            pdf_path (str or Path): Path to PDF file
+            use_layout_params (bool): Whether to use layout parameters for extraction
             
         Returns:
-            dict: Extraction results with page-wise data
+            dict: Extraction results including stats and success/failure information
         """
         pdf_path = Path(pdf_path)
         if not pdf_path.exists():
-            self.logger.error(f"PDF file not found: {pdf_path}")
-            return None
+            raise FileNotFoundError(f"PDF file not found: {pdf_path}")
         
-        self.logger.info(f"Starting text extraction from: {pdf_path.name}")
         start_time = datetime.now()
         
         # Create output directory for this PDF
-        pdf_output_dir = self.output_dir / pdf_path.stem
-        pdf_output_dir.mkdir(exist_ok=True)
+        pdf_name = pdf_path.stem
+        pdf_output_dir = self.output_dir / pdf_name
+        pdf_output_dir.mkdir(parents=True, exist_ok=True)
         
+        # Initialize extraction results
         extraction_results = {
-            'pdf_name': pdf_path.name,
+            'pdf_name': pdf_name,
+            'extraction_timestamp': datetime.now().isoformat(),
             'total_pages': 0,
-            'pages': [],
             'ocr_pages': [],
             'failed_pages': [],
-            'word_boxes_saved': False
+            'pages': []
         }
         
         try:
@@ -147,15 +144,15 @@ class PDFTextExtractor:
         
         return extraction_results
     
-    def _extract_page_text(self, page, page_num, output_dir, use_layout_params):
+    def _extract_page_text(self, page, page_num, output_dir, use_layout_params=True):
         """
         Extract text from a single page with OCR fallback.
         
         Args:
             page: pdfplumber page object
             page_num (int): Page number
-            output_dir (Path): Output directory for page files
-            use_layout_params (bool): Use layout parameters
+            output_dir (Path): Output directory
+            use_layout_params (bool): Whether to use layout parameters
             
         Returns:
             dict: Page extraction results
@@ -165,38 +162,40 @@ class PDFTextExtractor:
             'text_length': 0,
             'used_ocr': False,
             'success': True,
-            'text_file': f"page_{page_num:03d}.txt",
             'extraction_method': 'pdfplumber'
         }
         
         try:
-            # Try pdfplumber text extraction first
+            # Create text directory
+            text_dir = output_dir / 'text'
+            text_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Extract text with layout parameters
             if use_layout_params:
-                # Use experimental layout parameters for better text ordering
                 text = page.extract_text(
-                    x_density=2.0,  # Horizontal density for character clustering
-                    y_density=1.5   # Vertical density for line clustering
+                    x_density=7.25,  # Increase for better word separation
+                    y_density=13,   # Increase for better line separation
+                    layout=True,
+                    keep_blank_chars=False
                 )
             else:
                 text = page.extract_text()
             
-            # Check if meaningful text was extracted
-            if text and len(text.strip()) > 10:  # Threshold for meaningful text
-                page_result['text_length'] = len(text)
-                page_result['extraction_method'] = 'pdfplumber'
-            else:
-                # Fallback to OCR
-                self.logger.info(f"Page {page_num}: No text found, using OCR")
+            # If no text extracted, try OCR
+            if not text or text.isspace():
                 text = self._perform_ocr(page)
-                page_result['used_ocr'] = True
-                page_result['text_length'] = len(text) if text else 0
-                page_result['extraction_method'] = 'ocr'
+                if text:
+                    page_result['used_ocr'] = True
+                    page_result['extraction_method'] = 'tesseract_ocr'
             
-            # Save page text to file
             if text:
-                page_file = output_dir / page_result['text_file']
+                # Save text to file
+                page_file = text_dir / f'page_{page_num:03d}.txt'
                 with open(page_file, 'w', encoding='utf-8') as f:
                     f.write(text)
+                
+                page_result['text_length'] = len(text)
+                page_result['text_file'] = f'page_{page_num:03d}.txt'
                 self.logger.debug(f"Saved page {page_num} text to {page_file}")
             else:
                 page_result['success'] = False
@@ -243,7 +242,7 @@ class PDFTextExtractor:
             output_dir (Path): Output directory
         """
         try:
-            # Create text directory if it doesn't exist
+            # Create text directory
             text_dir = output_dir / 'text'
             text_dir.mkdir(parents=True, exist_ok=True)
             
@@ -251,6 +250,7 @@ class PDFTextExtractor:
             
             for page_num, page in enumerate(pdf.pages, 1):
                 self.logger.info(f"Extracting word boxes from page {page_num}")
+                
                 # Use extract_words with more granular settings
                 words = page.extract_words(
                     x_tolerance=3,  # Adjust space between letters
@@ -262,30 +262,31 @@ class PDFTextExtractor:
                 
                 page_words = {
                     'page_number': page_num,
-                    'page_width': page.width,
-                    'page_height': page.height,
+                    'page_width': float(page.width),
+                    'page_height': float(page.height),
                     'words': []
                 }
                 
                 for word in words:
-                    # Check if word has required coordinate properties
-                    if all(key in word for key in ['text', 'x0', 'y0', 'x1', 'y1']):
+                    try:
                         word_data = {
                             'text': word['text'],
-                            'x0': float(word['x0']),  # Ensure coordinates are float
-                            'y0': float(word['y0']),
+                            'x0': float(word['x0']),
                             'x1': float(word['x1']),
-                            'y1': float(word['y1']),
+                            'y0': float(word.get('y0', word.get('top', 0))),  # Use 'top' if 'y0' not present
+                            'y1': float(word.get('y1', word.get('bottom', 0))),  # Use 'bottom' if 'y1' not present
                             'font': word.get('fontname', ''),
                             'size': float(word.get('size', 0)),
-                            'upright': word.get('upright', True),  # Text orientation
-                            'direction': word.get('direction', 1)  # Text direction
+                            'upright': bool(word.get('upright', True)),
+                            'direction': word.get('direction', 'ltr')
                         }
-                        page_words['words'].append(word_data)
-                    else:
-                        # Log missing properties for debugging
-                        missing_keys = [key for key in ['text', 'x0', 'y0', 'x1', 'y1'] if key not in word]
-                        self.logger.warning(f"Page {page_num}: Word missing properties {missing_keys}: {word}")
+                        
+                        # Only add words with valid coordinates
+                        if word_data['x0'] >= 0 and word_data['y0'] >= 0:
+                            page_words['words'].append(word_data)
+                    except (KeyError, ValueError, TypeError) as e:
+                        # Log errors without unicode characters that might cause console issues
+                        self.logger.debug(f"Page {page_num}: Error processing word: {str(e)}")
                 
                 # Only append pages that have words
                 if page_words['words']:
@@ -322,50 +323,35 @@ class PDFTextExtractor:
                 'name': results['pdf_name'],
                 'total_pages': results['total_pages']
             },
-            'extraction_stats': {
-                'pages_with_text': len([p for p in results['pages'] if not p['used_ocr']]),
-                'pages_with_ocr': len(results['ocr_pages']),
+            'text_extraction': {
+                'total_pages': len(results['pages']),
+                'ocr_pages': len(results['ocr_pages']),
                 'failed_pages': len(results['failed_pages']),
-                'success_rate': (results['total_pages'] - len(results['failed_pages'])) / results['total_pages'] * 100
+                'processing_time_seconds': self.stats['processing_time']
             },
-            'ocr_pages': results['ocr_pages'],
-            'failed_pages': results['failed_pages'],
-            'processing_time_seconds': self.stats['processing_time']
+            'page_details': results['pages']
         }
         
         summary_file = output_dir / 'extraction_summary.json'
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
-        
-        self.logger.info(f"Extraction summary saved to {summary_file}")
 
 
 def main():
-    """Main function to demonstrate PDF text extraction."""
-    # Initialize extractor
+    """Main function to demonstrate usage."""
     extractor = PDFTextExtractor()
     
-    # Find PDF files in data/raw/pdf directory
-    pdf_dir = Path("data/raw/pdf")
-    pdf_files = list(pdf_dir.glob("*.pdf"))
+    # Example PDF to process
+    pdf_file = "data/raw/pdf/nvda-20240128.pdf"
     
-    if not pdf_files:
-        print("No PDF files found in data/raw/pdf directory")
-        return
+    print(f"Processing: {pdf_file}")
+    results = extractor.extract_text_from_pdf(pdf_file)
     
-    # Process each PDF
-    for pdf_file in pdf_files:
-        print(f"\nProcessing: {pdf_file.name}")
-        results = extractor.extract_text_from_pdf(pdf_file)
-        
-        if results:
-            print(f"✓ Extraction completed for {pdf_file.name}")
-            print(f"  Total pages: {results['total_pages']}")
-            print(f"  OCR pages: {len(results['ocr_pages'])}")
-            print(f"  Failed pages: {len(results['failed_pages'])}")
-        else:
-            print(f"✗ Extraction failed for {pdf_file.name}")
-
+    if results:
+        print("✓ Extraction completed for {pdf_name}".format(**results))
+        print(f"  Total pages: {results['total_pages']}")
+        print(f"  OCR pages: {len(results['ocr_pages'])}")
+        print(f"  Failed pages: {len(results['failed_pages'])}")
 
 if __name__ == "__main__":
     main()

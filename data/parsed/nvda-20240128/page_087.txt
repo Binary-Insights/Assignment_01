@@ -1,0 +1,55 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+we intend to sell the securities before recovery of its amortized cost basis. Allowances for credit losses and write-downs are recognized
+in the other income (expense), net section of our Consolidated Statements of Income.
+Fair Value of Financial Instruments
+The carrying value of cash equivalents, accounts receivable, accounts payable and accrued liabilities approximate their fair values due
+to their relatively short maturities as of January 28, 2024 and January 29, 2023. Marketable securities are comprised of available-for-
+sale securities that are reported at fair value with the related unrealized gains or losses included in accumulated other comprehensive
+income or loss, a component of shareholders’ equity, net of tax. Fair value of the marketable securities is determined based on quoted
+market prices. Derivative instruments are recognized as either assets or liabilities and are measured at fair value. The accounting for
+changes in the fair value of a derivative depends on the intended use of the derivative and the resulting designation. For derivative
+instruments designated as fair value hedges, the gains or losses are recognized in earnings in the periods of change together with the
+offsetting losses or gains on the hedged items attributed to the risk being hedged. For derivative instruments designated as cash-flow
+hedges, the effective portion of the gains or losses on the derivatives is initially reported as a component of other comprehensive income
+or loss and is subsequently recognized in earnings when the hedged exposure is recognized in earnings. For derivative instruments not
+designated for hedge accounting, changes in fair value are recognized in earnings.
+Concentration of Credit Risk
+Financial instruments that potentially subject us to concentrations of credit risk consist primarily of cash equivalents, marketable
+securities, and accounts receivable. Our investment policy requires the purchase of highly-rated fixed income securities, the
+diversification of investment type and credit exposures, and includes certain limits on our portfolio duration. We perform ongoing credit
+evaluations of our customers’ financial condition and maintain an allowance for potential credit losses. This allowance consists of an
+amount identified for specific customers and an amount based on overall estimated exposure. Our overall estimated exposure excludes
+amounts covered by credit insurance and letters of credit.
+Inventories
+Inventory cost is computed on an adjusted standard basis, which approximates actual cost on an average or first-in, first-out basis.
+Inventory costs consist primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging,
+manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, and shipping costs, as
+well as the cost of purchased memory products and other component parts. We charge cost of sales for inventory provisions to write-
+down our inventory to the lower of cost or net realizable value or for obsolete or excess inventory, and for excess product purchase
+commitments. Most of our inventory provisions relate to excess quantities of products, based on our inventory levels and future product
+purchase commitments compared to assumptions about future demand and market conditions. Once inventory has been written-off or
+written-down, it creates a new cost basis for the inventory that is not subsequently written-up. We record a liability for noncancelable
+purchase commitments with suppliers for quantities in excess of our future demand forecasts consistent with our valuation of obsolete or
+excess inventory.
+Property and Equipment
+Property and equipment are stated at cost less accumulated depreciation. Depreciation of property and equipment is computed using
+the straight-line method based on the estimated useful lives of the assets of three to seven years. Once an asset is identified for
+retirement or disposition, the related cost and accumulated depreciation or amortization are removed, and a gain or loss is recorded. The
+estimated useful lives of our buildings are up to thirty years. Depreciation expense includes the amortization of assets recorded under
+finance leases. Leasehold improvements and assets recorded under finance leases are amortized over the shorter of the expected
+lease term or the estimated useful life of the asset.
+Leases
+We determine if an arrangement is or contains a lease at inception. Operating leases with lease terms of more than 12 months are
+included in operating lease assets, accrued and other current liabilities, and long-term operating lease liabilities on our consolidated
+balance sheet. Operating lease assets represent our right to use an underlying asset for the lease term and lease liabilities represent our
+obligation to make lease payments over the lease term.
+Operating lease assets and liabilities are recognized based on the present value of the remaining lease payments discounted using our
+incremental borrowing rate. Operating lease assets also include initial direct costs incurred and prepaid lease payments, minus any
+lease incentives. Our lease terms include options to extend or terminate the lease when it is reasonably certain that we will exercise that
+option. Lease expense is recognized on a straight-line basis over the lease term.
+We combine the lease and non-lease components in determining the operating lease assets and liabilities.
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 87/118

@@ -35,17 +35,24 @@ class XBRLPDFComparator:
     
     def normalize_value(self, value: Any, value_type: str = 'monetary') -> Optional[float]:
         """Normalize a value based on its type and transformations."""
-        if pd.isna(value):
+        if pd.isna(value) or value == '':
             return None
             
         try:
+            if isinstance(value, (int, float)):
+                return float(value)
+                
             if isinstance(value, str):
-                # Remove currency symbols and commas
+                # Remove currency symbols, commas, and whitespace
                 value = value.replace('$', '').replace(',', '').strip()
                 
                 # Handle parentheses for negative numbers
                 if value.startswith('(') and value.endswith(')'):
                     value = '-' + value[1:-1]
+                
+                # Handle different formats of negative numbers
+                if value.startswith('−'):  # Unicode minus
+                    value = '-' + value[1:]
                 
                 # Handle percentage values
                 if value.endswith('%'):
@@ -53,6 +60,17 @@ class XBRLPDFComparator:
                     if value_type == 'percentage':
                         return value / 100
                     return value
+                    
+                # Handle text representations
+                if value.lower() == 'none' or value.lower() == 'nil':
+                    return 0.0
+                    
+                # Handle special notations
+                if '*' in value:  # Footnote indicator
+                    value = value.replace('*', '').strip()
+                    
+                # Remove any remaining non-numeric characters except . and -
+                value = ''.join(c for c in value if c.isdigit() or c in '.-')
                 
                 # Handle scale indicators
                 if value[-1].upper() in {'K', 'M', 'B'}:
@@ -69,18 +87,113 @@ class XBRLPDFComparator:
             return None
     
     def match_table_type(self, table_data: Dict[str, Any]) -> str:
-        """Match a table to its type based on content."""
+        """Match a table to its type based on content and structure."""
         content = json.dumps(table_data).lower()
         
-        # Check for keywords indicating table type
-        if any(keyword in content for keyword in ['stock', 'share', 'repurchase']):
-            return 'stock_transactions'
-        elif any(keyword in content for keyword in ['intangible', 'patent', 'license']):
-            return 'balance_sheet'
-        elif any(keyword in content for keyword in ['revenue', 'income', 'expense']):
-            return 'income_statement'
-        elif any(keyword in content for keyword in ['cash', 'flow']):
-            return 'cash_flow'
+        # Check for date patterns first
+        if any(month.lower() in content for month in [
+            'january', 'february', 'march', 'april', 'may', 'june',
+            'july', 'august', 'september', 'october', 'november', 'december'
+        ]):
+            # This might be a periodic report
+            if any(word in content for word in ['quarter', 'qtd', 'q1', 'q2', 'q3', 'q4']):
+                return 'quarterly_summary'
+            if any(word in content for word in ['ytd', 'year to date', 'fiscal year']):
+                return 'annual_summary'
+        
+        # Financial statement indicators
+        balance_sheet_keywords = [
+            'assets', 'liabilities', 'equity', 'intangible', 'patent', 'license',
+            'goodwill', 'inventory', 'receivables', 'payables', 'debt', 
+            'current assets', 'current liabilities', 'net book value',
+            'accumulated depreciation', 'carrying amount'
+        ]
+        
+        income_statement_keywords = [
+            'revenue', 'income', 'expense', 'profit', 'loss', 'earnings',
+            'cost of goods', 'operating expenses', 'tax', 'net income',
+            'gross margin', 'ebitda', 'depreciation', 'amortization'
+        ]
+        
+        cash_flow_keywords = [
+            'cash flow', 'operating activities', 'investing activities',
+            'financing activities', 'capital expenditures', 'dividends paid',
+            'proceeds from', 'payments for', 'net cash'
+        ]
+        
+        stockholders_equity_keywords = [
+            'stock', 'share', 'repurchase', 'dividend', 'retained earnings',
+            'additional paid-in capital', 'treasury stock', 'common stock'
+        ]
+        
+        # Count matches for each type
+        matches = {
+            'balance_sheet': sum(1 for kw in balance_sheet_keywords if kw in content),
+            'income_statement': sum(1 for kw in income_statement_keywords if kw in content),
+            'cash_flow': sum(1 for kw in cash_flow_keywords if kw in content),
+            'stockholders_equity': sum(1 for kw in stockholders_equity_keywords if kw in content)
+        }
+        
+        # Additional context checks
+        if 'data' in table_data:
+            table_items = [str(item).lower() for item in table_data['data']]
+            
+            # Look for common patterns
+            has_parentheses = any('(' in str(item) and ')' in str(item) for item in table_items)
+            has_percentages = any('%' in str(item) for item in table_items)
+            has_subtotals = any('total' in str(item).lower() for item in table_items)
+            has_dates = any('20' in str(item) and any(m in str(item).lower() for m in [
+                'jan', 'feb', 'mar', 'apr', 'may', 'jun',
+                'jul', 'aug', 'sep', 'oct', 'nov', 'dec'
+            ]) for item in table_items)
+            
+            # Check for numeric patterns
+            numeric_items = []
+            for item in table_items:
+                try:
+                    if isinstance(item, (int, float)):
+                        numeric_items.append(float(item))
+                    elif isinstance(item, str) and any(c.isdigit() for c in item):
+                        cleaned = ''.join(c for c in item if c.isdigit() or c in '.-')
+                        if cleaned:
+                            numeric_items.append(float(cleaned))
+                except ValueError:
+                    continue
+            
+            has_increasing_sequence = False
+            has_paired_values = False
+            if len(numeric_items) >= 3:
+                # Check for increasing/decreasing sequences
+                differences = [numeric_items[i+1] - numeric_items[i] for i in range(len(numeric_items)-1)]
+                has_increasing_sequence = all(d >= 0 for d in differences) or all(d <= 0 for d in differences)
+                
+                # Check for paired values (common in financial statements)
+                if len(numeric_items) % 2 == 0:
+                    pairs = list(zip(numeric_items[::2], numeric_items[1::2]))
+                    has_paired_values = any(abs(p[0] - p[1]) > 0 for p in pairs)
+            
+            # Adjust scores based on patterns
+            if has_parentheses and has_subtotals:
+                matches['balance_sheet'] += 1
+                matches['income_statement'] += 1
+                
+            if has_dates and has_increasing_sequence:
+                matches['income_statement'] += 2  # Time series data is common in income statements
+                
+            if has_paired_values:
+                matches['balance_sheet'] += 1  # Paired values (e.g., cost/accumulated) are common in balance sheets
+            
+            if has_percentages:
+                matches['income_statement'] += 2  # More common in income statements
+            
+            # Check for year-over-year comparisons
+            if any('20' in str(item) for item in table_items):  # Year indicators
+                matches['income_statement'] += 1
+                matches['balance_sheet'] += 1
+        
+        # Return the type with the most matches
+        if max(matches.values()) > 0:
+            return max(matches.items(), key=lambda x: x[1])[0]
         
         return 'unknown'
     
@@ -231,27 +344,27 @@ class XBRLPDFComparator:
 def main():
     # File paths
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    config_path = os.path.join(project_root, 'config', 'config.json')
-    docling_path = os.path.join(project_root, 'data', 'parsed', 'docling', 'nvda-20240128',
-                            'docling_extraction_results.json')
-    layout_path = os.path.join(project_root, 'data', 'parsed', 'layout_parser', 'nvda-20240128',
-                               'layout_parser_extraction_results.json')
+    config_path = os.path.join(project_root, 'config', 'xbrl_mappings.json')
+    results_path = os.path.join(project_root, 'data', 'parsed', 'nvda-20240128',
+                             'comparison', 'table_extraction_results.json')
+    xbrl_path = os.path.join(project_root, 'data', 'parsed', 'nvda-20240128',
+                          'xbrl_data.json')
     
     # Load data
-    logger.info("Loading DocLing extraction results...")
-    with open(docling_path, 'r') as f:
-        docling_data = json.load(f)
+    logger.info("Loading extraction results...")
+    with open(results_path, 'r') as f:
+        extraction_data = json.load(f)
         
-    logger.info("Loading LayoutParser extraction results...")
-    with open(layout_path, 'r') as f:
-        layout_data = json.load(f)
+    logger.info("Loading XBRL data...")
+    with open(xbrl_path, 'r') as f:
+        xbrl_data = json.load(f)
         
-    # Extract tables from docling data
+    # Extract tables from the extraction results
     tables = []
-    for page in docling_data['document_analysis']['content_elements']:
-        for element in page.get('elements', []):
-            if element.get('type') == 'table':
-                tables.append(element)
+    if 'tables' in extraction_data:
+        tables = extraction_data['tables']
+    else:
+        logger.warning("No tables found in extraction results")
                 
     logger.info(f"Found {len(tables)} tables in DocLing results")
     
@@ -260,22 +373,16 @@ def main():
     
     all_results = []
     for table in tables:
-        # Compare DocLing and LayoutParser results
-        docling_table = {
-            'original_file': docling_data['pdf_name'],
+        # Process each table
+        table_data = {
+            'original_file': extraction_data.get('pdf_name', 'unknown'),
             'data': table.get('data', []),
             'metadata': table.get('metadata', {})
         }
         
-        # Find matching table in LayoutParser results
-        layout_table = None
-        for lt in layout_data.get('tables', []):
-            if lt.get('page_number') == table.get('page_number'):
-                layout_table = lt
-                break
-                
-        if layout_table:
-            comparison = comparator.process_comparison(docling_table, layout_table)
+        # Compare with XBRL data
+        comparison = comparator.process_comparison(table_data, xbrl_data)
+        if comparison['status'] != 'skipped':
             all_results.append(comparison)
     
     # Save results

@@ -1,0 +1,60 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+products, and it is likely that additional unilateral or multilateral controls will be adopted. Such controls have been and may again be very
+broad in scope and application, prohibit us from exporting our products to any or all customers in one or more markets, including but not
+limited to China, and could negatively impact our manufacturing, testing and warehousing locations and options, or could impose other
+conditions that limit our ability to serve demand abroad and could negatively and materially impact our business, revenue and financial
+results. Export controls targeting GPUs and semiconductors associated with AI, which have been imposed and are increasingly likely to
+be further tightened, would further restrict our ability to export our technology, products, or services even though competitors may not be
+subject to similar restrictions, creating a competitive disadvantage for us and negatively impacting our business and financial results.
+Export controls targeting GPUs and semiconductors associated with AI have subjected and may in the future subject downstream users
+of our products to additional restrictions on the use, resale, repair, or transfer of our products, negatively impacting our business and
+financial results. Controls could negatively impact our cost and/or ability to provide services such as NVIDIA AI cloud services and could
+impact the cost and/or ability for our cloud service providers and customers to provide services to their end customers, even outside
+China.
+Export controls could disrupt our supply chain and distribution channels, negatively impacting our ability to serve demand, including in
+markets outside China and for our gaming products. The possibility of additional export controls has negatively impacted and may in the
+future negatively impact demand for our products, benefiting competitors that offer alternatives less likely to be restricted by further
+controls. Repeated changes in the export control rules are likely to impose compliance burdens on our business and our customers,
+negatively and materially impacting our business.
+Increasing use of economic sanctions and export controls has impacted and may in the future impact demand for our products or
+services, negatively impacting our business and financial results. Reduced demand due to export controls could also lead to excess
+inventory or cause us to incur related supply charges. Additional unilateral or multilateral controls are also likely to include deemed
+export control limitations that negatively impact the ability of our research and development teams to execute our roadmap or other
+objectives in a timely manner. Additional export restrictions may not only impact our ability to serve overseas markets, but also provoke
+responses from foreign governments, including China, that negatively impact our supply chain or our ability to provide our products and
+services to customers in all markets worldwide, which could also substantially reduce our revenue. Regulators in China have inquired
+about our sales and efforts to supply the China market and our fulfillment of the commitments we entered at the close of our Mellanox
+acquisition. If the regulators conclude that we have failed to fulfill such commitments or we have violated any applicable law in China, we
+could be subject to various penalties or restrictions on our ability to conduct our business, any of which could have a material and
+adverse impact on our business, operating results and financial condition.
+During the third quarter of fiscal year 2023, the USG announced export restrictions and export licensing requirements targeting China’s
+semiconductor and supercomputing industries. These restrictions impact exports of certain chips, as well as software, hardware,
+equipment and technology used to develop, produce and manufacture certain chips to China (including Hong Kong and Macau) and
+Russia, and specifically impact our A100 and H100 integrated circuits, DGX or any other systems or boards which incorporate A100 or
+H100 integrated circuits. The licensing requirements also apply to any future NVIDIA integrated circuit achieving certain peak
+performance and chip-to-chip I/O performance thresholds, as well as any system or board that includes those circuits. There are also
+now licensing requirements to export a wide array of products, including networking products, destined for certain end users and for
+certain end uses in China. During the second quarter of fiscal year 2024, the USG also informed us of an additional licensing
+requirement for a subset of A100 and H100 products destined to certain customers and other regions, including some countries in the
+Middle East.
+In October 2023, the USG announced new and updated licensing requirements that became effective in our fourth quarter of fiscal year
+2024 for exports to China and Country Groups D1, D4, and D5 (including but not limited to, Saudi Arabia, the United Arab Emirates, and
+Vietnam, but excluding Israel) of our products exceeding certain performance thresholds, including A100, A800, H100, H800, L4, L40,
+L40S and RTX 4090. The licensing requirements also apply to the export of products exceeding certain performance thresholds to a
+party headquartered in, or with an ultimate parent headquartered in, Country Group D5, including China. On October 23, 2023, the USG
+informed us that the licensing requirements were effective immediately for shipments of our A100, A800, H100, H800, and L40S
+products. We have not received licenses to ship these restricted products to China.
+Following these export controls, we transitioned some operations, including certain testing, validation, and supply and distribution
+operations out of China and Hong Kong. Any future transitions could be costly and time consuming, and adversely affect our research
+and development and supply and distribution operations, as well as our revenue, during any such transition period. We are working to
+expand our Data Center product portfolio to offer new solutions, including those for which the USG does not require a license or advance
+notice before each shipment. To the extent that a customer requires products covered by the licensing requirements, we may seek a
+license for the customer. However, the licensing process is time-consuming. We have no assurance that the USG will grant such a
+license or that the USG will act on the license application in a timely manner or at all. Even if a license is offered, it may impose
+burdensome conditions that we or our customer or end users cannot or decide not to accept. The USG is evaluating license requests in
+a closed process that does not have clear standards or an opportunity for review. For example, the Notified Advanced Computing, or
+“NAC,” process has not resulted in approvals for exports of products to customers in China. The license process for exports to D1 and
+D4 countries has been time-consuming and resulted in license conditions for countries outside China. The requirements have a
+disproportionate impact on NVIDIA and already have disadvantaged and may in the future
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 41/118

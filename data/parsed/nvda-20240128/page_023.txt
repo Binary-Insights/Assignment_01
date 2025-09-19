@@ -1,0 +1,49 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+commitments for capacity to address our business needs, or our long-term demand expectations may change. These risks may increase
+as we shorten our product development cycles, enter new lines of business, or integrate new suppliers or components into our supply
+chain, creating additional supply chain complexity. Additionally, our ability to sell certain products has been and could be impeded if
+components necessary for the finished products are not available from third parties. This risk may increase as a result of our platform
+strategy. In periods of shortages impacting the semiconductor industry and/or limited supply or capacity in our supply chain, the lead
+times on our orders may be extended. We have previously experienced and may continue to experience extended lead times of more
+than 12 months. We have paid premiums and provided deposits to secure future supply and capacity, which have increased our product
+costs and may continue to do so. If our existing suppliers are unable to scale their capabilities to meet our supply needs, we may require
+additional sources of capacity, which may require additional deposits. We may not have the ability to reduce our supply commitments at
+the same rate or at all if our revenue declines.
+Many additional factors have caused and/or could in the future cause us to either underestimate or overestimate our customers’ future
+demand for our products, or otherwise cause a mismatch between supply and demand for our products and impact the timing and
+volume of our revenue, including:
+• changes in product development cycles and time to market;
+• competing technologies and competitor product releases and announcements;
+• changes in business and economic conditions resulting in decreased end demand;
+• sudden or sustained government lockdowns or actions to control case spread of global or local health issues;
+• rapidly changing technology or customer requirements;
+• the availability of sufficient data center capacity and energy for customers to procure;
+• new product introductions and transitions resulting in less demand for existing products;
+• new or unexpected end-use cases;
+• increase in demand for competitive products, including competitive actions;
+• business decisions made by third parties;
+• the demand for accelerated or AI-related cloud services, including our own software and NVIDIA DGX Cloud services;
+• changes that impact the ecosystem for the architectures underlying our products and technologies;
+• the demand for our products; or
+• government actions or changes in governmental policies, such as export controls or increased restrictions on gaming usage.
+Demand for our data center systems and products surged in fiscal year 2024. Entering fiscal year 2025, we are gathering customer
+demand indications across several product transitions. We have demand visibility for our new data center products ramping later in fiscal
+year 2025. We have increased our supply and capacity purchases with existing suppliers, added new vendors and entered into prepaid
+manufacturing and capacity agreements. These increased purchase volumes, the number of suppliers, and the integration of new
+vendors into our supply chain may create more complexity and execution risk. We may continue to enter into new supplier and capacity
+arrangements. Our purchase commitments and obligations for inventory and manufacturing capacity at the end of fiscal year 2024 were
+impacted by shortening lead times for certain components. Supply of Hopper architecture products is improving, and demand remains
+very strong. We expect our next-generation products to be supply-constrained based upon demand indications. We may incur inventory
+provisions or impairments if our inventory or supply or capacity commitments exceed demand for our products or demand declines.
+Our customer orders and longer-term demand estimates may change or may not be correct, as we have experienced in the past.
+Product transitions are complex and can impact our revenue as we often ship both new and prior architecture products simultaneously
+and we and our channel partners prepare to ship and support new products. Due to our product introduction cycles, we are almost
+always in various stages of transitioning the architecture of our Data Center, Professional Visualization, and Gaming products. We will
+have a broader and faster Data Center product launch cadence to meet a growing and diverse set of AI opportunities. The increased
+frequency of these transitions may magnify the challenges associated with managing our supply and demand due to long manufacturing
+lead times. Qualification time for new products, customers anticipating product transitions and channel partners reducing channel
+inventory of prior architectures ahead of new product introductions can create reductions or volatility in our revenue. We have
+experienced and may in the future experience reduced demand for current generation architectures when customers anticipate
+16
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 23/118

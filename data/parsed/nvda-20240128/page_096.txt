@@ -1,0 +1,35 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+(Continued)
+Note 7 - Amortizable Intangible Assets
+The components of our amortizable intangible assets are as follows:
+Jan 28, 2024 Jan 29, 2023
+Gross Net Gross Net
+Carrying Accumulated Carrying Carrying Accumulated Carrying
+Amount Amortization Amount Amount Amortization Amount
+(In millions)
+Acquisition-related
+intangible assets (1) $ 2,642 $ (1,720) $ 922 $ 3,093 $ (1,614) $ 1,479
+Patents and licensed
+technology 449 (259) 190 446 (249) 197
+Total intangible assets $ 3,091 $ (1,979) $ 1,112 $ 3,539 $ (1,863) $ 1,676
+(1) During the first quarter of fiscal year 2023, we commenced amortization of a $630 million in-process research and development intangible asset
+related to our acquisition of Mellanox.
+Amortization expense associated with intangible assets for fiscal years 2024, 2023, and 2022 was $614 million, $699 million, and $563
+million, respectively.
+The following table outlines the estimated future amortization expense related to the net carrying amount of intangible assets as of
+January 28, 2024:
+Future Amortization Expense
+(In millions)
+Fiscal Year:
+2025 $ 555
+2026 261
+2027 150
+2028 37
+2029 9
+2030 and thereafter 100
+Total $ 1,112
+64
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 96/118

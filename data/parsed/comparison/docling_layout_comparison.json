@@ -1,0 +1,429 @@
+{
+  "timestamp": "2025-09-19T13:38:57.691402",
+  "total_tables": 2,
+  "results": [
+    {
+      "table_type": "balance_sheet",
+      "file_name": "unknown",
+      "comparisons": [
+        {
+          "line_item": "November 27, 2023 - December 24, 2023",
+          "pdf_values": [
+            1.1,
+            477.26,
+            1.1,
+            24.3
+          ],
+          "value_pairs": {},
+          "xbrl_concepts": [],
+          "matches": [],
+          "validation": {
+            "total_validations": 0,
+            "successful_matches": 0,
+            "match_rate": 0,
+            "issues": [],
+            "patterns_found": 0
+          }
+        },
+        {
+          "line_item": "December 25, 2023 - January 28, 2024",
+          "pdf_values": [
+            3.3,
+            540.85,
+            3.3,
+            22.5
+          ],
+          "value_pairs": {},
+          "xbrl_concepts": [],
+          "matches": [],
+          "validation": {
+            "total_validations": 0,
+            "successful_matches": 0,
+            "match_rate": 0,
+            "issues": [],
+            "patterns_found": 0
+          }
+        },
+        {
+          "line_item": "Total",
+          "pdf_values": [
+            5.3,
+            5.3
+          ],
+          "value_pairs": {},
+          "xbrl_concepts": [],
+          "matches": [],
+          "validation": {
+            "total_validations": 0,
+            "successful_matches": 0,
+            "match_rate": 0,
+            "issues": [],
+            "patterns_found": 0
+          }
+        }
+      ],
+      "status": "analyzed",
+      "timestamp": "2025-09-19T13:38:57.690432",
+      "analysis": {
+        "total_line_items": 3,
+        "matched_items": 0,
+        "pattern_matches": 0,
+        "year_over_year_changes": 0,
+        "issues": []
+      }
+    },
+    {
+      "table_type": "balance_sheet",
+      "file_name": "unknown",
+      "comparisons": [
+        {
+          "line_item": "Patents and licensed\ntechnology",
+          "pdf_values": [
+            449.0,
+            -259.0,
+            190.0,
+            446.0,
+            -249.0,
+            197.0
+          ],
+          "value_pairs": {
+            "FY2024": [
+              449.0,
+              -259.0,
+              190.0
+            ],
+            "FY2023": [
+              446.0,
+              -249.0,
+              197.0
+            ]
+          },
+          "xbrl_concepts": [
+            "us-gaap:PatentsAndLicenses",
+            "us-gaap:PatentsAndLicensesGross",
+            "us-gaap:PatentsAndLicensesAccumulatedAmortization"
+          ],
+          "matches": [],
+          "patterns": [
+            {
+              "type": "sum",
+              "description": "Value[0] + Value[1] = Value[2]",
+              "values": {
+                "a": 449.0,
+                "b": -259.0,
+                "sum": 190.0
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[1] is -57.7% of Value[0]",
+              "values": {
+                "base": 449.0,
+                "derived": -259.0,
+                "percentage": -0.576837416481069
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is 42.3% of Value[0]",
+              "values": {
+                "base": 449.0,
+                "derived": 190.0,
+                "percentage": 0.42316258351893093
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is -73.4% of Value[1]",
+              "values": {
+                "base": -259.0,
+                "derived": 190.0,
+                "percentage": -0.7335907335907336
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "sum",
+              "description": "Value[0] + Value[1] = Value[2]",
+              "values": {
+                "a": 446.0,
+                "b": -249.0,
+                "sum": 197.0
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[1] is -55.8% of Value[0]",
+              "values": {
+                "base": 446.0,
+                "derived": -249.0,
+                "percentage": -0.5582959641255605
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is 44.2% of Value[0]",
+              "values": {
+                "base": 446.0,
+                "derived": 197.0,
+                "percentage": 0.44170403587443946
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is -79.1% of Value[1]",
+              "values": {
+                "base": -249.0,
+                "derived": 197.0,
+                "percentage": -0.7911646586345381
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            }
+          ],
+          "year_over_year": [
+            {
+              "type": "yoy_change",
+              "index": 0,
+              "current_value": 449.0,
+              "previous_value": 446.0,
+              "change": 0.006726457399103139,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "minor"
+            },
+            {
+              "type": "yoy_change",
+              "index": 1,
+              "current_value": -259.0,
+              "previous_value": -249.0,
+              "change": -0.040160642570281124,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "minor"
+            },
+            {
+              "type": "yoy_change",
+              "index": 2,
+              "current_value": 190.0,
+              "previous_value": 197.0,
+              "change": -0.03553299492385787,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "minor"
+            }
+          ],
+          "validation": {
+            "total_validations": 0,
+            "successful_matches": 0,
+            "match_rate": 0,
+            "issues": [],
+            "patterns_found": 0
+          }
+        },
+        {
+          "line_item": "Total intangible assets",
+          "pdf_values": [
+            3091.0,
+            -1979.0,
+            1112.0,
+            3539.0,
+            -1863.0,
+            1676.0
+          ],
+          "value_pairs": {
+            "FY2024": [
+              3091.0,
+              -1979.0,
+              1112.0
+            ],
+            "FY2023": [
+              3539.0,
+              -1863.0,
+              1676.0
+            ]
+          },
+          "xbrl_concepts": [
+            "us-gaap:IntangibleAssetsNetExcludingGoodwill",
+            "us-gaap:IntangibleAssetsGross",
+            "us-gaap:AccumulatedAmortizationIntangibleAssets"
+          ],
+          "matches": [],
+          "patterns": [
+            {
+              "type": "sum",
+              "description": "Value[0] + Value[1] = Value[2]",
+              "values": {
+                "a": 3091.0,
+                "b": -1979.0,
+                "sum": 1112.0
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[1] is -64.0% of Value[0]",
+              "values": {
+                "base": 3091.0,
+                "derived": -1979.0,
+                "percentage": -0.6402458751213199
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is 36.0% of Value[0]",
+              "values": {
+                "base": 3091.0,
+                "derived": 1112.0,
+                "percentage": 0.35975412487868
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is -56.2% of Value[1]",
+              "values": {
+                "base": -1979.0,
+                "derived": 1112.0,
+                "percentage": -0.561899949469429
+              },
+              "context": {
+                "fiscal_year": "FY2024"
+              }
+            },
+            {
+              "type": "sum",
+              "description": "Value[0] + Value[1] = Value[2]",
+              "values": {
+                "a": 3539.0,
+                "b": -1863.0,
+                "sum": 1676.0
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[1] is -52.6% of Value[0]",
+              "values": {
+                "base": 3539.0,
+                "derived": -1863.0,
+                "percentage": -0.5264198926250353
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is 47.4% of Value[0]",
+              "values": {
+                "base": 3539.0,
+                "derived": 1676.0,
+                "percentage": 0.4735801073749647
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            },
+            {
+              "type": "percentage",
+              "description": "Value[2] is -90.0% of Value[1]",
+              "values": {
+                "base": -1863.0,
+                "derived": 1676.0,
+                "percentage": -0.8996242619431025
+              },
+              "context": {
+                "fiscal_year": "FY2023"
+              }
+            }
+          ],
+          "year_over_year": [
+            {
+              "type": "yoy_change",
+              "index": 0,
+              "current_value": 3091.0,
+              "previous_value": 3539.0,
+              "change": -0.12658943204294998,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "moderate"
+            },
+            {
+              "type": "yoy_change",
+              "index": 1,
+              "current_value": -1979.0,
+              "previous_value": -1863.0,
+              "change": -0.062265163714439076,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "minor"
+            },
+            {
+              "type": "yoy_change",
+              "index": 2,
+              "current_value": 1112.0,
+              "previous_value": 1676.0,
+              "change": -0.33651551312649164,
+              "context": {
+                "fiscal_year": "FY2024"
+              },
+              "significance": "moderate"
+            }
+          ],
+          "validation": {
+            "total_validations": 0,
+            "successful_matches": 0,
+            "match_rate": 0,
+            "issues": [],
+            "patterns_found": 0
+          }
+        }
+      ],
+      "status": "analyzed",
+      "timestamp": "2025-09-19T13:38:57.690811",
+      "analysis": {
+        "total_line_items": 2,
+        "matched_items": 0,
+        "pattern_matches": 16,
+        "year_over_year_changes": 6,
+        "issues": []
+      }
+    }
+  ]
+}

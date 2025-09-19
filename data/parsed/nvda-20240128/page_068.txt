@@ -1,0 +1,50 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+financial statement risk associated with changes in interest rates. Refer to Note 12 of the Notes to the Consolidated Financial
+Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.
+Foreign Exchange Rate Risk
+We consider our direct exposure to foreign exchange rate fluctuations to be minimal as our sales are in United States dollars and foreign
+currency forward contracts are used to offset movements of foreign currency exchange rate movements. Gains or losses from foreign
+currency remeasurement are included in other income or expenses. The impact of foreign currency transaction gain or loss included in
+determining net income was not significant for fiscal years 2024 and 2023.
+Sales and arrangements with third-party manufacturers provide for pricing and payment in United States dollars, and, therefore, are not
+subject to exchange rate fluctuations. Increases in the value of the United States’ dollar relative to other currencies would make our
+products more expensive, which could negatively impact our ability to compete. Conversely, decreases in the value of the United States’
+dollar relative to other currencies could result in our suppliers raising their manufacturing costs.
+If the U.S. dollar strengthened by 10% as of January 28, 2024 and January 29, 2023, the amount recorded in accumulated other
+comprehensive income (loss) related to our foreign exchange contracts before tax effect would have been $116 million and $112 million
+lower, respectively. Change in value recorded in accumulated other comprehensive income (loss) would be expected to offset a
+corresponding change in hedged forecasted foreign currency expenses when recognized.
+If an adverse 10% foreign exchange rate change was applied to our balance sheet hedging contracts, it would have resulted in an
+adverse impact on income before taxes of $60 million and $36 million as of January 28, 2024 and January 29, 2023, respectively. These
+changes in fair values would be offset in other income (expense), net by corresponding change in fair values of the foreign currency
+denominated monetary assets and liabilities, assuming the hedge contracts fully cover the foreign currency denominated monetary
+assets and liabilities balances.
+Refer to Note 11 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for
+additional information.
+Item 8. Financial Statements and Supplementary Data
+The information required by this Item is set forth in our Consolidated Financial Statements and Notes thereto included in this Annual
+Report on Form 10-K.
+Item 9. Changes in and Disagreements with Accountants on Accounting and Financial Disclosure
+None.
+Item 9A. Controls and Procedures
+Controls and Procedures
+Disclosure Controls and Procedures
+Based on their evaluation as of January 28, 2024, our management, including our Chief Executive Officer and Chief Financial Officer,
+has concluded that our disclosure controls and procedures (as defined in Rule 13a-15(e) under the Exchange Act) were effective to
+provide reasonable assurance.
+Management’s Annual Report on Internal Control Over Financial Reporting
+Our management is responsible for establishing and maintaining adequate internal control over financial reporting, as such term is
+defined in Exchange Act Rule 13a-15(f). Under the supervision and with the participation of our management, including our Chief
+Executive Officer and Chief Financial Officer, we conducted an evaluation of the effectiveness of our internal control over financial
+reporting as of January 28, 2024 based on the criteria set forth in Internal Control - Integrated Framework (2013) issued by the
+Committee of Sponsoring Organizations of the Treadway Commission. Based on our evaluation under the criteria set forth in Internal
+Control — Integrated Framework, our management concluded that our internal control over financial reporting was effective as of
+January 28, 2024.
+The effectiveness of our internal control over financial reporting as of January 28, 2024 has been audited by PricewaterhouseCoopers
+LLP, an independent registered public accounting firm, as stated in its report which is included herein.
+Changes in Internal Control Over Financial Reporting
+There have been no changes in our internal control over financial reporting during the quarter ended January 28, 2024 that have
+materially affected, or are reasonably likely to materially affect, our internal control over financial reporting. In fiscal year 2022, we began
+an upgrade of our enterprise resource planning, or ERP, system, which will update much of our
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 68/118

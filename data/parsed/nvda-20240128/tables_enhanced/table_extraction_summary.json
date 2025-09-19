@@ -1,0 +1,1402 @@
+[
+  {
+    "page": 1,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_001_001.csv",
+    "rows": 53,
+    "columns": 12
+  },
+  {
+    "page": 2,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_002_001.csv",
+    "rows": 33,
+    "columns": 7
+  },
+  {
+    "page": 3,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_003_001.csv",
+    "rows": 37,
+    "columns": 6
+  },
+  {
+    "page": 4,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_004_001.csv",
+    "rows": 49,
+    "columns": 8
+  },
+  {
+    "page": 6,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_006_001.csv",
+    "rows": 48,
+    "columns": 11
+  },
+  {
+    "page": 7,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_007_001.csv",
+    "rows": 49,
+    "columns": 9
+  },
+  {
+    "page": 8,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_008_001.csv",
+    "rows": 56,
+    "columns": 9
+  },
+  {
+    "page": 10,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_010_001.csv",
+    "rows": 49,
+    "columns": 8
+  },
+  {
+    "page": 11,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_011_001.csv",
+    "rows": 48,
+    "columns": 11
+  },
+  {
+    "page": 13,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_013_001.csv",
+    "rows": 51,
+    "columns": 10
+  },
+  {
+    "page": 15,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_015_001.csv",
+    "rows": 53,
+    "columns": 10
+  },
+  {
+    "page": 17,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_017_001.csv",
+    "rows": 43,
+    "columns": 11
+  },
+  {
+    "page": 17,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_017_001.csv",
+    "rows": 5,
+    "columns": 5
+  },
+  {
+    "page": 18,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_018_001.csv",
+    "rows": 46,
+    "columns": 9
+  },
+  {
+    "page": 19,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_019_001.csv",
+    "rows": 41,
+    "columns": 11
+  },
+  {
+    "page": 21,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_021_001.csv",
+    "rows": 51,
+    "columns": 9
+  },
+  {
+    "page": 23,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_023_001.csv",
+    "rows": 47,
+    "columns": 9
+  },
+  {
+    "page": 25,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_025_001.csv",
+    "rows": 56,
+    "columns": 10
+  },
+  {
+    "page": 27,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_027_001.csv",
+    "rows": 48,
+    "columns": 12
+  },
+  {
+    "page": 29,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_029_001.csv",
+    "rows": 52,
+    "columns": 9
+  },
+  {
+    "page": 31,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_031_001.csv",
+    "rows": 54,
+    "columns": 9
+  },
+  {
+    "page": 32,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_032_001.csv",
+    "rows": 56,
+    "columns": 9
+  },
+  {
+    "page": 33,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_033_001.csv",
+    "rows": 55,
+    "columns": 8
+  },
+  {
+    "page": 35,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_035_001.csv",
+    "rows": 49,
+    "columns": 11
+  },
+  {
+    "page": 37,
+    "table_number": 1,
+    "statement_type": "cash_flow",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_cash_flow_037_001.csv",
+    "rows": 52,
+    "columns": 10
+  },
+  {
+    "page": 39,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_039_001.csv",
+    "rows": 56,
+    "columns": 9
+  },
+  {
+    "page": 41,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_041_001.csv",
+    "rows": 58,
+    "columns": 8
+  },
+  {
+    "page": 43,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_043_001.csv",
+    "rows": 57,
+    "columns": 10
+  },
+  {
+    "page": 45,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_045_001.csv",
+    "rows": 53,
+    "columns": 8
+  },
+  {
+    "page": 46,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_046_001.csv",
+    "rows": 57,
+    "columns": 8
+  },
+  {
+    "page": 47,
+    "table_number": 1,
+    "statement_type": "cash_flow",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_cash_flow_047_001.csv",
+    "rows": 56,
+    "columns": 9
+  },
+  {
+    "page": 49,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_049_001.csv",
+    "rows": 51,
+    "columns": 12
+  },
+  {
+    "page": 51,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_051_001.csv",
+    "rows": 45,
+    "columns": 10
+  },
+  {
+    "page": 51,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_051_001.csv",
+    "rows": 4,
+    "columns": 11
+  },
+  {
+    "page": 53,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_053_001.csv",
+    "rows": 17,
+    "columns": 16
+  },
+  {
+    "page": 53,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_053_001.csv",
+    "rows": 3,
+    "columns": 18
+  },
+  {
+    "page": 54,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_054_001.csv",
+    "rows": 49,
+    "columns": 9
+  },
+  {
+    "page": 55,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_055_001.csv",
+    "rows": 47,
+    "columns": 9
+  },
+  {
+    "page": 56,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_056_001.csv",
+    "rows": 48,
+    "columns": 10
+  },
+  {
+    "page": 56,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_056_001.csv",
+    "rows": 6,
+    "columns": 8
+  },
+  {
+    "page": 58,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_058_001.csv",
+    "rows": 45,
+    "columns": 10
+  },
+  {
+    "page": 59,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_059_001.csv",
+    "rows": 42,
+    "columns": 8
+  },
+  {
+    "page": 60,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_060_001.csv",
+    "rows": 48,
+    "columns": 15
+  },
+  {
+    "page": 60,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_060_001.csv",
+    "rows": 16,
+    "columns": 6
+  },
+  {
+    "page": 60,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_060_002.csv",
+    "rows": 3,
+    "columns": 12
+  },
+  {
+    "page": 60,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_060_003.csv",
+    "rows": 4,
+    "columns": 12
+  },
+  {
+    "page": 61,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_061_001.csv",
+    "rows": 46,
+    "columns": 10
+  },
+  {
+    "page": 61,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_061_001.csv",
+    "rows": 8,
+    "columns": 14
+  },
+  {
+    "page": 63,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_063_001.csv",
+    "rows": 41,
+    "columns": 12
+  },
+  {
+    "page": 63,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_063_001.csv",
+    "rows": 4,
+    "columns": 9
+  },
+  {
+    "page": 64,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_064_001.csv",
+    "rows": 45,
+    "columns": 12
+  },
+  {
+    "page": 64,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_064_001.csv",
+    "rows": 3,
+    "columns": 5
+  },
+  {
+    "page": 64,
+    "table_number": 2,
+    "statement_type": "cash_flow",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_cash_flow_064_002.csv",
+    "rows": 3,
+    "columns": 5
+  },
+  {
+    "page": 66,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_066_001.csv",
+    "rows": 46,
+    "columns": 11
+  },
+  {
+    "page": 66,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_066_001.csv",
+    "rows": 8,
+    "columns": 4
+  },
+  {
+    "page": 68,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_068_001.csv",
+    "rows": 49,
+    "columns": 9
+  },
+  {
+    "page": 70,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_070_001.csv",
+    "rows": 47,
+    "columns": 10
+  },
+  {
+    "page": 72,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_072_001.csv",
+    "rows": 19,
+    "columns": 9
+  },
+  {
+    "page": 73,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_073_001.csv",
+    "rows": 24,
+    "columns": 11
+  },
+  {
+    "page": 74,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_074_001.csv",
+    "rows": 49,
+    "columns": 9
+  },
+  {
+    "page": 75,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_075_001.csv",
+    "rows": 35,
+    "columns": 9
+  },
+  {
+    "page": 76,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_076_001.csv",
+    "rows": 23,
+    "columns": 9
+  },
+  {
+    "page": 76,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_076_001.csv",
+    "rows": 26,
+    "columns": 7
+  },
+  {
+    "page": 77,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_077_001.csv",
+    "rows": 18,
+    "columns": 8
+  },
+  {
+    "page": 77,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_077_001.csv",
+    "rows": 16,
+    "columns": 7
+  },
+  {
+    "page": 78,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_078_001.csv",
+    "rows": 38,
+    "columns": 9
+  },
+  {
+    "page": 78,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_078_001.csv",
+    "rows": 43,
+    "columns": 5
+  },
+  {
+    "page": 79,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_079_001.csv",
+    "rows": 32,
+    "columns": 15
+  },
+  {
+    "page": 79,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_079_001.csv",
+    "rows": 30,
+    "columns": 14
+  },
+  {
+    "page": 80,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_080_001.csv",
+    "rows": 49,
+    "columns": 12
+  },
+  {
+    "page": 80,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_080_001.csv",
+    "rows": 50,
+    "columns": 7
+  },
+  {
+    "page": 81,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_081_001.csv",
+    "rows": 49,
+    "columns": 9
+  },
+  {
+    "page": 83,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_083_001.csv",
+    "rows": 52,
+    "columns": 11
+  },
+  {
+    "page": 85,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_085_001.csv",
+    "rows": 53,
+    "columns": 8
+  },
+  {
+    "page": 87,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_087_001.csv",
+    "rows": 53,
+    "columns": 10
+  },
+  {
+    "page": 89,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_089_001.csv",
+    "rows": 52,
+    "columns": 9
+  },
+  {
+    "page": 91,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_091_001.csv",
+    "rows": 44,
+    "columns": 10
+  },
+  {
+    "page": 91,
+    "table_number": 2,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_091_002.csv",
+    "rows": 14,
+    "columns": 3
+  },
+  {
+    "page": 92,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_092_001.csv",
+    "rows": 41,
+    "columns": 15
+  },
+  {
+    "page": 92,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_092_001.csv",
+    "rows": 4,
+    "columns": 7
+  },
+  {
+    "page": 92,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_092_002.csv",
+    "rows": 4,
+    "columns": 6
+  },
+  {
+    "page": 92,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_092_003.csv",
+    "rows": 12,
+    "columns": 6
+  },
+  {
+    "page": 93,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_093_001.csv",
+    "rows": 48,
+    "columns": 10
+  },
+  {
+    "page": 93,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_093_001.csv",
+    "rows": 4,
+    "columns": 4
+  },
+  {
+    "page": 94,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_094_001.csv",
+    "rows": 47,
+    "columns": 12
+  },
+  {
+    "page": 94,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_094_001.csv",
+    "rows": 8,
+    "columns": 5
+  },
+  {
+    "page": 94,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_094_002.csv",
+    "rows": 15,
+    "columns": 7
+  },
+  {
+    "page": 96,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_096_001.csv",
+    "rows": 33,
+    "columns": 11
+  },
+  {
+    "page": 96,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_096_001.csv",
+    "rows": 5,
+    "columns": 14
+  },
+  {
+    "page": 96,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_096_003.csv",
+    "rows": 8,
+    "columns": 3
+  },
+  {
+    "page": 97,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_097_001.csv",
+    "rows": 35,
+    "columns": 13
+  },
+  {
+    "page": 97,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_097_001.csv",
+    "rows": 9,
+    "columns": 13
+  },
+  {
+    "page": 97,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_097_002.csv",
+    "rows": 9,
+    "columns": 13
+  },
+  {
+    "page": 98,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_098_001.csv",
+    "rows": 40,
+    "columns": 18
+  },
+  {
+    "page": 98,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_098_001.csv",
+    "rows": 6,
+    "columns": 13
+  },
+  {
+    "page": 98,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_098_002.csv",
+    "rows": 6,
+    "columns": 13
+  },
+  {
+    "page": 98,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_098_003.csv",
+    "rows": 3,
+    "columns": 6
+  },
+  {
+    "page": 99,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_099_001.csv",
+    "rows": 42,
+    "columns": 13
+  },
+  {
+    "page": 99,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_099_001.csv",
+    "rows": 21,
+    "columns": 7
+  },
+  {
+    "page": 100,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_100_001.csv",
+    "rows": 39,
+    "columns": 11
+  },
+  {
+    "page": 100,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_100_001.csv",
+    "rows": 8,
+    "columns": 3
+  },
+  {
+    "page": 100,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_100_003.csv",
+    "rows": 2,
+    "columns": 3
+  },
+  {
+    "page": 100,
+    "table_number": 4,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_100_004.csv",
+    "rows": 4,
+    "columns": 6
+  },
+  {
+    "page": 101,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_101_001.csv",
+    "rows": 35,
+    "columns": 17
+  },
+  {
+    "page": 101,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_101_001.csv",
+    "rows": 7,
+    "columns": 8
+  },
+  {
+    "page": 101,
+    "table_number": 2,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_101_002.csv",
+    "rows": 5,
+    "columns": 5
+  },
+  {
+    "page": 102,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_102_001.csv",
+    "rows": 45,
+    "columns": 12
+  },
+  {
+    "page": 102,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_102_001.csv",
+    "rows": 11,
+    "columns": 4
+  },
+  {
+    "page": 102,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_102_002.csv",
+    "rows": 6,
+    "columns": 4
+  },
+  {
+    "page": 102,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_102_003.csv",
+    "rows": 4,
+    "columns": 4
+  },
+  {
+    "page": 103,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_103_001.csv",
+    "rows": 31,
+    "columns": 11
+  },
+  {
+    "page": 104,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_104_001.csv",
+    "rows": 43,
+    "columns": 14
+  },
+  {
+    "page": 104,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_104_001.csv",
+    "rows": 14,
+    "columns": 11
+  },
+  {
+    "page": 105,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_105_001.csv",
+    "rows": 47,
+    "columns": 11
+  },
+  {
+    "page": 105,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_105_002.csv",
+    "rows": 7,
+    "columns": 3
+  },
+  {
+    "page": 105,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_105_003.csv",
+    "rows": 2,
+    "columns": 6
+  },
+  {
+    "page": 105,
+    "table_number": 4,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_105_004.csv",
+    "rows": 5,
+    "columns": 10
+  },
+  {
+    "page": 106,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_106_001.csv",
+    "rows": 37,
+    "columns": 10
+  },
+  {
+    "page": 107,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_107_001.csv",
+    "rows": 43,
+    "columns": 12
+  },
+  {
+    "page": 107,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_107_001.csv",
+    "rows": 13,
+    "columns": 7
+  },
+  {
+    "page": 107,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_107_002.csv",
+    "rows": 3,
+    "columns": 7
+  },
+  {
+    "page": 107,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_107_003.csv",
+    "rows": 11,
+    "columns": 13
+  },
+  {
+    "page": 108,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_108_001.csv",
+    "rows": 48,
+    "columns": 10
+  },
+  {
+    "page": 108,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_108_001.csv",
+    "rows": 19,
+    "columns": 6
+  },
+  {
+    "page": 109,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_109_001.csv",
+    "rows": 50,
+    "columns": 13
+  },
+  {
+    "page": 109,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_109_001.csv",
+    "rows": 7,
+    "columns": 9
+  },
+  {
+    "page": 111,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_111_001.csv",
+    "rows": 40,
+    "columns": 11
+  },
+  {
+    "page": 111,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_111_001.csv",
+    "rows": 11,
+    "columns": 12
+  },
+  {
+    "page": 112,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_112_001.csv",
+    "rows": 41,
+    "columns": 13
+  },
+  {
+    "page": 112,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_112_001.csv",
+    "rows": 8,
+    "columns": 7
+  },
+  {
+    "page": 112,
+    "table_number": 2,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_112_002.csv",
+    "rows": 5,
+    "columns": 7
+  },
+  {
+    "page": 112,
+    "table_number": 3,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_112_003.csv",
+    "rows": 6,
+    "columns": 7
+  },
+  {
+    "page": 113,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_113_001.csv",
+    "rows": 13,
+    "columns": 4
+  },
+  {
+    "page": 113,
+    "table_number": 1,
+    "statement_type": "balance_sheet",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_balance_sheet_113_001.csv",
+    "rows": 5,
+    "columns": 6
+  },
+  {
+    "page": 114,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_114_001.csv",
+    "rows": 24,
+    "columns": 14
+  },
+  {
+    "page": 114,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_114_001.csv",
+    "rows": 11,
+    "columns": 11
+  },
+  {
+    "page": 115,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_115_001.csv",
+    "rows": 55,
+    "columns": 10
+  },
+  {
+    "page": 116,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "billions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_116_001.csv",
+    "rows": 42,
+    "columns": 15
+  },
+  {
+    "page": 117,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_117_001.csv",
+    "rows": 15,
+    "columns": 13
+  },
+  {
+    "page": 118,
+    "table_number": 1,
+    "statement_type": "income_statement",
+    "periods": [],
+    "units": "millions",
+    "path": "data/parsed/nvda-20240128/tables_enhanced\\table_income_statement_118_001.csv",
+    "rows": 39,
+    "columns": 6
+  }
+]

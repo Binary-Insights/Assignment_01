@@ -1,0 +1,50 @@
+9/17/25, 1:58 PM nvda-20240128
+Table of Contents
+NVIDIA Corporation and Subsidiaries
+Notes to the Consolidated Financial Statements
+Note 1 - Organization and Summary of Significant Accounting Policies
+Our Company
+Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorporated in Delaware in April
+1998.
+All references to “NVIDIA,” “we,” “us,” “our” or the “Company” mean NVIDIA Corporation and its subsidiaries.
+Fiscal Year
+We operate on a 52- or 53-week year, ending on the last Sunday in January. Fiscal years 2024, 2023 and 2022 were all 52-week years.
+Principles of Consolidation
+Our consolidated financial statements include the accounts of NVIDIA Corporation and our wholly-owned subsidiaries. All intercompany
+balances and transactions have been eliminated in consolidation.
+Use of Estimates
+The preparation of financial statements in conformity with U.S. GAAP requires management to make estimates and assumptions that
+affect the reported amounts of assets and liabilities and disclosures of contingent assets and liabilities at the date of the financial
+statements and the reported amounts of revenue and expenses during the reporting period. Actual results could differ materially from our
+estimates. On an on-going basis, we evaluate our estimates, including those related to revenue recognition, cash equivalents and
+marketable securities, accounts receivable, inventories and product purchase commitments, income taxes, goodwill, stock-based
+compensation, litigation, investigation and settlement costs, restructuring and other charges, property, plant, and equipment, and other
+contingencies. These estimates are based on historical facts and various other assumptions that we believe are reasonable.
+In February 2023, we assessed the useful lives of our property, plant, and equipment. Based on advances in technology and usage rate,
+we increased the estimated useful life of most of our server, storage, and network equipment from three to four or five years, and our
+assembly and test equipment from five to seven years. The effect of this change for the fiscal year ended January 28, 2024 was a
+benefit of $33 million and $102 million for cost of revenue and operating expenses, respectively, which resulted in an increase in
+operating income of $135 million and net income of $114 million after tax, or $0.05 per both basic and diluted share.
+Revenue Recognition
+We derive our revenue from product sales, including hardware and systems, license and development arrangements, software licensing,
+and cloud services. We determine revenue recognition through the following steps: (1) identification of the contract with a customer; (2)
+identification of the performance obligations in the contract; (3) determination of the transaction price; (4) allocation of the transaction
+price to the performance obligations in the contract (where revenue is allocated on a relative standalone selling price basis by
+maximizing the use of observable inputs to determine the standalone selling price for each performance obligation); and (5) recognition
+of revenue when, or as, we satisfy a performance obligation.
+Product Sales Revenue
+Revenue from product sales is recognized upon transfer of control of products to customers in an amount that reflects the consideration
+we expect to receive in exchange for those products. Certain products are sold with support or an extended warranty for the
+incorporated system, hardware, and/or software. Support and extended warranty revenue are recognized ratably over the service
+period, or as services are performed. Revenue is recognized net of allowances for returns, customer programs and any taxes collected
+from customers.
+For products sold with a right of return, we record a reduction to revenue by establishing a sales return allowance for estimated product
+returns at the time revenue is recognized, based primarily on historical return rates. However, if product returns for a fiscal period are
+anticipated to exceed historical return rates, we may determine that additional sales return allowances are required to accurately reflect
+our estimated exposure for product returns.
+Our customer programs involve rebates, which are designed to serve as sales incentives to resellers of our products in various target
+markets, and marketing development funds, or MDFs, which represent monies paid to our partners that are earmarked for market
+segment development and are designed to support our partners’ activities while also promoting NVIDIA products. We account for
+customer programs as a reduction to revenue and accrue for such programs for potential rebates and MDFs based on the amount we
+expect to be claimed by customers.
+https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm 81/118

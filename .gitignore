@@ -18,6 +18,18 @@ __pycache__/
 *.csv
 *.tsv
 *.xls
+
+# Intermediate files
+data/parsed/**/text/page_*.txt
+data/parsed/**/text/word_boxes.json
+data/parsed/basic_layout_log.txt
+data/parsed/extraction_log.txt
+data/parsed/table_extraction_log.txt
+
+# Development artifacts
+*.log
+logs/
+temp/
 *.xlsx
 *.parquet
 *.h5

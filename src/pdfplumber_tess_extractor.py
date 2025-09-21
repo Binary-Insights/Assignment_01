@@ -1,6 +1,7 @@
 import pdfplumber
 import pytesseract
 import pandas as pd
+import numpy as np
 from PIL import Image
 import os
 import json
@@ -20,7 +21,7 @@ class PDFTableExtractor:
     - Compare different table extraction approaches
     """
     
-    def __init__(self, output_dir="data/parsed", log_level=logging.INFO):
+    def __init__(self, output_dir="data/parsed/pdfplumber_tesseract", log_level=logging.INFO):
         """
         Initialize the PDF table extractor.
         
@@ -136,6 +137,8 @@ class PDFTableExtractor:
             
         except Exception as e:
             self.logger.error(f"Error during extraction: {e}")
+            import traceback
+            self.logger.error(f"Full traceback: {traceback.format_exc()}")
             return None
         
         return extraction_results
@@ -338,16 +341,48 @@ class PDFTableExtractor:
                 for page_num, page in enumerate(pdf.pages, 1):
                     # Standard table extraction
                     tables = page.extract_tables()
+                    self.logger.info(f"Page {page_num}: Found {len(tables)} tables with standard method")
                     
                     for i, table in enumerate(tables):
                         if table and len(table) > 1:
+                            self.logger.info(f"Processing table {i+1} on page {page_num}: {len(table)} rows, {len(table[0]) if table[0] else 0} columns")
                             table_count += 1
                             
-                            # Convert to DataFrame
-                            df = pd.DataFrame(table[1:], columns=table[0])
+                            try:
+                                # Convert to DataFrame
+                                # Handle case where first row might be None or have different length
+                                headers = table[0] if table[0] else [f"Col_{j}" for j in range(len(table[1]) if len(table) > 1 else 1)]
+                                data_rows = table[1:] if len(table) > 1 else []
+                                
+                                # Ensure all rows have same number of columns
+                                max_cols = max(len(row) if row else 0 for row in [headers] + data_rows) if table else 0
+                                
+                                # Normalize headers
+                                if len(headers) < max_cols:
+                                    headers.extend([f"Col_{j}" for j in range(len(headers), max_cols)])
+                                headers = headers[:max_cols]
+                                
+                                # Normalize data rows
+                                normalized_rows = []
+                                for row in data_rows:
+                                    if not row:
+                                        row = [''] * max_cols
+                                    elif len(row) < max_cols:
+                                        row.extend([''] * (max_cols - len(row)))
+                                    elif len(row) > max_cols:
+                                        row = row[:max_cols]
+                                    normalized_rows.append(row)
+                                
+                                df = pd.DataFrame(normalized_rows, columns=headers)
+                                self.logger.info(f"Created DataFrame with shape: {df.shape}")
+                                
+                                # Clean the dataframe
+                                df = self._clean_table_dataframe(df)
+                                self.logger.info(f"Cleaned DataFrame with shape: {df.shape}")
                             
-                            # Clean the dataframe
-                            df = self._clean_table_dataframe(df)
+                            except Exception as df_error:
+                                self.logger.error(f"Error creating DataFrame for table {table_count}: {df_error}")
+                                continue
                             
                             # Generate filename
                             filename = f"{method_name}_page_{page_num:03d}_table_{i+1:03d}.csv"
@@ -401,7 +436,6 @@ class PDFTableExtractor:
                         "edge_min_length": 3,
                         "min_words_vertical": 3,
                         "min_words_horizontal": 1,
-                        "keep_blank_chars": False,
                         "text_tolerance": 3,
                         "text_x_tolerance": 3,
                         "text_y_tolerance": 3,
@@ -416,11 +450,38 @@ class PDFTableExtractor:
                         if table and len(table) > 1:
                             table_count += 1
                             
-                            # Convert to DataFrame
-                            df = pd.DataFrame(table[1:], columns=table[0])
+                            try:
+                                # Convert to DataFrame with same robust approach
+                                headers = table[0] if table[0] else [f"Col_{j}" for j in range(len(table[1]) if len(table) > 1 else 1)]
+                                data_rows = table[1:] if len(table) > 1 else []
+                                
+                                # Ensure all rows have same number of columns
+                                max_cols = max(len(row) if row else 0 for row in [headers] + data_rows) if table else 0
+                                
+                                # Normalize headers
+                                if len(headers) < max_cols:
+                                    headers.extend([f"Col_{j}" for j in range(len(headers), max_cols)])
+                                headers = headers[:max_cols]
+                                
+                                # Normalize data rows
+                                normalized_rows = []
+                                for row in data_rows:
+                                    if not row:
+                                        row = [''] * max_cols
+                                    elif len(row) < max_cols:
+                                        row.extend([''] * (max_cols - len(row)))
+                                    elif len(row) > max_cols:
+                                        row = row[:max_cols]
+                                    normalized_rows.append(row)
+                                
+                                df = pd.DataFrame(normalized_rows, columns=headers)
+                                
+                                # Clean the dataframe
+                                df = self._clean_table_dataframe(df)
                             
-                            # Clean the dataframe
-                            df = self._clean_table_dataframe(df)
+                            except Exception as df_error:
+                                self.logger.error(f"Error creating DataFrame for custom table {table_count}: {df_error}")
+                                continue
                             
                             # Generate filename
                             filename = f"{method_name}_page_{page_num:03d}_table_{i+1:03d}.csv"
@@ -501,11 +562,38 @@ class PDFTableExtractor:
                                 if financial_score >= 2:  # At least 2 financial keywords
                                     table_count += 1
                                     
-                                    # Convert to DataFrame
-                                    df = pd.DataFrame(table[1:], columns=table[0])
+                                    try:
+                                        # Convert to DataFrame with same robust approach
+                                        headers = table[0] if table[0] else [f"Col_{j}" for j in range(len(table[1]) if len(table) > 1 else 1)]
+                                        data_rows = table[1:] if len(table) > 1 else []
+                                        
+                                        # Ensure all rows have same number of columns
+                                        max_cols = max(len(row) if row else 0 for row in [headers] + data_rows) if table else 0
+                                        
+                                        # Normalize headers
+                                        if len(headers) < max_cols:
+                                            headers.extend([f"Col_{j}" for j in range(len(headers), max_cols)])
+                                        headers = headers[:max_cols]
+                                        
+                                        # Normalize data rows
+                                        normalized_rows = []
+                                        for row in data_rows:
+                                            if not row:
+                                                row = [''] * max_cols
+                                            elif len(row) < max_cols:
+                                                row.extend([''] * (max_cols - len(row)))
+                                            elif len(row) > max_cols:
+                                                row = row[:max_cols]
+                                            normalized_rows.append(row)
+                                        
+                                        df = pd.DataFrame(normalized_rows, columns=headers)
+                                        
+                                        # Clean the dataframe
+                                        df = self._clean_table_dataframe(df)
                                     
-                                    # Clean the dataframe
-                                    df = self._clean_table_dataframe(df)
+                                    except Exception as df_error:
+                                        self.logger.error(f"Error creating DataFrame for financial table {table_count}: {df_error}")
+                                        continue
                                     
                                     # Generate filename
                                     filename = f"{method_name}_page_{page_num:03d}_table_{i+1:03d}.csv"
@@ -550,8 +638,18 @@ class PDFTableExtractor:
         
         # Strip whitespace from string columns
         for col in df.columns:
-            if df[col].dtype == 'object':
-                df[col] = df[col].astype(str).str.strip()
+            try:
+                # Check if column contains string data that can be stripped
+                if df[col].dtype == 'object' or df[col].dtype.name == 'object':
+                    df[col] = df[col].astype(str).str.strip()
+            except (AttributeError, TypeError):
+                # Handle cases where dtype might not be accessible
+                try:
+                    # Try to convert to string and strip
+                    df[col] = df[col].astype(str).str.strip()
+                except:
+                    # If all else fails, leave the column as is
+                    pass
         
         return df
     
@@ -588,17 +686,28 @@ class PDFTableExtractor:
             'cash', 'total', 'net', 'gross', 'operating', '$', 'million', 'thousand'
         ]
         
-        # Convert dataframe to text and check for financial keywords
-        table_text = df.to_string().lower()
-        financial_matches = sum(1 for indicator in financial_indicators if indicator in table_text)
+        try:
+            # Convert dataframe to text and check for financial keywords
+            table_text = df.to_string().lower()
+            financial_matches = sum(1 for indicator in financial_indicators if indicator in table_text)
+            
+            # Also check for numeric patterns typical in financial statements
+            numeric_columns = 0
+            for col in df.columns:
+                try:
+                    # Try to convert column to numeric and count non-null values
+                    numeric_count = pd.to_numeric(df[col], errors='coerce').notna().sum()
+                    if numeric_count > len(df) * 0.5:
+                        numeric_columns += 1
+                except Exception:
+                    # Skip column if conversion fails
+                    continue
+            
+            return financial_matches >= 3 or numeric_columns >= 2
         
-        # Also check for numeric patterns typical in financial statements
-        numeric_columns = 0
-        for col in df.columns:
-            if pd.to_numeric(df[col], errors='coerce').notna().sum() > len(df) * 0.5:
-                numeric_columns += 1
-        
-        return financial_matches >= 3 or numeric_columns >= 2
+        except Exception:
+            # If any error occurs, default to False
+            return False
     
     def _analyze_table_methods(self, standard_results, custom_results, financial_results):
         """Generate analysis comparing different table extraction methods."""
@@ -649,6 +758,21 @@ class PDFTableExtractor:
         
         return recommendations
     
+    def _convert_numpy_types(self, obj):
+        """Convert numpy types to native Python types for JSON serialization."""
+        if isinstance(obj, dict):
+            return {key: self._convert_numpy_types(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [self._convert_numpy_types(item) for item in obj]
+        elif isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        else:
+            return obj
+
     def _save_combined_summary(self, results, output_dir):
         """Save a comprehensive summary of both text and table extraction."""
         summary = {
@@ -661,6 +785,9 @@ class PDFTableExtractor:
             'table_extraction': results.get('table_results', {}),
             'overall_stats': self.stats
         }
+        
+        # Convert numpy types to native Python types
+        summary = self._convert_numpy_types(summary)
         
         summary_file = output_dir / 'table_extraction_summary.json'
         with open(summary_file, 'w', encoding='utf-8') as f:

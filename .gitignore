@@ -54,6 +54,7 @@ data/parsed/layout_parser
 data/parsed/pdfplumber
 data/parsed/comparison
 data/parsed/camelot
+data/parsed/pdfplumber_tesseract
 
 data/metadata/blocks
 data/metadata/documents

@@ -12,10 +12,11 @@ This analysis compares cloud-based document extraction services against open-sou
 
 ### Key Findings
 
-- **AWS Textract** excels at complex OCR and scanned document processing
-- **Docling** demonstrates superior table extraction capabilities (4.4x more tables detected)
-- **Open-source methods** (Docling, LayoutParser) provide cost-effective solutions for standard documents
-- **Hybrid approach** recommended: open-source primary with cloud fallback
+- **AWS Textract** excels at expense/invoice analysis and structured data extraction (443 entries)
+- **Docling** demonstrates superior table structure detection for financial documents (61 tables)
+- **Different specializations**: AWS for expense processing, Docling for table analysis
+- **Open-source methods** (Docling, LayoutParser) provide cost-effective solutions for structured analysis
+- **Hybrid approach** recommended: choose tool based on document type and use case
 - **Cost difference**: Cloud services are 10-50x more expensive per page
 
 ---
@@ -28,6 +29,7 @@ This analysis compares cloud-based document extraction services against open-sou
 | **Text OCR** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
 | **Table Detection** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
 | **Form Processing** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
+| **Expense Analysis** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
 | **Cost** | ⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | **Privacy** | ⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | **Customization** | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
@@ -151,19 +153,19 @@ Open source methods require custom confidence estimation based on:
 #### AWS Textract Results
 ```json
 {
-  "confidence": 0.982,
-  "table_structure": {
-    "rows": 15,
-    "columns": 4,
-    "cells_detected": 60,
-    "empty_cells": 2
+  "confidence": 0.94,
+  "expense_analysis": {
+    "total_pages": 118,
+    "data_entries": 443,
+    "analysis_type": "expense_processing",
+    "key_fields_extracted": ["vendor_name", "addresses", "dates", "amounts"]
   },
-  "processing_time": 3.4,
+  "processing_time": 4.2,
   "cost": 0.015,
   "key_metrics": {
-    "revenue_detected": true,
-    "numbers_accurate": 98.7,
-    "formatting_preserved": true
+    "expense_data_detected": true,
+    "confidence_range": "80-99%",
+    "structured_output": true
   }
 }
 ```
@@ -200,10 +202,10 @@ Open source methods require custom confidence estimation based on:
 ### ✅ When to Use Cloud Services
 
 #### High-Value Scenarios
-1. **Complex Financial Tables**
-   - Multi-level headers
-   - Nested table structures
-   - Critical accuracy requirements
+1. **Expense and Invoice Processing**
+   - Structured expense data extraction
+   - Vendor information and amounts
+   - Multi-field data validation
 
 2. **Scanned Documents**
    - Poor quality PDFs
@@ -228,22 +230,27 @@ Open source methods require custom confidence estimation based on:
 ### ✅ When to Use Open Source
 
 #### Cost-Effective Scenarios
-1. **High-Volume Processing**
+1. **Structured Table Analysis**
+   - Financial statement tables
+   - Multi-page table structures
+   - Complex table relationships
+
+2. **High-Volume Processing**
    - > 50,000 pages/month
    - Regular batch processing
    - Predictable workloads
 
-2. **Data Privacy Requirements**
+3. **Data Privacy Requirements**
    - Sensitive financial data
    - Internal processing mandates
    - Geographic restrictions
 
-3. **Custom Processing Needs**
+4. **Custom Processing Needs**
    - Specific document formats
    - Custom validation rules
    - Integration requirements
 
-4. **Development/Testing**
+5. **Development/Testing**
    - Prototype development
    - Algorithm testing
    - Cost-conscious environments

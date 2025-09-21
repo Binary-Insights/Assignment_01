@@ -13,19 +13,23 @@
       "confidence_score": 0.94,
       "processing_time_seconds": 4.2,
       "cost_per_page": 0.015,
-      "text_blocks_detected": 167,
-      "tables_detected": 14,
+      "data_entries_detected": 443,
+      "pages_processed": 118,
+      "analysis_type": "expense_analysis",
       "accuracy_estimate": "97.8%",
       "strengths": [
-        "Complex table extraction",
-        "OCR quality",
-        "JSON structured output"
+        "High-confidence expense/invoice extraction",
+        "Comprehensive page coverage",
+        "Structured data output",
+        "Built-in OCR quality"
       ],
       "weaknesses": [
+        "Limited table structure detection",
         "Cost per page",
-        "Data privacy concerns"
+        "Data privacy concerns",
+        "Specialized for expense/invoice analysis"
       ],
-      "best_for": "Complex documents with tables and forms"
+      "best_for": "Expense processing and invoice analysis"
     },
     "docling_open_source": {
       "service_type": "Open Source",

@@ -10,19 +10,19 @@ This analysis compares cloud-based AWS Textract against open-source alternatives
 
 ## Performance Comparison
 
-| Method | Type | Confidence | Speed (s) | Cost/Page | Accuracy | Tables Found |
-|--------|------|------------|-----------|-----------|----------|--------------|
-| **AWS Textract** | Cloud | 94.0% | 4.2 | $0.015 | 97.8% | 14 |
-| **Docling** | Open Source | 92.0% | 336.8 | $0.001 | 95.2% | **61** |
-| **LayoutParser** | Open Source | 84.0% | 11.3 | $0.001 | 89.2% | 8 |
+| Method | Type | Confidence | Speed (s) | Cost/Page | Accuracy | Data Elements |
+|--------|------|------------|-----------|-----------|----------|---------------|
+| **AWS Textract** | Cloud | 94.0% | 4.2 | $0.015 | 97.8% | 443 entries |
+| **Docling** | Open Source | 92.0% | 336.8 | $0.001 | 95.2% | **61 tables** |
+| **LayoutParser** | Open Source | 84.0% | 11.3 | $0.001 | 89.2% | 8 tables |
 
 ## Key Performance Insights
 
-🏆 **Table Extraction Champion:** Docling extracted **61 tables** vs AWS Textract's 14, demonstrating superior table detection capabilities for complex financial documents.
+🏆 **Table Extraction Champion:** Docling extracted **61 tables** vs AWS Textract's 443 data entries (expense analysis), demonstrating superior structured table detection for complex financial documents.
 
-⚡ **Speed vs Accuracy Trade-off:** While AWS Textract processes faster (4.2s vs 336.8s), Docling's comprehensive analysis identifies 4.4x more tables, making it ideal for table-heavy documents.
+⚡ **Different Approaches:** AWS Textract focused on expense/invoice analysis (443 entries, 4.2s), while Docling performed comprehensive table structure analysis (61 tables, 336.8s).
 
-💰 **Cost Efficiency:** Docling provides 95.2% accuracy at 1/15th the cost of AWS Textract, with exceptional table extraction performance.
+💰 **Cost vs Capability:** AWS Textract provides fast expense processing at premium cost, while Docling offers superior table structure analysis at 1/15th the cost.
 
 ## Cost Analysis by Volume
 
@@ -83,7 +83,7 @@ Based on this analysis:
 4. **Table extraction leader:** **Docling (61 tables vs 14)** - Superior for table-heavy documents
 5. **Cost leader:** Open source solutions (15x cheaper per page)
 
-**Recommendation:** For financial documents with extensive tables, Docling provides exceptional value with 95.2% accuracy, superior table detection, and significant cost savings.
+**Recommendation:** For financial documents requiring structured table analysis, Docling provides exceptional value. For expense/invoice processing, AWS Textract offers specialized capabilities with premium speed and accuracy.
 
 The implemented framework provides intelligent fallback between cloud and open source methods, optimizing both cost and quality based on document complexity and confidence thresholds.
 

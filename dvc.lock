@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python scripts/download_data.py
+    deps:
+    - path: config/config.json
+      hash: md5
+      md5: 9b68296e4f1f3e2c2d7f11c373328b8b
+      size: 586
+    - path: scripts/download_data.py
+      hash: md5
+      md5: d8b91edc15ae27cf72240e4d261f76cf
+      size: 5072
+    outs:
+    - path: data/raw/nvda-20240128.zip
+      hash: md5
+      md5: d41d8cd98f00b204e9800998ecf8427e
+      size: 0
+    - path: data/raw/pdf/nvda-20240128.pdf
+      hash: md5
+      md5: 5949a93dd8d585b26e8395e264cad3ae
+      size: 437

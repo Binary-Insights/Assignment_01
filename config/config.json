@@ -1,0 +1,23 @@
+{
+  "project": {
+    "name": "Document Processing Pipeline",
+    "version": "1.0.0",
+    "description": "Big Data Case Study - Document Extraction & Analysis"
+  },
+  "data": {
+    "source_document": "nvda-20240128.pdf",
+    "raw_data_dir": "data/raw",
+    "parsed_data_dir": "data/parsed",
+    "output_formats": ["json", "csv", "md"]
+  },
+  "processing": {
+    "methods": ["pdfplumber", "docling", "layout_parser"],
+    "enable_benchmarking": true,
+    "max_pages": 200
+  },
+  "paths": {
+    "models": "models",
+    "scripts": "scripts",
+    "docs": "docs"
+  }
+}

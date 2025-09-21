@@ -1,0 +1,87 @@
+stages:
+  download:
+    cmd: python scripts/download_data.py
+    deps:
+      - scripts/download_data.py
+      - config/config.json
+    outs:
+      - data/raw/pdf/nvda-20240128.pdf
+      - data/raw/nvda-20240128.zip
+    desc: "Download SEC filings and financial documents"
+
+  parse:
+    cmd: python scripts/parse_documents.py
+    deps:
+      - scripts/parse_documents.py
+      - data/raw/pdf/nvda-20240128.pdf
+      - src/text_extractor.py
+    outs:
+      - data/parsed/nvda-20240128/text/
+      - data/parsed/nvda-20240128/extraction_summary.json
+    desc: "Extract text content from PDF documents"
+
+  tables:
+    cmd: python scripts/extract_tables.py
+    deps:
+      - scripts/extract_tables.py
+      - data/raw/pdf/nvda-20240128.pdf
+      - src/pdfplumber_tess_extractor.py
+      - src/table_normalizer.py
+    outs:
+      - data/parsed/nvda-20240128/tables/
+      - data/parsed/nvda-20240128/table_extraction_summary.json
+    desc: "Extract and normalize table data from documents"
+
+  layout:
+    cmd: python scripts/layout_analysis.py
+    deps:
+      - scripts/layout_analysis.py
+      - data/raw/pdf/nvda-20240128.pdf
+      - src/layout_parser_extractor.py
+    outs:
+      - data/parsed/layout_parser/
+      - data/parsed/comparison/layout_analysis.json
+    desc: "Perform layout analysis using LayoutParser"
+
+  docling:
+    cmd: python scripts/docling_extraction.py
+    deps:
+      - scripts/docling_extraction.py
+      - data/raw/pdf/nvda-20240128.pdf
+      - src/docling_extractor.py
+    outs:
+      - data/parsed/docling/
+      - data/parsed/comparison/docling_layout_comparison.json
+    desc: "Extract content using Docling framework"
+
+  export:
+    cmd: python scripts/export_results.py
+    deps:
+      - scripts/export_results.py
+      - data/parsed/nvda-20240128/text/
+      - data/parsed/nvda-20240128/tables/
+      - data/parsed/docling/
+      - data/parsed/layout_parser/
+      - src/validation_report_generator.py
+    outs:
+      - data/parsed/benchmarks/benchmark_results.json
+      - data/parsed/analysis/final_report.md
+      - data/parsed/comparison/method_comparison.json
+    desc: "Generate final analysis and comparison reports"
+
+  benchmark:
+    cmd: python scripts/benchmark_pipeline.py --methods pdfplumber,docling
+    deps:
+      - scripts/benchmark_pipeline.py
+      - data/raw/pdf/nvda-20240128.pdf
+      - src/pdfplumber_tess_extractor.py
+      - src/docling_extractor.py
+    outs:
+      - data/parsed/benchmarks/benchmark_results.csv
+      - data/parsed/benchmarks/cost_analysis.json
+    desc: "Run performance benchmarks and cost analysis"
+
+vars:
+  - data_source: "nvda-20240128"
+  - models_dir: "models"
+  - output_format: "json"

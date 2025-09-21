@@ -1,8 +1,0 @@
-|                         | Jan 28, 2024   | Jan 29, 2023   |
-|-------------------------|----------------|----------------|
-| Long-lived assets:      | (In millions)  | (In millions)  |
-| United States           | $ 2,595        | $ 2,587        |
-| Taiwan                  | 773            | 702            |
-| Israel                  | 325            | 283            |
-| Other countries         | 221            | 235            |
-| Total long-lived assets | $ 3,914        | $ 3,807        |

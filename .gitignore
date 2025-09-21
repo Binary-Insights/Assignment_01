@@ -14,67 +14,52 @@ __pycache__/
 # VS Code
 .vscode/
 
-# Data files
+# DVC - Track .dvc files but not the actual data
+/data/raw/
+/data/parsed/
+/data/metadata/
+/data/staged/
+/data/analysis/
+/models/
+!*.dvc
+!.dvc/
+.dvc/cache/
+.dvc/tmp/
+
+# Large files and data artifacts
 *.csv
 *.tsv
 *.xls
-
-# Intermediate files
-data/parsed/**/text/page_*.txt
-data/parsed/**/text/word_boxes.json
-data/parsed/basic_layout_log.txt
-data/parsed/extraction_log.txt
-data/parsed/table_extraction_log.txt
-
-# Development artifacts
-*.log
-logs/
-temp/
 *.xlsx
 *.parquet
 *.h5
 *.db
 *.sqlite
+*.zip
+*.png
+*.jpg
+*.pdf
+
+# Intermediate files (DVC will handle these)
 *.log
+logs/
+temp/
+*.bak
+*.tmp
 
 # OS files
 .DS_Store
 Thumbs.db
 
 # Others
-*.bak
-*.tmp
 *.swp
 *.swo
 
 # Node
 node_modules/
 
-# Models
+# Models (large files)
 *.pth
-
-#Data
-*.png
-*.jpg
-
-*.zip
-
-data/raw/pdf/sec-edgar-filings
-
-data/parsed/docling
-data/parsed/layout_parser
-data/parsed/pdfplumber
-data/parsed/comparison
-data/parsed/camelot
-data/parsed/pdfplumber_tesseract
-
-data/metadata/blocks
-data/metadata/documents
-data/metadata/provenance
-data/metadata/quality_reports
-data/staged/schemas
-
-data/analysis
-data/staged
-data/metadata
-data/raw/*.zip
+*.pkl
+*.joblib
+*.model

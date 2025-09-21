@@ -1,8 +1,0 @@
-|                                            | Jan 28, 2024   | Jan 29, 2023   |
-|--------------------------------------------|----------------|----------------|
-| Other assets:                              | (In millions)  | (In millions)  |
-| Prepaid supply and capacity agreements (1) | $ 2,458        | $ 2,989        |
-| Investments in non-affiliated entities     | 1,546          | 299            |
-| Prepaid royalties                          | 364            | 387            |
-| Other                                      | 132            | 145            |
-| Total other assets                         | $ 4,500        | $ 3,820        |

@@ -30,7 +30,6 @@ from datetime import datetime
 from typing import List, Dict, Tuple, Optional, Any
 import pandas as pd
 import base64
-import pandas as pd
 
 
 class DoclingExtractor:

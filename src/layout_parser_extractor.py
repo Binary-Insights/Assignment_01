@@ -35,7 +35,7 @@ class LayoutParserExtractor:
     
     def __init__(self, output_dir="data/parsed/layout_parser", 
                  model_name="lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config",
-                 max_pages_testing=1):
+                 max_pages_testing=None):
         """
         Initialize the LayoutParser-based extractor.
         
@@ -48,7 +48,7 @@ class LayoutParserExtractor:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # Configuration flags
-        self.max_pages_testing = max_pages_testing  # Testing mode: limit pages
+        self.max_pages_testing = max_pages_testing  # None = process all pages
         
         # Initialize LayoutParser model
         self.model_name = model_name
@@ -185,17 +185,19 @@ class LayoutParserExtractor:
             # Convert PDF to images for LayoutParser processing
             images = pdf2image.convert_from_path(pdf_path, dpi=300)
             
-            # 🧪 TESTING MODE: Limit pages if configured
+            # Process all pages unless max_pages_testing is specifically set
             if self.max_pages_testing and len(images) > self.max_pages_testing:
                 print(f"⚠️ TESTING MODE: Processing only first {self.max_pages_testing} pages out of {len(images)} total pages")
                 images = images[:self.max_pages_testing]
+            else:
+                print(f"📄 Processing all {len(images)} pages in the document")
             
             extraction_results['total_pages'] = len(images)
             self.stats['total_pages'] = len(images)
             
             # Process each page with LayoutParser and OCR
             for page_num, image in enumerate(images, 1):
-                self.logger.info(f"Processing page {page_num}/{len(images)} (Testing Mode)")
+                self.logger.info(f"Processing page {page_num}/{len(images)}")
                 
                 page_result = self._process_page(
                     image, page_num, pdf_output_dir
@@ -750,14 +752,14 @@ def main():
     print("  ├── layout_images/ - Layout visualizations with bounding boxes")
     print("  └── bounding_boxes/- Detailed coordinate data")
     print()
-    print("🧪 TESTING MODE: Processing only first 25 pages for faster initial testing")
-    print("   Set max_pages_testing=None to process all pages")
+    print("📄 FULL DOCUMENT MODE: Processing all pages in each document")
+    print("   Set max_pages_testing=N to limit pages for testing")
     print()
     
     # Initialize extractor
     try:
         extractor = LayoutParserExtractor(
-            max_pages_testing=1 # Testing mode: only first 25 pages
+            max_pages_testing=None  # Process all pages
         )
     except RuntimeError as e:
         print(f"❌ LayoutParser initialization failed: {e}")
@@ -804,8 +806,8 @@ if __name__ == "__main__":
     parser.add_argument('--pdf_path', type=str, help='Path to PDF file to process')
     parser.add_argument('--output_dir', type=str, default='data/parsed/layout_parser', 
                        help='Output directory for extracted content')
-    parser.add_argument('--max_pages', type=int, default=25, 
-                       help='Maximum pages to process (for testing)')
+    parser.add_argument('--max_pages', type=int, default=None, 
+                       help='Maximum pages to process (None for all pages)')
     
     args = parser.parse_args()
     

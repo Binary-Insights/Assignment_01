@@ -1,1 +1,17 @@
-{}
+{
+  "nvda-20240128": {
+    "doc_id": "nvda-20240128",
+    "doc_name": "nvda-20240128.pdf",
+    "doc_path": "data/raw/pdf/nvda-20240128.pdf",
+    "processing_timestamp": "2025-09-19T16:34:10.229647",
+    "total_pages": 0,
+    "file_size_bytes": 3360824,
+    "checksum": "2e66857c8017e497a722970c17f36582aebaa69729945f2ee8d2ddde05f9132e",
+    "extraction_methods": [
+      "docling",
+      "layout_parser"
+    ],
+    "processing_status": "success",
+    "processing_time_seconds": 0.0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "table_id": "markdown_table_042",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                              | Jan 28, 2024   | Jan 29, 2023   |",
+    "|----------------------------------------------|----------------|----------------|",
+    "|                                              | (In millions)  | (In millions)  |",
+    "| Balance at beginning of period               | $ 572          | $ 502          |",
+    "| Deferred revenue additions during the period | 2,038          | 830            |",
+    "| Revenue recognized during the period         | (1,273)        | (760)          |",
+    "| Balance at end of period                     | $ 1,337        | $ 572          |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_042.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_042.csv"
+}

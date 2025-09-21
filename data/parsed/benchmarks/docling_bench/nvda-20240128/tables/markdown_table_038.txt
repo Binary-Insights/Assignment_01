@@ -1,0 +1,11 @@
+|                                                  | Jan 28, 2024   | Jan 29, 2023   | Estimated Useful Life   |
+|--------------------------------------------------|----------------|----------------|-------------------------|
+|                                                  | (In millions)  | (In millions)  | (In years)              |
+| Property and Equipment:                          |                |                |                         |
+| Land                                             | $ 218          | $ 218          | (A)                     |
+| Buildings, leasehold improvements, and furniture | 1,816          | 1,598          | (B)                     |
+| Equipment, compute hardware, and software        | 5,200          | 4,303          | 3-7                     |
+| Construction in process                          | 189            | 382            | (C)                     |
+| Total property and equipment, gross              | 7,423          | 6,501          |                         |
+| Accumulated depreciation and amortization        | (3,509)        | (2,694)        |                         |
+| Total property and equipment, net                | $ 3,914        | $ 3,807        |                         |

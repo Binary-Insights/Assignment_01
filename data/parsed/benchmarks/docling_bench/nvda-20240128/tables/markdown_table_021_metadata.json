@@ -1,0 +1,17 @@
+{
+  "table_id": "markdown_table_021",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                                                   | Year Ended    | Year Ended    | Year Ended    | Year Ended    | Year Ended    |",
+    "|-------------------------------------------------------------------|---------------|---------------|---------------|---------------|---------------|",
+    "|                                                                   | Jan 28, 2024  |               | Jan 29, 2023  |               | Jan 30, 2022  |",
+    "|                                                                   | (In millions) | (In millions) | (In millions) | (In millions) | (In millions) |",
+    "| Supplemental cash flows information                               |               |               |               |               |               |",
+    "| Operating cash flows used for operating leases                    | $             | 286           | 184           | $             | 154           |",
+    "| Operating lease assets obtained in exchange for lease obligations | $             | 531           | 358           | $             | 266           |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_021.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_021.csv"
+}

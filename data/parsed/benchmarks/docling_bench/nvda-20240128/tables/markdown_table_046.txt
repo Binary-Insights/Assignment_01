@@ -1,0 +1,8 @@
+|                                | Year Ended    | Year Ended    | Year Ended    |
+|--------------------------------|---------------|---------------|---------------|
+|                                | Jan 28, 2024  | Jan 29, 2023  | Jan 30, 2022  |
+|                                | (In millions) | (In millions) | (In millions) |
+| Balance at beginning of period | $ 82          | $ 46          | $ 22          |
+| Additions                      | 278           | 145           | 40            |
+| Utilization                    | (54)          | (109)         | (16)          |
+| Balance at end of period       | $ 306         | $ 82          | $ 46          |

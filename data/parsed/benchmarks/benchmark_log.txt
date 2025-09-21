@@ -1,0 +1,31 @@
+2025-09-21 14:30:06,721 - BenchmarkPipeline - INFO - Starting docling benchmark...
+2025-09-21 14:30:06,821 - BenchmarkPipeline - INFO - Benchmarking Docling on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 14:36:16,522 - BenchmarkPipeline - INFO - docling completed: 369.64s, 1454.8MB peak, Success: True
+2025-09-21 14:36:16,543 - BenchmarkPipeline - INFO - Results saved to benchmarks
+2025-09-21 14:38:14,808 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 14:38:14,824 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 14:38:14,824 - BenchmarkPipeline - ERROR - PDFPlumber benchmark failed: name 'PDFTableExtractor' is not defined
+2025-09-21 14:38:14,824 - BenchmarkPipeline - INFO - pdfplumber completed: 0.00s, 0.0MB peak, Success: False
+2025-09-21 14:38:43,073 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 14:38:43,087 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 14:38:43,087 - BenchmarkPipeline - ERROR - PDFPlumber benchmark failed: name 'PDFTableExtractor' is not defined
+2025-09-21 14:38:43,088 - BenchmarkPipeline - INFO - pdfplumber completed: 0.00s, 0.0MB peak, Success: False
+2025-09-21 14:38:43,094 - BenchmarkPipeline - INFO - Results saved to benchmarks
+2025-09-21 14:54:58,824 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 14:54:58,840 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 14:54:58,840 - BenchmarkPipeline - ERROR - PDFPlumber benchmark failed: name 'PDFTableExtractor' is not defined
+2025-09-21 14:54:58,840 - BenchmarkPipeline - INFO - pdfplumber completed: 0.00s, 0.0MB peak, Success: False
+2025-09-21 14:54:58,850 - BenchmarkPipeline - INFO - Results saved to data\parsed\benchmarks
+2025-09-21 14:56:01,045 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 14:56:01,061 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 14:56:01,063 - BenchmarkPipeline - ERROR - PDFPlumber benchmark failed: 'PDFTableExtractor' object has no attribute 'extract_tables_from_pdf'
+2025-09-21 14:56:01,063 - BenchmarkPipeline - INFO - pdfplumber completed: 0.00s, 0.0MB peak, Success: False
+2025-09-21 14:56:01,072 - BenchmarkPipeline - INFO - Results saved to data\parsed\benchmarks
+2025-09-21 14:56:49,884 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 14:56:49,902 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 15:01:21,646 - BenchmarkPipeline - INFO - pdfplumber completed: 271.74s, 1755.9MB peak, Success: False
+2025-09-21 15:01:21,663 - BenchmarkPipeline - INFO - Results saved to data\parsed\benchmarks
+2025-09-21 15:02:06,944 - BenchmarkPipeline - INFO - Starting pdfplumber benchmark...
+2025-09-21 15:02:06,961 - BenchmarkPipeline - INFO - Benchmarking PDFPlumber on data/raw/pdf/nvda-20240128.pdf
+2025-09-21 15:06:19,737 - BenchmarkPipeline - INFO - pdfplumber completed: 252.78s, 1754.9MB peak, Success: True
+2025-09-21 15:06:19,745 - BenchmarkPipeline - INFO - Results saved to data\parsed\benchmarks

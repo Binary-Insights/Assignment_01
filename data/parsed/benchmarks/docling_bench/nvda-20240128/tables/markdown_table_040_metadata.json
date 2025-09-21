@@ -1,0 +1,25 @@
+{
+  "table_id": "markdown_table_040",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                             | Jan 28, 2024   | Jan 29, 2023   |",
+    "|---------------------------------------------|----------------|----------------|",
+    "|                                             | (In millions)  | (In millions)  |",
+    "| Accrued and Other Current Liabilities:      |                |                |",
+    "| Customer program accruals                   | $ 2,081        | $ 1,196        |",
+    "| Excess inventory purchase obligations (1)   | 1,655          | 954            |",
+    "| Deferred revenue (2)                        | 764            | 354            |",
+    "| Accrued payroll and related expenses        | 675            | 530            |",
+    "| Product warranty and return provisions      | 415            | 108            |",
+    "| Taxes payable                               | 296            | 467            |",
+    "| Operating leases                            | 228            | 176            |",
+    "| Unsettled share repurchases                 | 187            | 117            |",
+    "| Licenses and royalties                      | 182            | 149            |",
+    "| Other                                       | 199            | 69             |",
+    "| Total accrued and other current liabilities | $ 6,682        | $ 4,120        |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_040.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_040.csv"
+}

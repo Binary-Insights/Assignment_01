@@ -1,0 +1,7 @@
+|                      | Year Ended      | Year Ended      | Year Ended      | Year Ended      |
+|----------------------|-----------------|-----------------|-----------------|-----------------|
+|                      | Jan 28, 2024    | Jan 29, 2023    | $ Change        | % Change        |
+|                      | ($ in millions) | ($ in millions) | ($ in millions) | ($ in millions) |
+| Compute & Networking | $ 47,405        | $ 15,068        | $ 32,337        | 215  %          |
+| Graphics             | 13,517          | 11,906          | 1,611           | 14  %           |
+| Total                | $ 60,922        | $ 26,974        | $ 33,948        | 126  %          |

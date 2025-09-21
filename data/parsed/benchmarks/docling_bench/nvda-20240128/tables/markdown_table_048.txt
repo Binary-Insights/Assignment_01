@@ -1,0 +1,7 @@
+|                          | Year Ended    | Year Ended    | Year Ended    |
+|--------------------------|---------------|---------------|---------------|
+|                          | Jan 28, 2024  | Jan 29, 2023  | Jan 30, 2022  |
+|                          | (In millions) | (In millions) | (In millions) |
+| U.S.                     | $ 29,495      | $ 3,477       | $ 8,446       |
+| Foreign                  | 4,323         | 704           | 1,495         |
+| Income before income tax | $ 33,818      | $ 4,181       | $ 9,941       |

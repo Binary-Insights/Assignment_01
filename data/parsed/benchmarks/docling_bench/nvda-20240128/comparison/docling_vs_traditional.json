@@ -1,0 +1,49 @@
+{
+  "docling_metrics": {
+    "docling_advantages": [
+      "Preserves reading order and document hierarchy",
+      "Advanced table structure recognition",
+      "Mathematical formula detection",
+      "Unified document model (DoclingDocument)",
+      "Multiple export formats (Markdown, JSON)",
+      "Semantic understanding of document elements",
+      "Better handling of complex layouts"
+    ],
+    "content_analysis": {
+      "reading_order_preserved": false,
+      "tables_with_structure": 61,
+      "formulas_detected": 0,
+      "figures_extracted": 0
+    },
+    "structure_quality": {
+      "hierarchical_extraction": true,
+      "semantic_understanding": true,
+      "layout_preservation": true,
+      "cross_page_continuity": true
+    },
+    "extraction_completeness": {}
+  },
+  "extraction_stats": {
+    "total_pages": 118,
+    "total_documents": 1,
+    "reading_order_elements": 0,
+    "tables_extracted": 61,
+    "formulas_detected": 0,
+    "figures_detected": 0,
+    "processing_time": 365.26812,
+    "export_formats": [
+      "markdown",
+      "doctags"
+    ]
+  },
+  "advantages_summary": [
+    "Preserves reading order and document hierarchy",
+    "Advanced table structure recognition",
+    "Mathematical formula detection",
+    "Unified document model (DoclingDocument)",
+    "Multiple export formats (Markdown, JSON)",
+    "Semantic understanding of document elements",
+    "Better handling of complex layouts"
+  ],
+  "processing_time": 365.26812
+}

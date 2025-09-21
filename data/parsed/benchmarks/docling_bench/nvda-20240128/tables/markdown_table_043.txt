@@ -1,0 +1,5 @@
+|                                | Jan 28, 2024   | Jan 29, 2023   |
+|--------------------------------|----------------|----------------|
+|                                | (In millions)  | (In millions)  |
+| Designated as cash flow hedges | $ 1,168        | $ 1,128        |
+| Non-designated hedges          | $ 597          | $ 366          |

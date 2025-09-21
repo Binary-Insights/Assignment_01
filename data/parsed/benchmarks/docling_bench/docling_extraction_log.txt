@@ -1,0 +1,21 @@
+2025-09-21 14:30:11,067 - DoclingExtractor - INFO - Docling DocumentConverter initialized successfully
+2025-09-21 14:30:11,067 - DoclingExtractor - INFO - Starting Docling extraction from: nvda-20240128.pdf
+2025-09-21 14:30:11,067 - DoclingExtractor - INFO - Converting document with Docling...
+2025-09-21 14:36:08,987 - DoclingExtractor - INFO - Document structure analysis completed: 118 pages
+2025-09-21 14:36:09,132 - DoclingExtractor - INFO - Content structure extracted: 0 elements
+2025-09-21 14:36:09,589 - DoclingExtractor - INFO - Advanced table extraction completed: 61 tables found
+2025-09-21 14:36:09,748 - DoclingExtractor - ERROR - Error extracting formulas: cannot access local variable 'formula_data' where it is not associated with a value
+2025-09-21 14:36:09,748 - DoclingExtractor - INFO - Figure extraction completed: 0 figures detected
+2025-09-21 14:36:16,335 - DoclingExtractor - INFO - Document exported to formats: ['markdown', 'doctags', 'text']
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Docling extraction results saved to benchmarks\docling_bench\nvda-20240128\docling_extraction_results.json
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Comparison analysis saved to benchmarks\docling_bench\nvda-20240128\comparison\docling_vs_traditional.json
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Docling extraction completed in 365.27 seconds
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - === Docling Extraction Statistics ===
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Documents processed: 1
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Total pages: 118
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Reading order elements: 0
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Tables extracted: 61
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Formulas detected: 0
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Figures detected: 0
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Export formats: ['markdown', 'doctags']
+2025-09-21 14:36:16,351 - DoclingExtractor - INFO - Processing time: 365.27 seconds

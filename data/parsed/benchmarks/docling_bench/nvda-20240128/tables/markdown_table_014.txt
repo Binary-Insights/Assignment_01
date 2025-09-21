@@ -1,0 +1,14 @@
+|        |                                                                                                                                                | Page   |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| (a) 1. | Financial Statements                                                                                                                           |        |
+|        | Report of Independent Registered Public Accounting Firm (PCAOB ID: 238)                                                                        | 48     |
+|        | Consolidated Statements of Income for the years ended January 28, 2024, January 29, 2023, and January 30, 2022                                 | 50     |
+|        | Consolidated Statements of Comprehensive Income for the years ended January 28, 2024, January 29, 2023, and January 30, 2022                   | 51     |
+|        | Consolidated Balance Sheets as of January 28, 2024 and January 29, 2023                                                                        | 52     |
+|        | Consolidated Statements of Shareholders' Equity for the years ended January 28, 2024, January 29, 2023, and January 30, 2022                   | 53     |
+|        | Consolidated Statements of Cash Flows for the years ended January 28, 2024, January 29, 2023, and January 30, 2022                             | 54     |
+|        | Notes to the Consolidated Financial Statements                                                                                                 | 55     |
+| 2.     | Financial Statement Schedule                                                                                                                   |        |
+|        | Schedule II Valuation and Qualifying Accounts for the years ended January 28, 2024, January 29, 2023, and January 30, 2022                     | 81     |
+| 3.     | Exhibits                                                                                                                                       |        |
+|        | The exhibits listed in the accompanying index to exhibits are filed or incorporated by reference as a part of this Annual Report on Form 10-K. | 82     |

@@ -1,0 +1,15 @@
+{
+  "table_id": "markdown_table_004",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                    | 1/27/2019   | 1/26/2020   | 1/31/2021   | 1/30/2022   | 1/29/2023   | 1/28/2024   |",
+    "|--------------------|-------------|-------------|-------------|-------------|-------------|-------------|",
+    "| NVIDIA Corporation | $ 100.00    | $ 157.02    | $ 326.26    | $ 574.15    | $ 512.40    | $ 1,536.28  |",
+    "| S&P 500            | $ 100.00    | $ 126.17    | $ 144.83    | $ 175.25    | $ 163.63    | $ 199.83    |",
+    "| Nasdaq 100         | $ 100.00    | $ 136.15    | $ 194.20    | $ 218.68    | $ 185.67    | $ 268.13    |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_004.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_004.csv"
+}

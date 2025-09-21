@@ -1,0 +1,9 @@
+|                                           | Year Ended                      | Year Ended                      | Year Ended                      |
+|-------------------------------------------|---------------------------------|---------------------------------|---------------------------------|
+|                                           | Jan 28, 2024                    | Jan 29, 2023                    | Jan 30, 2022                    |
+|                                           | (Using the Black-Scholes model) | (Using the Black-Scholes model) | (Using the Black-Scholes model) |
+| ESPP                                      |                                 |                                 |                                 |
+| Weighted average expected life (in years) | 0.1-2.0                         | 0.1-2.0                         | 0.1-2.0                         |
+| Risk-free interest rate                   | 3.9%-5.5%                       | -%-4.6%                         | -%-0.5%                         |
+| Volatility                                | 31%-67%                         | 43%-72%                         | 20%-58%                         |
+| Dividend yield                            | 0.1%                            | 0.1%                            | 0.1%                            |

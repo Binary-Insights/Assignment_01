@@ -1,0 +1,12 @@
+|                                                    | Jan 29, 2023   | Jan 29, 2023    | Jan 29, 2023    | Jan 29, 2023         | Jan 29, 2023     | Jan 29, 2023          |
+|----------------------------------------------------|----------------|-----------------|-----------------|----------------------|------------------|-----------------------|
+|                                                    |                |                 |                 |                      | Reported as      | Reported as           |
+|                                                    | Amortized Cost | Unrealized Gain | Unrealized Loss | Estimated Fair Value | Cash Equivalents | Marketable Securities |
+|                                                    | (In millions)  | (In millions)   | (In millions)   | (In millions)        | (In millions)    | (In millions)         |
+| Corporate debt securities                          | $ 4,809        | $ -             | $ (12)          | $ 4,797              | $ 1,087          | $ 3,710               |
+| Debt securities issued by the U.S. Treasury        | 4,185          | 1               | (44)            | 4,142                | -                | 4,142                 |
+| Debt securities issued by U.S. government agencies | 1,836          | -               | (2)             | 1,834                | 50               | 1,784                 |
+| Money market funds                                 | 1,777          | -               | -               | 1,777                | 1,777            | -                     |
+| Certificates of deposit                            | 365            | -               | -               | 365                  | 134              | 231                   |
+| Foreign government bonds                           | 140            | -               | -               | 140                  | 100              | 40                    |
+| Total                                              | $ 13,112       | $ 1             | $ (58)          | $ 13,055             | $ 3,148          | $ 9,907               |

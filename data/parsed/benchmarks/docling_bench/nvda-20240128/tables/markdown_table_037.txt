@@ -1,0 +1,8 @@
+|                    | Jan 28, 2024   | Jan 29, 2023   |
+|--------------------|----------------|----------------|
+|                    | (In millions)  | (In millions)  |
+| Inventories  (1) : |                |                |
+| Raw materials      | $ 1,719        | $ 2,430        |
+| Work in-process    | 1,505          | 466            |
+| Finished goods     | 2,058          | 2,263          |
+| Total inventories  | $ 5,282        | $ 5,159        |

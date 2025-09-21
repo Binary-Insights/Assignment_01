@@ -43,6 +43,9 @@ Step 4
 uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling
 
 Step 5
+python src/pdfplumber_tess_extractor.py
+
+Step 5
 # Lab 2
 # Uses Camelot and pdf Plumber
 python src/enhanced_pdf_extractor.py

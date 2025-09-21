@@ -25,10 +25,19 @@ class MethodSpecificMarkdownGenerator:
         Initialize the markdown generator.
         
         Args:
-            output_dir: Directory to save generated markdown files
+            output_dir: Base directory to save generated markdown files
         """
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.base_output_dir = Path(output_dir)
+        self.base_output_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Create method-specific subdirectories
+        self.docling_dir = self.base_output_dir / "docling"
+        self.layout_parser_dir = self.base_output_dir / "layout_parser"
+        self.traditional_dir = self.base_output_dir / "traditional"
+        
+        # Create all method directories
+        for method_dir in [self.docling_dir, self.layout_parser_dir, self.traditional_dir]:
+            method_dir.mkdir(parents=True, exist_ok=True)
     
     def generate_docling_markdown(self, doc_id: str) -> str:
         """
@@ -56,8 +65,8 @@ class MethodSpecificMarkdownGenerator:
         # Convert structured text to proper markdown
         markdown_content = self._convert_docling_text_to_markdown(content, doc_id)
         
-        # Save markdown file
-        output_file = self.output_dir / f"{doc_id}_docling_converted.md"
+        # Save markdown file in docling-specific folder
+        output_file = self.docling_dir / f"{doc_id}_docling_converted.md"
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(markdown_content)
         
@@ -93,8 +102,8 @@ class MethodSpecificMarkdownGenerator:
         # Reassemble blocks into markdown
         markdown_content = self._reassemble_layout_parser_blocks(blocks, doc_id)
         
-        # Save markdown file
-        output_file = self.output_dir / f"{doc_id}_layout_parser_reassembled.md"
+        # Save markdown file in layout_parser-specific folder
+        output_file = self.layout_parser_dir / f"{doc_id}_layout_parser_reassembled.md"
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(markdown_content)
         
@@ -125,8 +134,8 @@ class MethodSpecificMarkdownGenerator:
         text_files = list(traditional_dir.rglob("*.txt"))
         markdown_content = self._convert_traditional_files_to_markdown(text_files, doc_id)
         
-        # Save markdown file
-        output_file = self.output_dir / f"{doc_id}_traditional_converted.md"
+        # Save markdown file in traditional-specific folder
+        output_file = self.traditional_dir / f"{doc_id}_traditional_converted.md"
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(markdown_content)
         
@@ -650,7 +659,10 @@ def main():
         print()
     
     print("🎉 Method-specific markdown generation complete!")
-    print(f"📁 Output directory: {generator.output_dir}")
+    print(f"📁 Base output directory: {generator.base_output_dir}")
+    print(f"  - Docling: {generator.docling_dir}")
+    print(f"  - LayoutParser: {generator.layout_parser_dir}")
+    print(f"  - Traditional: {generator.traditional_dir}")
 
 
 if __name__ == "__main__":

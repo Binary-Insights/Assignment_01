@@ -1,9 +1,0 @@
-basic_layout_extractor
-docling_extractor
-enhanced_pdf_extractor
-extraction_comparator
-layout_parser_extractor
-metadata_extractor
-pdf_table_extractor
-pdf_text_extractor
-simple_layout_analyzer

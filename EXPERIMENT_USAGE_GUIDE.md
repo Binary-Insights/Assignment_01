@@ -47,30 +47,30 @@ export AWS_DEFAULT_REGION="us-east-1"
 # Navigate to cloud extractors directory
 cd src/cloud_extractors
 
-# Run the complete experiment
-python run_experiment.py --max-files 3
+# Run the complete experiment (results saved to data/parsed)
+python run_experiment.py --output-dir "../../data/parsed/aws_results" --max-files 3
 ```
 
 This will:
 1. Process 3 PDF files with AWS Textract
 2. Run intelligent fallback experiments  
 3. Generate comparison analysis
-4. Create comprehensive reports
+4. Create comprehensive reports in `data/parsed/aws_results/`
 
 ### Custom Experiments
 
 ```bash
-# Process specific PDF directory
-python run_experiment.py --pdf-dir "path/to/your/pdfs" --max-files 5
+# Process specific PDF directory (save to data/parsed)
+python run_experiment.py --pdf-dir "path/to/your/pdfs" --output-dir "../../data/parsed/aws_results" --max-files 5
 
 # Skip AWS if no credentials (open source only)
-python run_experiment.py --skip-aws --max-files 3
+python run_experiment.py --skip-aws --output-dir "../../data/parsed/aws_results" --max-files 3
 
 # Run only AWS Textract experiment
-python run_experiment.py --skip-fallback --skip-comparison --max-files 2
+python run_experiment.py --skip-fallback --skip-comparison --output-dir "../../data/parsed/aws_results" --max-files 2
 
-# Specify output directory
-python run_experiment.py --output-dir "experiments/my_test" --max-files 3
+# Use default output directory (data/experiments/cloud_comparison)
+python run_experiment.py --max-files 3
 ```
 
 ### Individual Component Testing
@@ -97,7 +97,7 @@ print(f'Method used: {result[\"final_method\"]}')
 
 ### Directory Structure After Running
 ```
-data/experiments/cloud_comparison/
+data/parsed/aws_results/
 ├── aws_textract/
 │   └── [document_name]/
 │       ├── textract_extraction_results.json
@@ -113,17 +113,20 @@ data/experiments/cloud_comparison/
 │   ├── extraction_metrics.csv
 │   ├── comparison_metrics.png
 │   └── cost_quality_tradeoff.png
-└── reports/
-    ├── cloud_vs_opensource_experiment_report.md
-    └── detailed_experiment_results.json
+├── reports/
+│   ├── cloud_vs_opensource_experiment_report.md
+│   └── detailed_experiment_results.json
+├── cloud_vs_opensource_analysis.json
+└── cloud_vs_opensource_report.md
 ```
 
 ### Key Files to Review
 
 1. **Main Report**: `reports/cloud_vs_opensource_experiment_report.md`
-2. **Detailed Results**: `reports/detailed_experiment_results.json`  
-3. **Cost Analysis**: `aws_textract/[doc]/extraction_costs.json`
-4. **Visualizations**: `comparison/comparison_metrics.png`
+2. **Final Analysis**: `cloud_vs_opensource_analysis.json` & `cloud_vs_opensource_report.md`
+3. **Detailed Results**: `reports/detailed_experiment_results.json`  
+4. **Cost Analysis**: `aws_textract/[doc]/extraction_costs.json`
+5. **Visualizations**: `comparison/comparison_metrics.png`
 
 ## Troubleshooting
 

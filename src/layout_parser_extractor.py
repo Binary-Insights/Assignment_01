@@ -1,99 +1,70 @@
 """
 LayoutParser-based Document Layout Analysis and Content Extraction
 
-This module uses LayoutParser to detect different block types (text, titles, tables, figures)
-in PDF documents and routes each block to specialized extraction methods.
+This module uses LayoutParser for layout detection and OCR for content extraction.
+Simplified to use only LayoutParser + pytesseract for reliable extraction.
 
 Features:
-- Deep learning-based layout detection using pre-trained models
+- Deep learning-based layout detection using LayoutParser with Detectron2
 - Block type classification (text, title, table, figure, list)
+- Pure OCR-based content extraction for all block types
 - Bounding box persistence for layout reconstruction
-- Specialized extractors for each content type
 - Comprehensive logging and metrics tracking
 """
 
 import layoutparser as lp
 import cv2
 import numpy as np
-import pandas as pd
-import pdfplumber
 import pytesseract
-from PIL import Image, ImageDraw
+from PIL import Image
 import pdf2image
 import json
-import os
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Tuple, Optional, Any
-import io
-
-# Enhanced table extraction with Camelot
-try:
-    import camelot
-    CAMELOT_AVAILABLE = True
-except ImportError:
-    CAMELOT_AVAILABLE = False
-
-# Multimodal model support with LayoutLMv3
-try:
-    from transformers import LayoutLMv3Processor, LayoutLMv3ForTokenClassification
-    import torch
-    LAYOUTLMV3_AVAILABLE = True
-except ImportError:
-    LAYOUTLMV3_AVAILABLE = False
+from typing import Dict, Tuple, Optional, Any
 
 
 class LayoutParserExtractor:
     """
-    Advanced PDF content extraction using LayoutParser for layout analysis.
+    PDF content extraction using LayoutParser for layout analysis and OCR for content extraction.
     
     This class uses deep learning models to detect document layout elements
-    and routes each detected block to appropriate extraction methods.
+    and uses OCR to extract content from each detected block.
     """
     
     def __init__(self, output_dir="data/parsed/layout_parser", 
                  model_name="lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config",
-                 use_camelot=True, use_layoutlmv3=True, max_pages_testing=25):
+                 max_pages_testing=None):
         """
         Initialize the LayoutParser-based extractor.
         
         Args:
             output_dir (str): Directory to save extracted content
             model_name (str): LayoutParser model for layout detection
-            use_camelot (bool): Whether to use Camelot for enhanced table extraction
-            use_layoutlmv3 (bool): Whether to use LayoutLMv3 for multimodal tasks
             max_pages_testing (int): Maximum pages to process for testing (None for all pages)
         """
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # Configuration flags
-        self.use_camelot = use_camelot and CAMELOT_AVAILABLE
-        self.use_layoutlmv3 = use_layoutlmv3 and LAYOUTLMV3_AVAILABLE
-        self.max_pages_testing = max_pages_testing  # Testing mode: limit pages
+        self.max_pages_testing = max_pages_testing  # None = process all pages
         
         # Initialize LayoutParser model
         self.model_name = model_name
         self.layout_model = None
         self._initialize_model()
         
-        # Initialize multimodal model if available
-        self.multimodal_processor = None
-        self.multimodal_model = None
-        if self.use_layoutlmv3:
-            self._initialize_multimodal_model()
-        
         # Setup logging
         self.logger = self._setup_logging()
         
-        # Block type mapping
+        # Block type mapping - LayoutParser returns capitalized string types
         self.block_types = {
-            0: 'text',
-            1: 'title', 
-            2: 'list',
-            3: 'table',
-            4: 'figure'
+            'Text': 'text',
+            'Title': 'title', 
+            'List': 'list',
+            'Table': 'table',
+            'Figure': 'figure'
         }
         
         # Extraction statistics
@@ -103,9 +74,7 @@ class LayoutParserExtractor:
             'blocks_by_type': {block_type: 0 for block_type in self.block_types.values()},
             'extraction_success': 0,
             'extraction_failures': 0,
-            'processing_time': 0,
-            'camelot_tables': 0,
-            'layoutlmv3_captions': 0
+            'processing_time': 0
         }
     
     def _setup_logging(self):
@@ -124,89 +93,22 @@ class LayoutParserExtractor:
         return logger
     
     def _initialize_model(self):
-        """Initialize the LayoutParser detection model using local files."""
-        print(f"Attempting to initialize LayoutParser model with local files...")
+        """Initialize the LayoutParser detection model."""
+        print(f"Initializing LayoutParser model...")
         
-        # Define paths to local model files
-        current_dir = Path(__file__).parent.parent  # Go up from src/ to project root
-        config_path = current_dir / "models" / "layoutparser" / "config.yml"
-        model_path = current_dir / "models" / "layoutparser" / "model_final.pth"
-        
-        print(f"Config path: {config_path}")
-        print(f"Model path: {model_path}")
-        
-        # Check if local files exist
-        if not config_path.exists():
-            print(f"❌ Config file not found: {config_path}")
-            self._fallback_to_remote_model()
-            return
-            
-        if not model_path.exists():
-            print(f"❌ Model file not found: {model_path}")
-            self._fallback_to_remote_model()
-            return
-        
-        print(f"✅ Local model files found")
-        print(f"  Config size: {config_path.stat().st_size} bytes")
-        print(f"  Model size: {model_path.stat().st_size / (1024*1024):.1f} MB")
-        
-        try:
-            # Method 1: Try with local config and model paths
-            print("🔧 Attempting local model initialization...")
-            self.layout_model = lp.models.Detectron2LayoutModel(
-                config_path=str(config_path),
-                model_path=str(model_path),
-                extra_config=["MODEL.ROI_HEADS.SCORE_THRESH_TEST", 0.8],
-                label_map={0: "Text", 1: "Title", 2: "List", 3: "Table", 4: "Figure"},
-                device="cpu"  # Use CPU to avoid GPU issues
-            )
-            
-            if self.layout_model is not None:
-                print(f"✅ LayoutParser model initialized with local files!")
-                print(f"Model type: {type(self.layout_model)}")
-                return
-            else:
-                print("❌ Local model initialization returned None")
-                
-        except Exception as e:
-            print(f"❌ Local model initialization failed: {e}")
-            # Print more detailed error for debugging
-            import traceback
-            print("Detailed error:")
-            traceback.print_exc()
-        
-        try:
-            # Method 2: Try with minimal parameters
-            print("🔧 Attempting minimal local model initialization...")
-            self.layout_model = lp.models.Detectron2LayoutModel(
-                config_path=str(config_path),
-                model_path=str(model_path),
-                device="cpu"
-            )
-            
-            if self.layout_model is not None:
-                print(f"✅ LayoutParser model initialized with minimal config!")
-                print(f"Model type: {type(self.layout_model)}")
-                return
-            else:
-                print("❌ Minimal local model initialization returned None")
-                
-        except Exception as e:
-            print(f"❌ Minimal local model initialization failed: {e}")
-        
-        # Method 3: Fallback to remote model (original approach)
-        print("🔄 Falling back to remote model download...")
+        # Due to local model compatibility issues, let's use the reliable remote model
+        print("� Using remote model for reliable detection...")
         self._fallback_to_remote_model()
     
     def _fallback_to_remote_model(self):
         """Fallback to the original remote model download approach."""
-        print("Trying original remote model approach...")
+        print("Trying original remote model approach with lower threshold...")
         
         try:
-            # Use the original remote model approach
+            # Use the original remote model approach with lower threshold
             self.layout_model = lp.models.Detectron2LayoutModel(
                 self.model_name,
-                extra_config=["MODEL.ROI_HEADS.SCORE_THRESH_TEST", 0.8],
+                extra_config=["MODEL.ROI_HEADS.SCORE_THRESH_TEST", 0.3],  # Much lower threshold
                 label_map={0: "Text", 1: "Title", 2: "List", 3: "Table", 4: "Figure"}
             )
             if self.layout_model is not None:
@@ -239,25 +141,7 @@ class LayoutParserExtractor:
         self.layout_model = None
         raise RuntimeError("LayoutParser model initialization failed. Please fix Detectron2 setup or use a different extractor.")
     
-    def _initialize_multimodal_model(self):
-        """Initialize LayoutLMv3 model for multimodal tasks like caption extraction."""
-        try:
-            if LAYOUTLMV3_AVAILABLE:
-                self.multimodal_processor = LayoutLMv3Processor.from_pretrained(
-                    "microsoft/layoutlmv3-base"
-                )
-                self.multimodal_model = LayoutLMv3ForTokenClassification.from_pretrained(
-                    "microsoft/layoutlmv3-base"
-                )
-                # Set to evaluation mode
-                self.multimodal_model.eval()
-                print("✓ LayoutLMv3 multimodal model initialized successfully")
-            else:
-                print("⚠ LayoutLMv3 not available - multimodal features disabled")
-        except Exception as e:
-            print(f"✗ Failed to initialize LayoutLMv3 model: {e}")
-            self.multimodal_processor = None
-            self.multimodal_model = None
+
     
     def extract_from_pdf(self, pdf_path: str) -> Dict[str, Any]:
         """
@@ -301,28 +185,26 @@ class LayoutParserExtractor:
             # Convert PDF to images for LayoutParser processing
             images = pdf2image.convert_from_path(pdf_path, dpi=300)
             
-            # 🧪 TESTING MODE: Limit pages if configured
+            # Process all pages unless max_pages_testing is specifically set
             if self.max_pages_testing and len(images) > self.max_pages_testing:
                 print(f"⚠️ TESTING MODE: Processing only first {self.max_pages_testing} pages out of {len(images)} total pages")
                 images = images[:self.max_pages_testing]
+            else:
+                print(f"📄 Processing all {len(images)} pages in the document")
             
             extraction_results['total_pages'] = len(images)
             self.stats['total_pages'] = len(images)
             
-            # Also open with pdfplumber for text extraction
-            with pdfplumber.open(pdf_path) as pdf:
-                # Limit PDF pages to match the images
-                pdf_pages = pdf.pages[:len(images)]
+            # Process each page with LayoutParser and OCR
+            for page_num, image in enumerate(images, 1):
+                self.logger.info(f"Processing page {page_num}/{len(images)}")
                 
-                for page_num, (image, pdf_page) in enumerate(zip(images, pdf_pages), 1):
-                    self.logger.info(f"Processing page {page_num}/{len(images)} (Testing Mode)")
-                    
-                    page_result = self._process_page(
-                        image, pdf_page, page_num, pdf_output_dir
-                    )
-                    
-                    extraction_results['pages'].append(page_result)
-                    extraction_results['layout_analysis'].extend(page_result['detected_blocks'])
+                page_result = self._process_page(
+                    image, page_num, pdf_output_dir
+                )
+                
+                extraction_results['pages'].append(page_result)
+                extraction_results['layout_analysis'].extend(page_result['detected_blocks'])
         
         except Exception as e:
             self.logger.error(f"Error processing PDF: {e}")
@@ -351,13 +233,12 @@ class LayoutParserExtractor:
         for dir_name in directories:
             (base_dir / dir_name).mkdir(parents=True, exist_ok=True)
     
-    def _process_page(self, image: Image.Image, pdf_page, page_num: int, output_dir: Path) -> Dict[str, Any]:
+    def _process_page(self, image: Image.Image, page_num: int, output_dir: Path) -> Dict[str, Any]:
         """
         Process a single page using LayoutParser and extract content by block type.
         
         Args:
             image (PIL.Image): Page image for layout detection
-            pdf_page: pdfplumber page object for text extraction
             page_num (int): Page number
             output_dir (Path): Output directory
             
@@ -380,9 +261,18 @@ class LayoutParserExtractor:
         try:
             # Convert PIL image to OpenCV format for LayoutParser
             cv_image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+            print(f"🖼️ Image converted to OpenCV format: shape={cv_image.shape}, dtype={cv_image.dtype}")
             
             # Detect layout elements
+            print(f"🔍 Running layout detection on page {page_num}...")
             layout = self.layout_model.detect(cv_image)
+            print(f"📊 Raw detection result: {type(layout)}, length={len(layout) if hasattr(layout, '__len__') else 'N/A'}")
+            
+            # Debug: Check if any blocks were detected at all (even with low confidence)
+            if hasattr(layout, '__iter__'):
+                for i, block in enumerate(layout):
+                    if hasattr(block, 'score') and hasattr(block, 'type'):
+                        print(f"   Block {i}: type={block.type}, confidence={block.score:.3f}")
             
             self.logger.info(f"Page {page_num}: Detected {len(layout)} blocks")
             self.stats['total_blocks'] += len(layout)
@@ -390,7 +280,7 @@ class LayoutParserExtractor:
             # Process each detected block
             for block_idx, block in enumerate(layout):
                 block_result = self._process_block(
-                    block, block_idx, image, pdf_page, page_num, output_dir
+                    block, block_idx, image, page_num, output_dir
                 )
                 
                 page_result['detected_blocks'].append(block_result)
@@ -415,7 +305,7 @@ class LayoutParserExtractor:
         return page_result
     
     def _process_block(self, block, block_idx: int, image: Image.Image, 
-                      pdf_page, page_num: int, output_dir: Path) -> Dict[str, Any]:
+                      page_num: int, output_dir: Path) -> Dict[str, Any]:
         """
         Process a detected layout block and extract content based on its type.
         
@@ -423,7 +313,6 @@ class LayoutParserExtractor:
             block: LayoutParser block object
             block_idx (int): Block index within the page
             image (PIL.Image): Full page image
-            pdf_page: pdfplumber page object
             page_num (int): Page number
             output_dir (Path): Output directory
             
@@ -431,7 +320,9 @@ class LayoutParserExtractor:
             dict: Block processing results
         """
         # Get block properties
+        print(f"🔍 Raw block.type: {block.type} (type: {type(block.type)})")
         block_type = self.block_types.get(block.type, 'unknown')
+        print(f"🏷️ Mapped block_type: '{block_type}'")
         bbox = block.block
         
         block_result = {
@@ -452,28 +343,27 @@ class LayoutParserExtractor:
         }
         
         try:
-            # Route block to appropriate extraction method
+            # Route block to appropriate extraction method using only OCR
             if block_type == 'text':
                 content, method, file_path = self._extract_text_block(
-                    bbox, pdf_page, image, block_result['block_id'], output_dir
+                    bbox, image, block_result['block_id'], output_dir
                 )
             elif block_type == 'title':
                 content, method, file_path = self._extract_title_block(
-                    bbox, pdf_page, image, block_result['block_id'], output_dir
+                    bbox, image, block_result['block_id'], output_dir
                 )
             elif block_type == 'table':
-                # Pass additional parameters for enhanced Camelot extraction
+                print('Inside Table block .........................')
                 content, method, file_path = self._extract_table_block(
-                    bbox, pdf_page, image, block_result['block_id'], output_dir,
-                    pdf_path=getattr(self, '_current_pdf_path', None), page_num=page_num
+                    bbox, image, block_result['block_id'], output_dir
                 )
             elif block_type == 'figure':
                 content, method, file_path = self._extract_figure_block(
-                    bbox, image, block_result['block_id'], output_dir, full_page_image=image
+                    bbox, image, block_result['block_id'], output_dir
                 )
             elif block_type == 'list':
                 content, method, file_path = self._extract_list_block(
-                    bbox, pdf_page, image, block_result['block_id'], output_dir
+                    bbox, image, block_result['block_id'], output_dir
                 )
             else:
                 content, method, file_path = None, 'unknown_type', None
@@ -493,43 +383,44 @@ class LayoutParserExtractor:
         
         return block_result
     
-    def _extract_text_block(self, bbox, pdf_page, image: Image.Image, 
+    def _extract_text_block(self, bbox, image: Image.Image, 
                            block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
-        """Extract text content from a detected text block."""
+        """Extract text content from a detected text block using OCR."""
         try:
-            # Try pdfplumber first (more accurate for text)
             x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
+            print(f"🔍 Processing text block {block_id}: bbox=({x1:.1f}, {y1:.1f}, {x2:.1f}, {y2:.1f})")
             
-            # Extract text from PDF page within bounding box
-            cropped_page = pdf_page.within_bbox((x1, y1, x2, y2))
-            text = cropped_page.extract_text()
+            # Crop the text region from the image
+            crop = image.crop((x1, y1, x2, y2))
+            print(f"📏 Cropped image size: {crop.size}")
             
-            if text and len(text.strip()) > 5:
-                method = 'pdfplumber'
-            else:
-                # Fallback to OCR on image crop
-                crop = image.crop((x1, y1, x2, y2))
-                text = pytesseract.image_to_string(crop, config='--psm 6 -l eng')
-                method = 'ocr'
+            # Use OCR to extract text
+            text = pytesseract.image_to_string(crop, config='--psm 6 -l eng')
+            method = 'ocr'
+            print(f"📝 OCR result for {block_id}: '{text.strip()[:50]}...' (length: {len(text.strip())})")
             
-            # Save text to file
+            # Save text to file if we got meaningful content
             if text and text.strip():
                 file_path = output_dir / 'text' / f"{block_id}.txt"
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(text.strip())
+                print(f"💾 Saved text block to: {file_path}")
                 return text.strip(), method, file_path
+            else:
+                print(f"⚠️ No meaningful text extracted from {block_id}")
             
             return None, method, None
         
         except Exception as e:
             self.logger.error(f"Error extracting text block {block_id}: {e}")
+            print(f"❌ Exception in text extraction: {e}")
             return None, 'error', None
     
-    def _extract_title_block(self, bbox, pdf_page, image: Image.Image,
+    def _extract_title_block(self, bbox, image: Image.Image,
                            block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
         """Extract title content from a detected title block."""
         # Similar to text extraction but saved in titles directory
-        text, method, _ = self._extract_text_block(bbox, pdf_page, image, block_id, output_dir)
+        text, method, _ = self._extract_text_block(bbox, image, block_id, output_dir)
         
         if text:
             file_path = output_dir / 'titles' / f"{block_id}.txt"
@@ -539,150 +430,26 @@ class LayoutParserExtractor:
         
         return None, method, None
     
-    def _extract_table_block(self, bbox, pdf_page, image: Image.Image,
-                           block_id: str, output_dir: Path, pdf_path: Optional[str] = None, 
-                           page_num: int = 1) -> Tuple[Optional[pd.DataFrame], str, Optional[Path]]:
-        """Extract table content from a detected table block with enhanced Camelot support."""
+    def _extract_table_block(self, bbox, image: Image.Image,
+                           block_id: str, output_dir: Path) -> Tuple[Optional[str], str, Optional[Path]]:
+        """Extract table content from a detected table block using OCR."""
         try:
             x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
-            df = None
-            method = 'unknown'
             
-            # Method 1: Try Camelot for advanced table extraction (if available and PDF path provided)
-            if self.use_camelot and CAMELOT_AVAILABLE and pdf_path:
-                try:
-                    # Convert bbox coordinates to Camelot format (x1,y1,x2,y2)
-                    table_area = f"{x1},{y1},{x2},{y2}"
-                    
-                    # Extract tables using Camelot with lattice method (better for structured tables)
-                    camelot_tables = camelot.read_pdf(
-                        str(pdf_path), 
-                        pages=str(page_num),
-                        flavor='lattice',  # Try lattice first
-                        table_areas=[table_area],
-                        line_scale=40  # Adjust line detection sensitivity
-                    )
-                    
-                    if len(camelot_tables) > 0 and not camelot_tables[0].df.empty:
-                        df = camelot_tables[0].df
-                        method = 'camelot_lattice'
-                        self.stats['camelot_tables'] += 1
-                        
-                        # Save additional Camelot metadata
-                        camelot_metadata = {
-                            'parsing_report': camelot_tables[0].parsing_report,
-                            'accuracy': camelot_tables[0].accuracy,
-                            'whitespace': camelot_tables[0].whitespace,
-                            'shape': camelot_tables[0].shape
-                        }
-                        
-                        metadata_file = output_dir / 'tables' / f"{block_id}_camelot_metadata.json"
-                        with open(metadata_file, 'w', encoding='utf-8') as f:
-                            json.dump(camelot_metadata, f, indent=2, default=str)
-                    else:
-                        # Try stream method as fallback
-                        camelot_tables = camelot.read_pdf(
-                            str(pdf_path), 
-                            pages=str(page_num),
-                            flavor='stream',  # Stream method for unstructured tables
-                            table_areas=[table_area]
-                        )
-                        
-                        if len(camelot_tables) > 0 and not camelot_tables[0].df.empty:
-                            df = camelot_tables[0].df
-                            method = 'camelot_stream'
-                            self.stats['camelot_tables'] += 1
-                
-                except Exception as camelot_error:
-                    self.logger.warning(f"Camelot extraction failed: {camelot_error}")
+            # Crop the table region from the image
+            crop = image.crop((x1, y1, x2, y2))
             
-            # Method 2: Fallback to pdfplumber if Camelot failed or unavailable
-            if df is None or df.empty:
-                cropped_page = pdf_page.within_bbox((x1, y1, x2, y2))
-                tables = cropped_page.extract_tables()
-                
-                if tables and len(tables) > 0:
-                    table_data = tables[0]
-                    # Clean and validate table data
-                    if table_data and len(table_data) > 1:
-                        # Filter out empty rows and columns
-                        cleaned_data = []
-                        for row in table_data:
-                            if row and any(cell and str(cell).strip() for cell in row):
-                                cleaned_data.append([str(cell).strip() if cell else '' for cell in row])
-                        
-                        if cleaned_data and len(cleaned_data) > 1:
-                            headers = cleaned_data[0]
-                            data_rows = cleaned_data[1:]
-                            df = pd.DataFrame(data_rows, columns=headers)
-                            method = 'pdfplumber'
+            # Use OCR with table-specific configuration
+            ocr_config = '--psm 6 -c tessedit_char_whitelist=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,()[]{}|+- '
+            text = pytesseract.image_to_string(crop, config=ocr_config)
+            method = 'ocr'
             
-            # Method 3: OCR fallback for tables that couldn't be extracted
-            if df is None or df.empty:
-                crop = image.crop((x1, y1, x2, y2))
-                # Enhanced OCR with table-specific configuration
-                ocr_config = '--psm 6 -c tessedit_char_whitelist=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,()[]{}|+- '
-                text = pytesseract.image_to_string(crop, config=ocr_config)
-                
-                # Try to parse OCR text into structured table
-                lines = [line.strip() for line in text.split('\n') if line.strip()]
-                if len(lines) > 1:
-                    # Attempt to detect column separators
-                    rows = []
-                    for line in lines:
-                        # Split by multiple spaces, tabs, or pipes
-                        if '|' in line:
-                            row = [cell.strip() for cell in line.split('|') if cell.strip()]
-                        elif '\t' in line:
-                            row = [cell.strip() for cell in line.split('\t') if cell.strip()]
-                        else:
-                            # Split by multiple spaces (2 or more)
-                            import re
-                            row = [cell.strip() for cell in re.split(r'\s{2,}', line) if cell.strip()]
-                        
-                        if row:
-                            rows.append(row)
-                    
-                    if len(rows) > 1:
-                        # Use first row as headers, ensure consistent column count
-                        headers = rows[0]
-                        data_rows = []
-                        for row in rows[1:]:
-                            # Pad or truncate row to match header count
-                            while len(row) < len(headers):
-                                row.append('')
-                            if len(row) > len(headers):
-                                row = row[:len(headers)]
-                            data_rows.append(row)
-                        
-                        if data_rows:
-                            df = pd.DataFrame(data_rows, columns=headers)
-                            method = 'ocr_enhanced'
-            
-            # Save table if extraction was successful
-            if df is not None and not df.empty:
-                # Clean the DataFrame
-                df = df.dropna(how='all').dropna(axis=1, how='all')  # Remove empty rows/columns
-                
-                if not df.empty:
-                    file_path = output_dir / 'tables' / f"{block_id}.csv"
-                    df.to_csv(file_path, index=False, encoding='utf-8')
-                    
-                    # Save additional table analysis
-                    table_analysis = {
-                        'extraction_method': method,
-                        'rows': len(df),
-                        'columns': len(df.columns),
-                        'headers': list(df.columns),
-                        'data_types': {col: str(dtype) for col, dtype in df.dtypes.items()},
-                        'non_null_counts': df.count().to_dict()
-                    }
-                    
-                    analysis_file = output_dir / 'tables' / f"{block_id}_analysis.json"
-                    with open(analysis_file, 'w', encoding='utf-8') as f:
-                        json.dump(table_analysis, f, indent=2, default=str)
-                    
-                    return df, method, file_path
+            # Save table text to file if we got meaningful content
+            if text and text.strip():
+                file_path = output_dir / 'tables' / f"{block_id}.txt"
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(text.strip())
+                return text.strip(), method, file_path
             
             return None, method, None
         
@@ -691,8 +458,8 @@ class LayoutParserExtractor:
             return None, 'error', None
     
     def _extract_figure_block(self, bbox, image: Image.Image,
-                            block_id: str, output_dir: Path, full_page_image: Optional[Image.Image] = None) -> Tuple[Optional[Image.Image], str, Optional[Path]]:
-        """Extract figure content from a detected figure block with enhanced caption detection."""
+                            block_id: str, output_dir: Path) -> Tuple[Optional[Image.Image], str, Optional[Path]]:
+        """Extract figure content from a detected figure block."""
         try:
             x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
             
@@ -703,60 +470,17 @@ class LayoutParserExtractor:
             file_path = output_dir / 'figures' / f"{block_id}.png"
             figure_crop.save(file_path, 'PNG')
             
-            # Enhanced caption extraction using LayoutLMv3 if available
-            caption = None
-            caption_method = 'none'
-            
-            if self.use_layoutlmv3 and self.multimodal_model and full_page_image:
-                try:
-                    caption = self._extract_caption_with_layoutlmv3(figure_crop, full_page_image, bbox)
-                    if caption:
-                        caption_method = 'layoutlmv3'
-                        self.stats['layoutlmv3_captions'] += 1
-                except Exception as caption_error:
-                    self.logger.warning(f"LayoutLMv3 caption extraction failed: {caption_error}")
-            
-            # Fallback caption extraction using OCR on surrounding areas
-            if not caption:
-                caption = self._extract_caption_with_ocr(image, bbox)
-                if caption:
-                    caption_method = 'ocr_surrounding'
-            
-            # Save figure metadata including caption
-            figure_metadata = {
-                'block_id': block_id,
-                'bounding_box': {
-                    'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2,
-                    'width': x2 - x1, 'height': y2 - y1
-                },
-                'caption': caption,
-                'caption_method': caption_method,
-                'image_file': str(file_path),
-                'image_format': 'PNG',
-                'image_size': figure_crop.size
-            }
-            
-            metadata_file = output_dir / 'figures' / f"{block_id}_metadata.json"
-            with open(metadata_file, 'w', encoding='utf-8') as f:
-                json.dump(figure_metadata, f, indent=2, default=str)
-            
-            # Save caption separately if found
-            if caption:
-                caption_file = output_dir / 'figures' / f"{block_id}_caption.txt"
-                with open(caption_file, 'w', encoding='utf-8') as f:
-                    f.write(f"Caption for {block_id}:\n{caption}")
-            
-            return figure_crop, f'image_crop_{caption_method}', file_path
+            return figure_crop, 'image_crop', file_path
         
         except Exception as e:
             self.logger.error(f"Error extracting figure block {block_id}: {e}")
             return None, 'error', None
     
-    def _extract_list_block(self, bbox, pdf_page, image: Image.Image,
+    def _extract_list_block(self, bbox, image: Image.Image,
                           block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
         """Extract list content from a detected list block."""
         # Similar to text extraction but saved in lists directory
-        text, method, _ = self._extract_text_block(bbox, pdf_page, image, block_id, output_dir)
+        text, method, _ = self._extract_text_block(bbox, image, block_id, output_dir)
         
         if text:
             file_path = output_dir / 'lists' / f"{block_id}.txt"
@@ -766,146 +490,22 @@ class LayoutParserExtractor:
         
         return None, method, None
     
-    def _extract_caption_with_layoutlmv3(self, figure_crop: Image.Image, 
-                                       full_page_image: Image.Image, bbox) -> Optional[str]:
-        """Extract figure caption using LayoutLMv3 multimodal model."""
-        try:
-            if not (self.multimodal_processor and self.multimodal_model):
-                return None
-            
-            # Expand the bounding box to include potential caption areas
-            x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
-            page_width, page_height = full_page_image.size
-            
-            # Look for captions below and above the figure
-            caption_regions = [
-                # Below figure (most common)
-                (max(0, x1 - 20), y2, min(page_width, x2 + 20), min(page_height, y2 + 100)),
-                # Above figure
-                (max(0, x1 - 20), max(0, y1 - 100), min(page_width, x2 + 20), y1),
-                # To the right (for side captions)
-                (x2, max(0, y1 - 20), min(page_width, x2 + 200), min(page_height, y2 + 20))
-            ]
-            
-            best_caption = None
-            best_confidence = 0.0
-            
-            for region in caption_regions:
-                try:
-                    x1_cap, y1_cap, x2_cap, y2_cap = region
-                    if x2_cap > x1_cap and y2_cap > y1_cap:
-                        caption_crop = full_page_image.crop(region)
-                        
-                        # Use LayoutLMv3 to process the image and extract text
-                        encoding = self.multimodal_processor(
-                            caption_crop, 
-                            return_tensors="pt",
-                            truncation=True,
-                            padding=True
-                        )
-                        
-                        with torch.no_grad():
-                            outputs = self.multimodal_model(**encoding)
-                            
-                        # Extract text using OCR as LayoutLMv3 needs text input
-                        # This is a simplified approach - in practice, you'd use proper tokenization
-                        caption_text = pytesseract.image_to_string(caption_crop, config='--psm 6 -l eng').strip()
-                        
-                        if caption_text and len(caption_text) > 10:  # Minimum caption length
-                            # Check if this looks like a caption (starts with "Figure", "Fig", contains numbers, etc.)
-                            caption_indicators = ['figure', 'fig', 'table', 'chart', 'graph', 'image']
-                            text_lower = caption_text.lower()
-                            
-                            confidence = 0.5  # Base confidence
-                            if any(indicator in text_lower for indicator in caption_indicators):
-                                confidence += 0.3
-                            if any(char.isdigit() for char in caption_text):
-                                confidence += 0.2
-                            
-                            if confidence > best_confidence:
-                                best_caption = caption_text
-                                best_confidence = confidence
-                
-                except Exception as region_error:
-                    continue  # Try next region
-            
-            return best_caption if best_confidence > 0.6 else None
-        
-        except Exception as e:
-            self.logger.error(f"LayoutLMv3 caption extraction error: {e}")
-            return None
-    
-    def _extract_caption_with_ocr(self, image: Image.Image, bbox) -> Optional[str]:
-        """Extract figure caption using OCR on surrounding areas."""
-        try:
-            x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
-            page_width, page_height = image.size
-            
-            # Define caption search regions (below figure is most common)
-            caption_regions = [
-                # Below figure
-                (max(0, x1 - 20), y2, min(page_width, x2 + 20), min(page_height, y2 + 80)),
-                # Above figure  
-                (max(0, x1 - 20), max(0, y1 - 80), min(page_width, x2 + 20), y1)
-            ]
-            
-            best_caption = None
-            
-            for region in caption_regions:
-                try:
-                    x1_cap, y1_cap, x2_cap, y2_cap = region
-                    if x2_cap > x1_cap and y2_cap > y1_cap:
-                        caption_crop = image.crop(region)
-                        
-                        # Use OCR with configuration optimized for captions
-                        caption_text = pytesseract.image_to_string(
-                            caption_crop, 
-                            config='--psm 6 -l eng'
-                        ).strip()
-                        
-                        if caption_text and len(caption_text) > 5:
-                            # Check if this looks like a caption
-                            text_lower = caption_text.lower()
-                            caption_indicators = ['figure', 'fig', 'table', 'chart', 'graph', 'image']
-                            
-                            if (any(indicator in text_lower for indicator in caption_indicators) or
-                                any(char.isdigit() for char in caption_text)):
-                                best_caption = caption_text
-                                break  # Found a good caption, stop searching
-                
-                except Exception as region_error:
-                    continue
-            
-            return best_caption
-        
-        except Exception as e:
-            self.logger.error(f"OCR caption extraction error: {e}")
-            return None
+
     
     def _save_layout_visualization(self, image: np.ndarray, layout, page_num: int, output_dir: Path):
-        """Save annotated layout visualization."""
+        """Save enhanced annotated layout visualization with detailed bounding boxes."""
         try:
-            # Create visualization with bounding boxes
-            vis_image = lp.draw_box(image, layout, box_width=3)
-            
-            # Ensure vis_image is a proper numpy array for OpenCV
-            if vis_image is None:
-                self.logger.warning(f"LayoutParser draw_box returned None for page {page_num}")
-                # Create a simple visualization manually
-                vis_image = self._create_manual_visualization(image, layout)
-            elif not isinstance(vis_image, np.ndarray):
-                self.logger.warning(f"LayoutParser draw_box returned unexpected type: {type(vis_image)}")
-                # Try to convert to numpy array
-                try:
-                    vis_image = np.array(vis_image)
-                except:
-                    vis_image = self._create_manual_visualization(image, layout)
+            # Always use our enhanced manual visualization for better annotations
+            print(f"📊 Creating enhanced layout visualization for page {page_num} with {len(layout)} blocks")
+            vis_image = self._create_manual_visualization(image, layout)
             
             # Save visualization
-            vis_path = output_dir / 'layout_images' / f"page_{page_num:03d}_layout.png"
+            vis_path = output_dir / 'layout_images' / f"page_{page_num:03d}_layout_annotated.png"
             success = cv2.imwrite(str(vis_path), vis_image)
             
-            if not success:
+            if success:
+                print(f"✅ Saved enhanced layout visualization: {vis_path}")
+            else:
                 self.logger.warning(f"OpenCV failed to save visualization for page {page_num}, trying PIL")
                 # Fallback to PIL
                 from PIL import Image as PILImage
@@ -916,67 +516,170 @@ class LayoutParserExtractor:
                     vis_image_rgb = cv2.cvtColor(vis_image, cv2.COLOR_BGR2RGB)
                     pil_image = PILImage.fromarray(vis_image_rgb)
                     pil_image.save(vis_path)
+                    print(f"✅ Saved enhanced layout visualization via PIL: {vis_path}")
                 else:
                     pil_image = PILImage.fromarray(vis_image)
                     pil_image.save(vis_path)
+                    print(f"✅ Saved enhanced layout visualization via PIL: {vis_path}")
+            
+            # Also save a simple version using LayoutParser's draw_box for comparison
+            try:
+                simple_vis = lp.draw_box(image, layout, box_width=3)
+                if simple_vis is not None and isinstance(simple_vis, np.ndarray):
+                    simple_path = output_dir / 'layout_images' / f"page_{page_num:03d}_layout_simple.png"
+                    cv2.imwrite(str(simple_path), simple_vis)
+                    print(f"📄 Also saved simple layout visualization: {simple_path}")
+            except Exception as simple_error:
+                print(f"⚠️ Could not create simple visualization: {simple_error}")
             
         except Exception as e:
             self.logger.error(f"Error saving layout visualization for page {page_num}: {e}")
             # Try to save original image as fallback
             try:
-                vis_path = output_dir / 'layout_images' / f"page_{page_num:03d}_layout.png"
+                vis_path = output_dir / 'layout_images' / f"page_{page_num:03d}_layout_fallback.png"
                 cv2.imwrite(str(vis_path), image)
                 self.logger.info(f"Saved original image without annotations for page {page_num}")
             except Exception as fallback_error:
                 self.logger.error(f"Fallback image save also failed for page {page_num}: {fallback_error}")
     
     def _create_manual_visualization(self, image: np.ndarray, layout) -> np.ndarray:
-        """Create manual visualization when LayoutParser's draw_box fails."""
+        """Create enhanced manual visualization with detailed bounding box annotations."""
         try:
             # Make a copy of the original image
             vis_image = image.copy()
             
-            # Draw bounding boxes manually
-            for block in layout:
+            # Define enhanced colors for better visibility
+            type_colors = {
+                'Text': (0, 255, 0),      # Green
+                'Title': (255, 0, 0),     # Blue
+                'List': (0, 255, 255),    # Yellow
+                'Table': (255, 0, 255),   # Magenta
+                'Figure': (0, 0, 255),    # Red
+                'unknown': (128, 128, 128) # Gray
+            }
+            
+            # Draw bounding boxes with enhanced annotations
+            for i, block in enumerate(layout):
                 bbox = block.block
                 x1, y1, x2, y2 = int(bbox.x_1), int(bbox.y_1), int(bbox.x_2), int(bbox.y_2)
                 
-                # Choose color based on block type
-                colors = {
-                    0: (0, 255, 0),    # Text - Green
-                    1: (255, 0, 0),    # Title - Blue  
-                    2: (0, 255, 255),  # List - Yellow
-                    3: (255, 0, 255),  # Table - Magenta
-                    4: (0, 0, 255)     # Figure - Red
-                }
-                color = colors.get(block.type, (255, 255, 255))  # Default white
+                # Get block type and color
+                block_type = self.block_types.get(block.type, 'unknown')
+                color = type_colors.get(block_type, (128, 128, 128))
                 
-                # Draw rectangle
-                cv2.rectangle(vis_image, (x1, y1), (x2, y2), color, 3)
+                # Draw thicker rectangle for better visibility
+                cv2.rectangle(vis_image, (x1, y1), (x2, y2), color, 4)
                 
-                # Add label
-                label = self.block_types.get(block.type, 'unknown')
-                label_text = f"{label} ({block.score:.2f})"
+                # Create detailed label with bounding box coordinates
+                confidence = block.score if hasattr(block, 'score') else 0.0
+                label_text = f"{block_type} {i+1}"
+                detail_text = f"Conf: {confidence:.2f}"
+                bbox_text = f"({x1},{y1})-({x2},{y2})"
+                size_text = f"{x2-x1}x{y2-y1}"
                 
-                # Put text with background
+                # Font settings
                 font = cv2.FONT_HERSHEY_SIMPLEX
-                font_scale = 0.7
+                font_scale = 0.6
                 font_thickness = 2
-                text_size = cv2.getTextSize(label_text, font, font_scale, font_thickness)[0]
+                line_height = 25
                 
-                # Background rectangle for text
-                cv2.rectangle(vis_image, (x1, y1 - text_size[1] - 10), 
-                            (x1 + text_size[0] + 10, y1), color, -1)
+                # Calculate text dimensions
+                label_size = cv2.getTextSize(label_text, font, font_scale, font_thickness)[0]
+                detail_size = cv2.getTextSize(detail_text, font, font_scale-0.1, font_thickness-1)[0]
+                bbox_size = cv2.getTextSize(bbox_text, font, font_scale-0.1, font_thickness-1)[0]
                 
-                # Text
-                cv2.putText(vis_image, label_text, (x1 + 5, y1 - 5), 
-                          font, font_scale, (0, 0, 0), font_thickness)
+                # Determine label position (above or below box)
+                label_y = y1 - 10 if y1 > 80 else y2 + 30
+                
+                # Draw background rectangle for all text
+                bg_width = max(label_size[0], detail_size[0], bbox_size[0]) + 20
+                bg_height = line_height * 3 + 10
+                bg_y = label_y - bg_height if y1 > 80 else label_y - 5
+                
+                cv2.rectangle(vis_image, (x1, bg_y), (x1 + bg_width, bg_y + bg_height), color, -1)
+                cv2.rectangle(vis_image, (x1, bg_y), (x1 + bg_width, bg_y + bg_height), (0, 0, 0), 2)
+                
+                # Draw text labels
+                text_y = bg_y + 20
+                cv2.putText(vis_image, label_text, (x1 + 5, text_y), 
+                          font, font_scale, (255, 255, 255), font_thickness)
+                
+                text_y += line_height
+                cv2.putText(vis_image, detail_text, (x1 + 5, text_y), 
+                          font, font_scale-0.1, (255, 255, 255), font_thickness-1)
+                
+                text_y += line_height
+                cv2.putText(vis_image, bbox_text, (x1 + 5, text_y), 
+                          font, font_scale-0.1, (255, 255, 255), font_thickness-1)
+                
+                # Add small corner markers for precise positioning
+                corner_size = 10
+                # Top-left corner
+                cv2.line(vis_image, (x1, y1), (x1 + corner_size, y1), color, 3)
+                cv2.line(vis_image, (x1, y1), (x1, y1 + corner_size), color, 3)
+                
+                # Top-right corner
+                cv2.line(vis_image, (x2, y1), (x2 - corner_size, y1), color, 3)
+                cv2.line(vis_image, (x2, y1), (x2, y1 + corner_size), color, 3)
+                
+                # Bottom-left corner
+                cv2.line(vis_image, (x1, y2), (x1 + corner_size, y2), color, 3)
+                cv2.line(vis_image, (x1, y2), (x1, y2 - corner_size), color, 3)
+                
+                # Bottom-right corner
+                cv2.line(vis_image, (x2, y2), (x2 - corner_size, y2), color, 3)
+                cv2.line(vis_image, (x2, y2), (x2, y2 - corner_size), color, 3)
+            
+            # Add legend in the top-right corner
+            self._add_legend_to_visualization(vis_image, type_colors)
             
             return vis_image
             
         except Exception as e:
             self.logger.error(f"Manual visualization creation failed: {e}")
             return image  # Return original image as last resort
+    
+    def _add_legend_to_visualization(self, vis_image: np.ndarray, type_colors: dict):
+        """Add a legend to the visualization showing block type colors."""
+        try:
+            height, width = vis_image.shape[:2]
+            legend_width = 200
+            legend_height = len(type_colors) * 30 + 40
+            
+            # Position legend in top-right corner
+            legend_x = width - legend_width - 20
+            legend_y = 20
+            
+            # Draw legend background
+            cv2.rectangle(vis_image, (legend_x, legend_y), 
+                         (legend_x + legend_width, legend_y + legend_height), 
+                         (255, 255, 255), -1)
+            cv2.rectangle(vis_image, (legend_x, legend_y), 
+                         (legend_x + legend_width, legend_y + legend_height), 
+                         (0, 0, 0), 2)
+            
+            # Add legend title
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            cv2.putText(vis_image, "Block Types", (legend_x + 10, legend_y + 25), 
+                       font, 0.6, (0, 0, 0), 2)
+            
+            # Add legend entries
+            y_offset = 50
+            for block_type, color in type_colors.items():
+                if block_type != 'unknown':  # Skip unknown type in legend
+                    # Draw color square
+                    cv2.rectangle(vis_image, (legend_x + 10, legend_y + y_offset - 10), 
+                                 (legend_x + 30, legend_y + y_offset + 5), color, -1)
+                    cv2.rectangle(vis_image, (legend_x + 10, legend_y + y_offset - 10), 
+                                 (legend_x + 30, legend_y + y_offset + 5), (0, 0, 0), 1)
+                    
+                    # Add type label
+                    cv2.putText(vis_image, block_type, (legend_x + 40, legend_y + y_offset), 
+                               font, 0.5, (0, 0, 0), 1)
+                    y_offset += 30
+                    
+        except Exception as e:
+            self.logger.warning(f"Failed to add legend to visualization: {e}")
     
     def _generate_summary(self) -> Dict[str, Any]:
         """Generate extraction summary statistics."""
@@ -1033,68 +736,34 @@ class LayoutParserExtractor:
 
 
 def main():
-    """Main function to demonstrate enhanced LayoutParser-based extraction."""
-    print("=== Enhanced LayoutParser Document Extraction ===")
+    """Main function to demonstrate LayoutParser-based extraction with OCR."""
+    print("=== LayoutParser Document Extraction ===")
     print("Features:")
-    print("  • Deep learning layout detection (PubLayNet/Detectron2)")
-    print("  • Enhanced table extraction with Camelot integration")
-    print("  • Multimodal caption extraction with LayoutLMv3")
-    print("  • Layout-aware multi-column text extraction")
-    print("  • Comprehensive bounding box visualization")
+    print("  • Deep learning layout detection (LayoutParser + Detectron2)")
+    print("  • OCR-based content extraction for all block types")
+    print("  • Layout visualization with bounding boxes")
     print()
     print("Output structure: data/parsed/layout_parser/[pdf_name]/")
-    print("  ├── text/          - Text blocks with OCR fallback")
-    print("  ├── tables/        - Enhanced tables (Camelot + pdfplumber + OCR)")
-    print("  │   ├── *.csv       - Structured table data")
-    print("  │   ├── *_analysis.json - Table structure analysis")
-    print("  │   └── *_camelot_metadata.json - Camelot extraction metrics")
-    print("  ├── figures/       - Figures with caption extraction")
-    print("  │   ├── *.png       - Extracted figure images")
-    print("  │   ├── *_caption.txt - Extracted captions")
-    print("  │   └── *_metadata.json - Figure analysis")
-    print("  ├── titles/        - Title blocks")
-    print("  ├── lists/         - List blocks")
+    print("  ├── text/          - Text blocks (OCR)")
+    print("  ├── tables/        - Table content (OCR)")
+    print("  ├── figures/       - Extracted figure images")
+    print("  ├── titles/        - Title blocks (OCR)")
+    print("  ├── lists/         - List blocks (OCR)")
     print("  ├── layout_images/ - Layout visualizations with bounding boxes")
     print("  └── bounding_boxes/- Detailed coordinate data")
     print()
-    
-    # Check available enhancements
-    enhancements = []
-    if CAMELOT_AVAILABLE:
-        enhancements.append("✓ Camelot (advanced table extraction)")
-    else:
-        enhancements.append("✗ Camelot not available (pip install camelot-py[cv])")
-    
-    if LAYOUTLMV3_AVAILABLE:
-        enhancements.append("✓ LayoutLMv3 (multimodal caption extraction)")
-    else:
-        enhancements.append("✗ LayoutLMv3 not available (pip install transformers torch)")
-    
-    print("Enhancement Status:")
-    for enhancement in enhancements:
-        print(f"  {enhancement}")
-    print()
-    print("⚠️  FALLBACK MODE DISABLED: LayoutParser model initialization is now required")
-    print("   If LayoutParser fails to initialize, the extractor will raise an error")
-    print("   Use basic_layout_extractor.py or other extractors if LayoutParser is unavailable")
-    print()
-    print("🧪 TESTING MODE: Processing only first 25 pages for faster initial testing")
-    print("   Set max_pages_testing=None to process all pages")
+    print("📄 FULL DOCUMENT MODE: Processing all pages in each document")
+    print("   Set max_pages_testing=N to limit pages for testing")
     print()
     
-    # Initialize extractor with all available enhancements
+    # Initialize extractor
     try:
         extractor = LayoutParserExtractor(
-            use_camelot=CAMELOT_AVAILABLE,
-            use_layoutlmv3=LAYOUTLMV3_AVAILABLE,
-            max_pages_testing=25  # Testing mode: only first 25 pages
+            max_pages_testing=None  # Process all pages
         )
     except RuntimeError as e:
         print(f"❌ LayoutParser initialization failed: {e}")
-        print("💡 Try one of these alternatives:")
-        print("  1. Fix Detectron2 installation: pip install detectron2")
-        print("  2. Use basic_layout_extractor.py for layout-aware extraction")
-        print("  3. Use enhanced_pdf_extractor.py for text + table extraction")
+        print("💡 Please ensure LayoutParser and Detectron2 are properly installed")
         return
     
     # Find PDF files
@@ -1128,17 +797,38 @@ def main():
         else:
             print(f"✗ Enhanced LayoutParser extraction failed for {pdf_file.name}")
     
-    print("\n=== Requirements Compliance Check ===")
-    print("✅ Deep learning layout detection (LayoutParser + Detectron2)")
-    print("✅ Multi-column document support with proper reading order")
-    print("✅ Block type classification (Text, Title, Table, Figure, List)")
-    print("✅ Bounding box visualization and metadata storage")
-    print("✅ JSON output with page numbers, block types, and coordinates")
-    print("✅ Content routing (text→pdfplumber/OCR, tables→Camelot/pdfplumber, figures→storage)")
-    print("🔄 Enhanced table extraction with Camelot (if available)")
-    print("🔄 Multimodal caption extraction with LayoutLMv3 (if available)")
-    print("✅ Layout-aware extraction for complex document structures")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Extract content from PDF using LayoutParser')
+    parser.add_argument('--pdf_path', type=str, help='Path to PDF file to process')
+    parser.add_argument('--output_dir', type=str, default='data/parsed/layout_parser', 
+                       help='Output directory for extracted content')
+    parser.add_argument('--max_pages', type=int, default=None, 
+                       help='Maximum pages to process (None for all pages)')
+    
+    args = parser.parse_args()
+    
+    if args.pdf_path:
+        # Process specific PDF
+        extractor = LayoutParserExtractor(
+            output_dir=args.output_dir,
+            max_pages_testing=args.max_pages
+        )
+        results = extractor.extract_from_pdf(args.pdf_path)
+        
+        if results:
+            summary = results['extraction_summary']
+            print(f"✓ Enhanced LayoutParser extraction completed for {Path(args.pdf_path).name}")
+            print(f"  Total pages: {summary['total_pages_processed']}")
+            print(f"  Total blocks: {summary['total_blocks_detected']}")
+            print(f"  Success rate: {summary['success_rate']:.1f}%")
+            print(f"  Blocks by type: {summary['blocks_by_type']}")
+            print(f"  All content extracted using OCR")
+        else:
+            print(f"✗ LayoutParser extraction failed for {Path(args.pdf_path).name}")
+    else:
+        # Run main demo
+        main()

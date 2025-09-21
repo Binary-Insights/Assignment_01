@@ -45,7 +45,23 @@ node_modules/
 *.png
 *.jpg
 
+*.zip
+
 data/raw/pdf/sec-edgar-filings
+
 data/parsed/docling
-data/parsed/trial_01
+data/parsed/layout_parser
+data/parsed/pdfplumber
+data/parsed/comparison
+data/parsed/camelot
+
+data/metadata/blocks
+data/metadata/documents
+data/metadata/provenance
+data/metadata/quality_reports
+data/staged/schemas
+
+data/analysis
+data/staged
+data/metadata
 data/raw/*.zip

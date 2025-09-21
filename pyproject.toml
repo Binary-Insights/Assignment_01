@@ -5,9 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    # Your existing dependencies  
+    # Your existing dependencies
     "camelot-py>=1.0.0",
-    "opencv-python",  # Required for camelot table detection
+    "opencv-python", # Required for camelot table detection
     "ghostscript",
     "layoutparser",
     "numpy",
@@ -18,7 +18,6 @@ dependencies = [
     "pytesseract",
     "requests",
     "sec-edgar-downloader",
-
     # Essential Docling dependencies
     "docling==1.20.0",
     "pypdfium2",
@@ -26,7 +25,6 @@ dependencies = [
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
-
     # AI/ML dependencies for Docling
     "transformers",
     "torch",

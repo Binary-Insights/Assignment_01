@@ -109,6 +109,12 @@ class MetadataExtractor:
         # Create directory structure
         self._create_directory_structure()
         
+        # Generate schema files
+        self._generate_schema_files()
+        
+        # Generate method configuration files
+        self._generate_method_configs()
+        
         # Setup logging
         self.logger = self._setup_logging()
         
@@ -151,6 +157,469 @@ class MetadataExtractor:
         for directory in directories:
             directory.mkdir(parents=True, exist_ok=True)
     
+    def _generate_schema_files(self):
+        """Generate JSON schema files for the data structures."""
+        schemas = {
+            'document_metadata_schema.json': {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Document Metadata Schema",
+                "description": "Schema for document-level metadata",
+                "type": "object",
+                "properties": {
+                    "doc_id": {"type": "string", "description": "Unique document identifier"},
+                    "doc_name": {"type": "string", "description": "Document filename"},
+                    "doc_path": {"type": "string", "description": "Full path to document"},
+                    "processing_timestamp": {"type": "string", "format": "date-time"},
+                    "total_pages": {"type": "integer", "minimum": 0},
+                    "file_size_bytes": {"type": "integer", "minimum": 0},
+                    "checksum": {"type": "string", "description": "SHA-256 checksum"},
+                    "extraction_methods": {
+                        "type": "array",
+                        "items": {"type": "string", "enum": ["docling", "layout_parser", "traditional", "unified"]}
+                    },
+                    "processing_status": {"type": "string", "enum": ["success", "error", "partial"]},
+                    "processing_time_seconds": {"type": "number", "minimum": 0}
+                },
+                "required": ["doc_id", "doc_name", "processing_timestamp", "extraction_methods", "processing_status"]
+            },
+            
+            'content_block_schema.json': {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Content Block Schema",
+                "description": "Schema for unified content blocks",
+                "type": "object",
+                "properties": {
+                    "doc_id": {"type": "string"},
+                    "block_id": {"type": "string"},
+                    "extraction_method": {"type": "string", "enum": ["docling", "layout_parser", "traditional", "unified"]},
+                    "page_number": {"type": "integer", "minimum": 1},
+                    "block_type": {"type": "string", "enum": ["text", "title", "table", "figure", "formula", "list"]},
+                    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+                    "bounding_box": {
+                        "type": ["object", "null"],
+                        "properties": {
+                            "x1": {"type": "number"},
+                            "y1": {"type": "number"},
+                            "x2": {"type": "number"},
+                            "y2": {"type": "number"},
+                            "width": {"type": "number"},
+                            "height": {"type": "number"}
+                        }
+                    },
+                    "content": {
+                        "type": "object",
+                        "properties": {
+                            "text": {"type": ["string", "null"]},
+                            "structured": {},
+                            "metadata": {"type": "object"}
+                        }
+                    },
+                    "provenance": {
+                        "type": "object",
+                        "properties": {
+                            "source_file": {"type": "string"},
+                            "extraction_config": {"type": "object"},
+                            "parent_blocks": {"type": "array", "items": {"type": "string"}},
+                            "child_blocks": {"type": "array", "items": {"type": "string"}}
+                        }
+                    },
+                    "semantic_tags": {"type": "array", "items": {"type": "string"}},
+                    "quality_metrics": {
+                        "type": "object",
+                        "properties": {
+                            "text_length": {"type": "integer", "minimum": 0},
+                            "word_count": {"type": "integer", "minimum": 0},
+                            "readability_score": {"type": "number", "minimum": 0, "maximum": 1},
+                            "completeness": {"type": "number", "minimum": 0, "maximum": 1}
+                        }
+                    }
+                },
+                "required": ["doc_id", "block_id", "extraction_method", "page_number", "block_type", "confidence"]
+            },
+            
+            'bounding_box_schema.json': {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Bounding Box Schema",
+                "description": "Schema for bounding box coordinates",
+                "type": "object",
+                "properties": {
+                    "x1": {"type": "number", "description": "Left coordinate"},
+                    "y1": {"type": "number", "description": "Top coordinate"},
+                    "x2": {"type": "number", "description": "Right coordinate"},
+                    "y2": {"type": "number", "description": "Bottom coordinate"},
+                    "width": {"type": "number", "minimum": 0},
+                    "height": {"type": "number", "minimum": 0}
+                },
+                "required": ["x1", "y1", "x2", "y2", "width", "height"]
+            },
+            
+            'processing_summary_schema.json': {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Processing Summary Schema",
+                "description": "Schema for processing summary reports",
+                "type": "object",
+                "properties": {
+                    "status": {"type": "string", "enum": ["success", "no_files", "error"]},
+                    "processing_timestamp": {"type": "string", "format": "date-time"},
+                    "total_pdfs_found": {"type": "integer", "minimum": 0},
+                    "documents_processed": {"type": "integer", "minimum": 0},
+                    "processing_results": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "doc_id": {"type": "string"},
+                                "status": {"type": "string"},
+                                "total_blocks": {"type": "integer", "minimum": 0},
+                                "unified_blocks": {"type": "integer", "minimum": 0},
+                                "method_results": {"type": "object"}
+                            }
+                        }
+                    },
+                    "statistics": {
+                        "type": "object",
+                        "properties": {
+                            "documents_processed": {"type": "integer"},
+                            "total_blocks_extracted": {"type": "integer"},
+                            "blocks_by_method": {"type": "object"},
+                            "blocks_by_type": {"type": "object"},
+                            "processing_time": {"type": "number"}
+                        }
+                    },
+                    "processing_time_seconds": {"type": "number", "minimum": 0}
+                },
+                "required": ["status", "processing_timestamp"]
+            },
+            
+            'jsonl_format_spec.json': {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "JSONL Format Specification",
+                "description": "Specification for JSONL files containing content blocks",
+                "type": "object",
+                "properties": {
+                    "format": {"type": "string", "const": "jsonl"},
+                    "description": {"type": "string"},
+                    "line_format": {"$ref": "#/definitions/content_block"},
+                    "encoding": {"type": "string", "const": "utf-8"},
+                    "usage": {
+                        "type": "object",
+                        "properties": {
+                            "reading": {"type": "string"},
+                            "streaming": {"type": "string"},
+                            "filtering": {"type": "string"}
+                        }
+                    }
+                },
+                "definitions": {
+                    "content_block": {
+                        "description": "Each line contains a JSON object representing a content block",
+                        "type": "object"
+                    }
+                }
+            }
+        }
+        
+        # Save schema files
+        for schema_name, schema_content in schemas.items():
+            schema_file = self.metadata_dir / 'schemas' / schema_name
+            with open(schema_file, 'w', encoding='utf-8') as f:
+                json.dump(schema_content, f, indent=2, ensure_ascii=False)
+    
+    def _generate_method_configs(self):
+        """Generate configuration files for each extraction method."""
+        method_configs = {
+            'docling_config.json': {
+                "method_name": "docling",
+                "description": "AI-powered document understanding and layout analysis",
+                "version": "2.0+",
+                "capabilities": [
+                    "document_layout_analysis",
+                    "text_extraction",
+                    "table_detection_and_extraction",
+                    "figure_detection",
+                    "formula_recognition",
+                    "hierarchical_document_structure",
+                    "multi_modal_ai_processing"
+                ],
+                "configuration": {
+                    "model_type": "multimodal_ai",
+                    "layout_detection": "enabled",
+                    "ocr_engine": "built_in_ai",
+                    "table_extraction": "structure_aware",
+                    "figure_extraction": "bounding_box_detection",
+                    "formula_recognition": "latex_conversion",
+                    "preprocessing": {
+                        "image_enhancement": "automatic",
+                        "noise_reduction": "enabled",
+                        "resolution_optimization": "adaptive"
+                    }
+                },
+                "output_formats": [
+                    "structured_text",
+                    "markdown",
+                    "json_metadata",
+                    "hierarchical_document_tree"
+                ],
+                "quality_characteristics": {
+                    "text_accuracy": "high",
+                    "layout_preservation": "excellent",
+                    "table_structure_retention": "very_high",
+                    "formula_accuracy": "high",
+                    "processing_speed": "moderate"
+                },
+                "strengths": [
+                    "comprehensive_document_understanding",
+                    "high_text_accuracy",
+                    "excellent_layout_analysis",
+                    "multi_modal_ai_processing",
+                    "structured_output"
+                ],
+                "limitations": [
+                    "slower_processing_speed",
+                    "requires_more_computational_resources",
+                    "may_struggle_with_very_poor_image_quality"
+                ]
+            },
+            
+            'layout_parser_config.json': {
+                "method_name": "layout_parser",
+                "description": "Deep learning-based document layout detection with OCR",
+                "version": "0.3+",
+                "model_info": {
+                    "model_name": "lp://PubLayNet/faster_rcnn_R_50_FPN_3x/config",
+                    "architecture": "Faster R-CNN with ResNet-50 backbone",
+                    "training_dataset": "PubLayNet",
+                    "detection_threshold": 0.3
+                },
+                "capabilities": [
+                    "layout_element_detection",
+                    "bounding_box_extraction",
+                    "block_type_classification",
+                    "spatial_relationship_analysis",
+                    "ocr_integration"
+                ],
+                "configuration": {
+                    "backend": "detectron2",
+                    "ocr_engine": "pytesseract",
+                    "detection_classes": {
+                        0: "Text",
+                        1: "Title", 
+                        2: "List",
+                        3: "Table",
+                        4: "Figure"
+                    },
+                    "preprocessing": {
+                        "image_format": "opencv_bgr",
+                        "resolution": "original",
+                        "enhancement": "none"
+                    },
+                    "ocr_settings": {
+                        "psm_mode": 6,
+                        "language": "eng",
+                        "config_flags": "--psm 6 -l eng"
+                    }
+                },
+                "output_formats": [
+                    "bounding_boxes_with_coordinates",
+                    "classified_text_blocks",
+                    "spatial_layout_visualization",
+                    "confidence_scores"
+                ],
+                "quality_characteristics": {
+                    "spatial_accuracy": "very_high",
+                    "block_classification": "high",
+                    "text_extraction_quality": "variable_depends_on_ocr",
+                    "confidence_scores": "reliable_for_detection",
+                    "processing_speed": "fast"
+                },
+                "strengths": [
+                    "excellent_spatial_detection",
+                    "fast_processing",
+                    "reliable_bounding_boxes",
+                    "good_block_type_classification",
+                    "visual_layout_analysis"
+                ],
+                "limitations": [
+                    "ocr_quality_dependent_on_image",
+                    "confidence_scores_measure_detection_not_text_quality",
+                    "may_struggle_with_complex_layouts",
+                    "requires_good_image_preprocessing"
+                ]
+            },
+            
+            'traditional_config.json': {
+                "method_name": "traditional",
+                "description": "Rule-based PDF text extraction using traditional libraries",
+                "version": "multiple",
+                "libraries_used": [
+                    "PyPDF2",
+                    "pdfplumber", 
+                    "camelot-py",
+                    "tabula-py"
+                ],
+                "capabilities": [
+                    "direct_text_extraction",
+                    "table_extraction",
+                    "metadata_extraction",
+                    "page_based_processing"
+                ],
+                "configuration": {
+                    "text_extraction": {
+                        "method": "pypdf2_or_pdfplumber",
+                        "encoding": "utf-8",
+                        "preserve_layout": "limited"
+                    },
+                    "table_extraction": {
+                        "method": "camelot_lattice_stream",
+                        "detection_algorithm": "line_detection",
+                        "format": "csv"
+                    },
+                    "preprocessing": {
+                        "image_conversion": "not_required",
+                        "ocr": "not_used"
+                    }
+                },
+                "output_formats": [
+                    "plain_text",
+                    "csv_tables", 
+                    "json_metadata",
+                    "page_separated_content"
+                ],
+                "quality_characteristics": {
+                    "text_accuracy": "high_for_text_based_pdfs",
+                    "layout_preservation": "limited",
+                    "table_extraction": "good_for_structured_tables",
+                    "processing_speed": "very_fast",
+                    "reliability": "depends_on_pdf_structure"
+                },
+                "strengths": [
+                    "very_fast_processing",
+                    "excellent_for_text_based_pdfs",
+                    "no_ocr_errors",
+                    "good_table_extraction",
+                    "lightweight_resource_usage"
+                ],
+                "limitations": [
+                    "fails_on_scanned_pdfs",
+                    "limited_layout_analysis", 
+                    "no_figure_extraction",
+                    "poor_handling_of_complex_layouts",
+                    "depends_on_pdf_text_layer"
+                ]
+            },
+            
+            'unified_method_config.json': {
+                "method_name": "unified",
+                "description": "Cross-method consolidation and best-result selection",
+                "version": "1.0",
+                "consolidation_strategy": "highest_confidence",
+                "capabilities": [
+                    "multi_method_result_comparison",
+                    "confidence_based_selection",
+                    "provenance_tracking",
+                    "quality_metric_aggregation",
+                    "alternative_result_preservation"
+                ],
+                "configuration": {
+                    "selection_criteria": {
+                        "primary": "confidence_score",
+                        "tiebreaker": "text_length",
+                        "minimum_confidence": 0.0
+                    },
+                    "consolidation_logic": {
+                        "grouping": ["block_type", "page_number"],
+                        "deduplication": "coordinate_overlap_detection",
+                        "conflict_resolution": "highest_confidence_wins"
+                    },
+                    "provenance_tracking": {
+                        "source_methods": "all_contributing_methods",
+                        "best_method": "selected_method",
+                        "alternative_blocks": "non_selected_results",
+                        "consolidation_strategy": "algorithm_used"
+                    }
+                },
+                "output_formats": [
+                    "best_of_breed_blocks",
+                    "comprehensive_provenance",
+                    "quality_metrics",
+                    "method_comparison_data"
+                ],
+                "quality_characteristics": {
+                    "accuracy": "optimized_across_methods",
+                    "completeness": "comprehensive",
+                    "transparency": "full_provenance",
+                    "reliability": "multi_method_validation"
+                },
+                "strengths": [
+                    "leverages_best_of_each_method",
+                    "full_transparency_and_provenance",
+                    "quality_optimization",
+                    "comprehensive_coverage",
+                    "method_agnostic_results"
+                ],
+                "limitations": [
+                    "complexity_overhead",
+                    "confidence_scores_may_be_misleading",
+                    "requires_all_methods_to_run",
+                    "processing_time_is_sum_of_all_methods"
+                ]
+            },
+            
+            'extraction_pipeline_config.json': {
+                "pipeline_name": "pdf_content_extraction_pipeline",
+                "description": "Complete pipeline configuration for PDF content extraction",
+                "version": "1.0",
+                "pipeline_steps": [
+                    {
+                        "step": 1,
+                        "name": "docling_extraction",
+                        "method": "docling",
+                        "parallel": False,
+                        "timeout_seconds": 300
+                    },
+                    {
+                        "step": 2, 
+                        "name": "layout_parser_extraction",
+                        "method": "layout_parser",
+                        "parallel": False,
+                        "timeout_seconds": 180
+                    },
+                    {
+                        "step": 3,
+                        "name": "traditional_extraction", 
+                        "method": "traditional",
+                        "parallel": False,
+                        "timeout_seconds": 60
+                    },
+                    {
+                        "step": 4,
+                        "name": "unified_consolidation",
+                        "method": "unified",
+                        "parallel": False,
+                        "timeout_seconds": 120
+                    }
+                ],
+                "error_handling": {
+                    "continue_on_method_failure": True,
+                    "minimum_successful_methods": 1,
+                    "fallback_strategy": "use_available_results"
+                },
+                "output_configuration": {
+                    "save_individual_method_results": True,
+                    "save_unified_results": True,
+                    "generate_provenance": True,
+                    "create_visualizations": True,
+                    "export_formats": ["jsonl", "markdown", "json"]
+                }
+            }
+        }
+        
+        # Save method configuration files
+        for config_name, config_content in method_configs.items():
+            config_file = self.metadata_dir / 'provenance' / 'method_configs' / config_name
+            with open(config_file, 'w', encoding='utf-8') as f:
+                json.dump(config_content, f, indent=2, ensure_ascii=False)
+    
     def _setup_logging(self):
         """Setup logging configuration."""
         logger = logging.getLogger('MetadataExtractor')
@@ -185,6 +654,7 @@ class MetadataExtractor:
         
         # Find all PDF files
         pdf_files = list(self.raw_pdf_dir.glob("*.pdf"))
+        print('pdf files : ', pdf_files)
         if not pdf_files:
             self.logger.warning(f"No PDF files found in {self.raw_pdf_dir}")
             return {'status': 'no_files', 'message': 'No PDF files found'}
@@ -206,11 +676,14 @@ class MetadataExtractor:
                     self.stats['documents_processed'] += 1
                 
             except Exception as e:
-                self.logger.error(f"Error processing {pdf_file.name}: {e}")
+                import traceback
+                error_details = traceback.format_exc()
+                self.logger.error(f"Error processing {pdf_file.name}: {e}\n{error_details}")
                 processing_results.append({
                     'doc_id': pdf_file.stem,
                     'status': 'error',
-                    'error': str(e)
+                    'error': str(e),
+                    'traceback': error_details
                 })
         
         # Save document registry
@@ -225,6 +698,7 @@ class MetadataExtractor:
         
         # Generate processing summary
         summary = {
+            'status': 'success',
             'processing_timestamp': start_time.isoformat(),
             'total_pdfs_found': len(pdf_files),
             'documents_processed': self.stats['documents_processed'],
@@ -334,11 +808,15 @@ class MetadataExtractor:
     
     def _calculate_file_checksum(self, file_path: Path) -> str:
         """Calculate SHA-256 checksum of file."""
-        hash_sha256 = hashlib.sha256()
-        with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(4096), b""):
-                hash_sha256.update(chunk)
-        return hash_sha256.hexdigest()
+        try:
+            hash_sha256 = hashlib.sha256()
+            with open(file_path, "rb") as f:
+                for chunk in iter(lambda: f.read(4096), b""):
+                    hash_sha256.update(chunk)
+            return hash_sha256.hexdigest()
+        except Exception as e:
+            self.logger.error(f"Error calculating checksum for {file_path}: {e}")
+            return "unknown_checksum"
     
     def _extract_blocks_from_method(self, doc_id: str, method: str) -> List[ContentBlock]:
         """Extract blocks from a specific method's results."""
@@ -698,11 +1176,20 @@ class MetadataExtractor:
             if isinstance(content_text, dict):
                 content_text = str(content_text)
             
+            # Extract page number from block_id (e.g., "page_001_block_002")
+            page_number = 1  # default
+            try:
+                if block_id and 'page_' in block_id:
+                    page_part = block_id.split('page_')[1].split('_')[0]
+                    page_number = int(page_part)
+            except (IndexError, ValueError):
+                page_number = 1
+            
             return ContentBlock(
                 doc_id=doc_id,
                 block_id=block_id,
                 extraction_method='layout_parser',
-                page_number=1,  # Will be extracted from block_id if available
+                page_number=page_number,
                 block_type=block_type,
                 confidence=block_info.get('confidence', 0.8),
                 bounding_box=bbox,
@@ -816,7 +1303,7 @@ class MetadataExtractor:
             # Group by page
             blocks_by_page = {}
             for block in type_blocks:
-                page = block.page_number
+                page = block.page_number if block.page_number is not None else 1
                 if page not in blocks_by_page:
                     blocks_by_page[page] = []
                 blocks_by_page[page].append(block)
@@ -826,12 +1313,15 @@ class MetadataExtractor:
                 # Sort by confidence and select best
                 best_block = max(page_blocks, key=lambda b: b.confidence)
                 
+                # Ensure page is an integer for formatting
+                page_num = page if page is not None else 1
+                
                 # Create unified block
                 unified_block = ContentBlock(
                     doc_id=doc_id,
-                    block_id=f"unified_{block_type}_{page:03d}_{uuid.uuid4().hex[:8]}",
+                    block_id=f"unified_{block_type}_{page_num:03d}_{uuid.uuid4().hex[:8]}",
                     extraction_method='unified',
-                    page_number=page,
+                    page_number=page_num,
                     block_type=block_type,
                     confidence=best_block.confidence,
                     bounding_box=best_block.bounding_box,
@@ -885,7 +1375,10 @@ class MetadataExtractor:
         markdown_content.append(f"- **Extraction Methods**: {', '.join(doc_metadata.extraction_methods)}")
         markdown_content.append(f"- **Total Pages**: {doc_metadata.total_pages}")
         markdown_content.append(f"- **File Size**: {doc_metadata.file_size_bytes:,} bytes")
-        markdown_content.append(f"- **Checksum**: {doc_metadata.checksum[:16]}...")
+        
+        # Handle potential None checksum
+        checksum_display = doc_metadata.checksum[:16] + "..." if doc_metadata.checksum else "Unknown"
+        markdown_content.append(f"- **Checksum**: {checksum_display}")
         markdown_content.append("\n---\n")
         
         # Group blocks by page and type
@@ -994,6 +1487,254 @@ class MetadataExtractor:
             'total_word_count': sum(block.quality_metrics.get('word_count', 0) for block in blocks)
         }
     
+    def reassemble_report_sections(self, doc_id: str, section_label_field: str = 'semantic_tags') -> str:
+        """
+        Reassemble report sections by grouping records with the same section label.
+        
+        Args:
+            doc_id: Document identifier
+            section_label_field: Field to use for section grouping ('semantic_tags', 'block_type', etc.)
+            
+        Returns:
+            str: Markdown content with reassembled sections
+        """
+        # Load unified blocks for the document
+        unified_jsonl = self.metadata_dir / 'blocks' / 'unified' / f'{doc_id}.jsonl'
+        if not unified_jsonl.exists():
+            return f"# Document: {doc_id}\n\n**Error**: No unified blocks found for this document.\n"
+        
+        # Read blocks from JSONL
+        blocks = []
+        try:
+            with open(unified_jsonl, 'r', encoding='utf-8') as f:
+                for line in f:
+                    block_data = json.loads(line.strip())
+                    blocks.append(block_data)
+        except Exception as e:
+            return f"# Document: {doc_id}\n\n**Error**: Failed to load blocks - {e}\n"
+        
+        # Group blocks by section labels
+        sections = {}
+        for block in blocks:
+            # Determine section label based on specified field
+            if section_label_field == 'semantic_tags':
+                labels = block.get('semantic_tags', ['uncategorized'])
+                section_label = labels[0] if labels else 'uncategorized'
+            elif section_label_field == 'block_type':
+                section_label = block.get('block_type', 'unknown')
+            else:
+                section_label = block.get(section_label_field, 'unknown')
+            
+            if section_label not in sections:
+                sections[section_label] = []
+            sections[section_label].append(block)
+        
+        # Sort blocks within each section by page number
+        for section_label in sections:
+            sections[section_label].sort(key=lambda x: x.get('page_number', 0))
+        
+        # Generate reassembled Markdown report
+        markdown_lines = []
+        markdown_lines.append(f"# Reassembled Report: {doc_id}")
+        markdown_lines.append("")
+        markdown_lines.append("*Generated by automatic section reassembly*")
+        markdown_lines.append("")
+        
+        # Add document summary
+        total_blocks = len(blocks)
+        total_sections = len(sections)
+        markdown_lines.append("## Document Summary")
+        markdown_lines.append("")
+        markdown_lines.append(f"- **Total Blocks**: {total_blocks}")
+        markdown_lines.append(f"- **Total Sections**: {total_sections}")
+        markdown_lines.append(f"- **Grouping Field**: {section_label_field}")
+        markdown_lines.append("")
+        
+        # Add section overview table
+        markdown_lines.append("## Section Overview")
+        markdown_lines.append("")
+        markdown_lines.append("| Section | Block Count | Page Range | Content Types |")
+        markdown_lines.append("|---------|-------------|------------|---------------|")
+        
+        for section_label in sorted(sections.keys()):
+            section_blocks = sections[section_label]
+            block_count = len(section_blocks)
+            page_numbers = [b.get('page_number', 0) for b in section_blocks]
+            page_range = f"{min(page_numbers)}-{max(page_numbers)}" if page_numbers else "N/A"
+            content_types = list(set(b.get('block_type', 'unknown') for b in section_blocks))
+            content_types_str = ", ".join(sorted(content_types))
+            
+            markdown_lines.append(f"| {section_label} | {block_count} | {page_range} | {content_types_str} |")
+        
+        markdown_lines.append("")
+        markdown_lines.append("---")
+        markdown_lines.append("")
+        
+        # Generate detailed sections
+        for section_label in sorted(sections.keys()):
+            section_blocks = sections[section_label]
+            
+            # Section header
+            markdown_lines.append(f"## {section_label.title()}")
+            markdown_lines.append("")
+            
+            # Section metadata
+            markdown_lines.append(f"*{len(section_blocks)} blocks in this section*")
+            markdown_lines.append("")
+            
+            # Group by content type within section
+            content_by_type = {}
+            for block in section_blocks:
+                block_type = block.get('block_type', 'unknown')
+                if block_type not in content_by_type:
+                    content_by_type[block_type] = []
+                content_by_type[block_type].append(block)
+            
+            # Process each content type
+            for content_type in sorted(content_by_type.keys()):
+                type_blocks = content_by_type[content_type]
+                
+                if content_type == 'table':
+                    # Special handling for tables
+                    markdown_lines.append(f"### {content_type.title()} Content")
+                    markdown_lines.append("")
+                    
+                    for i, block in enumerate(type_blocks, 1):
+                        content_text = block.get('content', {}).get('text', '')
+                        page_num = block.get('page_number', 'N/A')
+                        confidence = block.get('confidence', 0)
+                        
+                        markdown_lines.append(f"#### Table {i} (Page {page_num}, Confidence: {confidence:.2f})")
+                        markdown_lines.append("")
+                        
+                        if content_text:
+                            # Try to format as table if it contains structured data
+                            lines = content_text.strip().split('\n')
+                            if len(lines) > 1 and any(',' in line or '\t' in line for line in lines):
+                                # Attempt to create markdown table
+                                markdown_lines.append("| Column 1 | Column 2 | Column 3 | Column 4 |")
+                                markdown_lines.append("|----------|----------|----------|----------|")
+                                for line in lines[:10]:  # Limit to first 10 rows
+                                    cells = line.replace('\t', ',').split(',')
+                                    cells = [cell.strip() for cell in cells]
+                                    # Pad or trim to 4 columns
+                                    while len(cells) < 4:
+                                        cells.append('')
+                                    cells = cells[:4]
+                                    markdown_lines.append(f"| {' | '.join(cells)} |")
+                            else:
+                                # Fallback to code block
+                                markdown_lines.append("```")
+                                markdown_lines.append(content_text)
+                                markdown_lines.append("```")
+                        else:
+                            markdown_lines.append("*No content available*")
+                        
+                        markdown_lines.append("")
+                
+                elif content_type == 'figure':
+                    # Special handling for figures
+                    markdown_lines.append(f"### {content_type.title()} Content")
+                    markdown_lines.append("")
+                    
+                    for i, block in enumerate(type_blocks, 1):
+                        content_text = block.get('content', {}).get('text', 'Figure')
+                        page_num = block.get('page_number', 'N/A')
+                        confidence = block.get('confidence', 0)
+                        
+                        markdown_lines.append(f"#### Figure {i} (Page {page_num}, Confidence: {confidence:.2f})")
+                        markdown_lines.append("")
+                        markdown_lines.append(f"*{content_text}*")
+                        markdown_lines.append("")
+                
+                else:
+                    # Standard handling for text, title, list, etc.
+                    if len(type_blocks) > 1:
+                        markdown_lines.append(f"### {content_type.title()} Content")
+                        markdown_lines.append("")
+                    
+                    for block in type_blocks:
+                        content_text = block.get('content', {}).get('text', '')
+                        page_num = block.get('page_number', 'N/A')
+                        confidence = block.get('confidence', 0)
+                        
+                        if content_text:
+                            if content_type == 'title':
+                                markdown_lines.append(f"### {content_text}")
+                            else:
+                                markdown_lines.append(content_text)
+                            
+                            # Add metadata as comment
+                            markdown_lines.append("")
+                            markdown_lines.append(f"<!-- Page {page_num}, Confidence: {confidence:.2f}, Method: {block.get('extraction_method', 'unknown')} -->")
+                            markdown_lines.append("")
+            
+            markdown_lines.append("---")
+            markdown_lines.append("")
+        
+        # Add provenance information
+        markdown_lines.append("## Processing Provenance")
+        markdown_lines.append("")
+        markdown_lines.append("### Extraction Methods Used")
+        methods_used = set()
+        for block in blocks:
+            methods_used.add(block.get('extraction_method', 'unknown'))
+        
+        for method in sorted(methods_used):
+            method_blocks = [b for b in blocks if b.get('extraction_method') == method]
+            markdown_lines.append(f"- **{method}**: {len(method_blocks)} blocks")
+        
+        markdown_lines.append("")
+        markdown_lines.append("### Quality Statistics")
+        confidences = [b.get('confidence', 0) for b in blocks]
+        if confidences:
+            avg_confidence = sum(confidences) / len(confidences)
+            min_confidence = min(confidences)
+            max_confidence = max(confidences)
+            
+            markdown_lines.append(f"- **Average Confidence**: {avg_confidence:.3f}")
+            markdown_lines.append(f"- **Confidence Range**: {min_confidence:.3f} - {max_confidence:.3f}")
+        
+        markdown_lines.append("")
+        markdown_lines.append("*Report generated automatically from unified extraction results*")
+        
+        return '\n'.join(markdown_lines)
+    
+    def save_reassembled_report(self, doc_id: str, section_label_field: str = 'block_type', 
+                               output_filename: str = None) -> str:
+        """
+        Generate and save a reassembled report for a document.
+        
+        Args:
+            doc_id: Document identifier
+            section_label_field: Field to use for section grouping
+            output_filename: Custom output filename (optional)
+            
+        Returns:
+            str: Path to saved report file
+        """
+        # Generate reassembled report
+        report_content = self.reassemble_report_sections(doc_id, section_label_field)
+        
+        # Determine output filename
+        if output_filename is None:
+            output_filename = f"{doc_id}_reassembled_report.md"
+        
+        # Save to staged markdown directory
+        report_file = self.staged_dir / 'markdown' / output_filename
+        
+        try:
+            with open(report_file, 'w', encoding='utf-8') as f:
+                f.write(report_content)
+            
+            print(f"✓ Reassembled report saved: {report_file}")
+            return str(report_file)
+            
+        except Exception as e:
+            error_msg = f"Error saving reassembled report: {e}"
+            print(f"✗ {error_msg}")
+            return error_msg
+
     def _log_statistics(self):
         """Log extraction statistics."""
         self.logger.info("=== Metadata Extraction Statistics ===")
@@ -1033,15 +1774,16 @@ def main():
         # Process all documents
         results = extractor.process_all_documents()
         
-        if results['status'] == 'no_files':
+        # Check if results indicate no files found
+        if results.get('status') == 'no_files':
             print("No PDF files found. Please ensure PDF files are in data/raw/pdf/")
             return
         
         # Display results summary
         print(f"✓ Metadata extraction completed!")
-        print(f"Documents processed: {results['documents_processed']}")
+        print(f"Documents processed: {results.get('documents_processed', 0)}")
         print(f"Total blocks extracted: {extractor.stats['total_blocks_extracted']}")
-        print(f"Processing time: {results['processing_time_seconds']:.2f} seconds")
+        print(f"Processing time: {results.get('processing_time_seconds', 0):.2f} seconds")
         print()
         
         # Show method breakdown

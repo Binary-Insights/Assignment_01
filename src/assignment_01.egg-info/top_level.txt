@@ -1,5 +1,4 @@
 basic_layout_extractor
-comparison
 docling_extractor
 enhanced_pdf_extractor
 extraction_comparator
@@ -8,6 +7,3 @@ metadata_extractor
 pdf_table_extractor
 pdf_text_extractor
 simple_layout_analyzer
-table_normalizer
-validation_report_generator
-xbrl_loader

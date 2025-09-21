@@ -4,7 +4,7 @@ Version: 0.1.0
 Summary: Add your description here
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
-Requires-Dist: camelot-py>=1.0.0
+Requires-Dist: camelot-py[all]
 Requires-Dist: opencv-python
 Requires-Dist: ghostscript
 Requires-Dist: layoutparser
@@ -16,10 +16,17 @@ Requires-Dist: playwright
 Requires-Dist: pytesseract
 Requires-Dist: requests
 Requires-Dist: sec-edgar-downloader
+<<<<<<< HEAD
 Requires-Dist: docling==1.20.0
 Requires-Dist: pypdfium2
 Requires-Dist: python-magic
 Requires-Dist: pydantic>=2.0.0
+=======
+Requires-Dist: docling
+Requires-Dist: pypdfium2
+Requires-Dist: python-magic
+Requires-Dist: pydantic
+>>>>>>> origin/main
 Requires-Dist: beautifulsoup4
 Requires-Dist: lxml
 Requires-Dist: transformers
@@ -27,4 +34,9 @@ Requires-Dist: torch
 Requires-Dist: torchvision
 Requires-Dist: accelerate
 Requires-Dist: sentencepiece
+<<<<<<< HEAD
 Requires-Dist: dvc>=3.63.0
+=======
+Requires-Dist: dvc
+Requires-Dist: detectron2@ git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2
+>>>>>>> origin/main

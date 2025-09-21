@@ -1,4 +1,4 @@
-camelot-py>=1.0.0
+camelot-py[all]
 opencv-python
 ghostscript
 layoutparser
@@ -10,10 +10,10 @@ playwright
 pytesseract
 requests
 sec-edgar-downloader
-docling==1.20.0
+docling
 pypdfium2
 python-magic
-pydantic>=2.0.0
+pydantic
 beautifulsoup4
 lxml
 transformers
@@ -21,4 +21,5 @@ torch
 torchvision
 accelerate
 sentencepiece
-dvc>=3.63.0
+dvc
+detectron2@ git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2

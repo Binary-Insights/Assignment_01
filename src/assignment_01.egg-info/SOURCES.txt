@@ -9,16 +9,8 @@ src/metadata_extractor.py
 src/pdf_table_extractor.py
 src/pdf_text_extractor.py
 src/simple_layout_analyzer.py
-src/table_normalizer.py
-src/validation_report_generator.py
-src/xbrl_loader.py
 src/assignment_01.egg-info/PKG-INFO
 src/assignment_01.egg-info/SOURCES.txt
 src/assignment_01.egg-info/dependency_links.txt
 src/assignment_01.egg-info/requires.txt
 src/assignment_01.egg-info/top_level.txt
-src/comparison/__init__.py
-src/comparison/text_matcher.py
-src/comparison/validation_enhancer.py
-src/comparison/xbrl_pdf_comparator.py
-tests/test_comparator.py

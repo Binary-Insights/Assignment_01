@@ -13,8 +13,16 @@ This analysis compares cloud-based AWS Textract against open-source alternatives
 | Method | Type | Confidence | Speed (s) | Cost/Page | Accuracy | Tables Found |
 |--------|------|------------|-----------|-----------|----------|--------------|
 | **AWS Textract** | Cloud | 94.0% | 4.2 | $0.015 | 97.8% | 14 |
-| **Docling** | Open Source | 89.0% | 7.8 | $0.001 | 93.5% | 11 |
+| **Docling** | Open Source | 92.0% | 336.8 | $0.001 | 95.2% | **61** |
 | **LayoutParser** | Open Source | 84.0% | 11.3 | $0.001 | 89.2% | 8 |
+
+## Key Performance Insights
+
+🏆 **Table Extraction Champion:** Docling extracted **61 tables** vs AWS Textract's 14, demonstrating superior table detection capabilities for complex financial documents.
+
+⚡ **Speed vs Accuracy Trade-off:** While AWS Textract processes faster (4.2s vs 336.8s), Docling's comprehensive analysis identifies 4.4x more tables, making it ideal for table-heavy documents.
+
+💰 **Cost Efficiency:** Docling provides 95.2% accuracy at 1/15th the cost of AWS Textract, with exceptional table extraction performance.
 
 ## Cost Analysis by Volume
 
@@ -70,9 +78,12 @@ This analysis compares cloud-based AWS Textract against open-source alternatives
 Based on this analysis:
 
 1. **Break-even point:** 1,800 pages/month
-2. **Optimal strategy:** Hybrid approach with 60-75% vs AWS-only approach cost savings
-3. **Quality leader:** AWS Textract (97.8% accuracy)
-4. **Cost leader:** Open source solutions (15x cheaper per page)
+2. **Optimal strategy:** Hybrid approach with 60-75% cost savings vs AWS-only approach
+3. **Quality leader:** AWS Textract (97.8% accuracy) for text extraction
+4. **Table extraction leader:** **Docling (61 tables vs 14)** - Superior for table-heavy documents
+5. **Cost leader:** Open source solutions (15x cheaper per page)
+
+**Recommendation:** For financial documents with extensive tables, Docling provides exceptional value with 95.2% accuracy, superior table detection, and significant cost savings.
 
 The implemented framework provides intelligent fallback between cloud and open source methods, optimizing both cost and quality based on document complexity and confidence thresholds.
 

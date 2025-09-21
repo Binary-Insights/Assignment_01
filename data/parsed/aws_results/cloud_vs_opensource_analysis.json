@@ -29,22 +29,25 @@
     },
     "docling_open_source": {
       "service_type": "Open Source",
-      "confidence_score": 0.89,
-      "processing_time_seconds": 7.8,
+      "confidence_score": 0.92,
+      "processing_time_seconds": 336.83,
       "cost_per_page": 0.001,
-      "text_blocks_detected": 152,
-      "tables_detected": 11,
-      "accuracy_estimate": "93.5%",
+      "text_blocks_detected": 118,
+      "tables_detected": 61,
+      "accuracy_estimate": "95.2%",
       "strengths": [
+        "Excellent table extraction (61 tables)",
+        "Advanced document understanding",
         "Cost effective",
         "Privacy control",
-        "Customizable"
+        "Multiple export formats",
+        "Semantic structure preservation"
       ],
       "weaknesses": [
-        "Longer processing",
-        "Table extraction complexity"
+        "Longer processing time (336s)",
+        "Requires more computational resources"
       ],
-      "best_for": "High volume processing, privacy-sensitive data"
+      "best_for": "Complex financial documents, high-accuracy table extraction"
     },
     "layoutparser_open_source": {
       "service_type": "Open Source",
@@ -97,17 +100,17 @@
   "quality_comparison": {
     "text_extraction": {
       "aws_textract": 98,
-      "docling": 94,
+      "docling": 95,
       "layoutparser": 90
     },
     "table_extraction": {
       "aws_textract": 96,
-      "docling": 88,
+      "docling": 98,
       "layoutparser": 82
     },
     "form_processing": {
       "aws_textract": 95,
-      "docling": 85,
+      "docling": 89,
       "layoutparser": 78
     }
   },

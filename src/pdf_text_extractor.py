@@ -243,22 +243,10 @@ class PDFTextExtractor:
             output_dir (Path): Output directory
         """
         try:
-            # Create text directory if it doesn't exist
-            text_dir = output_dir / 'text'
-            text_dir.mkdir(parents=True, exist_ok=True)
-            
             word_boxes_data = []
             
             for page_num, page in enumerate(pdf.pages, 1):
-                self.logger.info(f"Extracting word boxes from page {page_num}")
-                # Use extract_words with more granular settings
-                words = page.extract_words(
-                    x_tolerance=3,  # Adjust space between letters
-                    y_tolerance=3,  # Adjust line spacing
-                    keep_blank_chars=False,
-                    use_text_flow=True,  # Use text flow for better word grouping
-                    horizontal_ltr=True  # Assume left-to-right text
-                )
+                words = page.extract_words()
                 
                 page_words = {
                     'page_number': page_num,
@@ -272,33 +260,23 @@ class PDFTextExtractor:
                     if all(key in word for key in ['text', 'x0', 'y0', 'x1', 'y1']):
                         word_data = {
                             'text': word['text'],
-                            'x0': float(word['x0']),  # Ensure coordinates are float
-                            'y0': float(word['y0']),
-                            'x1': float(word['x1']),
-                            'y1': float(word['y1']),
+                            'x0': word['x0'],
+                            'y0': word['y0'],
+                            'x1': word['x1'],
+                            'y1': word['y1'],
                             'font': word.get('fontname', ''),
-                            'size': float(word.get('size', 0)),
-                            'upright': word.get('upright', True),  # Text orientation
-                            'direction': word.get('direction', 1)  # Text direction
+                            'size': word.get('size', 0)
                         }
                         page_words['words'].append(word_data)
                     else:
                         # Log missing properties for debugging
                         missing_keys = [key for key in ['text', 'x0', 'y0', 'x1', 'y1'] if key not in word]
-                        self.logger.warning(f"Page {page_num}: Word missing properties {missing_keys}: {word}")
+                        self.logger.debug(f"Page {page_num}: Word missing properties {missing_keys}: {word}")
                 
-                # Only append pages that have words
-                if page_words['words']:
-                    word_boxes_data.append(page_words)
-                else:
-                    self.logger.warning(f"No words found on page {page_num}")
+                word_boxes_data.append(page_words)
             
-            if not word_boxes_data:
-                self.logger.error("No word boxes extracted from any page")
-                return
-            
-            # Save word boxes to JSON file in the text directory
-            word_boxes_file = text_dir / 'word_boxes.json'
+            # Save word boxes to JSON file
+            word_boxes_file = output_dir / 'word_boxes.json'
             with open(word_boxes_file, 'w', encoding='utf-8') as f:
                 json.dump(word_boxes_data, f, indent=2, ensure_ascii=False)
             
@@ -306,7 +284,6 @@ class PDFTextExtractor:
             
         except Exception as e:
             self.logger.error(f"Error extracting word boxes: {e}")
-            raise  # Re-raise to ensure error is caught by caller
     
     def _save_extraction_summary(self, results, output_dir):
         """

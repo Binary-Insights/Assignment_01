@@ -1,0 +1,54 @@
+# Extraction Configuration Parameters
+extraction:
+  # PDF processing settings
+  pdf:
+    max_pages: 200
+    ocr_fallback: true
+    dpi: 300
+  
+  # Table extraction settings
+  tables:
+    camelot_lattice:
+      line_scale: 15
+      table_areas: []
+      copy_text: []
+    camelot_stream:
+      table_areas: []
+      columns: []
+      row_close_tol: 2
+    pdfplumber:
+      table_settings:
+        vertical_strategy: "lines"
+        horizontal_strategy: "lines"
+        intersection_tolerance: 3
+  
+  # Layout analysis settings
+  layout:
+    confidence_threshold: 0.8
+    model_path: "models/layoutparser/model_final.pth"
+    device: "cpu"
+  
+  # OCR settings
+  ocr:
+    language: "eng"
+    psm: 6
+    oem: 3
+  
+  # Output settings
+  output:
+    save_intermediate: true
+    generate_visualizations: true
+    include_metadata: true
+
+# Quality thresholds
+quality:
+  min_table_accuracy: 0.7
+  min_text_confidence: 0.8
+  max_processing_time: 300  # seconds per document
+
+# File paths
+paths:
+  raw_pdf: "data/raw/pdf"
+  output_base: "data/parsed"
+  models: "models"
+  reports: "reports"

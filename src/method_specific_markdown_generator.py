@@ -2098,7 +2098,7 @@ class MethodSpecificReportGenerator:
 
 
 def main():
-    """Demonstrate multi-format report generation for all extraction methods."""
+    """Demonstrate multi-format report generation for all extraction methods. Thhnf"""
     print("=== Multi-Format Report Generation ===")
     print("Creating tailored outputs in markdown, JSON, and text formats for each extraction method")
     print()

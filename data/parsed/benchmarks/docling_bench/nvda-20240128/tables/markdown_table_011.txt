@@ -1,6 +1,0 @@
-|                                                   | Jan 28, 2024   | Jan 29, 2023   |
-|---------------------------------------------------|----------------|----------------|
-|                                                   | (In millions)  | (In millions)  |
-| Cash and cash equivalents                         | $ 7,280        | $ 3,389        |
-| Marketable securities                             | 18,704         | 9,907          |
-| Cash, cash equivalents, and marketable securities | $ 25,984       | $ 13,296       |

@@ -1,7 +1,0 @@
-| Name             |   Age | Position                                             |
-|------------------|-------|------------------------------------------------------|
-| Jen-Hsun Huang   |    60 | President and Chief Executive Officer                |
-| Colette M. Kress |    56 | Executive Vice President and Chief Financial Officer |
-| Ajay K. Puri     |    69 | Executive Vice President, Worldwide Field Operations |
-| Debora Shoquist  |    69 | Executive Vice President, Operations                 |
-| Timothy S. Teter |    57 | Executive Vice President and General Counsel         |

@@ -1,7 +1,0 @@
-|                                                                   | Year Ended    | Year Ended    | Year Ended    | Year Ended    | Year Ended    |
-|-------------------------------------------------------------------|---------------|---------------|---------------|---------------|---------------|
-|                                                                   | Jan 28, 2024  |               | Jan 29, 2023  |               | Jan 30, 2022  |
-|                                                                   | (In millions) | (In millions) | (In millions) | (In millions) | (In millions) |
-| Supplemental cash flows information                               |               |               |               |               |               |
-| Operating cash flows used for operating leases                    | $             | 286           | 184           | $             | 154           |
-| Operating lease assets obtained in exchange for lease obligations | $             | 531           | 358           | $             | 266           |

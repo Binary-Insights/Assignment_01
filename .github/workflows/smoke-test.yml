@@ -57,27 +57,27 @@ jobs:
     - name: Create test PDF
       run: |
         mkdir -p data/raw/pdf
-        # Create a simple test PDF using reportlab or download a small sample
-        python -c "
+        # Create a simple test PDF using reportlab
+        python -c '
 import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 
 # Create a simple test PDF
-pdf_path = 'data/raw/pdf/test_document.pdf'
+pdf_path = "data/raw/pdf/test_document.pdf"
 c = canvas.Canvas(pdf_path, pagesize=letter)
-c.drawString(100, 750, 'Test Document for Smoke Testing')
-c.drawString(100, 700, 'This is a sample PDF for pipeline validation.')
+c.drawString(100, 750, "Test Document for Smoke Testing")
+c.drawString(100, 700, "This is a sample PDF for pipeline validation.")
 
 # Add a simple table structure
-c.drawString(100, 650, 'Sample Table:')
-c.drawString(100, 620, 'Name    Age    City')
-c.drawString(100, 600, 'John    25     NYC')
-c.drawString(100, 580, 'Jane    30     LA')
+c.drawString(100, 650, "Sample Table:")
+c.drawString(100, 620, "Name    Age    City")
+c.drawString(100, 600, "John    25     NYC")
+c.drawString(100, 580, "Jane    30     LA")
 
 c.save()
-print(f'Created test PDF: {pdf_path}')
-"
+print(f"Created test PDF: {pdf_path}")
+'
       env:
         PYTHONPATH: .
     

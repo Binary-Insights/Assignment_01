@@ -1,0 +1,166 @@
+name: PDF Extraction Pipeline Smoke Test
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+  push:
+    branches: [ main, develop, reky-feature-01 ]
+  workflow_dispatch:  # Allow manual triggering
+
+env:
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Needed for DVC
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y poppler-utils tesseract-ocr
+    
+    - name: Install uv
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+    
+    - name: Create virtual environment and install dependencies
+      run: |
+        uv venv .venv
+        source .venv/bin/activate
+        uv pip install -r pyproject.toml
+    
+    - name: Install DVC with S3 support
+      run: |
+        source .venv/bin/activate
+        uv pip install dvc dvc-s3
+    
+    - name: Configure AWS credentials (if needed for DVC)
+      uses: aws-actions/configure-aws-credentials@v4
+      if: ${{ vars.AWS_ACCESS_KEY_ID }}
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Create test PDF
+      run: |
+        mkdir -p data/raw/pdf
+        # Create a simple test PDF using reportlab or download a small sample
+        python -c "
+import os
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+
+# Create a simple test PDF
+pdf_path = 'data/raw/pdf/test_document.pdf'
+c = canvas.Canvas(pdf_path, pagesize=letter)
+c.drawString(100, 750, 'Test Document for Smoke Testing')
+c.drawString(100, 700, 'This is a sample PDF for pipeline validation.')
+
+# Add a simple table structure
+c.drawString(100, 650, 'Sample Table:')
+c.drawString(100, 620, 'Name    Age    City')
+c.drawString(100, 600, 'John    25     NYC')
+c.drawString(100, 580, 'Jane    30     LA')
+
+c.save()
+print(f'Created test PDF: {pdf_path}')
+"
+      env:
+        PYTHONPATH: .
+    
+    - name: Run smoke test - Basic parsing
+      run: |
+        source .venv/bin/activate
+        # Test basic pdfplumber extraction
+        python src/pdfplumber_tess_extractor.py
+        
+        # Verify output exists
+        if [ ! -d "data/parsed/pdfplumber_tesseract" ]; then
+          echo "ERROR: pdfplumber extraction failed"
+          exit 1
+        fi
+        
+        echo "✓ Basic parsing smoke test passed"
+    
+    - name: Run smoke test - Hybrid table extraction
+      run: |
+        source .venv/bin/activate
+        # Test hybrid extraction
+        python src/hybrid_pdf_extractor.py
+        
+        # Verify output exists
+        if [ ! -d "data/parsed/hybrid" ]; then
+          echo "ERROR: hybrid extraction failed"
+          exit 1
+        fi
+        
+        echo "✓ Hybrid extraction smoke test passed"
+    
+    - name: Test DVC pipeline (dry run)
+      run: |
+        source .venv/bin/activate
+        # Test that DVC can parse the pipeline
+        dvc dag
+        
+        # Test pipeline validation
+        dvc status
+        
+        echo "✓ DVC pipeline validation passed"
+    
+    - name: Validate configuration files
+      run: |
+        source .venv/bin/activate
+        # Test that config files are valid YAML
+        python -c "
+import yaml
+with open('config/extraction_config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+    print('✓ Configuration file is valid YAML')
+    print(f'Found {len(config)} configuration sections')
+"
+    
+    - name: Check output structure
+      run: |
+        # Verify expected directory structure exists
+        expected_dirs=(
+          "data/raw/pdf"
+          "data/parsed"
+          "src"
+          "config"
+        )
+        
+        for dir in "${expected_dirs[@]}"; do
+          if [ ! -d "$dir" ]; then
+            echo "ERROR: Expected directory $dir not found"
+            exit 1
+          fi
+          echo "✓ Directory $dir exists"
+        done
+    
+    - name: Upload test artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: smoke-test-outputs
+        path: |
+          data/parsed/*/
+          *.log
+        retention-days: 7
+    
+    - name: Summary
+      run: |
+        echo "🎉 All smoke tests passed!"
+        echo "Pipeline is ready for full execution."

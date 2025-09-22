@@ -1,0 +1,10 @@
+# Only ignore specific file types within tracked directories
+# DVC pipeline will manage the parsed/, metadata/, analysis/ directories
+# So we don't ignore the directories themselves, just certain file patterns
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# But allow DVC to track the main output directories and their structure

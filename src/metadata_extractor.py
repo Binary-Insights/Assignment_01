@@ -122,6 +122,7 @@ class MetadataExtractor:
         self.extraction_methods = {
             'docling': 'docling',
             'layout_parser': 'layout_parser',
+            'hybrid': 'hybrid',
             'pdfplumber_tesseract': 'pdfplumber_tesseract'
         }
         
@@ -140,6 +141,7 @@ class MetadataExtractor:
             self.metadata_dir / 'documents',
             self.metadata_dir / 'blocks' / 'docling',
             self.metadata_dir / 'blocks' / 'layout_parser',
+            self.metadata_dir / 'blocks' / 'hybrid',
             self.metadata_dir / 'blocks' / 'pdfplumber_tesseract',
             self.metadata_dir / 'blocks' / 'unified',
             self.metadata_dir / 'provenance' / 'extraction_logs',
@@ -175,7 +177,7 @@ class MetadataExtractor:
                     "checksum": {"type": "string", "description": "SHA-256 checksum"},
                     "extraction_methods": {
                         "type": "array",
-                        "items": {"type": "string", "enum": ["docling", "layout_parser", "pdfplumber_tesseract", "unified"]}
+                        "items": {"type": "string", "enum": ["docling", "layout_parser", "hybrid", "pdfplumber_tesseract", "unified"]}
                     },
                     "processing_status": {"type": "string", "enum": ["success", "error", "partial"]},
                     "processing_time_seconds": {"type": "number", "minimum": 0}
@@ -191,7 +193,7 @@ class MetadataExtractor:
                 "properties": {
                     "doc_id": {"type": "string"},
                     "block_id": {"type": "string"},
-                    "extraction_method": {"type": "string", "enum": ["docling", "layout_parser", "pdfplumber_tesseract", "unified"]},
+                    "extraction_method": {"type": "string", "enum": ["docling", "layout_parser", "hybrid", "pdfplumber_tesseract", "unified"]},
                     "page_number": {"type": "integer", "minimum": 1},
                     "block_type": {"type": "string", "enum": ["text", "title", "table", "figure", "formula", "list"]},
                     "confidence": {"type": "number", "minimum": 0, "maximum": 1},
@@ -590,6 +592,71 @@ class MetadataExtractor:
                 ]
             },
             
+            'hybrid_config.json': {
+                "method_name": "hybrid",
+                "description": "Hybrid extraction combining pdfplumber and Tesseract OCR with intelligent fallback",
+                "version": "1.0",
+                "libraries_used": [
+                    "pdfplumber",
+                    "pytesseract",
+                    "pandas",
+                    "PIL",
+                    "camelot-py"
+                ],
+                "capabilities": [
+                    "intelligent_text_extraction_with_ocr_fallback",
+                    "multi_strategy_table_extraction",
+                    "comprehensive_table_analysis",
+                    "page_by_page_processing",
+                    "quality_assessment"
+                ],
+                "configuration": {
+                    "text_extraction": {
+                        "primary_method": "pdfplumber",
+                        "fallback_method": "tesseract_ocr",
+                        "ocr_config": "--psm 6 -l eng",
+                        "ocr_resolution": 300,
+                        "confidence_threshold": 0.7
+                    },
+                    "table_extraction": {
+                        "methods": ["camelot_lattice", "camelot_stream", "pdfplumber"],
+                        "quality_assessment": "accuracy_scoring",
+                        "best_method_selection": "automatic",
+                        "fallback_strategy": "try_all_methods"
+                    },
+                    "processing": {
+                        "page_by_page": True,
+                        "parallel_processing": False,
+                        "error_recovery": "continue_with_next_page",
+                        "quality_tracking": True
+                    }
+                },
+                "output_formats": [
+                    "page_based_text_files",
+                    "extraction_summary_json",
+                    "table_analysis_reports",
+                    "processing_statistics"
+                ],
+                "quality_characteristics": {
+                    "text_accuracy": "high_with_ocr_fallback",
+                    "table_extraction": "comprehensive_multi_method",
+                    "processing_speed": "moderate",
+                    "reliability": "high_with_error_recovery"
+                },
+                "strengths": [
+                    "intelligent_method_fallback",
+                    "comprehensive_table_analysis",
+                    "detailed_quality_reporting",
+                    "robust_error_handling",
+                    "page_level_processing_control"
+                ],
+                "limitations": [
+                    "processing_time_depends_on_ocr_usage",
+                    "table_quality_varies_by_document_structure",
+                    "requires_multiple_library_dependencies"
+                ]
+            },
+            
             'extraction_pipeline_config.json': {
                 "pipeline_name": "pdf_content_extraction_pipeline",
                 "description": "Complete pipeline configuration for PDF content extraction",
@@ -611,13 +678,20 @@ class MetadataExtractor:
                     },
                     {
                         "step": 3,
+                        "name": "hybrid_extraction",
+                        "method": "hybrid",
+                        "parallel": False,
+                        "timeout_seconds": 240
+                    },
+                    {
+                        "step": 4,
                         "name": "pdfplumber_tesseract_extraction",
                         "method": "pdfplumber_tesseract",
                         "parallel": False,
                         "timeout_seconds": 240
                     },
                     {
-                        "step": 4,
+                        "step": 5,
                         "name": "unified_consolidation",
                         "method": "unified",
                         "parallel": False,
@@ -857,6 +931,8 @@ class MetadataExtractor:
                 blocks = self._extract_docling_blocks(doc_id, method_dir)
             elif method == 'layout_parser':
                 blocks = self._extract_layout_parser_blocks(doc_id, method_dir)
+            elif method == 'hybrid':
+                blocks = self._extract_hybrid_blocks(doc_id, method_dir)
             elif method == 'pdfplumber_tesseract':
                 blocks = self._extract_pdfplumber_blocks(doc_id, method_dir)
             
@@ -996,6 +1072,59 @@ class MetadataExtractor:
             
         except Exception as e:
             self.logger.error(f"Error extracting pdfplumber blocks for {doc_id}: {e}")
+        
+        return blocks
+    
+    def _extract_hybrid_blocks(self, doc_id: str, method_dir: Path) -> List[ContentBlock]:
+        """Extract blocks from hybrid extraction results."""
+        blocks = []
+        
+        try:
+            # Load extraction summary for metadata
+            summary_file = method_dir / 'hybrid_extraction_results.json'
+            summary_data = {}
+            if summary_file.exists():
+                with open(summary_file, 'r', encoding='utf-8') as f:
+                    summary_data = json.load(f)
+            
+            # Extract text blocks from text/ directory
+            text_dir = method_dir / 'text'
+            if text_dir.exists():
+                for text_file in sorted(text_dir.glob('page_*.txt')):
+                    page_num = self._extract_page_number_from_filename(text_file.name)
+                    block = self._create_hybrid_text_block(
+                        doc_id=doc_id,
+                        block_id=f"hybrid_{text_file.stem}",
+                        method='hybrid',
+                        file_path=text_file,
+                        page_number=page_num,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+            
+            # Extract table blocks from tables/ directory if it exists
+            tables_dir = method_dir / 'tables'
+            if tables_dir.exists():
+                for table_file in sorted(tables_dir.glob('*.csv')):
+                    page_num = self._extract_page_number_from_filename(table_file.name)
+                    table_type = self._extract_table_type_from_filename(table_file.name)
+                    block = self._create_hybrid_table_block(
+                        doc_id=doc_id,
+                        block_id=f"hybrid_{table_file.stem}",
+                        method='hybrid',
+                        file_path=table_file,
+                        page_number=page_num,
+                        table_type=table_type,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+            
+            self.logger.info(f"Extracted {len(blocks)} hybrid blocks for {doc_id}")
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting hybrid blocks for {doc_id}: {e}")
         
         return blocks
     
@@ -1281,6 +1410,164 @@ class MetadataExtractor:
         table_text_lower = table_text.lower()
         matches = sum(1 for keyword in financial_keywords if keyword in table_text_lower)
         return matches >= 3
+    
+    def _create_hybrid_text_block(self, doc_id: str, block_id: str, method: str,
+                                 file_path: Path, page_number: int, 
+                                 summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create a text content block from hybrid text extraction."""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                text_content = f.read().strip()
+            
+            if not text_content:
+                return None
+            
+            # Extract OCR information from summary if available
+            used_ocr = False
+            extraction_method = 'pdfplumber'
+            
+            if 'text_extraction' in summary_data:
+                pages = summary_data['text_extraction'].get('pages', [])
+                for page_info in pages:
+                    if page_info.get('page_number') == page_number:
+                        used_ocr = page_info.get('used_ocr', False)
+                        extraction_method = page_info.get('extraction_method', 'pdfplumber')
+                        break
+            
+            # Calculate quality metrics
+            quality_metrics = {
+                'text_length': len(text_content),
+                'word_count': len(text_content.split()),
+                'readability_score': 0.8 if not used_ocr else 0.6,
+                'completeness': 1.0
+            }
+            
+            # Determine semantic tags
+            semantic_tags = ['text', 'page_content']
+            if used_ocr:
+                semantic_tags.append('ocr_extracted')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='text',
+                confidence=0.9 if not used_ocr else 0.7,
+                bounding_box=None,
+                content={
+                    'text': text_content,
+                    'structured': None,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'extraction_method': extraction_method,
+                        'used_ocr': used_ocr
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'extraction_method': extraction_method,
+                        'ocr_used': used_ocr
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics=quality_metrics
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating hybrid text block from {file_path}: {e}")
+            return None
+    
+    def _create_hybrid_table_block(self, doc_id: str, block_id: str, method: str,
+                                  file_path: Path, page_number: int, table_type: str,
+                                  summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create table block from hybrid table extraction."""
+        try:
+            # Read CSV file
+            table_data = []
+            with open(file_path, 'r', encoding='utf-8') as f:
+                csv_reader = csv.reader(f)
+                table_data = list(csv_reader)
+            
+            if not table_data:
+                return None
+            
+            # Convert to text representation
+            table_text = '\n'.join([','.join(row) for row in table_data])
+            
+            # Convert to structured format
+            structured_data = []
+            if len(table_data) > 1:
+                headers = table_data[0]
+                for row in table_data[1:]:
+                    row_dict = {}
+                    for i, cell in enumerate(row):
+                        if i < len(headers):
+                            row_dict[headers[i]] = cell
+                    structured_data.append(row_dict)
+            
+            # Extract quality information from summary data
+            quality_score = 0.8  # Default
+            is_financial = table_type == 'financial'
+            
+            # Check if this is a financial table by content
+            if not is_financial:
+                is_financial = self._is_financial_table_content(table_text)
+            
+            # Calculate confidence based on table type and content
+            confidence = 0.9 if table_type == 'standard' else 0.8
+            if table_type == 'financial':
+                confidence = 0.85
+            
+            # Determine semantic tags
+            semantic_tags = ['table', table_type]
+            if is_financial:
+                semantic_tags.append('financial_data')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='table',
+                confidence=confidence,
+                bounding_box=None,
+                content={
+                    'text': table_text,
+                    'structured': structured_data,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'table_type': table_type,
+                        'rows': len(table_data) - 1 if len(table_data) > 1 else 0,
+                        'columns': len(table_data[0]) if table_data else 0,
+                        'is_financial': is_financial
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'table_extraction_type': table_type
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics={
+                    'text_length': len(table_text),
+                    'word_count': len(table_text.split()),
+                    'readability_score': 0.9,
+                    'completeness': quality_score
+                }
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating hybrid table block from {file_path}: {e}")
+            return None
     
     def _create_text_block(self, doc_id: str, block_id: str, method: str, 
                           file_path: Path, block_type: str) -> Optional[ContentBlock]:

@@ -79,15 +79,26 @@ class LayoutParserExtractor:
     
     def _setup_logging(self):
         """Set up logging for the extractor."""
-        logger = logging.getLogger(__name__)
+        logger = logging.getLogger('LayoutParserExtractor')
         logger.setLevel(logging.INFO)
         
-        # Create console handler if not already present
+        # Create file handler
+        log_file = self.output_dir / 'extraction_log.txt'
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        
+        # Create console handler
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        
+        # Create formatter
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
+        
+        # Add handlers to logger if not already present
         if not logger.handlers:
-            console_handler = logging.StreamHandler()
-            console_handler.setLevel(logging.INFO)
-            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            console_handler.setFormatter(formatter)
+            logger.addHandler(file_handler)
             logger.addHandler(console_handler)
         
         return logger

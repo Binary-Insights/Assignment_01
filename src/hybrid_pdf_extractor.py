@@ -595,7 +595,7 @@ class HybridPDFExtractor:
         # Convert numpy types to native Python types for JSON serialization
         summary = self._convert_numpy_types(summary)
         
-        summary_file = output_dir / 'complete_extraction_summary.json'
+        summary_file = output_dir / 'hybrid_extraction_results.json'
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
         

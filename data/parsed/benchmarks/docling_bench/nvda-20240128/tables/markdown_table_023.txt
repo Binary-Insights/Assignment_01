@@ -1,0 +1,12 @@
+|                                                  | Year Ended                           | Year Ended                           | Year Ended                           |
+|--------------------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
+|                                                  | Jan 28, 2024                         | Jan 29, 2023                         | Jan 30, 2022                         |
+|                                                  | (In millions, except per share data) | (In millions, except per share data) | (In millions, except per share data) |
+| RSUs, PSUs and Market-based PSUs                 |                                      |                                      |                                      |
+| Awards granted                                   | 14                                   | 25                                   | 18                                   |
+| Estimated total grant-date fair value            | $ 5,316                              | $ 4,505                              | $ 3,492                              |
+| Weighted average grant-date fair value per share | $ 374.08                             | $ 183.72                             | $ 190.69                             |
+| ESPP                                             |                                      |                                      |                                      |
+| Shares purchased                                 | 3                                    | 3                                    | 5                                    |
+| Weighted average price per share                 | $ 158.07                             | $ 122.54                             | $ 56.36                              |
+| Weighted average grant-date fair value per share | $ 69.90                              | $ 51.87                              | $ 23.24                              |

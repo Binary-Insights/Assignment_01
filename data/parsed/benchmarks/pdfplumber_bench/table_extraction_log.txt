@@ -1,0 +1,1554 @@
+2025-09-21 14:56:49,909 - PDFTableExtractor - INFO - Starting extraction from: nvda-20240128.pdf
+2025-09-21 14:56:49,911 - PDFTableExtractor - INFO - Starting text extraction...
+2025-09-21 14:56:50,204 - PDFTableExtractor - INFO - Processing text from page 1/118
+2025-09-21 14:56:51,225 - PDFTableExtractor - INFO - Processing text from page 2/118
+2025-09-21 14:56:51,605 - PDFTableExtractor - INFO - Processing text from page 3/118
+2025-09-21 14:56:52,042 - PDFTableExtractor - INFO - Processing text from page 4/118
+2025-09-21 14:56:52,660 - PDFTableExtractor - INFO - Processing text from page 5/118
+2025-09-21 14:56:52,693 - PDFTableExtractor - INFO - Processing text from page 6/118
+2025-09-21 14:56:53,206 - PDFTableExtractor - INFO - Processing text from page 7/118
+2025-09-21 14:56:53,753 - PDFTableExtractor - INFO - Processing text from page 8/118
+2025-09-21 14:56:54,601 - PDFTableExtractor - INFO - Processing text from page 9/118
+2025-09-21 14:56:54,638 - PDFTableExtractor - INFO - Processing text from page 10/118
+2025-09-21 14:56:55,290 - PDFTableExtractor - INFO - Processing text from page 11/118
+2025-09-21 14:56:55,950 - PDFTableExtractor - INFO - Processing text from page 12/118
+2025-09-21 14:56:56,001 - PDFTableExtractor - INFO - Processing text from page 13/118
+2025-09-21 14:56:56,658 - PDFTableExtractor - INFO - Processing text from page 14/118
+2025-09-21 14:56:56,690 - PDFTableExtractor - INFO - Processing text from page 15/118
+2025-09-21 14:56:57,253 - PDFTableExtractor - INFO - Processing text from page 16/118
+2025-09-21 14:56:57,290 - PDFTableExtractor - INFO - Processing text from page 17/118
+2025-09-21 14:56:57,694 - PDFTableExtractor - INFO - Processing text from page 18/118
+2025-09-21 14:56:58,252 - PDFTableExtractor - INFO - Processing text from page 19/118
+2025-09-21 14:56:58,620 - PDFTableExtractor - INFO - Processing text from page 20/118
+2025-09-21 14:56:58,652 - PDFTableExtractor - INFO - Processing text from page 21/118
+2025-09-21 14:56:59,219 - PDFTableExtractor - INFO - Processing text from page 22/118
+2025-09-21 14:56:59,252 - PDFTableExtractor - INFO - Processing text from page 23/118
+2025-09-21 14:56:59,786 - PDFTableExtractor - INFO - Processing text from page 24/118
+2025-09-21 14:56:59,823 - PDFTableExtractor - INFO - Processing text from page 25/118
+2025-09-21 14:57:00,628 - PDFTableExtractor - INFO - Processing text from page 26/118
+2025-09-21 14:57:00,668 - PDFTableExtractor - INFO - Processing text from page 27/118
+2025-09-21 14:57:01,277 - PDFTableExtractor - INFO - Processing text from page 28/118
+2025-09-21 14:57:01,318 - PDFTableExtractor - INFO - Processing text from page 29/118
+2025-09-21 14:57:01,969 - PDFTableExtractor - INFO - Processing text from page 30/118
+2025-09-21 14:57:02,006 - PDFTableExtractor - INFO - Processing text from page 31/118
+2025-09-21 14:57:02,857 - PDFTableExtractor - INFO - Processing text from page 32/118
+2025-09-21 14:57:03,568 - PDFTableExtractor - INFO - Processing text from page 33/118
+2025-09-21 14:57:04,232 - PDFTableExtractor - INFO - Processing text from page 34/118
+2025-09-21 14:57:04,265 - PDFTableExtractor - INFO - Processing text from page 35/118
+2025-09-21 14:57:04,803 - PDFTableExtractor - INFO - Processing text from page 36/118
+2025-09-21 14:57:04,836 - PDFTableExtractor - INFO - Processing text from page 37/118
+2025-09-21 14:57:05,407 - PDFTableExtractor - INFO - Processing text from page 38/118
+2025-09-21 14:57:05,443 - PDFTableExtractor - INFO - Processing text from page 39/118
+2025-09-21 14:57:06,337 - PDFTableExtractor - INFO - Processing text from page 40/118
+2025-09-21 14:57:06,387 - PDFTableExtractor - INFO - Processing text from page 41/118
+2025-09-21 14:57:07,252 - PDFTableExtractor - INFO - Processing text from page 42/118
+2025-09-21 14:57:07,293 - PDFTableExtractor - INFO - Processing text from page 43/118
+2025-09-21 14:57:08,085 - PDFTableExtractor - INFO - Processing text from page 44/118
+2025-09-21 14:57:08,123 - PDFTableExtractor - INFO - Processing text from page 45/118
+2025-09-21 14:57:08,868 - PDFTableExtractor - INFO - Processing text from page 46/118
+2025-09-21 14:57:09,574 - PDFTableExtractor - INFO - Processing text from page 47/118
+2025-09-21 14:57:10,344 - PDFTableExtractor - INFO - Processing text from page 48/118
+2025-09-21 14:57:10,376 - PDFTableExtractor - INFO - Processing text from page 49/118
+2025-09-21 14:57:10,905 - PDFTableExtractor - INFO - Processing text from page 50/118
+2025-09-21 14:57:10,937 - PDFTableExtractor - INFO - Processing text from page 51/118
+2025-09-21 14:57:11,490 - PDFTableExtractor - INFO - Processing text from page 52/118
+2025-09-21 14:57:11,520 - PDFTableExtractor - INFO - Processing text from page 53/118
+2025-09-21 14:57:11,754 - PDFTableExtractor - INFO - Processing text from page 54/118
+2025-09-21 14:57:12,378 - PDFTableExtractor - INFO - Processing text from page 55/118
+2025-09-21 14:57:13,003 - PDFTableExtractor - INFO - Processing text from page 56/118
+2025-09-21 14:57:13,576 - PDFTableExtractor - INFO - Processing text from page 57/118
+2025-09-21 14:57:13,615 - PDFTableExtractor - INFO - Processing text from page 58/118
+2025-09-21 14:57:14,233 - PDFTableExtractor - INFO - Processing text from page 59/118
+2025-09-21 14:57:14,925 - PDFTableExtractor - INFO - Processing text from page 60/118
+2025-09-21 14:57:15,326 - PDFTableExtractor - INFO - Processing text from page 61/118
+2025-09-21 14:57:15,781 - PDFTableExtractor - INFO - Processing text from page 62/118
+2025-09-21 14:57:15,812 - PDFTableExtractor - INFO - Processing text from page 63/118
+2025-09-21 14:57:16,222 - PDFTableExtractor - INFO - Processing text from page 64/118
+2025-09-21 14:57:16,742 - PDFTableExtractor - INFO - Processing text from page 65/118
+2025-09-21 14:57:16,774 - PDFTableExtractor - INFO - Processing text from page 66/118
+2025-09-21 14:57:17,184 - PDFTableExtractor - INFO - Processing text from page 67/118
+2025-09-21 14:57:17,214 - PDFTableExtractor - INFO - Processing text from page 68/118
+2025-09-21 14:57:17,703 - PDFTableExtractor - INFO - Processing text from page 69/118
+2025-09-21 14:57:17,737 - PDFTableExtractor - INFO - Processing text from page 70/118
+2025-09-21 14:57:18,255 - PDFTableExtractor - INFO - Processing text from page 71/118
+2025-09-21 14:57:18,292 - PDFTableExtractor - INFO - Processing text from page 72/118
+2025-09-21 14:57:18,556 - PDFTableExtractor - INFO - Processing text from page 73/118
+2025-09-21 14:57:18,959 - PDFTableExtractor - INFO - Processing text from page 74/118
+2025-09-21 14:57:19,623 - PDFTableExtractor - INFO - Processing text from page 75/118
+2025-09-21 14:57:20,287 - PDFTableExtractor - INFO - Processing text from page 76/118
+2025-09-21 14:57:20,675 - PDFTableExtractor - INFO - Processing text from page 77/118
+2025-09-21 14:57:20,917 - PDFTableExtractor - INFO - Processing text from page 78/118
+2025-09-21 14:57:21,271 - PDFTableExtractor - INFO - Processing text from page 79/118
+2025-09-21 14:57:21,958 - PDFTableExtractor - INFO - Processing text from page 80/118
+2025-09-21 14:57:22,537 - PDFTableExtractor - INFO - Processing text from page 81/118
+2025-09-21 14:57:23,022 - PDFTableExtractor - INFO - Processing text from page 82/118
+2025-09-21 14:57:23,054 - PDFTableExtractor - INFO - Processing text from page 83/118
+2025-09-21 14:57:23,583 - PDFTableExtractor - INFO - Processing text from page 84/118
+2025-09-21 14:57:23,616 - PDFTableExtractor - INFO - Processing text from page 85/118
+2025-09-21 14:57:24,255 - PDFTableExtractor - INFO - Processing text from page 86/118
+2025-09-21 14:57:24,299 - PDFTableExtractor - INFO - Processing text from page 87/118
+2025-09-21 14:57:25,004 - PDFTableExtractor - INFO - Processing text from page 88/118
+2025-09-21 14:57:25,161 - PDFTableExtractor - INFO - Processing text from page 89/118
+2025-09-21 14:57:26,193 - PDFTableExtractor - INFO - Processing text from page 90/118
+2025-09-21 14:57:26,240 - PDFTableExtractor - INFO - Processing text from page 91/118
+2025-09-21 14:57:26,732 - PDFTableExtractor - INFO - Processing text from page 92/118
+2025-09-21 14:57:27,191 - PDFTableExtractor - INFO - Processing text from page 93/118
+2025-09-21 14:57:28,054 - PDFTableExtractor - INFO - Processing text from page 94/118
+2025-09-21 14:57:28,624 - PDFTableExtractor - INFO - Processing text from page 95/118
+2025-09-21 14:57:28,664 - PDFTableExtractor - INFO - Processing text from page 96/118
+2025-09-21 14:57:29,024 - PDFTableExtractor - INFO - Processing text from page 97/118
+2025-09-21 14:57:29,601 - PDFTableExtractor - INFO - Processing text from page 98/118
+2025-09-21 14:57:30,130 - PDFTableExtractor - INFO - Processing text from page 99/118
+2025-09-21 14:57:30,610 - PDFTableExtractor - INFO - Processing text from page 100/118
+2025-09-21 14:57:30,907 - PDFTableExtractor - INFO - Processing text from page 101/118
+2025-09-21 14:57:31,282 - PDFTableExtractor - INFO - Processing text from page 102/118
+2025-09-21 14:57:31,786 - PDFTableExtractor - INFO - Processing text from page 103/118
+2025-09-21 14:57:32,083 - PDFTableExtractor - INFO - Processing text from page 104/118
+2025-09-21 14:57:32,517 - PDFTableExtractor - INFO - Processing text from page 105/118
+2025-09-21 14:57:32,963 - PDFTableExtractor - INFO - Processing text from page 106/118
+2025-09-21 14:57:33,474 - PDFTableExtractor - INFO - Processing text from page 107/118
+2025-09-21 14:57:34,142 - PDFTableExtractor - INFO - Processing text from page 108/118
+2025-09-21 14:57:34,803 - PDFTableExtractor - INFO - Processing text from page 109/118
+2025-09-21 14:57:35,454 - PDFTableExtractor - INFO - Processing text from page 110/118
+2025-09-21 14:57:35,493 - PDFTableExtractor - INFO - Processing text from page 111/118
+2025-09-21 14:57:36,024 - PDFTableExtractor - INFO - Processing text from page 112/118
+2025-09-21 14:57:36,659 - PDFTableExtractor - INFO - Processing text from page 113/118
+2025-09-21 14:57:36,774 - PDFTableExtractor - INFO - Processing text from page 114/118
+2025-09-21 14:57:37,195 - PDFTableExtractor - INFO - Processing text from page 115/118
+2025-09-21 14:57:37,981 - PDFTableExtractor - INFO - Processing text from page 116/118
+2025-09-21 14:57:38,588 - PDFTableExtractor - INFO - Processing text from page 117/118
+2025-09-21 14:57:38,752 - PDFTableExtractor - INFO - Processing text from page 118/118
+2025-09-21 14:57:41,052 - PDFTableExtractor - INFO - Word bounding boxes saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\text\word_boxes.json
+2025-09-21 14:57:41,058 - PDFTableExtractor - INFO - Starting table extraction...
+2025-09-21 14:57:41,058 - PDFTableExtractor - INFO - Extracting tables with standard pdfplumber settings...
+2025-09-21 14:57:42,432 - PDFTableExtractor - INFO - Page 1: Found 0 tables with standard method
+2025-09-21 14:57:42,832 - PDFTableExtractor - INFO - Page 2: Found 0 tables with standard method
+2025-09-21 14:57:43,235 - PDFTableExtractor - INFO - Page 3: Found 0 tables with standard method
+2025-09-21 14:57:43,776 - PDFTableExtractor - INFO - Page 4: Found 0 tables with standard method
+2025-09-21 14:57:43,813 - PDFTableExtractor - INFO - Page 5: Found 0 tables with standard method
+2025-09-21 14:57:44,322 - PDFTableExtractor - INFO - Page 6: Found 0 tables with standard method
+2025-09-21 14:57:44,822 - PDFTableExtractor - INFO - Page 7: Found 0 tables with standard method
+2025-09-21 14:57:45,535 - PDFTableExtractor - INFO - Page 8: Found 0 tables with standard method
+2025-09-21 14:57:45,575 - PDFTableExtractor - INFO - Page 9: Found 0 tables with standard method
+2025-09-21 14:57:46,197 - PDFTableExtractor - INFO - Page 10: Found 0 tables with standard method
+2025-09-21 14:57:46,739 - PDFTableExtractor - INFO - Page 11: Found 0 tables with standard method
+2025-09-21 14:57:46,786 - PDFTableExtractor - INFO - Page 12: Found 0 tables with standard method
+2025-09-21 14:57:47,413 - PDFTableExtractor - INFO - Page 13: Found 0 tables with standard method
+2025-09-21 14:57:47,452 - PDFTableExtractor - INFO - Page 14: Found 0 tables with standard method
+2025-09-21 14:57:48,088 - PDFTableExtractor - INFO - Page 15: Found 0 tables with standard method
+2025-09-21 14:57:48,122 - PDFTableExtractor - INFO - Page 16: Found 0 tables with standard method
+2025-09-21 14:57:48,531 - PDFTableExtractor - INFO - Page 17: Found 1 tables with standard method
+2025-09-21 14:57:48,531 - PDFTableExtractor - INFO - Processing table 1 on page 17: 5 rows, 5 columns
+2025-09-21 14:57:48,533 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 14:57:48,552 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 14:57:48,569 - PDFTableExtractor - INFO - Saved standard table 1 to standard_page_017_table_001.csv
+2025-09-21 14:57:49,042 - PDFTableExtractor - INFO - Page 18: Found 0 tables with standard method
+2025-09-21 14:57:49,410 - PDFTableExtractor - INFO - Page 19: Found 0 tables with standard method
+2025-09-21 14:57:49,447 - PDFTableExtractor - INFO - Page 20: Found 0 tables with standard method
+2025-09-21 14:57:52,253 - PDFTableExtractor - INFO - Page 21: Found 0 tables with standard method
+2025-09-21 14:57:52,296 - PDFTableExtractor - INFO - Page 22: Found 0 tables with standard method
+2025-09-21 14:57:52,892 - PDFTableExtractor - INFO - Page 23: Found 0 tables with standard method
+2025-09-21 14:57:52,936 - PDFTableExtractor - INFO - Page 24: Found 0 tables with standard method
+2025-09-21 14:57:53,787 - PDFTableExtractor - INFO - Page 25: Found 0 tables with standard method
+2025-09-21 14:57:53,829 - PDFTableExtractor - INFO - Page 26: Found 0 tables with standard method
+2025-09-21 14:57:54,368 - PDFTableExtractor - INFO - Page 27: Found 0 tables with standard method
+2025-09-21 14:57:54,407 - PDFTableExtractor - INFO - Page 28: Found 0 tables with standard method
+2025-09-21 14:57:54,969 - PDFTableExtractor - INFO - Page 29: Found 0 tables with standard method
+2025-09-21 14:57:55,003 - PDFTableExtractor - INFO - Page 30: Found 0 tables with standard method
+2025-09-21 14:57:55,654 - PDFTableExtractor - INFO - Page 31: Found 0 tables with standard method
+2025-09-21 14:57:56,343 - PDFTableExtractor - INFO - Page 32: Found 0 tables with standard method
+2025-09-21 14:57:56,978 - PDFTableExtractor - INFO - Page 33: Found 0 tables with standard method
+2025-09-21 14:57:57,014 - PDFTableExtractor - INFO - Page 34: Found 0 tables with standard method
+2025-09-21 14:57:57,705 - PDFTableExtractor - INFO - Page 35: Found 0 tables with standard method
+2025-09-21 14:57:57,749 - PDFTableExtractor - INFO - Page 36: Found 0 tables with standard method
+2025-09-21 14:57:58,388 - PDFTableExtractor - INFO - Page 37: Found 0 tables with standard method
+2025-09-21 14:57:58,429 - PDFTableExtractor - INFO - Page 38: Found 0 tables with standard method
+2025-09-21 14:57:59,206 - PDFTableExtractor - INFO - Page 39: Found 0 tables with standard method
+2025-09-21 14:57:59,249 - PDFTableExtractor - INFO - Page 40: Found 0 tables with standard method
+2025-09-21 14:58:00,081 - PDFTableExtractor - INFO - Page 41: Found 0 tables with standard method
+2025-09-21 14:58:00,123 - PDFTableExtractor - INFO - Page 42: Found 0 tables with standard method
+2025-09-21 14:58:00,799 - PDFTableExtractor - INFO - Page 43: Found 0 tables with standard method
+2025-09-21 14:58:00,835 - PDFTableExtractor - INFO - Page 44: Found 0 tables with standard method
+2025-09-21 14:58:01,466 - PDFTableExtractor - INFO - Page 45: Found 0 tables with standard method
+2025-09-21 14:58:02,268 - PDFTableExtractor - INFO - Page 46: Found 0 tables with standard method
+2025-09-21 14:58:02,899 - PDFTableExtractor - INFO - Page 47: Found 0 tables with standard method
+2025-09-21 14:58:02,935 - PDFTableExtractor - INFO - Page 48: Found 0 tables with standard method
+2025-09-21 14:58:03,515 - PDFTableExtractor - INFO - Page 49: Found 0 tables with standard method
+2025-09-21 14:58:03,556 - PDFTableExtractor - INFO - Page 50: Found 0 tables with standard method
+2025-09-21 14:58:04,144 - PDFTableExtractor - INFO - Page 51: Found 1 tables with standard method
+2025-09-21 14:58:04,144 - PDFTableExtractor - INFO - Processing table 1 on page 51: 4 rows, 11 columns
+2025-09-21 14:58:04,145 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 11)
+2025-09-21 14:58:04,158 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 11)
+2025-09-21 14:58:04,179 - PDFTableExtractor - INFO - Saved standard table 2 to standard_page_051_table_001.csv
+2025-09-21 14:58:04,219 - PDFTableExtractor - INFO - Page 52: Found 0 tables with standard method
+2025-09-21 14:58:04,523 - PDFTableExtractor - INFO - Page 53: Found 1 tables with standard method
+2025-09-21 14:58:04,523 - PDFTableExtractor - INFO - Processing table 1 on page 53: 3 rows, 18 columns
+2025-09-21 14:58:04,525 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 18)
+2025-09-21 14:58:04,551 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 18)
+2025-09-21 14:58:04,580 - PDFTableExtractor - INFO - Saved standard table 3 to standard_page_053_table_001.csv
+2025-09-21 14:58:05,201 - PDFTableExtractor - INFO - Page 54: Found 0 tables with standard method
+2025-09-21 14:58:05,829 - PDFTableExtractor - INFO - Page 55: Found 0 tables with standard method
+2025-09-21 14:58:06,454 - PDFTableExtractor - INFO - Page 56: Found 1 tables with standard method
+2025-09-21 14:58:06,454 - PDFTableExtractor - INFO - Processing table 1 on page 56: 6 rows, 8 columns
+2025-09-21 14:58:06,455 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 8)
+2025-09-21 14:58:06,465 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 8)
+2025-09-21 14:58:06,477 - PDFTableExtractor - INFO - Saved standard table 4 to standard_page_056_table_001.csv
+2025-09-21 14:58:06,513 - PDFTableExtractor - INFO - Page 57: Found 0 tables with standard method
+2025-09-21 14:58:07,026 - PDFTableExtractor - INFO - Page 58: Found 0 tables with standard method
+2025-09-21 14:58:07,615 - PDFTableExtractor - INFO - Page 59: Found 0 tables with standard method
+2025-09-21 14:58:08,149 - PDFTableExtractor - INFO - Page 60: Found 3 tables with standard method
+2025-09-21 14:58:08,150 - PDFTableExtractor - INFO - Processing table 1 on page 60: 16 rows, 6 columns
+2025-09-21 14:58:08,150 - PDFTableExtractor - INFO - Created DataFrame with shape: (15, 6)
+2025-09-21 14:58:08,158 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (15, 6)
+2025-09-21 14:58:08,172 - PDFTableExtractor - INFO - Saved standard table 5 to standard_page_060_table_001.csv
+2025-09-21 14:58:08,173 - PDFTableExtractor - INFO - Processing table 2 on page 60: 3 rows, 12 columns
+2025-09-21 14:58:08,174 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 12)
+2025-09-21 14:58:08,188 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 12)
+2025-09-21 14:58:08,204 - PDFTableExtractor - INFO - Saved standard table 6 to standard_page_060_table_002.csv
+2025-09-21 14:58:08,204 - PDFTableExtractor - INFO - Processing table 3 on page 60: 4 rows, 12 columns
+2025-09-21 14:58:08,205 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 12)
+2025-09-21 14:58:08,219 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 12)
+2025-09-21 14:58:08,237 - PDFTableExtractor - INFO - Saved standard table 7 to standard_page_060_table_003.csv
+2025-09-21 14:58:08,751 - PDFTableExtractor - INFO - Page 61: Found 1 tables with standard method
+2025-09-21 14:58:08,751 - PDFTableExtractor - INFO - Processing table 1 on page 61: 8 rows, 14 columns
+2025-09-21 14:58:08,752 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 14)
+2025-09-21 14:58:08,768 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 14)
+2025-09-21 14:58:08,786 - PDFTableExtractor - INFO - Saved standard table 8 to standard_page_061_table_001.csv
+2025-09-21 14:58:08,821 - PDFTableExtractor - INFO - Page 62: Found 0 tables with standard method
+2025-09-21 14:58:09,270 - PDFTableExtractor - INFO - Page 63: Found 1 tables with standard method
+2025-09-21 14:58:09,270 - PDFTableExtractor - INFO - Processing table 1 on page 63: 4 rows, 9 columns
+2025-09-21 14:58:09,271 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 9)
+2025-09-21 14:58:09,284 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 9)
+2025-09-21 14:58:09,298 - PDFTableExtractor - INFO - Saved standard table 9 to standard_page_063_table_001.csv
+2025-09-21 14:58:09,865 - PDFTableExtractor - INFO - Page 64: Found 2 tables with standard method
+2025-09-21 14:58:09,865 - PDFTableExtractor - INFO - Processing table 1 on page 64: 3 rows, 5 columns
+2025-09-21 14:58:09,866 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 14:58:09,874 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 14:58:09,885 - PDFTableExtractor - INFO - Saved standard table 10 to standard_page_064_table_001.csv
+2025-09-21 14:58:09,885 - PDFTableExtractor - INFO - Processing table 2 on page 64: 3 rows, 5 columns
+2025-09-21 14:58:09,886 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 14:58:09,898 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 14:58:09,909 - PDFTableExtractor - INFO - Saved standard table 11 to standard_page_064_table_002.csv
+2025-09-21 14:58:09,950 - PDFTableExtractor - INFO - Page 65: Found 0 tables with standard method
+2025-09-21 14:58:10,457 - PDFTableExtractor - INFO - Page 66: Found 1 tables with standard method
+2025-09-21 14:58:10,457 - PDFTableExtractor - INFO - Processing table 1 on page 66: 8 rows, 4 columns
+2025-09-21 14:58:10,458 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 4)
+2025-09-21 14:58:10,464 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 4)
+2025-09-21 14:58:10,474 - PDFTableExtractor - INFO - Saved standard table 12 to standard_page_066_table_001.csv
+2025-09-21 14:58:10,515 - PDFTableExtractor - INFO - Page 67: Found 0 tables with standard method
+2025-09-21 14:58:11,090 - PDFTableExtractor - INFO - Page 68: Found 0 tables with standard method
+2025-09-21 14:58:11,133 - PDFTableExtractor - INFO - Page 69: Found 0 tables with standard method
+2025-09-21 14:58:11,668 - PDFTableExtractor - INFO - Page 70: Found 0 tables with standard method
+2025-09-21 14:58:11,709 - PDFTableExtractor - INFO - Page 71: Found 0 tables with standard method
+2025-09-21 14:58:11,980 - PDFTableExtractor - INFO - Page 72: Found 0 tables with standard method
+2025-09-21 14:58:12,471 - PDFTableExtractor - INFO - Page 73: Found 0 tables with standard method
+2025-09-21 14:58:13,023 - PDFTableExtractor - INFO - Page 74: Found 0 tables with standard method
+2025-09-21 14:58:13,576 - PDFTableExtractor - INFO - Page 75: Found 0 tables with standard method
+2025-09-21 14:58:14,035 - PDFTableExtractor - INFO - Page 76: Found 1 tables with standard method
+2025-09-21 14:58:14,035 - PDFTableExtractor - INFO - Processing table 1 on page 76: 24 rows, 7 columns
+2025-09-21 14:58:14,036 - PDFTableExtractor - INFO - Created DataFrame with shape: (23, 7)
+2025-09-21 14:58:14,049 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (23, 7)
+2025-09-21 14:58:14,068 - PDFTableExtractor - INFO - Saved standard table 13 to standard_page_076_table_001.csv
+2025-09-21 14:58:14,356 - PDFTableExtractor - INFO - Page 77: Found 1 tables with standard method
+2025-09-21 14:58:14,356 - PDFTableExtractor - INFO - Processing table 1 on page 77: 13 rows, 7 columns
+2025-09-21 14:58:14,357 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 7)
+2025-09-21 14:58:14,367 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 7)
+2025-09-21 14:58:14,377 - PDFTableExtractor - INFO - Saved standard table 14 to standard_page_077_table_001.csv
+2025-09-21 14:58:14,874 - PDFTableExtractor - INFO - Page 78: Found 1 tables with standard method
+2025-09-21 14:58:14,874 - PDFTableExtractor - INFO - Processing table 1 on page 78: 35 rows, 5 columns
+2025-09-21 14:58:14,875 - PDFTableExtractor - INFO - Created DataFrame with shape: (34, 5)
+2025-09-21 14:58:14,883 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (34, 5)
+2025-09-21 14:58:14,894 - PDFTableExtractor - INFO - Saved standard table 15 to standard_page_078_table_001.csv
+2025-09-21 14:58:15,999 - PDFTableExtractor - INFO - Page 79: Found 1 tables with standard method
+2025-09-21 14:58:15,999 - PDFTableExtractor - INFO - Processing table 1 on page 79: 27 rows, 14 columns
+2025-09-21 14:58:16,000 - PDFTableExtractor - INFO - Created DataFrame with shape: (26, 14)
+2025-09-21 14:58:16,017 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (26, 14)
+2025-09-21 14:58:16,047 - PDFTableExtractor - INFO - Saved standard table 16 to standard_page_079_table_001.csv
+2025-09-21 14:58:17,150 - PDFTableExtractor - INFO - Page 80: Found 1 tables with standard method
+2025-09-21 14:58:17,150 - PDFTableExtractor - INFO - Processing table 1 on page 80: 41 rows, 7 columns
+2025-09-21 14:58:17,151 - PDFTableExtractor - INFO - Created DataFrame with shape: (40, 7)
+2025-09-21 14:58:17,162 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (40, 7)
+2025-09-21 14:58:17,179 - PDFTableExtractor - INFO - Saved standard table 17 to standard_page_080_table_001.csv
+2025-09-21 14:58:17,674 - PDFTableExtractor - INFO - Page 81: Found 0 tables with standard method
+2025-09-21 14:58:17,708 - PDFTableExtractor - INFO - Page 82: Found 0 tables with standard method
+2025-09-21 14:58:18,209 - PDFTableExtractor - INFO - Page 83: Found 0 tables with standard method
+2025-09-21 14:58:18,241 - PDFTableExtractor - INFO - Page 84: Found 0 tables with standard method
+2025-09-21 14:58:18,858 - PDFTableExtractor - INFO - Page 85: Found 0 tables with standard method
+2025-09-21 14:58:18,900 - PDFTableExtractor - INFO - Page 86: Found 0 tables with standard method
+2025-09-21 14:58:19,561 - PDFTableExtractor - INFO - Page 87: Found 0 tables with standard method
+2025-09-21 14:58:19,602 - PDFTableExtractor - INFO - Page 88: Found 0 tables with standard method
+2025-09-21 14:58:20,269 - PDFTableExtractor - INFO - Page 89: Found 0 tables with standard method
+2025-09-21 14:58:20,310 - PDFTableExtractor - INFO - Page 90: Found 0 tables with standard method
+2025-09-21 14:58:20,757 - PDFTableExtractor - INFO - Page 91: Found 1 tables with standard method
+2025-09-21 14:58:20,757 - PDFTableExtractor - INFO - Processing table 1 on page 91: 12 rows, 3 columns
+2025-09-21 14:58:20,758 - PDFTableExtractor - INFO - Created DataFrame with shape: (11, 3)
+2025-09-21 14:58:20,763 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (11, 3)
+2025-09-21 14:58:20,771 - PDFTableExtractor - INFO - Saved standard table 18 to standard_page_091_table_001.csv
+2025-09-21 14:58:21,670 - PDFTableExtractor - INFO - Page 92: Found 3 tables with standard method
+2025-09-21 14:58:21,670 - PDFTableExtractor - INFO - Processing table 1 on page 92: 3 rows, 7 columns
+2025-09-21 14:58:21,671 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 14:58:21,680 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 14:58:21,690 - PDFTableExtractor - INFO - Saved standard table 19 to standard_page_092_table_001.csv
+2025-09-21 14:58:21,690 - PDFTableExtractor - INFO - Processing table 2 on page 92: 4 rows, 6 columns
+2025-09-21 14:58:21,690 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 14:58:21,700 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 14:58:21,712 - PDFTableExtractor - INFO - Saved standard table 20 to standard_page_092_table_002.csv
+2025-09-21 14:58:21,712 - PDFTableExtractor - INFO - Processing table 3 on page 92: 9 rows, 6 columns
+2025-09-21 14:58:21,713 - PDFTableExtractor - INFO - Created DataFrame with shape: (8, 6)
+2025-09-21 14:58:21,721 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (8, 6)
+2025-09-21 14:58:21,734 - PDFTableExtractor - INFO - Saved standard table 21 to standard_page_092_table_003.csv
+2025-09-21 14:58:22,375 - PDFTableExtractor - INFO - Page 93: Found 1 tables with standard method
+2025-09-21 14:58:22,375 - PDFTableExtractor - INFO - Processing table 1 on page 93: 4 rows, 4 columns
+2025-09-21 14:58:22,377 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 14:58:22,383 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 14:58:22,391 - PDFTableExtractor - INFO - Saved standard table 22 to standard_page_093_table_001.csv
+2025-09-21 14:58:22,940 - PDFTableExtractor - INFO - Page 94: Found 2 tables with standard method
+2025-09-21 14:58:22,940 - PDFTableExtractor - INFO - Processing table 1 on page 94: 7 rows, 5 columns
+2025-09-21 14:58:22,941 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 5)
+2025-09-21 14:58:22,948 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 5)
+2025-09-21 14:58:22,955 - PDFTableExtractor - INFO - Saved standard table 23 to standard_page_094_table_001.csv
+2025-09-21 14:58:22,955 - PDFTableExtractor - INFO - Processing table 2 on page 94: 10 rows, 7 columns
+2025-09-21 14:58:22,956 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 14:58:22,964 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 14:58:22,973 - PDFTableExtractor - INFO - Saved standard table 24 to standard_page_094_table_002.csv
+2025-09-21 14:58:23,008 - PDFTableExtractor - INFO - Page 95: Found 0 tables with standard method
+2025-09-21 14:58:23,378 - PDFTableExtractor - INFO - Page 96: Found 2 tables with standard method
+2025-09-21 14:58:23,379 - PDFTableExtractor - INFO - Processing table 1 on page 96: 3 rows, 14 columns
+2025-09-21 14:58:23,380 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 14)
+2025-09-21 14:58:23,398 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 14)
+2025-09-21 14:58:23,417 - PDFTableExtractor - INFO - Saved standard table 25 to standard_page_096_table_001.csv
+2025-09-21 14:58:23,417 - PDFTableExtractor - INFO - Processing table 2 on page 96: 8 rows, 3 columns
+2025-09-21 14:58:23,417 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 3)
+2025-09-21 14:58:23,421 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 3)
+2025-09-21 14:58:23,429 - PDFTableExtractor - INFO - Saved standard table 26 to standard_page_096_table_002.csv
+2025-09-21 14:58:24,034 - PDFTableExtractor - INFO - Page 97: Found 2 tables with standard method
+2025-09-21 14:58:24,034 - PDFTableExtractor - INFO - Processing table 1 on page 97: 7 rows, 13 columns
+2025-09-21 14:58:24,035 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 14:58:24,051 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 14:58:24,069 - PDFTableExtractor - INFO - Saved standard table 27 to standard_page_097_table_001.csv
+2025-09-21 14:58:24,069 - PDFTableExtractor - INFO - Processing table 2 on page 97: 7 rows, 13 columns
+2025-09-21 14:58:24,070 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 14:58:24,086 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 14:58:24,105 - PDFTableExtractor - INFO - Saved standard table 28 to standard_page_097_table_002.csv
+2025-09-21 14:58:24,778 - PDFTableExtractor - INFO - Page 98: Found 3 tables with standard method
+2025-09-21 14:58:24,778 - PDFTableExtractor - INFO - Processing table 1 on page 98: 4 rows, 13 columns
+2025-09-21 14:58:24,780 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 14:58:24,797 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 14:58:24,819 - PDFTableExtractor - INFO - Saved standard table 29 to standard_page_098_table_001.csv
+2025-09-21 14:58:24,819 - PDFTableExtractor - INFO - Processing table 2 on page 98: 4 rows, 13 columns
+2025-09-21 14:58:24,820 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 14:58:24,838 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 14:58:24,858 - PDFTableExtractor - INFO - Saved standard table 30 to standard_page_098_table_002.csv
+2025-09-21 14:58:24,858 - PDFTableExtractor - INFO - Processing table 3 on page 98: 3 rows, 6 columns
+2025-09-21 14:58:24,860 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 6)
+2025-09-21 14:58:24,866 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 6)
+2025-09-21 14:58:24,880 - PDFTableExtractor - INFO - Saved standard table 31 to standard_page_098_table_003.csv
+2025-09-21 14:58:25,548 - PDFTableExtractor - INFO - Page 99: Found 1 tables with standard method
+2025-09-21 14:58:25,548 - PDFTableExtractor - INFO - Processing table 1 on page 99: 20 rows, 7 columns
+2025-09-21 14:58:25,549 - PDFTableExtractor - INFO - Created DataFrame with shape: (19, 7)
+2025-09-21 14:58:25,558 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (19, 7)
+2025-09-21 14:58:25,573 - PDFTableExtractor - INFO - Saved standard table 32 to standard_page_099_table_001.csv
+2025-09-21 14:58:25,969 - PDFTableExtractor - INFO - Page 100: Found 3 tables with standard method
+2025-09-21 14:58:25,970 - PDFTableExtractor - INFO - Processing table 1 on page 100: 6 rows, 3 columns
+2025-09-21 14:58:25,970 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 3)
+2025-09-21 14:58:25,974 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 3)
+2025-09-21 14:58:25,983 - PDFTableExtractor - INFO - Saved standard table 33 to standard_page_100_table_001.csv
+2025-09-21 14:58:25,984 - PDFTableExtractor - INFO - Processing table 2 on page 100: 2 rows, 3 columns
+2025-09-21 14:58:25,984 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 3)
+2025-09-21 14:58:25,988 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 2)
+2025-09-21 14:58:25,998 - PDFTableExtractor - INFO - Saved standard table 34 to standard_page_100_table_002.csv
+2025-09-21 14:58:25,998 - PDFTableExtractor - INFO - Processing table 3 on page 100: 4 rows, 6 columns
+2025-09-21 14:58:25,999 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 14:58:26,007 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 14:58:26,020 - PDFTableExtractor - INFO - Saved standard table 35 to standard_page_100_table_003.csv
+2025-09-21 14:58:26,541 - PDFTableExtractor - INFO - Page 101: Found 2 tables with standard method
+2025-09-21 14:58:26,541 - PDFTableExtractor - INFO - Processing table 1 on page 101: 7 rows, 8 columns
+2025-09-21 14:58:26,543 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 8)
+2025-09-21 14:58:26,552 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 8)
+2025-09-21 14:58:26,567 - PDFTableExtractor - INFO - Saved standard table 36 to standard_page_101_table_001.csv
+2025-09-21 14:58:26,568 - PDFTableExtractor - INFO - Processing table 2 on page 101: 5 rows, 5 columns
+2025-09-21 14:58:26,568 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 14:58:26,577 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 14:58:26,590 - PDFTableExtractor - INFO - Saved standard table 37 to standard_page_101_table_002.csv
+2025-09-21 14:58:27,336 - PDFTableExtractor - INFO - Page 102: Found 3 tables with standard method
+2025-09-21 14:58:27,336 - PDFTableExtractor - INFO - Processing table 1 on page 102: 11 rows, 4 columns
+2025-09-21 14:58:27,337 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 4)
+2025-09-21 14:58:27,341 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 4)
+2025-09-21 14:58:27,352 - PDFTableExtractor - INFO - Saved standard table 38 to standard_page_102_table_001.csv
+2025-09-21 14:58:27,352 - PDFTableExtractor - INFO - Processing table 2 on page 102: 6 rows, 4 columns
+2025-09-21 14:58:27,353 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 4)
+2025-09-21 14:58:27,359 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 4)
+2025-09-21 14:58:27,369 - PDFTableExtractor - INFO - Saved standard table 39 to standard_page_102_table_002.csv
+2025-09-21 14:58:27,369 - PDFTableExtractor - INFO - Processing table 3 on page 102: 4 rows, 4 columns
+2025-09-21 14:58:27,370 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 14:58:27,374 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 14:58:27,385 - PDFTableExtractor - INFO - Saved standard table 40 to standard_page_102_table_003.csv
+2025-09-21 14:58:27,752 - PDFTableExtractor - INFO - Page 103: Found 1 tables with standard method
+2025-09-21 14:58:27,752 - PDFTableExtractor - INFO - Processing table 1 on page 103: 2 rows, 6 columns
+2025-09-21 14:58:27,754 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 14:58:27,762 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 14:58:27,773 - PDFTableExtractor - INFO - Saved standard table 41 to standard_page_103_table_001.csv
+2025-09-21 14:58:28,317 - PDFTableExtractor - INFO - Page 104: Found 1 tables with standard method
+2025-09-21 14:58:28,317 - PDFTableExtractor - INFO - Processing table 1 on page 104: 13 rows, 11 columns
+2025-09-21 14:58:28,318 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 11)
+2025-09-21 14:58:28,331 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 11)
+2025-09-21 14:58:28,347 - PDFTableExtractor - INFO - Saved standard table 42 to standard_page_104_table_001.csv
+2025-09-21 14:58:28,882 - PDFTableExtractor - INFO - Page 105: Found 3 tables with standard method
+2025-09-21 14:58:28,882 - PDFTableExtractor - INFO - Processing table 1 on page 105: 7 rows, 3 columns
+2025-09-21 14:58:28,883 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 3)
+2025-09-21 14:58:28,887 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 3)
+2025-09-21 14:58:28,897 - PDFTableExtractor - INFO - Saved standard table 43 to standard_page_105_table_001.csv
+2025-09-21 14:58:28,897 - PDFTableExtractor - INFO - Processing table 2 on page 105: 2 rows, 6 columns
+2025-09-21 14:58:28,897 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 14:58:28,904 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 14:58:28,915 - PDFTableExtractor - INFO - Saved standard table 44 to standard_page_105_table_002.csv
+2025-09-21 14:58:28,915 - PDFTableExtractor - INFO - Processing table 3 on page 105: 4 rows, 10 columns
+2025-09-21 14:58:28,916 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 10)
+2025-09-21 14:58:28,928 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 10)
+2025-09-21 14:58:28,940 - PDFTableExtractor - INFO - Saved standard table 45 to standard_page_105_table_003.csv
+2025-09-21 14:58:29,399 - PDFTableExtractor - INFO - Page 106: Found 0 tables with standard method
+2025-09-21 14:58:30,198 - PDFTableExtractor - INFO - Page 107: Found 3 tables with standard method
+2025-09-21 14:58:30,198 - PDFTableExtractor - INFO - Processing table 1 on page 107: 10 rows, 7 columns
+2025-09-21 14:58:30,199 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 14:58:30,208 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 14:58:30,220 - PDFTableExtractor - INFO - Saved standard table 46 to standard_page_107_table_001.csv
+2025-09-21 14:58:30,221 - PDFTableExtractor - INFO - Processing table 2 on page 107: 3 rows, 7 columns
+2025-09-21 14:58:30,221 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 14:58:30,231 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 14:58:30,242 - PDFTableExtractor - INFO - Saved standard table 47 to standard_page_107_table_002.csv
+2025-09-21 14:58:30,242 - PDFTableExtractor - INFO - Processing table 3 on page 107: 11 rows, 13 columns
+2025-09-21 14:58:30,244 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 13)
+2025-09-21 14:58:30,258 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 13)
+2025-09-21 14:58:30,280 - PDFTableExtractor - INFO - Saved standard table 48 to standard_page_107_table_003.csv
+2025-09-21 14:58:31,043 - PDFTableExtractor - INFO - Page 108: Found 1 tables with standard method
+2025-09-21 14:58:31,044 - PDFTableExtractor - INFO - Processing table 1 on page 108: 19 rows, 6 columns
+2025-09-21 14:58:31,045 - PDFTableExtractor - INFO - Created DataFrame with shape: (18, 6)
+2025-09-21 14:58:31,054 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (18, 6)
+2025-09-21 14:58:31,071 - PDFTableExtractor - INFO - Saved standard table 49 to standard_page_108_table_001.csv
+2025-09-21 14:58:31,829 - PDFTableExtractor - INFO - Page 109: Found 1 tables with standard method
+2025-09-21 14:58:31,829 - PDFTableExtractor - INFO - Processing table 1 on page 109: 7 rows, 9 columns
+2025-09-21 14:58:31,830 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 9)
+2025-09-21 14:58:31,842 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 9)
+2025-09-21 14:58:31,857 - PDFTableExtractor - INFO - Saved standard table 50 to standard_page_109_table_001.csv
+2025-09-21 14:58:31,901 - PDFTableExtractor - INFO - Page 110: Found 0 tables with standard method
+2025-09-21 14:58:32,846 - PDFTableExtractor - INFO - Page 111: Found 1 tables with standard method
+2025-09-21 14:58:32,846 - PDFTableExtractor - INFO - Processing table 1 on page 111: 11 rows, 12 columns
+2025-09-21 14:58:32,847 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 12)
+2025-09-21 14:58:32,864 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 12)
+2025-09-21 14:58:32,885 - PDFTableExtractor - INFO - Saved standard table 51 to standard_page_111_table_001.csv
+2025-09-21 14:58:33,572 - PDFTableExtractor - INFO - Page 112: Found 3 tables with standard method
+2025-09-21 14:58:33,572 - PDFTableExtractor - INFO - Processing table 1 on page 112: 8 rows, 7 columns
+2025-09-21 14:58:33,573 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 7)
+2025-09-21 14:58:33,585 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 7)
+2025-09-21 14:58:33,599 - PDFTableExtractor - INFO - Saved standard table 52 to standard_page_112_table_001.csv
+2025-09-21 14:58:33,599 - PDFTableExtractor - INFO - Processing table 2 on page 112: 5 rows, 7 columns
+2025-09-21 14:58:33,600 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 7)
+2025-09-21 14:58:33,612 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 7)
+2025-09-21 14:58:33,630 - PDFTableExtractor - INFO - Saved standard table 53 to standard_page_112_table_002.csv
+2025-09-21 14:58:33,631 - PDFTableExtractor - INFO - Processing table 3 on page 112: 6 rows, 7 columns
+2025-09-21 14:58:33,631 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 7)
+2025-09-21 14:58:33,642 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 7)
+2025-09-21 14:58:33,654 - PDFTableExtractor - INFO - Saved standard table 54 to standard_page_112_table_003.csv
+2025-09-21 14:58:33,814 - PDFTableExtractor - INFO - Page 113: Found 1 tables with standard method
+2025-09-21 14:58:33,814 - PDFTableExtractor - INFO - Processing table 1 on page 113: 5 rows, 6 columns
+2025-09-21 14:58:33,815 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 6)
+2025-09-21 14:58:33,824 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 6)
+2025-09-21 14:58:33,838 - PDFTableExtractor - INFO - Saved standard table 55 to standard_page_113_table_001.csv
+2025-09-21 14:58:34,713 - PDFTableExtractor - INFO - Page 114: Found 1 tables with standard method
+2025-09-21 14:58:34,713 - PDFTableExtractor - INFO - Processing table 1 on page 114: 11 rows, 11 columns
+2025-09-21 14:58:34,714 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 11)
+2025-09-21 14:58:34,731 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 11)
+2025-09-21 14:58:34,765 - PDFTableExtractor - INFO - Saved standard table 56 to standard_page_114_table_001.csv
+2025-09-21 14:58:35,621 - PDFTableExtractor - INFO - Page 115: Found 0 tables with standard method
+2025-09-21 14:58:36,549 - PDFTableExtractor - INFO - Page 116: Found 0 tables with standard method
+2025-09-21 14:58:36,723 - PDFTableExtractor - INFO - Page 117: Found 0 tables with standard method
+2025-09-21 14:58:36,932 - PDFTableExtractor - INFO - Page 118: Found 0 tables with standard method
+2025-09-21 14:58:36,938 - PDFTableExtractor - INFO - Extracting tables with custom settings...
+2025-09-21 14:59:32,876 - PDFTableExtractor - INFO - Extracting tables with financial statement focus...
+2025-09-21 14:59:46,361 - PDFTableExtractor - INFO - Saved financial table 1 to financial_page_015_table_001.csv
+2025-09-21 14:59:50,025 - PDFTableExtractor - INFO - Saved financial table 2 to financial_page_019_table_001.csv
+2025-09-21 14:59:51,297 - PDFTableExtractor - INFO - Saved financial table 3 to financial_page_021_table_001.csv
+2025-09-21 14:59:54,173 - PDFTableExtractor - INFO - Saved financial table 4 to financial_page_025_table_001.csv
+2025-09-21 14:59:55,711 - PDFTableExtractor - INFO - Saved financial table 5 to financial_page_027_table_001.csv
+2025-09-21 14:59:58,725 - PDFTableExtractor - INFO - Saved financial table 6 to financial_page_031_table_001.csv
+2025-09-21 15:00:00,228 - PDFTableExtractor - INFO - Saved financial table 7 to financial_page_032_table_001.csv
+2025-09-21 15:00:01,743 - PDFTableExtractor - INFO - Saved financial table 8 to financial_page_033_table_001.csv
+2025-09-21 15:00:03,633 - PDFTableExtractor - INFO - Saved financial table 9 to financial_page_035_table_001.csv
+2025-09-21 15:00:05,080 - PDFTableExtractor - INFO - Saved financial table 10 to financial_page_037_table_001.csv
+2025-09-21 15:00:08,736 - PDFTableExtractor - INFO - Saved financial table 11 to financial_page_041_table_001.csv
+2025-09-21 15:00:15,289 - PDFTableExtractor - INFO - Saved financial table 12 to financial_page_047_table_001.csv
+2025-09-21 15:00:17,432 - PDFTableExtractor - INFO - Saved financial table 13 to financial_page_051_table_001.csv
+2025-09-21 15:00:20,747 - PDFTableExtractor - INFO - Saved financial table 14 to financial_page_055_table_001.csv
+2025-09-21 15:00:22,127 - PDFTableExtractor - INFO - Saved financial table 15 to financial_page_056_table_001.csv
+2025-09-21 15:00:23,685 - PDFTableExtractor - INFO - Saved financial table 16 to financial_page_058_table_001.csv
+2025-09-21 15:00:25,144 - PDFTableExtractor - INFO - Saved financial table 17 to financial_page_059_table_001.csv
+2025-09-21 15:00:26,372 - PDFTableExtractor - INFO - Saved financial table 18 to financial_page_060_table_001.csv
+2025-09-21 15:00:27,595 - PDFTableExtractor - INFO - Saved financial table 19 to financial_page_061_table_001.csv
+2025-09-21 15:00:28,957 - PDFTableExtractor - INFO - Saved financial table 20 to financial_page_063_table_001.csv
+2025-09-21 15:00:31,808 - PDFTableExtractor - INFO - Saved financial table 21 to financial_page_066_table_001.csv
+2025-09-21 15:00:33,156 - PDFTableExtractor - INFO - Saved financial table 22 to financial_page_068_table_001.csv
+2025-09-21 15:00:38,432 - PDFTableExtractor - INFO - Saved financial table 23 to financial_page_077_table_001.csv
+2025-09-21 15:00:39,267 - PDFTableExtractor - INFO - Saved financial table 24 to financial_page_078_table_001.csv
+2025-09-21 15:00:40,884 - PDFTableExtractor - INFO - Saved financial table 25 to financial_page_079_table_001.csv
+2025-09-21 15:00:42,550 - PDFTableExtractor - INFO - Saved financial table 26 to financial_page_080_table_001.csv
+2025-09-21 15:00:44,032 - PDFTableExtractor - INFO - Saved financial table 27 to financial_page_081_table_001.csv
+2025-09-21 15:00:46,052 - PDFTableExtractor - INFO - Saved financial table 28 to financial_page_083_table_001.csv
+2025-09-21 15:00:47,557 - PDFTableExtractor - INFO - Saved financial table 29 to financial_page_085_table_001.csv
+2025-09-21 15:00:49,191 - PDFTableExtractor - INFO - Saved financial table 30 to financial_page_087_table_001.csv
+2025-09-21 15:00:50,913 - PDFTableExtractor - INFO - Saved financial table 31 to financial_page_089_table_001.csv
+2025-09-21 15:00:53,226 - PDFTableExtractor - INFO - Saved financial table 32 to financial_page_092_table_001.csv
+2025-09-21 15:00:54,536 - PDFTableExtractor - INFO - Saved financial table 33 to financial_page_093_table_001.csv
+2025-09-21 15:00:55,972 - PDFTableExtractor - INFO - Saved financial table 34 to financial_page_094_table_001.csv
+2025-09-21 15:00:57,856 - PDFTableExtractor - INFO - Saved financial table 35 to financial_page_097_table_001.csv
+2025-09-21 15:00:59,246 - PDFTableExtractor - INFO - Saved financial table 36 to financial_page_098_table_001.csv
+2025-09-21 15:01:00,605 - PDFTableExtractor - INFO - Saved financial table 37 to financial_page_099_table_001.csv
+2025-09-21 15:01:01,708 - PDFTableExtractor - INFO - Saved financial table 38 to financial_page_100_table_001.csv
+2025-09-21 15:01:02,698 - PDFTableExtractor - INFO - Saved financial table 39 to financial_page_101_table_001.csv
+2025-09-21 15:01:03,965 - PDFTableExtractor - INFO - Saved financial table 40 to financial_page_102_table_001.csv
+2025-09-21 15:01:04,992 - PDFTableExtractor - INFO - Saved financial table 41 to financial_page_103_table_001.csv
+2025-09-21 15:01:07,529 - PDFTableExtractor - INFO - Saved financial table 42 to financial_page_105_table_001.csv
+2025-09-21 15:01:11,168 - PDFTableExtractor - INFO - Saved financial table 43 to financial_page_108_table_001.csv
+2025-09-21 15:01:12,620 - PDFTableExtractor - INFO - Saved financial table 44 to financial_page_109_table_001.csv
+2025-09-21 15:01:13,769 - PDFTableExtractor - INFO - Saved financial table 45 to financial_page_111_table_001.csv
+2025-09-21 15:01:15,210 - PDFTableExtractor - INFO - Saved financial table 46 to financial_page_112_table_001.csv
+2025-09-21 15:01:15,607 - PDFTableExtractor - INFO - Saved financial table 47 to financial_page_113_table_001.csv
+2025-09-21 15:01:16,976 - PDFTableExtractor - INFO - Saved financial table 48 to financial_page_114_table_001.csv
+2025-09-21 15:01:20,366 - PDFTableExtractor - INFO - Table extraction completed. Found 104 tables total.
+2025-09-21 15:01:20,382 - PDFTableExtractor - INFO - Table extraction summary saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\table_extraction_summary.json
+2025-09-21 15:01:20,382 - PDFTableExtractor - INFO - Complete extraction finished in 270.46 seconds
+2025-09-21 15:02:06,962 - PDFTableExtractor - INFO - Starting extraction from: nvda-20240128.pdf
+2025-09-21 15:02:06,963 - PDFTableExtractor - INFO - Starting text extraction...
+2025-09-21 15:02:07,260 - PDFTableExtractor - INFO - Processing text from page 1/118
+2025-09-21 15:02:08,258 - PDFTableExtractor - INFO - Processing text from page 2/118
+2025-09-21 15:02:08,651 - PDFTableExtractor - INFO - Processing text from page 3/118
+2025-09-21 15:02:09,086 - PDFTableExtractor - INFO - Processing text from page 4/118
+2025-09-21 15:02:09,676 - PDFTableExtractor - INFO - Processing text from page 5/118
+2025-09-21 15:02:09,710 - PDFTableExtractor - INFO - Processing text from page 6/118
+2025-09-21 15:02:10,235 - PDFTableExtractor - INFO - Processing text from page 7/118
+2025-09-21 15:02:10,768 - PDFTableExtractor - INFO - Processing text from page 8/118
+2025-09-21 15:02:11,496 - PDFTableExtractor - INFO - Processing text from page 9/118
+2025-09-21 15:02:11,529 - PDFTableExtractor - INFO - Processing text from page 10/118
+2025-09-21 15:02:12,103 - PDFTableExtractor - INFO - Processing text from page 11/118
+2025-09-21 15:02:12,626 - PDFTableExtractor - INFO - Processing text from page 12/118
+2025-09-21 15:02:12,658 - PDFTableExtractor - INFO - Processing text from page 13/118
+2025-09-21 15:02:13,228 - PDFTableExtractor - INFO - Processing text from page 14/118
+2025-09-21 15:02:13,262 - PDFTableExtractor - INFO - Processing text from page 15/118
+2025-09-21 15:02:13,845 - PDFTableExtractor - INFO - Processing text from page 16/118
+2025-09-21 15:02:13,882 - PDFTableExtractor - INFO - Processing text from page 17/118
+2025-09-21 15:02:14,300 - PDFTableExtractor - INFO - Processing text from page 18/118
+2025-09-21 15:02:14,876 - PDFTableExtractor - INFO - Processing text from page 19/118
+2025-09-21 15:02:15,242 - PDFTableExtractor - INFO - Processing text from page 20/118
+2025-09-21 15:02:15,274 - PDFTableExtractor - INFO - Processing text from page 21/118
+2025-09-21 15:02:15,855 - PDFTableExtractor - INFO - Processing text from page 22/118
+2025-09-21 15:02:15,888 - PDFTableExtractor - INFO - Processing text from page 23/118
+2025-09-21 15:02:16,402 - PDFTableExtractor - INFO - Processing text from page 24/118
+2025-09-21 15:02:16,435 - PDFTableExtractor - INFO - Processing text from page 25/118
+2025-09-21 15:02:17,200 - PDFTableExtractor - INFO - Processing text from page 26/118
+2025-09-21 15:02:17,232 - PDFTableExtractor - INFO - Processing text from page 27/118
+2025-09-21 15:02:17,783 - PDFTableExtractor - INFO - Processing text from page 28/118
+2025-09-21 15:02:17,815 - PDFTableExtractor - INFO - Processing text from page 29/118
+2025-09-21 15:02:18,416 - PDFTableExtractor - INFO - Processing text from page 30/118
+2025-09-21 15:02:18,451 - PDFTableExtractor - INFO - Processing text from page 31/118
+2025-09-21 15:02:19,283 - PDFTableExtractor - INFO - Processing text from page 32/118
+2025-09-21 15:02:20,135 - PDFTableExtractor - INFO - Processing text from page 33/118
+2025-09-21 15:02:20,922 - PDFTableExtractor - INFO - Processing text from page 34/118
+2025-09-21 15:02:20,959 - PDFTableExtractor - INFO - Processing text from page 35/118
+2025-09-21 15:02:21,618 - PDFTableExtractor - INFO - Processing text from page 36/118
+2025-09-21 15:02:21,655 - PDFTableExtractor - INFO - Processing text from page 37/118
+2025-09-21 15:02:22,323 - PDFTableExtractor - INFO - Processing text from page 38/118
+2025-09-21 15:02:22,362 - PDFTableExtractor - INFO - Processing text from page 39/118
+2025-09-21 15:02:23,258 - PDFTableExtractor - INFO - Processing text from page 40/118
+2025-09-21 15:02:23,295 - PDFTableExtractor - INFO - Processing text from page 41/118
+2025-09-21 15:02:24,104 - PDFTableExtractor - INFO - Processing text from page 42/118
+2025-09-21 15:02:24,135 - PDFTableExtractor - INFO - Processing text from page 43/118
+2025-09-21 15:02:24,834 - PDFTableExtractor - INFO - Processing text from page 44/118
+2025-09-21 15:02:24,866 - PDFTableExtractor - INFO - Processing text from page 45/118
+2025-09-21 15:02:25,686 - PDFTableExtractor - INFO - Processing text from page 46/118
+2025-09-21 15:02:26,400 - PDFTableExtractor - INFO - Processing text from page 47/118
+2025-09-21 15:02:27,213 - PDFTableExtractor - INFO - Processing text from page 48/118
+2025-09-21 15:02:27,251 - PDFTableExtractor - INFO - Processing text from page 49/118
+2025-09-21 15:02:28,187 - PDFTableExtractor - INFO - Processing text from page 50/118
+2025-09-21 15:02:28,224 - PDFTableExtractor - INFO - Processing text from page 51/118
+2025-09-21 15:02:28,860 - PDFTableExtractor - INFO - Processing text from page 52/118
+2025-09-21 15:02:28,900 - PDFTableExtractor - INFO - Processing text from page 53/118
+2025-09-21 15:02:29,168 - PDFTableExtractor - INFO - Processing text from page 54/118
+2025-09-21 15:02:29,803 - PDFTableExtractor - INFO - Processing text from page 55/118
+2025-09-21 15:02:30,384 - PDFTableExtractor - INFO - Processing text from page 56/118
+2025-09-21 15:02:30,879 - PDFTableExtractor - INFO - Processing text from page 57/118
+2025-09-21 15:02:30,913 - PDFTableExtractor - INFO - Processing text from page 58/118
+2025-09-21 15:02:31,450 - PDFTableExtractor - INFO - Processing text from page 59/118
+2025-09-21 15:02:32,083 - PDFTableExtractor - INFO - Processing text from page 60/118
+2025-09-21 15:02:32,491 - PDFTableExtractor - INFO - Processing text from page 61/118
+2025-09-21 15:02:32,974 - PDFTableExtractor - INFO - Processing text from page 62/118
+2025-09-21 15:02:33,006 - PDFTableExtractor - INFO - Processing text from page 63/118
+2025-09-21 15:02:33,432 - PDFTableExtractor - INFO - Processing text from page 64/118
+2025-09-21 15:02:33,889 - PDFTableExtractor - INFO - Processing text from page 65/118
+2025-09-21 15:02:33,921 - PDFTableExtractor - INFO - Processing text from page 66/118
+2025-09-21 15:02:34,345 - PDFTableExtractor - INFO - Processing text from page 67/118
+2025-09-21 15:02:34,376 - PDFTableExtractor - INFO - Processing text from page 68/118
+2025-09-21 15:02:34,881 - PDFTableExtractor - INFO - Processing text from page 69/118
+2025-09-21 15:02:34,915 - PDFTableExtractor - INFO - Processing text from page 70/118
+2025-09-21 15:02:35,423 - PDFTableExtractor - INFO - Processing text from page 71/118
+2025-09-21 15:02:35,460 - PDFTableExtractor - INFO - Processing text from page 72/118
+2025-09-21 15:02:35,718 - PDFTableExtractor - INFO - Processing text from page 73/118
+2025-09-21 15:02:36,123 - PDFTableExtractor - INFO - Processing text from page 74/118
+2025-09-21 15:02:36,772 - PDFTableExtractor - INFO - Processing text from page 75/118
+2025-09-21 15:02:37,326 - PDFTableExtractor - INFO - Processing text from page 76/118
+2025-09-21 15:02:37,665 - PDFTableExtractor - INFO - Processing text from page 77/118
+2025-09-21 15:02:37,892 - PDFTableExtractor - INFO - Processing text from page 78/118
+2025-09-21 15:02:38,261 - PDFTableExtractor - INFO - Processing text from page 79/118
+2025-09-21 15:02:38,974 - PDFTableExtractor - INFO - Processing text from page 80/118
+2025-09-21 15:02:39,575 - PDFTableExtractor - INFO - Processing text from page 81/118
+2025-09-21 15:02:40,076 - PDFTableExtractor - INFO - Processing text from page 82/118
+2025-09-21 15:02:40,109 - PDFTableExtractor - INFO - Processing text from page 83/118
+2025-09-21 15:02:40,641 - PDFTableExtractor - INFO - Processing text from page 84/118
+2025-09-21 15:02:40,674 - PDFTableExtractor - INFO - Processing text from page 85/118
+2025-09-21 15:02:41,258 - PDFTableExtractor - INFO - Processing text from page 86/118
+2025-09-21 15:02:41,292 - PDFTableExtractor - INFO - Processing text from page 87/118
+2025-09-21 15:02:41,883 - PDFTableExtractor - INFO - Processing text from page 88/118
+2025-09-21 15:02:41,916 - PDFTableExtractor - INFO - Processing text from page 89/118
+2025-09-21 15:02:42,501 - PDFTableExtractor - INFO - Processing text from page 90/118
+2025-09-21 15:02:42,534 - PDFTableExtractor - INFO - Processing text from page 91/118
+2025-09-21 15:02:42,887 - PDFTableExtractor - INFO - Processing text from page 92/118
+2025-09-21 15:02:43,289 - PDFTableExtractor - INFO - Processing text from page 93/118
+2025-09-21 15:02:43,979 - PDFTableExtractor - INFO - Processing text from page 94/118
+2025-09-21 15:02:44,454 - PDFTableExtractor - INFO - Processing text from page 95/118
+2025-09-21 15:02:44,487 - PDFTableExtractor - INFO - Processing text from page 96/118
+2025-09-21 15:02:44,791 - PDFTableExtractor - INFO - Processing text from page 97/118
+2025-09-21 15:02:45,275 - PDFTableExtractor - INFO - Processing text from page 98/118
+2025-09-21 15:02:45,770 - PDFTableExtractor - INFO - Processing text from page 99/118
+2025-09-21 15:02:46,255 - PDFTableExtractor - INFO - Processing text from page 100/118
+2025-09-21 15:02:46,616 - PDFTableExtractor - INFO - Processing text from page 101/118
+2025-09-21 15:02:47,057 - PDFTableExtractor - INFO - Processing text from page 102/118
+2025-09-21 15:02:47,581 - PDFTableExtractor - INFO - Processing text from page 103/118
+2025-09-21 15:02:47,884 - PDFTableExtractor - INFO - Processing text from page 104/118
+2025-09-21 15:02:48,325 - PDFTableExtractor - INFO - Processing text from page 105/118
+2025-09-21 15:02:48,781 - PDFTableExtractor - INFO - Processing text from page 106/118
+2025-09-21 15:02:49,240 - PDFTableExtractor - INFO - Processing text from page 107/118
+2025-09-21 15:02:49,893 - PDFTableExtractor - INFO - Processing text from page 108/118
+2025-09-21 15:02:50,510 - PDFTableExtractor - INFO - Processing text from page 109/118
+2025-09-21 15:02:51,092 - PDFTableExtractor - INFO - Processing text from page 110/118
+2025-09-21 15:02:51,127 - PDFTableExtractor - INFO - Processing text from page 111/118
+2025-09-21 15:02:51,592 - PDFTableExtractor - INFO - Processing text from page 112/118
+2025-09-21 15:02:52,211 - PDFTableExtractor - INFO - Processing text from page 113/118
+2025-09-21 15:02:52,328 - PDFTableExtractor - INFO - Processing text from page 114/118
+2025-09-21 15:02:52,741 - PDFTableExtractor - INFO - Processing text from page 115/118
+2025-09-21 15:02:53,503 - PDFTableExtractor - INFO - Processing text from page 116/118
+2025-09-21 15:02:54,218 - PDFTableExtractor - INFO - Processing text from page 117/118
+2025-09-21 15:02:54,410 - PDFTableExtractor - INFO - Processing text from page 118/118
+2025-09-21 15:02:56,577 - PDFTableExtractor - INFO - Word bounding boxes saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\text\word_boxes.json
+2025-09-21 15:02:56,584 - PDFTableExtractor - INFO - Starting table extraction...
+2025-09-21 15:02:56,584 - PDFTableExtractor - INFO - Extracting tables with standard pdfplumber settings...
+2025-09-21 15:02:57,892 - PDFTableExtractor - INFO - Page 1: Found 0 tables with standard method
+2025-09-21 15:02:58,309 - PDFTableExtractor - INFO - Page 2: Found 0 tables with standard method
+2025-09-21 15:02:58,721 - PDFTableExtractor - INFO - Page 3: Found 0 tables with standard method
+2025-09-21 15:02:59,293 - PDFTableExtractor - INFO - Page 4: Found 0 tables with standard method
+2025-09-21 15:02:59,328 - PDFTableExtractor - INFO - Page 5: Found 0 tables with standard method
+2025-09-21 15:02:59,885 - PDFTableExtractor - INFO - Page 6: Found 0 tables with standard method
+2025-09-21 15:03:00,476 - PDFTableExtractor - INFO - Page 7: Found 0 tables with standard method
+2025-09-21 15:03:01,226 - PDFTableExtractor - INFO - Page 8: Found 0 tables with standard method
+2025-09-21 15:03:01,267 - PDFTableExtractor - INFO - Page 9: Found 0 tables with standard method
+2025-09-21 15:03:01,830 - PDFTableExtractor - INFO - Page 10: Found 0 tables with standard method
+2025-09-21 15:03:02,314 - PDFTableExtractor - INFO - Page 11: Found 0 tables with standard method
+2025-09-21 15:03:02,350 - PDFTableExtractor - INFO - Page 12: Found 0 tables with standard method
+2025-09-21 15:03:02,908 - PDFTableExtractor - INFO - Page 13: Found 0 tables with standard method
+2025-09-21 15:03:02,942 - PDFTableExtractor - INFO - Page 14: Found 0 tables with standard method
+2025-09-21 15:03:03,489 - PDFTableExtractor - INFO - Page 15: Found 0 tables with standard method
+2025-09-21 15:03:03,524 - PDFTableExtractor - INFO - Page 16: Found 0 tables with standard method
+2025-09-21 15:03:03,955 - PDFTableExtractor - INFO - Page 17: Found 1 tables with standard method
+2025-09-21 15:03:03,955 - PDFTableExtractor - INFO - Processing table 1 on page 17: 5 rows, 5 columns
+2025-09-21 15:03:03,956 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 15:03:03,966 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 15:03:03,982 - PDFTableExtractor - INFO - Saved standard table 1 to standard_page_017_table_001.csv
+2025-09-21 15:03:04,485 - PDFTableExtractor - INFO - Page 18: Found 0 tables with standard method
+2025-09-21 15:03:04,843 - PDFTableExtractor - INFO - Page 19: Found 0 tables with standard method
+2025-09-21 15:03:04,877 - PDFTableExtractor - INFO - Page 20: Found 0 tables with standard method
+2025-09-21 15:03:07,443 - PDFTableExtractor - INFO - Page 21: Found 0 tables with standard method
+2025-09-21 15:03:07,486 - PDFTableExtractor - INFO - Page 22: Found 0 tables with standard method
+2025-09-21 15:03:07,966 - PDFTableExtractor - INFO - Page 23: Found 0 tables with standard method
+2025-09-21 15:03:08,001 - PDFTableExtractor - INFO - Page 24: Found 0 tables with standard method
+2025-09-21 15:03:08,670 - PDFTableExtractor - INFO - Page 25: Found 0 tables with standard method
+2025-09-21 15:03:08,704 - PDFTableExtractor - INFO - Page 26: Found 0 tables with standard method
+2025-09-21 15:03:09,167 - PDFTableExtractor - INFO - Page 27: Found 0 tables with standard method
+2025-09-21 15:03:09,203 - PDFTableExtractor - INFO - Page 28: Found 0 tables with standard method
+2025-09-21 15:03:09,758 - PDFTableExtractor - INFO - Page 29: Found 0 tables with standard method
+2025-09-21 15:03:09,793 - PDFTableExtractor - INFO - Page 30: Found 0 tables with standard method
+2025-09-21 15:03:10,447 - PDFTableExtractor - INFO - Page 31: Found 0 tables with standard method
+2025-09-21 15:03:11,142 - PDFTableExtractor - INFO - Page 32: Found 0 tables with standard method
+2025-09-21 15:03:11,792 - PDFTableExtractor - INFO - Page 33: Found 0 tables with standard method
+2025-09-21 15:03:11,826 - PDFTableExtractor - INFO - Page 34: Found 0 tables with standard method
+2025-09-21 15:03:12,453 - PDFTableExtractor - INFO - Page 35: Found 0 tables with standard method
+2025-09-21 15:03:12,490 - PDFTableExtractor - INFO - Page 36: Found 0 tables with standard method
+2025-09-21 15:03:13,053 - PDFTableExtractor - INFO - Page 37: Found 0 tables with standard method
+2025-09-21 15:03:13,089 - PDFTableExtractor - INFO - Page 38: Found 0 tables with standard method
+2025-09-21 15:03:13,769 - PDFTableExtractor - INFO - Page 39: Found 0 tables with standard method
+2025-09-21 15:03:13,808 - PDFTableExtractor - INFO - Page 40: Found 0 tables with standard method
+2025-09-21 15:03:14,617 - PDFTableExtractor - INFO - Page 41: Found 0 tables with standard method
+2025-09-21 15:03:14,656 - PDFTableExtractor - INFO - Page 42: Found 0 tables with standard method
+2025-09-21 15:03:15,411 - PDFTableExtractor - INFO - Page 43: Found 0 tables with standard method
+2025-09-21 15:03:15,451 - PDFTableExtractor - INFO - Page 44: Found 0 tables with standard method
+2025-09-21 15:03:16,248 - PDFTableExtractor - INFO - Page 45: Found 0 tables with standard method
+2025-09-21 15:03:17,210 - PDFTableExtractor - INFO - Page 46: Found 0 tables with standard method
+2025-09-21 15:03:17,864 - PDFTableExtractor - INFO - Page 47: Found 0 tables with standard method
+2025-09-21 15:03:17,902 - PDFTableExtractor - INFO - Page 48: Found 0 tables with standard method
+2025-09-21 15:03:18,449 - PDFTableExtractor - INFO - Page 49: Found 0 tables with standard method
+2025-09-21 15:03:18,485 - PDFTableExtractor - INFO - Page 50: Found 0 tables with standard method
+2025-09-21 15:03:19,035 - PDFTableExtractor - INFO - Page 51: Found 1 tables with standard method
+2025-09-21 15:03:19,035 - PDFTableExtractor - INFO - Processing table 1 on page 51: 4 rows, 11 columns
+2025-09-21 15:03:19,037 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 11)
+2025-09-21 15:03:19,052 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 11)
+2025-09-21 15:03:19,070 - PDFTableExtractor - INFO - Saved standard table 2 to standard_page_051_table_001.csv
+2025-09-21 15:03:19,108 - PDFTableExtractor - INFO - Page 52: Found 0 tables with standard method
+2025-09-21 15:03:19,413 - PDFTableExtractor - INFO - Page 53: Found 1 tables with standard method
+2025-09-21 15:03:19,414 - PDFTableExtractor - INFO - Processing table 1 on page 53: 3 rows, 18 columns
+2025-09-21 15:03:19,415 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 18)
+2025-09-21 15:03:19,441 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 18)
+2025-09-21 15:03:19,467 - PDFTableExtractor - INFO - Saved standard table 3 to standard_page_053_table_001.csv
+2025-09-21 15:03:20,031 - PDFTableExtractor - INFO - Page 54: Found 0 tables with standard method
+2025-09-21 15:03:20,575 - PDFTableExtractor - INFO - Page 55: Found 0 tables with standard method
+2025-09-21 15:03:21,131 - PDFTableExtractor - INFO - Page 56: Found 1 tables with standard method
+2025-09-21 15:03:21,131 - PDFTableExtractor - INFO - Processing table 1 on page 56: 6 rows, 8 columns
+2025-09-21 15:03:21,132 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 8)
+2025-09-21 15:03:21,141 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 8)
+2025-09-21 15:03:21,154 - PDFTableExtractor - INFO - Saved standard table 4 to standard_page_056_table_001.csv
+2025-09-21 15:03:21,189 - PDFTableExtractor - INFO - Page 57: Found 0 tables with standard method
+2025-09-21 15:03:21,714 - PDFTableExtractor - INFO - Page 58: Found 0 tables with standard method
+2025-09-21 15:03:22,275 - PDFTableExtractor - INFO - Page 59: Found 0 tables with standard method
+2025-09-21 15:03:22,818 - PDFTableExtractor - INFO - Page 60: Found 3 tables with standard method
+2025-09-21 15:03:22,818 - PDFTableExtractor - INFO - Processing table 1 on page 60: 16 rows, 6 columns
+2025-09-21 15:03:22,819 - PDFTableExtractor - INFO - Created DataFrame with shape: (15, 6)
+2025-09-21 15:03:22,828 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (15, 6)
+2025-09-21 15:03:22,839 - PDFTableExtractor - INFO - Saved standard table 5 to standard_page_060_table_001.csv
+2025-09-21 15:03:22,839 - PDFTableExtractor - INFO - Processing table 2 on page 60: 3 rows, 12 columns
+2025-09-21 15:03:22,840 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 12)
+2025-09-21 15:03:22,854 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 12)
+2025-09-21 15:03:22,870 - PDFTableExtractor - INFO - Saved standard table 6 to standard_page_060_table_002.csv
+2025-09-21 15:03:22,870 - PDFTableExtractor - INFO - Processing table 3 on page 60: 4 rows, 12 columns
+2025-09-21 15:03:22,871 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 12)
+2025-09-21 15:03:22,887 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 12)
+2025-09-21 15:03:22,904 - PDFTableExtractor - INFO - Saved standard table 7 to standard_page_060_table_003.csv
+2025-09-21 15:03:23,440 - PDFTableExtractor - INFO - Page 61: Found 1 tables with standard method
+2025-09-21 15:03:23,441 - PDFTableExtractor - INFO - Processing table 1 on page 61: 8 rows, 14 columns
+2025-09-21 15:03:23,442 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 14)
+2025-09-21 15:03:23,458 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 14)
+2025-09-21 15:03:23,476 - PDFTableExtractor - INFO - Saved standard table 8 to standard_page_061_table_001.csv
+2025-09-21 15:03:23,515 - PDFTableExtractor - INFO - Page 62: Found 0 tables with standard method
+2025-09-21 15:03:23,965 - PDFTableExtractor - INFO - Page 63: Found 1 tables with standard method
+2025-09-21 15:03:23,965 - PDFTableExtractor - INFO - Processing table 1 on page 63: 4 rows, 9 columns
+2025-09-21 15:03:23,966 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 9)
+2025-09-21 15:03:23,977 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 9)
+2025-09-21 15:03:23,999 - PDFTableExtractor - INFO - Saved standard table 9 to standard_page_063_table_001.csv
+2025-09-21 15:03:24,567 - PDFTableExtractor - INFO - Page 64: Found 2 tables with standard method
+2025-09-21 15:03:24,567 - PDFTableExtractor - INFO - Processing table 1 on page 64: 3 rows, 5 columns
+2025-09-21 15:03:24,568 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 15:03:24,575 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 15:03:24,585 - PDFTableExtractor - INFO - Saved standard table 10 to standard_page_064_table_001.csv
+2025-09-21 15:03:24,585 - PDFTableExtractor - INFO - Processing table 2 on page 64: 3 rows, 5 columns
+2025-09-21 15:03:24,586 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 15:03:24,592 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 15:03:24,602 - PDFTableExtractor - INFO - Saved standard table 11 to standard_page_064_table_002.csv
+2025-09-21 15:03:24,639 - PDFTableExtractor - INFO - Page 65: Found 0 tables with standard method
+2025-09-21 15:03:25,152 - PDFTableExtractor - INFO - Page 66: Found 1 tables with standard method
+2025-09-21 15:03:25,153 - PDFTableExtractor - INFO - Processing table 1 on page 66: 8 rows, 4 columns
+2025-09-21 15:03:25,153 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 4)
+2025-09-21 15:03:25,158 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 4)
+2025-09-21 15:03:25,170 - PDFTableExtractor - INFO - Saved standard table 12 to standard_page_066_table_001.csv
+2025-09-21 15:03:25,209 - PDFTableExtractor - INFO - Page 67: Found 0 tables with standard method
+2025-09-21 15:03:25,800 - PDFTableExtractor - INFO - Page 68: Found 0 tables with standard method
+2025-09-21 15:03:25,848 - PDFTableExtractor - INFO - Page 69: Found 0 tables with standard method
+2025-09-21 15:03:26,365 - PDFTableExtractor - INFO - Page 70: Found 0 tables with standard method
+2025-09-21 15:03:26,406 - PDFTableExtractor - INFO - Page 71: Found 0 tables with standard method
+2025-09-21 15:03:26,668 - PDFTableExtractor - INFO - Page 72: Found 0 tables with standard method
+2025-09-21 15:03:27,073 - PDFTableExtractor - INFO - Page 73: Found 0 tables with standard method
+2025-09-21 15:03:27,639 - PDFTableExtractor - INFO - Page 74: Found 0 tables with standard method
+2025-09-21 15:03:28,150 - PDFTableExtractor - INFO - Page 75: Found 0 tables with standard method
+2025-09-21 15:03:28,615 - PDFTableExtractor - INFO - Page 76: Found 1 tables with standard method
+2025-09-21 15:03:28,615 - PDFTableExtractor - INFO - Processing table 1 on page 76: 24 rows, 7 columns
+2025-09-21 15:03:28,616 - PDFTableExtractor - INFO - Created DataFrame with shape: (23, 7)
+2025-09-21 15:03:28,625 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (23, 7)
+2025-09-21 15:03:28,638 - PDFTableExtractor - INFO - Saved standard table 13 to standard_page_076_table_001.csv
+2025-09-21 15:03:28,932 - PDFTableExtractor - INFO - Page 77: Found 1 tables with standard method
+2025-09-21 15:03:28,932 - PDFTableExtractor - INFO - Processing table 1 on page 77: 13 rows, 7 columns
+2025-09-21 15:03:28,933 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 7)
+2025-09-21 15:03:28,941 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 7)
+2025-09-21 15:03:28,951 - PDFTableExtractor - INFO - Saved standard table 14 to standard_page_077_table_001.csv
+2025-09-21 15:03:29,471 - PDFTableExtractor - INFO - Page 78: Found 1 tables with standard method
+2025-09-21 15:03:29,471 - PDFTableExtractor - INFO - Processing table 1 on page 78: 35 rows, 5 columns
+2025-09-21 15:03:29,471 - PDFTableExtractor - INFO - Created DataFrame with shape: (34, 5)
+2025-09-21 15:03:29,479 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (34, 5)
+2025-09-21 15:03:29,489 - PDFTableExtractor - INFO - Saved standard table 15 to standard_page_078_table_001.csv
+2025-09-21 15:03:30,466 - PDFTableExtractor - INFO - Page 79: Found 1 tables with standard method
+2025-09-21 15:03:30,466 - PDFTableExtractor - INFO - Processing table 1 on page 79: 27 rows, 14 columns
+2025-09-21 15:03:30,467 - PDFTableExtractor - INFO - Created DataFrame with shape: (26, 14)
+2025-09-21 15:03:30,482 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (26, 14)
+2025-09-21 15:03:30,500 - PDFTableExtractor - INFO - Saved standard table 16 to standard_page_079_table_001.csv
+2025-09-21 15:03:31,352 - PDFTableExtractor - INFO - Page 80: Found 1 tables with standard method
+2025-09-21 15:03:31,352 - PDFTableExtractor - INFO - Processing table 1 on page 80: 41 rows, 7 columns
+2025-09-21 15:03:31,353 - PDFTableExtractor - INFO - Created DataFrame with shape: (40, 7)
+2025-09-21 15:03:31,361 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (40, 7)
+2025-09-21 15:03:31,374 - PDFTableExtractor - INFO - Saved standard table 17 to standard_page_080_table_001.csv
+2025-09-21 15:03:31,868 - PDFTableExtractor - INFO - Page 81: Found 0 tables with standard method
+2025-09-21 15:03:31,904 - PDFTableExtractor - INFO - Page 82: Found 0 tables with standard method
+2025-09-21 15:03:32,447 - PDFTableExtractor - INFO - Page 83: Found 0 tables with standard method
+2025-09-21 15:03:32,485 - PDFTableExtractor - INFO - Page 84: Found 0 tables with standard method
+2025-09-21 15:03:33,093 - PDFTableExtractor - INFO - Page 85: Found 0 tables with standard method
+2025-09-21 15:03:33,136 - PDFTableExtractor - INFO - Page 86: Found 0 tables with standard method
+2025-09-21 15:03:33,772 - PDFTableExtractor - INFO - Page 87: Found 0 tables with standard method
+2025-09-21 15:03:33,815 - PDFTableExtractor - INFO - Page 88: Found 0 tables with standard method
+2025-09-21 15:03:34,467 - PDFTableExtractor - INFO - Page 89: Found 0 tables with standard method
+2025-09-21 15:03:34,506 - PDFTableExtractor - INFO - Page 90: Found 0 tables with standard method
+2025-09-21 15:03:34,935 - PDFTableExtractor - INFO - Page 91: Found 1 tables with standard method
+2025-09-21 15:03:34,935 - PDFTableExtractor - INFO - Processing table 1 on page 91: 12 rows, 3 columns
+2025-09-21 15:03:34,936 - PDFTableExtractor - INFO - Created DataFrame with shape: (11, 3)
+2025-09-21 15:03:34,940 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (11, 3)
+2025-09-21 15:03:34,948 - PDFTableExtractor - INFO - Saved standard table 18 to standard_page_091_table_001.csv
+2025-09-21 15:03:35,628 - PDFTableExtractor - INFO - Page 92: Found 3 tables with standard method
+2025-09-21 15:03:35,629 - PDFTableExtractor - INFO - Processing table 1 on page 92: 3 rows, 7 columns
+2025-09-21 15:03:35,630 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 15:03:35,637 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 15:03:35,648 - PDFTableExtractor - INFO - Saved standard table 19 to standard_page_092_table_001.csv
+2025-09-21 15:03:35,648 - PDFTableExtractor - INFO - Processing table 2 on page 92: 4 rows, 6 columns
+2025-09-21 15:03:35,649 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 15:03:35,656 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 15:03:35,669 - PDFTableExtractor - INFO - Saved standard table 20 to standard_page_092_table_002.csv
+2025-09-21 15:03:35,669 - PDFTableExtractor - INFO - Processing table 3 on page 92: 9 rows, 6 columns
+2025-09-21 15:03:35,670 - PDFTableExtractor - INFO - Created DataFrame with shape: (8, 6)
+2025-09-21 15:03:35,676 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (8, 6)
+2025-09-21 15:03:35,686 - PDFTableExtractor - INFO - Saved standard table 21 to standard_page_092_table_003.csv
+2025-09-21 15:03:36,244 - PDFTableExtractor - INFO - Page 93: Found 1 tables with standard method
+2025-09-21 15:03:36,244 - PDFTableExtractor - INFO - Processing table 1 on page 93: 4 rows, 4 columns
+2025-09-21 15:03:36,245 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 15:03:36,251 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 15:03:36,258 - PDFTableExtractor - INFO - Saved standard table 22 to standard_page_093_table_001.csv
+2025-09-21 15:03:36,821 - PDFTableExtractor - INFO - Page 94: Found 2 tables with standard method
+2025-09-21 15:03:36,821 - PDFTableExtractor - INFO - Processing table 1 on page 94: 7 rows, 5 columns
+2025-09-21 15:03:36,822 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 5)
+2025-09-21 15:03:36,830 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 5)
+2025-09-21 15:03:36,837 - PDFTableExtractor - INFO - Saved standard table 23 to standard_page_094_table_001.csv
+2025-09-21 15:03:36,838 - PDFTableExtractor - INFO - Processing table 2 on page 94: 10 rows, 7 columns
+2025-09-21 15:03:36,838 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 15:03:36,847 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 15:03:36,857 - PDFTableExtractor - INFO - Saved standard table 24 to standard_page_094_table_002.csv
+2025-09-21 15:03:36,892 - PDFTableExtractor - INFO - Page 95: Found 0 tables with standard method
+2025-09-21 15:03:37,268 - PDFTableExtractor - INFO - Page 96: Found 2 tables with standard method
+2025-09-21 15:03:37,268 - PDFTableExtractor - INFO - Processing table 1 on page 96: 3 rows, 14 columns
+2025-09-21 15:03:37,269 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 14)
+2025-09-21 15:03:37,287 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 14)
+2025-09-21 15:03:37,305 - PDFTableExtractor - INFO - Saved standard table 25 to standard_page_096_table_001.csv
+2025-09-21 15:03:37,305 - PDFTableExtractor - INFO - Processing table 2 on page 96: 8 rows, 3 columns
+2025-09-21 15:03:37,305 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 3)
+2025-09-21 15:03:37,308 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 3)
+2025-09-21 15:03:37,316 - PDFTableExtractor - INFO - Saved standard table 26 to standard_page_096_table_002.csv
+2025-09-21 15:03:37,952 - PDFTableExtractor - INFO - Page 97: Found 2 tables with standard method
+2025-09-21 15:03:37,952 - PDFTableExtractor - INFO - Processing table 1 on page 97: 7 rows, 13 columns
+2025-09-21 15:03:37,953 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 15:03:37,970 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 15:03:37,988 - PDFTableExtractor - INFO - Saved standard table 27 to standard_page_097_table_001.csv
+2025-09-21 15:03:37,989 - PDFTableExtractor - INFO - Processing table 2 on page 97: 7 rows, 13 columns
+2025-09-21 15:03:37,990 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 15:03:38,006 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 15:03:38,024 - PDFTableExtractor - INFO - Saved standard table 28 to standard_page_097_table_002.csv
+2025-09-21 15:03:38,670 - PDFTableExtractor - INFO - Page 98: Found 3 tables with standard method
+2025-09-21 15:03:38,670 - PDFTableExtractor - INFO - Processing table 1 on page 98: 4 rows, 13 columns
+2025-09-21 15:03:38,671 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 15:03:38,686 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 15:03:38,702 - PDFTableExtractor - INFO - Saved standard table 29 to standard_page_098_table_001.csv
+2025-09-21 15:03:38,703 - PDFTableExtractor - INFO - Processing table 2 on page 98: 4 rows, 13 columns
+2025-09-21 15:03:38,704 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 15:03:38,721 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 15:03:38,739 - PDFTableExtractor - INFO - Saved standard table 30 to standard_page_098_table_002.csv
+2025-09-21 15:03:38,739 - PDFTableExtractor - INFO - Processing table 3 on page 98: 3 rows, 6 columns
+2025-09-21 15:03:38,740 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 6)
+2025-09-21 15:03:38,746 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 6)
+2025-09-21 15:03:38,755 - PDFTableExtractor - INFO - Saved standard table 31 to standard_page_098_table_003.csv
+2025-09-21 15:03:39,358 - PDFTableExtractor - INFO - Page 99: Found 1 tables with standard method
+2025-09-21 15:03:39,359 - PDFTableExtractor - INFO - Processing table 1 on page 99: 20 rows, 7 columns
+2025-09-21 15:03:39,360 - PDFTableExtractor - INFO - Created DataFrame with shape: (19, 7)
+2025-09-21 15:03:39,369 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (19, 7)
+2025-09-21 15:03:39,380 - PDFTableExtractor - INFO - Saved standard table 32 to standard_page_099_table_001.csv
+2025-09-21 15:03:39,741 - PDFTableExtractor - INFO - Page 100: Found 3 tables with standard method
+2025-09-21 15:03:39,741 - PDFTableExtractor - INFO - Processing table 1 on page 100: 6 rows, 3 columns
+2025-09-21 15:03:39,741 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 3)
+2025-09-21 15:03:39,746 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 3)
+2025-09-21 15:03:39,752 - PDFTableExtractor - INFO - Saved standard table 33 to standard_page_100_table_001.csv
+2025-09-21 15:03:39,753 - PDFTableExtractor - INFO - Processing table 2 on page 100: 2 rows, 3 columns
+2025-09-21 15:03:39,753 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 3)
+2025-09-21 15:03:39,756 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 2)
+2025-09-21 15:03:39,763 - PDFTableExtractor - INFO - Saved standard table 34 to standard_page_100_table_002.csv
+2025-09-21 15:03:39,763 - PDFTableExtractor - INFO - Processing table 3 on page 100: 4 rows, 6 columns
+2025-09-21 15:03:39,764 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 15:03:39,771 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 15:03:39,781 - PDFTableExtractor - INFO - Saved standard table 35 to standard_page_100_table_003.csv
+2025-09-21 15:03:40,253 - PDFTableExtractor - INFO - Page 101: Found 2 tables with standard method
+2025-09-21 15:03:40,253 - PDFTableExtractor - INFO - Processing table 1 on page 101: 7 rows, 8 columns
+2025-09-21 15:03:40,254 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 8)
+2025-09-21 15:03:40,265 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 8)
+2025-09-21 15:03:40,274 - PDFTableExtractor - INFO - Saved standard table 36 to standard_page_101_table_001.csv
+2025-09-21 15:03:40,275 - PDFTableExtractor - INFO - Processing table 2 on page 101: 5 rows, 5 columns
+2025-09-21 15:03:40,275 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 15:03:40,283 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 15:03:40,292 - PDFTableExtractor - INFO - Saved standard table 37 to standard_page_101_table_002.csv
+2025-09-21 15:03:40,920 - PDFTableExtractor - INFO - Page 102: Found 3 tables with standard method
+2025-09-21 15:03:40,920 - PDFTableExtractor - INFO - Processing table 1 on page 102: 11 rows, 4 columns
+2025-09-21 15:03:40,921 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 4)
+2025-09-21 15:03:40,925 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 4)
+2025-09-21 15:03:40,935 - PDFTableExtractor - INFO - Saved standard table 38 to standard_page_102_table_001.csv
+2025-09-21 15:03:40,935 - PDFTableExtractor - INFO - Processing table 2 on page 102: 6 rows, 4 columns
+2025-09-21 15:03:40,936 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 4)
+2025-09-21 15:03:40,940 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 4)
+2025-09-21 15:03:40,949 - PDFTableExtractor - INFO - Saved standard table 39 to standard_page_102_table_002.csv
+2025-09-21 15:03:40,949 - PDFTableExtractor - INFO - Processing table 3 on page 102: 4 rows, 4 columns
+2025-09-21 15:03:40,950 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 15:03:40,954 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 15:03:40,962 - PDFTableExtractor - INFO - Saved standard table 40 to standard_page_102_table_003.csv
+2025-09-21 15:03:41,280 - PDFTableExtractor - INFO - Page 103: Found 1 tables with standard method
+2025-09-21 15:03:41,280 - PDFTableExtractor - INFO - Processing table 1 on page 103: 2 rows, 6 columns
+2025-09-21 15:03:41,281 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 15:03:41,289 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 15:03:41,299 - PDFTableExtractor - INFO - Saved standard table 41 to standard_page_103_table_001.csv
+2025-09-21 15:03:41,822 - PDFTableExtractor - INFO - Page 104: Found 1 tables with standard method
+2025-09-21 15:03:41,822 - PDFTableExtractor - INFO - Processing table 1 on page 104: 13 rows, 11 columns
+2025-09-21 15:03:41,823 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 11)
+2025-09-21 15:03:41,836 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 11)
+2025-09-21 15:03:41,851 - PDFTableExtractor - INFO - Saved standard table 42 to standard_page_104_table_001.csv
+2025-09-21 15:03:42,373 - PDFTableExtractor - INFO - Page 105: Found 3 tables with standard method
+2025-09-21 15:03:42,373 - PDFTableExtractor - INFO - Processing table 1 on page 105: 7 rows, 3 columns
+2025-09-21 15:03:42,374 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 3)
+2025-09-21 15:03:42,379 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 3)
+2025-09-21 15:03:42,386 - PDFTableExtractor - INFO - Saved standard table 43 to standard_page_105_table_001.csv
+2025-09-21 15:03:42,386 - PDFTableExtractor - INFO - Processing table 2 on page 105: 2 rows, 6 columns
+2025-09-21 15:03:42,387 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 15:03:42,395 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 15:03:42,403 - PDFTableExtractor - INFO - Saved standard table 44 to standard_page_105_table_002.csv
+2025-09-21 15:03:42,403 - PDFTableExtractor - INFO - Processing table 3 on page 105: 4 rows, 10 columns
+2025-09-21 15:03:42,404 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 10)
+2025-09-21 15:03:42,417 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 10)
+2025-09-21 15:03:42,430 - PDFTableExtractor - INFO - Saved standard table 45 to standard_page_105_table_003.csv
+2025-09-21 15:03:42,885 - PDFTableExtractor - INFO - Page 106: Found 0 tables with standard method
+2025-09-21 15:03:43,747 - PDFTableExtractor - INFO - Page 107: Found 3 tables with standard method
+2025-09-21 15:03:43,747 - PDFTableExtractor - INFO - Processing table 1 on page 107: 10 rows, 7 columns
+2025-09-21 15:03:43,748 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 15:03:43,758 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 15:03:43,772 - PDFTableExtractor - INFO - Saved standard table 46 to standard_page_107_table_001.csv
+2025-09-21 15:03:43,772 - PDFTableExtractor - INFO - Processing table 2 on page 107: 3 rows, 7 columns
+2025-09-21 15:03:43,773 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 15:03:43,783 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 15:03:43,796 - PDFTableExtractor - INFO - Saved standard table 47 to standard_page_107_table_002.csv
+2025-09-21 15:03:43,797 - PDFTableExtractor - INFO - Processing table 3 on page 107: 11 rows, 13 columns
+2025-09-21 15:03:43,798 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 13)
+2025-09-21 15:03:43,816 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 13)
+2025-09-21 15:03:43,837 - PDFTableExtractor - INFO - Saved standard table 48 to standard_page_107_table_003.csv
+2025-09-21 15:03:44,510 - PDFTableExtractor - INFO - Page 108: Found 1 tables with standard method
+2025-09-21 15:03:44,510 - PDFTableExtractor - INFO - Processing table 1 on page 108: 19 rows, 6 columns
+2025-09-21 15:03:44,512 - PDFTableExtractor - INFO - Created DataFrame with shape: (18, 6)
+2025-09-21 15:03:44,519 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (18, 6)
+2025-09-21 15:03:44,531 - PDFTableExtractor - INFO - Saved standard table 49 to standard_page_108_table_001.csv
+2025-09-21 15:03:45,146 - PDFTableExtractor - INFO - Page 109: Found 1 tables with standard method
+2025-09-21 15:03:45,146 - PDFTableExtractor - INFO - Processing table 1 on page 109: 7 rows, 9 columns
+2025-09-21 15:03:45,147 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 9)
+2025-09-21 15:03:45,157 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 9)
+2025-09-21 15:03:45,173 - PDFTableExtractor - INFO - Saved standard table 50 to standard_page_109_table_001.csv
+2025-09-21 15:03:45,208 - PDFTableExtractor - INFO - Page 110: Found 0 tables with standard method
+2025-09-21 15:03:45,940 - PDFTableExtractor - INFO - Page 111: Found 1 tables with standard method
+2025-09-21 15:03:45,940 - PDFTableExtractor - INFO - Processing table 1 on page 111: 11 rows, 12 columns
+2025-09-21 15:03:45,941 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 12)
+2025-09-21 15:03:45,954 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 12)
+2025-09-21 15:03:45,968 - PDFTableExtractor - INFO - Saved standard table 51 to standard_page_111_table_001.csv
+2025-09-21 15:03:46,520 - PDFTableExtractor - INFO - Page 112: Found 3 tables with standard method
+2025-09-21 15:03:46,520 - PDFTableExtractor - INFO - Processing table 1 on page 112: 8 rows, 7 columns
+2025-09-21 15:03:46,521 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 7)
+2025-09-21 15:03:46,532 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 7)
+2025-09-21 15:03:46,544 - PDFTableExtractor - INFO - Saved standard table 52 to standard_page_112_table_001.csv
+2025-09-21 15:03:46,544 - PDFTableExtractor - INFO - Processing table 2 on page 112: 5 rows, 7 columns
+2025-09-21 15:03:46,545 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 7)
+2025-09-21 15:03:46,554 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 7)
+2025-09-21 15:03:46,566 - PDFTableExtractor - INFO - Saved standard table 53 to standard_page_112_table_002.csv
+2025-09-21 15:03:46,566 - PDFTableExtractor - INFO - Processing table 3 on page 112: 6 rows, 7 columns
+2025-09-21 15:03:46,566 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 7)
+2025-09-21 15:03:46,575 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 7)
+2025-09-21 15:03:46,587 - PDFTableExtractor - INFO - Saved standard table 54 to standard_page_112_table_003.csv
+2025-09-21 15:03:46,725 - PDFTableExtractor - INFO - Page 113: Found 1 tables with standard method
+2025-09-21 15:03:46,725 - PDFTableExtractor - INFO - Processing table 1 on page 113: 5 rows, 6 columns
+2025-09-21 15:03:46,727 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 6)
+2025-09-21 15:03:46,735 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 6)
+2025-09-21 15:03:46,746 - PDFTableExtractor - INFO - Saved standard table 55 to standard_page_113_table_001.csv
+2025-09-21 15:03:47,267 - PDFTableExtractor - INFO - Page 114: Found 1 tables with standard method
+2025-09-21 15:03:47,268 - PDFTableExtractor - INFO - Processing table 1 on page 114: 11 rows, 11 columns
+2025-09-21 15:03:47,269 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 11)
+2025-09-21 15:03:47,280 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 11)
+2025-09-21 15:03:47,292 - PDFTableExtractor - INFO - Saved standard table 56 to standard_page_114_table_001.csv
+2025-09-21 15:03:47,884 - PDFTableExtractor - INFO - Page 115: Found 0 tables with standard method
+2025-09-21 15:03:48,766 - PDFTableExtractor - INFO - Page 116: Found 0 tables with standard method
+2025-09-21 15:03:48,976 - PDFTableExtractor - INFO - Page 117: Found 0 tables with standard method
+2025-09-21 15:03:49,188 - PDFTableExtractor - INFO - Page 118: Found 0 tables with standard method
+2025-09-21 15:03:49,195 - PDFTableExtractor - INFO - Extracting tables with custom settings...
+2025-09-21 15:04:39,333 - PDFTableExtractor - INFO - Extracting tables with financial statement focus...
+2025-09-21 15:04:51,785 - PDFTableExtractor - INFO - Saved financial table 1 to financial_page_015_table_001.csv
+2025-09-21 15:04:55,284 - PDFTableExtractor - INFO - Saved financial table 2 to financial_page_019_table_001.csv
+2025-09-21 15:04:56,695 - PDFTableExtractor - INFO - Saved financial table 3 to financial_page_021_table_001.csv
+2025-09-21 15:04:59,516 - PDFTableExtractor - INFO - Saved financial table 4 to financial_page_025_table_001.csv
+2025-09-21 15:05:00,954 - PDFTableExtractor - INFO - Saved financial table 5 to financial_page_027_table_001.csv
+2025-09-21 15:05:03,779 - PDFTableExtractor - INFO - Saved financial table 6 to financial_page_031_table_001.csv
+2025-09-21 15:05:05,344 - PDFTableExtractor - INFO - Saved financial table 7 to financial_page_032_table_001.csv
+2025-09-21 15:05:06,820 - PDFTableExtractor - INFO - Saved financial table 8 to financial_page_033_table_001.csv
+2025-09-21 15:05:08,404 - PDFTableExtractor - INFO - Saved financial table 9 to financial_page_035_table_001.csv
+2025-09-21 15:05:09,819 - PDFTableExtractor - INFO - Saved financial table 10 to financial_page_037_table_001.csv
+2025-09-21 15:05:13,076 - PDFTableExtractor - INFO - Saved financial table 11 to financial_page_041_table_001.csv
+2025-09-21 15:05:19,147 - PDFTableExtractor - INFO - Saved financial table 12 to financial_page_047_table_001.csv
+2025-09-21 15:05:21,167 - PDFTableExtractor - INFO - Saved financial table 13 to financial_page_051_table_001.csv
+2025-09-21 15:05:24,396 - PDFTableExtractor - INFO - Saved financial table 14 to financial_page_055_table_001.csv
+2025-09-21 15:05:25,518 - PDFTableExtractor - INFO - Saved financial table 15 to financial_page_056_table_001.csv
+2025-09-21 15:05:26,810 - PDFTableExtractor - INFO - Saved financial table 16 to financial_page_058_table_001.csv
+2025-09-21 15:05:27,987 - PDFTableExtractor - INFO - Saved financial table 17 to financial_page_059_table_001.csv
+2025-09-21 15:05:29,114 - PDFTableExtractor - INFO - Saved financial table 18 to financial_page_060_table_001.csv
+2025-09-21 15:05:30,204 - PDFTableExtractor - INFO - Saved financial table 19 to financial_page_061_table_001.csv
+2025-09-21 15:05:31,201 - PDFTableExtractor - INFO - Saved financial table 20 to financial_page_063_table_001.csv
+2025-09-21 15:05:33,498 - PDFTableExtractor - INFO - Saved financial table 21 to financial_page_066_table_001.csv
+2025-09-21 15:05:34,809 - PDFTableExtractor - INFO - Saved financial table 22 to financial_page_068_table_001.csv
+2025-09-21 15:05:39,887 - PDFTableExtractor - INFO - Saved financial table 23 to financial_page_077_table_001.csv
+2025-09-21 15:05:40,740 - PDFTableExtractor - INFO - Saved financial table 24 to financial_page_078_table_001.csv
+2025-09-21 15:05:41,957 - PDFTableExtractor - INFO - Saved financial table 25 to financial_page_079_table_001.csv
+2025-09-21 15:05:43,263 - PDFTableExtractor - INFO - Saved financial table 26 to financial_page_080_table_001.csv
+2025-09-21 15:05:44,442 - PDFTableExtractor - INFO - Saved financial table 27 to financial_page_081_table_001.csv
+2025-09-21 15:05:45,980 - PDFTableExtractor - INFO - Saved financial table 28 to financial_page_083_table_001.csv
+2025-09-21 15:05:47,244 - PDFTableExtractor - INFO - Saved financial table 29 to financial_page_085_table_001.csv
+2025-09-21 15:05:48,586 - PDFTableExtractor - INFO - Saved financial table 30 to financial_page_087_table_001.csv
+2025-09-21 15:05:49,994 - PDFTableExtractor - INFO - Saved financial table 31 to financial_page_089_table_001.csv
+2025-09-21 15:05:52,120 - PDFTableExtractor - INFO - Saved financial table 32 to financial_page_092_table_001.csv
+2025-09-21 15:05:53,289 - PDFTableExtractor - INFO - Saved financial table 33 to financial_page_093_table_001.csv
+2025-09-21 15:05:54,541 - PDFTableExtractor - INFO - Saved financial table 34 to financial_page_094_table_001.csv
+2025-09-21 15:05:56,250 - PDFTableExtractor - INFO - Saved financial table 35 to financial_page_097_table_001.csv
+2025-09-21 15:05:57,433 - PDFTableExtractor - INFO - Saved financial table 36 to financial_page_098_table_001.csv
+2025-09-21 15:05:58,712 - PDFTableExtractor - INFO - Saved financial table 37 to financial_page_099_table_001.csv
+2025-09-21 15:05:59,693 - PDFTableExtractor - INFO - Saved financial table 38 to financial_page_100_table_001.csv
+2025-09-21 15:06:00,570 - PDFTableExtractor - INFO - Saved financial table 39 to financial_page_101_table_001.csv
+2025-09-21 15:06:01,678 - PDFTableExtractor - INFO - Saved financial table 40 to financial_page_102_table_001.csv
+2025-09-21 15:06:02,462 - PDFTableExtractor - INFO - Saved financial table 41 to financial_page_103_table_001.csv
+2025-09-21 15:06:05,044 - PDFTableExtractor - INFO - Saved financial table 42 to financial_page_105_table_001.csv
+2025-09-21 15:06:09,517 - PDFTableExtractor - INFO - Saved financial table 43 to financial_page_108_table_001.csv
+2025-09-21 15:06:11,240 - PDFTableExtractor - INFO - Saved financial table 44 to financial_page_109_table_001.csv
+2025-09-21 15:06:12,551 - PDFTableExtractor - INFO - Saved financial table 45 to financial_page_111_table_001.csv
+2025-09-21 15:06:13,835 - PDFTableExtractor - INFO - Saved financial table 46 to financial_page_112_table_001.csv
+2025-09-21 15:06:14,297 - PDFTableExtractor - INFO - Saved financial table 47 to financial_page_113_table_001.csv
+2025-09-21 15:06:15,316 - PDFTableExtractor - INFO - Saved financial table 48 to financial_page_114_table_001.csv
+2025-09-21 15:06:18,540 - PDFTableExtractor - INFO - Table extraction completed. Found 104 tables total.
+2025-09-21 15:06:18,555 - PDFTableExtractor - INFO - Table extraction summary saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\table_extraction_summary.json
+2025-09-21 15:06:18,556 - PDFTableExtractor - INFO - Complete extraction finished in 251.58 seconds
+2025-09-21 18:43:31,060 - PDFTableExtractor - INFO - Starting extraction from: nvda-20240128.pdf
+2025-09-21 18:43:31,061 - PDFTableExtractor - INFO - Starting text extraction...
+2025-09-21 18:43:31,418 - PDFTableExtractor - INFO - Processing text from page 1/118
+2025-09-21 18:43:32,450 - PDFTableExtractor - INFO - Processing text from page 2/118
+2025-09-21 18:43:32,837 - PDFTableExtractor - INFO - Processing text from page 3/118
+2025-09-21 18:43:33,282 - PDFTableExtractor - INFO - Processing text from page 4/118
+2025-09-21 18:43:33,872 - PDFTableExtractor - INFO - Processing text from page 5/118
+2025-09-21 18:43:33,907 - PDFTableExtractor - INFO - Processing text from page 6/118
+2025-09-21 18:43:34,440 - PDFTableExtractor - INFO - Processing text from page 7/118
+2025-09-21 18:43:34,994 - PDFTableExtractor - INFO - Processing text from page 8/118
+2025-09-21 18:43:35,817 - PDFTableExtractor - INFO - Processing text from page 9/118
+2025-09-21 18:43:35,856 - PDFTableExtractor - INFO - Processing text from page 10/118
+2025-09-21 18:43:36,523 - PDFTableExtractor - INFO - Processing text from page 11/118
+2025-09-21 18:43:37,184 - PDFTableExtractor - INFO - Processing text from page 12/118
+2025-09-21 18:43:37,227 - PDFTableExtractor - INFO - Processing text from page 13/118
+2025-09-21 18:43:37,962 - PDFTableExtractor - INFO - Processing text from page 14/118
+2025-09-21 18:43:38,001 - PDFTableExtractor - INFO - Processing text from page 15/118
+2025-09-21 18:43:38,675 - PDFTableExtractor - INFO - Processing text from page 16/118
+2025-09-21 18:43:38,721 - PDFTableExtractor - INFO - Processing text from page 17/118
+2025-09-21 18:43:39,235 - PDFTableExtractor - INFO - Processing text from page 18/118
+2025-09-21 18:43:39,896 - PDFTableExtractor - INFO - Processing text from page 19/118
+2025-09-21 18:43:40,355 - PDFTableExtractor - INFO - Processing text from page 20/118
+2025-09-21 18:43:40,398 - PDFTableExtractor - INFO - Processing text from page 21/118
+2025-09-21 18:43:41,013 - PDFTableExtractor - INFO - Processing text from page 22/118
+2025-09-21 18:43:41,046 - PDFTableExtractor - INFO - Processing text from page 23/118
+2025-09-21 18:43:41,568 - PDFTableExtractor - INFO - Processing text from page 24/118
+2025-09-21 18:43:41,605 - PDFTableExtractor - INFO - Processing text from page 25/118
+2025-09-21 18:43:42,423 - PDFTableExtractor - INFO - Processing text from page 26/118
+2025-09-21 18:43:42,460 - PDFTableExtractor - INFO - Processing text from page 27/118
+2025-09-21 18:43:43,090 - PDFTableExtractor - INFO - Processing text from page 28/118
+2025-09-21 18:43:43,128 - PDFTableExtractor - INFO - Processing text from page 29/118
+2025-09-21 18:43:43,818 - PDFTableExtractor - INFO - Processing text from page 30/118
+2025-09-21 18:43:43,858 - PDFTableExtractor - INFO - Processing text from page 31/118
+2025-09-21 18:43:44,729 - PDFTableExtractor - INFO - Processing text from page 32/118
+2025-09-21 18:43:45,489 - PDFTableExtractor - INFO - Processing text from page 33/118
+2025-09-21 18:43:46,262 - PDFTableExtractor - INFO - Processing text from page 34/118
+2025-09-21 18:43:46,298 - PDFTableExtractor - INFO - Processing text from page 35/118
+2025-09-21 18:43:46,915 - PDFTableExtractor - INFO - Processing text from page 36/118
+2025-09-21 18:43:46,949 - PDFTableExtractor - INFO - Processing text from page 37/118
+2025-09-21 18:43:47,556 - PDFTableExtractor - INFO - Processing text from page 38/118
+2025-09-21 18:43:47,591 - PDFTableExtractor - INFO - Processing text from page 39/118
+2025-09-21 18:43:48,407 - PDFTableExtractor - INFO - Processing text from page 40/118
+2025-09-21 18:43:48,440 - PDFTableExtractor - INFO - Processing text from page 41/118
+2025-09-21 18:43:49,319 - PDFTableExtractor - INFO - Processing text from page 42/118
+2025-09-21 18:43:49,361 - PDFTableExtractor - INFO - Processing text from page 43/118
+2025-09-21 18:43:50,200 - PDFTableExtractor - INFO - Processing text from page 44/118
+2025-09-21 18:43:50,241 - PDFTableExtractor - INFO - Processing text from page 45/118
+2025-09-21 18:43:51,151 - PDFTableExtractor - INFO - Processing text from page 46/118
+2025-09-21 18:43:51,986 - PDFTableExtractor - INFO - Processing text from page 47/118
+2025-09-21 18:43:52,875 - PDFTableExtractor - INFO - Processing text from page 48/118
+2025-09-21 18:43:52,908 - PDFTableExtractor - INFO - Processing text from page 49/118
+2025-09-21 18:43:53,472 - PDFTableExtractor - INFO - Processing text from page 50/118
+2025-09-21 18:43:53,506 - PDFTableExtractor - INFO - Processing text from page 51/118
+2025-09-21 18:43:54,082 - PDFTableExtractor - INFO - Processing text from page 52/118
+2025-09-21 18:43:54,115 - PDFTableExtractor - INFO - Processing text from page 53/118
+2025-09-21 18:43:54,358 - PDFTableExtractor - INFO - Processing text from page 54/118
+2025-09-21 18:43:54,936 - PDFTableExtractor - INFO - Processing text from page 55/118
+2025-09-21 18:43:55,527 - PDFTableExtractor - INFO - Processing text from page 56/118
+2025-09-21 18:43:56,054 - PDFTableExtractor - INFO - Processing text from page 57/118
+2025-09-21 18:43:56,087 - PDFTableExtractor - INFO - Processing text from page 58/118
+2025-09-21 18:43:56,643 - PDFTableExtractor - INFO - Processing text from page 59/118
+2025-09-21 18:43:57,380 - PDFTableExtractor - INFO - Processing text from page 60/118
+2025-09-21 18:43:57,865 - PDFTableExtractor - INFO - Processing text from page 61/118
+2025-09-21 18:43:58,432 - PDFTableExtractor - INFO - Processing text from page 62/118
+2025-09-21 18:43:58,469 - PDFTableExtractor - INFO - Processing text from page 63/118
+2025-09-21 18:43:58,977 - PDFTableExtractor - INFO - Processing text from page 64/118
+2025-09-21 18:43:59,558 - PDFTableExtractor - INFO - Processing text from page 65/118
+2025-09-21 18:43:59,598 - PDFTableExtractor - INFO - Processing text from page 66/118
+2025-09-21 18:44:00,025 - PDFTableExtractor - INFO - Processing text from page 67/118
+2025-09-21 18:44:00,059 - PDFTableExtractor - INFO - Processing text from page 68/118
+2025-09-21 18:44:00,586 - PDFTableExtractor - INFO - Processing text from page 69/118
+2025-09-21 18:44:00,627 - PDFTableExtractor - INFO - Processing text from page 70/118
+2025-09-21 18:44:01,111 - PDFTableExtractor - INFO - Processing text from page 71/118
+2025-09-21 18:44:01,144 - PDFTableExtractor - INFO - Processing text from page 72/118
+2025-09-21 18:44:01,394 - PDFTableExtractor - INFO - Processing text from page 73/118
+2025-09-21 18:44:01,767 - PDFTableExtractor - INFO - Processing text from page 74/118
+2025-09-21 18:44:02,372 - PDFTableExtractor - INFO - Processing text from page 75/118
+2025-09-21 18:44:02,759 - PDFTableExtractor - INFO - Processing text from page 76/118
+2025-09-21 18:44:03,303 - PDFTableExtractor - INFO - Processing text from page 77/118
+2025-09-21 18:44:03,544 - PDFTableExtractor - INFO - Processing text from page 78/118
+2025-09-21 18:44:03,940 - PDFTableExtractor - INFO - Processing text from page 79/118
+2025-09-21 18:44:04,717 - PDFTableExtractor - INFO - Processing text from page 80/118
+2025-09-21 18:44:05,440 - PDFTableExtractor - INFO - Processing text from page 81/118
+2025-09-21 18:44:06,034 - PDFTableExtractor - INFO - Processing text from page 82/118
+2025-09-21 18:44:06,073 - PDFTableExtractor - INFO - Processing text from page 83/118
+2025-09-21 18:44:06,831 - PDFTableExtractor - INFO - Processing text from page 84/118
+2025-09-21 18:44:06,870 - PDFTableExtractor - INFO - Processing text from page 85/118
+2025-09-21 18:44:07,496 - PDFTableExtractor - INFO - Processing text from page 86/118
+2025-09-21 18:44:07,531 - PDFTableExtractor - INFO - Processing text from page 87/118
+2025-09-21 18:44:08,146 - PDFTableExtractor - INFO - Processing text from page 88/118
+2025-09-21 18:44:08,180 - PDFTableExtractor - INFO - Processing text from page 89/118
+2025-09-21 18:44:08,814 - PDFTableExtractor - INFO - Processing text from page 90/118
+2025-09-21 18:44:08,854 - PDFTableExtractor - INFO - Processing text from page 91/118
+2025-09-21 18:44:09,317 - PDFTableExtractor - INFO - Processing text from page 92/118
+2025-09-21 18:44:09,804 - PDFTableExtractor - INFO - Processing text from page 93/118
+2025-09-21 18:44:10,445 - PDFTableExtractor - INFO - Processing text from page 94/118
+2025-09-21 18:44:11,223 - PDFTableExtractor - INFO - Processing text from page 95/118
+2025-09-21 18:44:11,260 - PDFTableExtractor - INFO - Processing text from page 96/118
+2025-09-21 18:44:11,639 - PDFTableExtractor - INFO - Processing text from page 97/118
+2025-09-21 18:44:12,224 - PDFTableExtractor - INFO - Processing text from page 98/118
+2025-09-21 18:44:12,811 - PDFTableExtractor - INFO - Processing text from page 99/118
+2025-09-21 18:44:13,297 - PDFTableExtractor - INFO - Processing text from page 100/118
+2025-09-21 18:44:13,601 - PDFTableExtractor - INFO - Processing text from page 101/118
+2025-09-21 18:44:13,993 - PDFTableExtractor - INFO - Processing text from page 102/118
+2025-09-21 18:44:14,523 - PDFTableExtractor - INFO - Processing text from page 103/118
+2025-09-21 18:44:14,860 - PDFTableExtractor - INFO - Processing text from page 104/118
+2025-09-21 18:44:15,315 - PDFTableExtractor - INFO - Processing text from page 105/118
+2025-09-21 18:44:15,822 - PDFTableExtractor - INFO - Processing text from page 106/118
+2025-09-21 18:44:16,285 - PDFTableExtractor - INFO - Processing text from page 107/118
+2025-09-21 18:44:16,882 - PDFTableExtractor - INFO - Processing text from page 108/118
+2025-09-21 18:44:17,569 - PDFTableExtractor - INFO - Processing text from page 109/118
+2025-09-21 18:44:18,229 - PDFTableExtractor - INFO - Processing text from page 110/118
+2025-09-21 18:44:18,268 - PDFTableExtractor - INFO - Processing text from page 111/118
+2025-09-21 18:44:18,824 - PDFTableExtractor - INFO - Processing text from page 112/118
+2025-09-21 18:44:19,581 - PDFTableExtractor - INFO - Processing text from page 113/118
+2025-09-21 18:44:19,718 - PDFTableExtractor - INFO - Processing text from page 114/118
+2025-09-21 18:44:20,201 - PDFTableExtractor - INFO - Processing text from page 115/118
+2025-09-21 18:44:20,850 - PDFTableExtractor - INFO - Processing text from page 116/118
+2025-09-21 18:44:21,622 - PDFTableExtractor - INFO - Processing text from page 117/118
+2025-09-21 18:44:21,841 - PDFTableExtractor - INFO - Processing text from page 118/118
+2025-09-21 18:44:24,294 - PDFTableExtractor - INFO - Word bounding boxes saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\text\word_boxes.json
+2025-09-21 18:44:24,301 - PDFTableExtractor - INFO - Starting table extraction...
+2025-09-21 18:44:24,301 - PDFTableExtractor - INFO - Extracting tables with standard pdfplumber settings...
+2025-09-21 18:44:25,650 - PDFTableExtractor - INFO - Page 1: Found 0 tables with standard method
+2025-09-21 18:44:26,110 - PDFTableExtractor - INFO - Page 2: Found 0 tables with standard method
+2025-09-21 18:44:26,592 - PDFTableExtractor - INFO - Page 3: Found 0 tables with standard method
+2025-09-21 18:44:27,283 - PDFTableExtractor - INFO - Page 4: Found 0 tables with standard method
+2025-09-21 18:44:27,319 - PDFTableExtractor - INFO - Page 5: Found 0 tables with standard method
+2025-09-21 18:44:27,826 - PDFTableExtractor - INFO - Page 6: Found 0 tables with standard method
+2025-09-21 18:44:28,371 - PDFTableExtractor - INFO - Page 7: Found 0 tables with standard method
+2025-09-21 18:44:29,031 - PDFTableExtractor - INFO - Page 8: Found 0 tables with standard method
+2025-09-21 18:44:29,066 - PDFTableExtractor - INFO - Page 9: Found 0 tables with standard method
+2025-09-21 18:44:29,646 - PDFTableExtractor - INFO - Page 10: Found 0 tables with standard method
+2025-09-21 18:44:30,137 - PDFTableExtractor - INFO - Page 11: Found 0 tables with standard method
+2025-09-21 18:44:30,172 - PDFTableExtractor - INFO - Page 12: Found 0 tables with standard method
+2025-09-21 18:44:30,971 - PDFTableExtractor - INFO - Page 13: Found 0 tables with standard method
+2025-09-21 18:44:31,006 - PDFTableExtractor - INFO - Page 14: Found 0 tables with standard method
+2025-09-21 18:44:31,582 - PDFTableExtractor - INFO - Page 15: Found 0 tables with standard method
+2025-09-21 18:44:31,617 - PDFTableExtractor - INFO - Page 16: Found 0 tables with standard method
+2025-09-21 18:44:32,057 - PDFTableExtractor - INFO - Page 17: Found 1 tables with standard method
+2025-09-21 18:44:32,057 - PDFTableExtractor - INFO - Processing table 1 on page 17: 5 rows, 5 columns
+2025-09-21 18:44:32,065 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 18:44:32,094 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 18:44:32,114 - PDFTableExtractor - INFO - Saved standard table 1 to standard_page_017_table_001.csv
+2025-09-21 18:44:32,604 - PDFTableExtractor - INFO - Page 18: Found 0 tables with standard method
+2025-09-21 18:44:32,970 - PDFTableExtractor - INFO - Page 19: Found 0 tables with standard method
+2025-09-21 18:44:33,016 - PDFTableExtractor - INFO - Page 20: Found 0 tables with standard method
+2025-09-21 18:44:33,606 - PDFTableExtractor - INFO - Page 21: Found 0 tables with standard method
+2025-09-21 18:44:33,645 - PDFTableExtractor - INFO - Page 22: Found 0 tables with standard method
+2025-09-21 18:44:34,147 - PDFTableExtractor - INFO - Page 23: Found 0 tables with standard method
+2025-09-21 18:44:34,183 - PDFTableExtractor - INFO - Page 24: Found 0 tables with standard method
+2025-09-21 18:44:36,859 - PDFTableExtractor - INFO - Page 25: Found 0 tables with standard method
+2025-09-21 18:44:36,900 - PDFTableExtractor - INFO - Page 26: Found 0 tables with standard method
+2025-09-21 18:44:37,436 - PDFTableExtractor - INFO - Page 27: Found 0 tables with standard method
+2025-09-21 18:44:37,476 - PDFTableExtractor - INFO - Page 28: Found 0 tables with standard method
+2025-09-21 18:44:38,106 - PDFTableExtractor - INFO - Page 29: Found 0 tables with standard method
+2025-09-21 18:44:38,147 - PDFTableExtractor - INFO - Page 30: Found 0 tables with standard method
+2025-09-21 18:44:38,835 - PDFTableExtractor - INFO - Page 31: Found 0 tables with standard method
+2025-09-21 18:44:39,581 - PDFTableExtractor - INFO - Page 32: Found 0 tables with standard method
+2025-09-21 18:44:40,247 - PDFTableExtractor - INFO - Page 33: Found 0 tables with standard method
+2025-09-21 18:44:40,284 - PDFTableExtractor - INFO - Page 34: Found 0 tables with standard method
+2025-09-21 18:44:40,845 - PDFTableExtractor - INFO - Page 35: Found 0 tables with standard method
+2025-09-21 18:44:40,881 - PDFTableExtractor - INFO - Page 36: Found 0 tables with standard method
+2025-09-21 18:44:41,458 - PDFTableExtractor - INFO - Page 37: Found 0 tables with standard method
+2025-09-21 18:44:41,496 - PDFTableExtractor - INFO - Page 38: Found 0 tables with standard method
+2025-09-21 18:44:42,296 - PDFTableExtractor - INFO - Page 39: Found 0 tables with standard method
+2025-09-21 18:44:42,337 - PDFTableExtractor - INFO - Page 40: Found 0 tables with standard method
+2025-09-21 18:44:43,133 - PDFTableExtractor - INFO - Page 41: Found 0 tables with standard method
+2025-09-21 18:44:43,178 - PDFTableExtractor - INFO - Page 42: Found 0 tables with standard method
+2025-09-21 18:44:44,003 - PDFTableExtractor - INFO - Page 43: Found 0 tables with standard method
+2025-09-21 18:44:44,042 - PDFTableExtractor - INFO - Page 44: Found 0 tables with standard method
+2025-09-21 18:44:44,802 - PDFTableExtractor - INFO - Page 45: Found 0 tables with standard method
+2025-09-21 18:44:45,588 - PDFTableExtractor - INFO - Page 46: Found 0 tables with standard method
+2025-09-21 18:44:46,347 - PDFTableExtractor - INFO - Page 47: Found 0 tables with standard method
+2025-09-21 18:44:46,388 - PDFTableExtractor - INFO - Page 48: Found 0 tables with standard method
+2025-09-21 18:44:46,991 - PDFTableExtractor - INFO - Page 49: Found 0 tables with standard method
+2025-09-21 18:44:47,030 - PDFTableExtractor - INFO - Page 50: Found 0 tables with standard method
+2025-09-21 18:44:47,706 - PDFTableExtractor - INFO - Page 51: Found 1 tables with standard method
+2025-09-21 18:44:47,706 - PDFTableExtractor - INFO - Processing table 1 on page 51: 4 rows, 11 columns
+2025-09-21 18:44:47,707 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 11)
+2025-09-21 18:44:47,720 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 11)
+2025-09-21 18:44:47,749 - PDFTableExtractor - INFO - Saved standard table 2 to standard_page_051_table_001.csv
+2025-09-21 18:44:47,785 - PDFTableExtractor - INFO - Page 52: Found 0 tables with standard method
+2025-09-21 18:44:48,086 - PDFTableExtractor - INFO - Page 53: Found 1 tables with standard method
+2025-09-21 18:44:48,087 - PDFTableExtractor - INFO - Processing table 1 on page 53: 3 rows, 18 columns
+2025-09-21 18:44:48,088 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 18)
+2025-09-21 18:44:48,115 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 18)
+2025-09-21 18:44:48,139 - PDFTableExtractor - INFO - Saved standard table 3 to standard_page_053_table_001.csv
+2025-09-21 18:44:48,759 - PDFTableExtractor - INFO - Page 54: Found 0 tables with standard method
+2025-09-21 18:44:49,361 - PDFTableExtractor - INFO - Page 55: Found 0 tables with standard method
+2025-09-21 18:44:49,918 - PDFTableExtractor - INFO - Page 56: Found 1 tables with standard method
+2025-09-21 18:44:49,918 - PDFTableExtractor - INFO - Processing table 1 on page 56: 6 rows, 8 columns
+2025-09-21 18:44:49,919 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 8)
+2025-09-21 18:44:49,931 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 8)
+2025-09-21 18:44:49,946 - PDFTableExtractor - INFO - Saved standard table 4 to standard_page_056_table_001.csv
+2025-09-21 18:44:49,985 - PDFTableExtractor - INFO - Page 57: Found 0 tables with standard method
+2025-09-21 18:44:50,637 - PDFTableExtractor - INFO - Page 58: Found 0 tables with standard method
+2025-09-21 18:44:51,131 - PDFTableExtractor - INFO - Page 59: Found 0 tables with standard method
+2025-09-21 18:44:51,751 - PDFTableExtractor - INFO - Page 60: Found 3 tables with standard method
+2025-09-21 18:44:51,751 - PDFTableExtractor - INFO - Processing table 1 on page 60: 16 rows, 6 columns
+2025-09-21 18:44:51,752 - PDFTableExtractor - INFO - Created DataFrame with shape: (15, 6)
+2025-09-21 18:44:51,762 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (15, 6)
+2025-09-21 18:44:51,776 - PDFTableExtractor - INFO - Saved standard table 5 to standard_page_060_table_001.csv
+2025-09-21 18:44:51,776 - PDFTableExtractor - INFO - Processing table 2 on page 60: 3 rows, 12 columns
+2025-09-21 18:44:51,779 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 12)
+2025-09-21 18:44:51,796 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 12)
+2025-09-21 18:44:51,816 - PDFTableExtractor - INFO - Saved standard table 6 to standard_page_060_table_002.csv
+2025-09-21 18:44:51,816 - PDFTableExtractor - INFO - Processing table 3 on page 60: 4 rows, 12 columns
+2025-09-21 18:44:51,817 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 12)
+2025-09-21 18:44:51,833 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 12)
+2025-09-21 18:44:51,853 - PDFTableExtractor - INFO - Saved standard table 7 to standard_page_060_table_003.csv
+2025-09-21 18:44:52,491 - PDFTableExtractor - INFO - Page 61: Found 1 tables with standard method
+2025-09-21 18:44:52,492 - PDFTableExtractor - INFO - Processing table 1 on page 61: 8 rows, 14 columns
+2025-09-21 18:44:52,493 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 14)
+2025-09-21 18:44:52,514 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 14)
+2025-09-21 18:44:52,535 - PDFTableExtractor - INFO - Saved standard table 8 to standard_page_061_table_001.csv
+2025-09-21 18:44:52,575 - PDFTableExtractor - INFO - Page 62: Found 0 tables with standard method
+2025-09-21 18:44:53,236 - PDFTableExtractor - INFO - Page 63: Found 1 tables with standard method
+2025-09-21 18:44:53,236 - PDFTableExtractor - INFO - Processing table 1 on page 63: 4 rows, 9 columns
+2025-09-21 18:44:53,237 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 9)
+2025-09-21 18:44:53,249 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 9)
+2025-09-21 18:44:53,265 - PDFTableExtractor - INFO - Saved standard table 9 to standard_page_063_table_001.csv
+2025-09-21 18:44:53,786 - PDFTableExtractor - INFO - Page 64: Found 2 tables with standard method
+2025-09-21 18:44:53,787 - PDFTableExtractor - INFO - Processing table 1 on page 64: 3 rows, 5 columns
+2025-09-21 18:44:53,788 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 18:44:53,797 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 18:44:53,806 - PDFTableExtractor - INFO - Saved standard table 10 to standard_page_064_table_001.csv
+2025-09-21 18:44:53,806 - PDFTableExtractor - INFO - Processing table 2 on page 64: 3 rows, 5 columns
+2025-09-21 18:44:53,806 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 5)
+2025-09-21 18:44:53,815 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 5)
+2025-09-21 18:44:53,828 - PDFTableExtractor - INFO - Saved standard table 11 to standard_page_064_table_002.csv
+2025-09-21 18:44:53,865 - PDFTableExtractor - INFO - Page 65: Found 0 tables with standard method
+2025-09-21 18:44:54,352 - PDFTableExtractor - INFO - Page 66: Found 1 tables with standard method
+2025-09-21 18:44:54,352 - PDFTableExtractor - INFO - Processing table 1 on page 66: 8 rows, 4 columns
+2025-09-21 18:44:54,353 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 4)
+2025-09-21 18:44:54,358 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 4)
+2025-09-21 18:44:54,369 - PDFTableExtractor - INFO - Saved standard table 12 to standard_page_066_table_001.csv
+2025-09-21 18:44:54,408 - PDFTableExtractor - INFO - Page 67: Found 0 tables with standard method
+2025-09-21 18:44:54,924 - PDFTableExtractor - INFO - Page 68: Found 0 tables with standard method
+2025-09-21 18:44:54,959 - PDFTableExtractor - INFO - Page 69: Found 0 tables with standard method
+2025-09-21 18:44:55,425 - PDFTableExtractor - INFO - Page 70: Found 0 tables with standard method
+2025-09-21 18:44:55,463 - PDFTableExtractor - INFO - Page 71: Found 0 tables with standard method
+2025-09-21 18:44:55,700 - PDFTableExtractor - INFO - Page 72: Found 0 tables with standard method
+2025-09-21 18:44:56,116 - PDFTableExtractor - INFO - Page 73: Found 0 tables with standard method
+2025-09-21 18:44:56,685 - PDFTableExtractor - INFO - Page 74: Found 0 tables with standard method
+2025-09-21 18:44:57,066 - PDFTableExtractor - INFO - Page 75: Found 0 tables with standard method
+2025-09-21 18:44:57,536 - PDFTableExtractor - INFO - Page 76: Found 1 tables with standard method
+2025-09-21 18:44:57,536 - PDFTableExtractor - INFO - Processing table 1 on page 76: 24 rows, 7 columns
+2025-09-21 18:44:57,537 - PDFTableExtractor - INFO - Created DataFrame with shape: (23, 7)
+2025-09-21 18:44:57,548 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (23, 7)
+2025-09-21 18:44:57,561 - PDFTableExtractor - INFO - Saved standard table 13 to standard_page_076_table_001.csv
+2025-09-21 18:44:57,859 - PDFTableExtractor - INFO - Page 77: Found 1 tables with standard method
+2025-09-21 18:44:57,860 - PDFTableExtractor - INFO - Processing table 1 on page 77: 13 rows, 7 columns
+2025-09-21 18:44:57,861 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 7)
+2025-09-21 18:44:57,870 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 7)
+2025-09-21 18:44:57,880 - PDFTableExtractor - INFO - Saved standard table 14 to standard_page_077_table_001.csv
+2025-09-21 18:44:58,408 - PDFTableExtractor - INFO - Page 78: Found 1 tables with standard method
+2025-09-21 18:44:58,408 - PDFTableExtractor - INFO - Processing table 1 on page 78: 35 rows, 5 columns
+2025-09-21 18:44:58,409 - PDFTableExtractor - INFO - Created DataFrame with shape: (34, 5)
+2025-09-21 18:44:58,417 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (34, 5)
+2025-09-21 18:44:58,452 - PDFTableExtractor - INFO - Saved standard table 15 to standard_page_078_table_001.csv
+2025-09-21 18:44:59,519 - PDFTableExtractor - INFO - Page 79: Found 1 tables with standard method
+2025-09-21 18:44:59,519 - PDFTableExtractor - INFO - Processing table 1 on page 79: 27 rows, 14 columns
+2025-09-21 18:44:59,520 - PDFTableExtractor - INFO - Created DataFrame with shape: (26, 14)
+2025-09-21 18:44:59,535 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (26, 14)
+2025-09-21 18:44:59,554 - PDFTableExtractor - INFO - Saved standard table 16 to standard_page_079_table_001.csv
+2025-09-21 18:45:00,555 - PDFTableExtractor - INFO - Page 80: Found 1 tables with standard method
+2025-09-21 18:45:00,555 - PDFTableExtractor - INFO - Processing table 1 on page 80: 41 rows, 7 columns
+2025-09-21 18:45:00,556 - PDFTableExtractor - INFO - Created DataFrame with shape: (40, 7)
+2025-09-21 18:45:00,566 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (40, 7)
+2025-09-21 18:45:00,581 - PDFTableExtractor - INFO - Saved standard table 17 to standard_page_080_table_001.csv
+2025-09-21 18:45:01,083 - PDFTableExtractor - INFO - Page 81: Found 0 tables with standard method
+2025-09-21 18:45:01,120 - PDFTableExtractor - INFO - Page 82: Found 0 tables with standard method
+2025-09-21 18:45:01,655 - PDFTableExtractor - INFO - Page 83: Found 0 tables with standard method
+2025-09-21 18:45:01,691 - PDFTableExtractor - INFO - Page 84: Found 0 tables with standard method
+2025-09-21 18:45:02,275 - PDFTableExtractor - INFO - Page 85: Found 0 tables with standard method
+2025-09-21 18:45:02,314 - PDFTableExtractor - INFO - Page 86: Found 0 tables with standard method
+2025-09-21 18:45:02,876 - PDFTableExtractor - INFO - Page 87: Found 0 tables with standard method
+2025-09-21 18:45:02,914 - PDFTableExtractor - INFO - Page 88: Found 0 tables with standard method
+2025-09-21 18:45:03,571 - PDFTableExtractor - INFO - Page 89: Found 0 tables with standard method
+2025-09-21 18:45:03,617 - PDFTableExtractor - INFO - Page 90: Found 0 tables with standard method
+2025-09-21 18:45:04,081 - PDFTableExtractor - INFO - Page 91: Found 1 tables with standard method
+2025-09-21 18:45:04,082 - PDFTableExtractor - INFO - Processing table 1 on page 91: 12 rows, 3 columns
+2025-09-21 18:45:04,082 - PDFTableExtractor - INFO - Created DataFrame with shape: (11, 3)
+2025-09-21 18:45:04,087 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (11, 3)
+2025-09-21 18:45:04,103 - PDFTableExtractor - INFO - Saved standard table 18 to standard_page_091_table_001.csv
+2025-09-21 18:45:04,698 - PDFTableExtractor - INFO - Page 92: Found 3 tables with standard method
+2025-09-21 18:45:04,699 - PDFTableExtractor - INFO - Processing table 1 on page 92: 3 rows, 7 columns
+2025-09-21 18:45:04,699 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 18:45:04,708 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 18:45:04,722 - PDFTableExtractor - INFO - Saved standard table 19 to standard_page_092_table_001.csv
+2025-09-21 18:45:04,722 - PDFTableExtractor - INFO - Processing table 2 on page 92: 4 rows, 6 columns
+2025-09-21 18:45:04,723 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 18:45:04,734 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 18:45:04,747 - PDFTableExtractor - INFO - Saved standard table 20 to standard_page_092_table_002.csv
+2025-09-21 18:45:04,747 - PDFTableExtractor - INFO - Processing table 3 on page 92: 9 rows, 6 columns
+2025-09-21 18:45:04,748 - PDFTableExtractor - INFO - Created DataFrame with shape: (8, 6)
+2025-09-21 18:45:04,755 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (8, 6)
+2025-09-21 18:45:04,770 - PDFTableExtractor - INFO - Saved standard table 21 to standard_page_092_table_003.csv
+2025-09-21 18:45:05,400 - PDFTableExtractor - INFO - Page 93: Found 1 tables with standard method
+2025-09-21 18:45:05,400 - PDFTableExtractor - INFO - Processing table 1 on page 93: 4 rows, 4 columns
+2025-09-21 18:45:05,401 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 18:45:05,407 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 18:45:05,418 - PDFTableExtractor - INFO - Saved standard table 22 to standard_page_093_table_001.csv
+2025-09-21 18:45:06,068 - PDFTableExtractor - INFO - Page 94: Found 2 tables with standard method
+2025-09-21 18:45:06,068 - PDFTableExtractor - INFO - Processing table 1 on page 94: 7 rows, 5 columns
+2025-09-21 18:45:06,069 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 5)
+2025-09-21 18:45:06,078 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 5)
+2025-09-21 18:45:06,091 - PDFTableExtractor - INFO - Saved standard table 23 to standard_page_094_table_001.csv
+2025-09-21 18:45:06,091 - PDFTableExtractor - INFO - Processing table 2 on page 94: 10 rows, 7 columns
+2025-09-21 18:45:06,092 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 18:45:06,104 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 18:45:06,123 - PDFTableExtractor - INFO - Saved standard table 24 to standard_page_094_table_002.csv
+2025-09-21 18:45:06,159 - PDFTableExtractor - INFO - Page 95: Found 0 tables with standard method
+2025-09-21 18:45:06,636 - PDFTableExtractor - INFO - Page 96: Found 2 tables with standard method
+2025-09-21 18:45:06,636 - PDFTableExtractor - INFO - Processing table 1 on page 96: 3 rows, 14 columns
+2025-09-21 18:45:06,637 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 14)
+2025-09-21 18:45:06,655 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 14)
+2025-09-21 18:45:06,678 - PDFTableExtractor - INFO - Saved standard table 25 to standard_page_096_table_001.csv
+2025-09-21 18:45:06,678 - PDFTableExtractor - INFO - Processing table 2 on page 96: 8 rows, 3 columns
+2025-09-21 18:45:06,678 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 3)
+2025-09-21 18:45:06,682 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 3)
+2025-09-21 18:45:06,689 - PDFTableExtractor - INFO - Saved standard table 26 to standard_page_096_table_002.csv
+2025-09-21 18:45:07,319 - PDFTableExtractor - INFO - Page 97: Found 2 tables with standard method
+2025-09-21 18:45:07,319 - PDFTableExtractor - INFO - Processing table 1 on page 97: 7 rows, 13 columns
+2025-09-21 18:45:07,320 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 18:45:07,337 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 18:45:07,357 - PDFTableExtractor - INFO - Saved standard table 27 to standard_page_097_table_001.csv
+2025-09-21 18:45:07,357 - PDFTableExtractor - INFO - Processing table 2 on page 97: 7 rows, 13 columns
+2025-09-21 18:45:07,358 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 13)
+2025-09-21 18:45:07,373 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 13)
+2025-09-21 18:45:07,392 - PDFTableExtractor - INFO - Saved standard table 28 to standard_page_097_table_002.csv
+2025-09-21 18:45:08,207 - PDFTableExtractor - INFO - Page 98: Found 3 tables with standard method
+2025-09-21 18:45:08,208 - PDFTableExtractor - INFO - Processing table 1 on page 98: 4 rows, 13 columns
+2025-09-21 18:45:08,210 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 18:45:08,223 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 18:45:08,241 - PDFTableExtractor - INFO - Saved standard table 29 to standard_page_098_table_001.csv
+2025-09-21 18:45:08,242 - PDFTableExtractor - INFO - Processing table 2 on page 98: 4 rows, 13 columns
+2025-09-21 18:45:08,243 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 13)
+2025-09-21 18:45:08,259 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 13)
+2025-09-21 18:45:08,277 - PDFTableExtractor - INFO - Saved standard table 30 to standard_page_098_table_002.csv
+2025-09-21 18:45:08,277 - PDFTableExtractor - INFO - Processing table 3 on page 98: 3 rows, 6 columns
+2025-09-21 18:45:08,278 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 6)
+2025-09-21 18:45:08,283 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 6)
+2025-09-21 18:45:08,297 - PDFTableExtractor - INFO - Saved standard table 31 to standard_page_098_table_003.csv
+2025-09-21 18:45:08,896 - PDFTableExtractor - INFO - Page 99: Found 1 tables with standard method
+2025-09-21 18:45:08,897 - PDFTableExtractor - INFO - Processing table 1 on page 99: 20 rows, 7 columns
+2025-09-21 18:45:08,898 - PDFTableExtractor - INFO - Created DataFrame with shape: (19, 7)
+2025-09-21 18:45:08,905 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (19, 7)
+2025-09-21 18:45:08,918 - PDFTableExtractor - INFO - Saved standard table 32 to standard_page_099_table_001.csv
+2025-09-21 18:45:09,271 - PDFTableExtractor - INFO - Page 100: Found 3 tables with standard method
+2025-09-21 18:45:09,272 - PDFTableExtractor - INFO - Processing table 1 on page 100: 6 rows, 3 columns
+2025-09-21 18:45:09,272 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 3)
+2025-09-21 18:45:09,277 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 3)
+2025-09-21 18:45:09,296 - PDFTableExtractor - INFO - Saved standard table 33 to standard_page_100_table_001.csv
+2025-09-21 18:45:09,297 - PDFTableExtractor - INFO - Processing table 2 on page 100: 2 rows, 3 columns
+2025-09-21 18:45:09,299 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 3)
+2025-09-21 18:45:09,306 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 2)
+2025-09-21 18:45:09,317 - PDFTableExtractor - INFO - Saved standard table 34 to standard_page_100_table_002.csv
+2025-09-21 18:45:09,317 - PDFTableExtractor - INFO - Processing table 3 on page 100: 4 rows, 6 columns
+2025-09-21 18:45:09,319 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 6)
+2025-09-21 18:45:09,340 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 6)
+2025-09-21 18:45:09,363 - PDFTableExtractor - INFO - Saved standard table 35 to standard_page_100_table_003.csv
+2025-09-21 18:45:09,854 - PDFTableExtractor - INFO - Page 101: Found 2 tables with standard method
+2025-09-21 18:45:09,854 - PDFTableExtractor - INFO - Processing table 1 on page 101: 7 rows, 8 columns
+2025-09-21 18:45:09,856 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 8)
+2025-09-21 18:45:09,866 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 8)
+2025-09-21 18:45:09,882 - PDFTableExtractor - INFO - Saved standard table 36 to standard_page_101_table_001.csv
+2025-09-21 18:45:09,882 - PDFTableExtractor - INFO - Processing table 2 on page 101: 5 rows, 5 columns
+2025-09-21 18:45:09,883 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 5)
+2025-09-21 18:45:09,889 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 5)
+2025-09-21 18:45:09,900 - PDFTableExtractor - INFO - Saved standard table 37 to standard_page_101_table_002.csv
+2025-09-21 18:45:10,524 - PDFTableExtractor - INFO - Page 102: Found 3 tables with standard method
+2025-09-21 18:45:10,524 - PDFTableExtractor - INFO - Processing table 1 on page 102: 11 rows, 4 columns
+2025-09-21 18:45:10,525 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 4)
+2025-09-21 18:45:10,531 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 4)
+2025-09-21 18:45:10,540 - PDFTableExtractor - INFO - Saved standard table 38 to standard_page_102_table_001.csv
+2025-09-21 18:45:10,540 - PDFTableExtractor - INFO - Processing table 2 on page 102: 6 rows, 4 columns
+2025-09-21 18:45:10,541 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 4)
+2025-09-21 18:45:10,546 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 4)
+2025-09-21 18:45:10,555 - PDFTableExtractor - INFO - Saved standard table 39 to standard_page_102_table_002.csv
+2025-09-21 18:45:10,555 - PDFTableExtractor - INFO - Processing table 3 on page 102: 4 rows, 4 columns
+2025-09-21 18:45:10,555 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 4)
+2025-09-21 18:45:10,561 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 4)
+2025-09-21 18:45:10,570 - PDFTableExtractor - INFO - Saved standard table 40 to standard_page_102_table_003.csv
+2025-09-21 18:45:10,896 - PDFTableExtractor - INFO - Page 103: Found 1 tables with standard method
+2025-09-21 18:45:10,896 - PDFTableExtractor - INFO - Processing table 1 on page 103: 2 rows, 6 columns
+2025-09-21 18:45:10,899 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 18:45:10,906 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 18:45:10,917 - PDFTableExtractor - INFO - Saved standard table 41 to standard_page_103_table_001.csv
+2025-09-21 18:45:11,489 - PDFTableExtractor - INFO - Page 104: Found 1 tables with standard method
+2025-09-21 18:45:11,489 - PDFTableExtractor - INFO - Processing table 1 on page 104: 13 rows, 11 columns
+2025-09-21 18:45:11,490 - PDFTableExtractor - INFO - Created DataFrame with shape: (12, 11)
+2025-09-21 18:45:11,506 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (12, 11)
+2025-09-21 18:45:11,526 - PDFTableExtractor - INFO - Saved standard table 42 to standard_page_104_table_001.csv
+2025-09-21 18:45:12,131 - PDFTableExtractor - INFO - Page 105: Found 3 tables with standard method
+2025-09-21 18:45:12,132 - PDFTableExtractor - INFO - Processing table 1 on page 105: 7 rows, 3 columns
+2025-09-21 18:45:12,132 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 3)
+2025-09-21 18:45:12,136 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 3)
+2025-09-21 18:45:12,149 - PDFTableExtractor - INFO - Saved standard table 43 to standard_page_105_table_001.csv
+2025-09-21 18:45:12,150 - PDFTableExtractor - INFO - Processing table 2 on page 105: 2 rows, 6 columns
+2025-09-21 18:45:12,150 - PDFTableExtractor - INFO - Created DataFrame with shape: (1, 6)
+2025-09-21 18:45:12,157 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (1, 6)
+2025-09-21 18:45:12,167 - PDFTableExtractor - INFO - Saved standard table 44 to standard_page_105_table_002.csv
+2025-09-21 18:45:12,167 - PDFTableExtractor - INFO - Processing table 3 on page 105: 4 rows, 10 columns
+2025-09-21 18:45:12,168 - PDFTableExtractor - INFO - Created DataFrame with shape: (3, 10)
+2025-09-21 18:45:12,181 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (3, 10)
+2025-09-21 18:45:12,196 - PDFTableExtractor - INFO - Saved standard table 45 to standard_page_105_table_003.csv
+2025-09-21 18:45:12,638 - PDFTableExtractor - INFO - Page 106: Found 0 tables with standard method
+2025-09-21 18:45:13,406 - PDFTableExtractor - INFO - Page 107: Found 3 tables with standard method
+2025-09-21 18:45:13,406 - PDFTableExtractor - INFO - Processing table 1 on page 107: 10 rows, 7 columns
+2025-09-21 18:45:13,407 - PDFTableExtractor - INFO - Created DataFrame with shape: (9, 7)
+2025-09-21 18:45:13,418 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (9, 7)
+2025-09-21 18:45:13,433 - PDFTableExtractor - INFO - Saved standard table 46 to standard_page_107_table_001.csv
+2025-09-21 18:45:13,433 - PDFTableExtractor - INFO - Processing table 2 on page 107: 3 rows, 7 columns
+2025-09-21 18:45:13,434 - PDFTableExtractor - INFO - Created DataFrame with shape: (2, 7)
+2025-09-21 18:45:13,443 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (2, 7)
+2025-09-21 18:45:13,456 - PDFTableExtractor - INFO - Saved standard table 47 to standard_page_107_table_002.csv
+2025-09-21 18:45:13,456 - PDFTableExtractor - INFO - Processing table 3 on page 107: 11 rows, 13 columns
+2025-09-21 18:45:13,457 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 13)
+2025-09-21 18:45:13,472 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 13)
+2025-09-21 18:45:13,490 - PDFTableExtractor - INFO - Saved standard table 48 to standard_page_107_table_003.csv
+2025-09-21 18:45:14,186 - PDFTableExtractor - INFO - Page 108: Found 1 tables with standard method
+2025-09-21 18:45:14,186 - PDFTableExtractor - INFO - Processing table 1 on page 108: 19 rows, 6 columns
+2025-09-21 18:45:14,187 - PDFTableExtractor - INFO - Created DataFrame with shape: (18, 6)
+2025-09-21 18:45:14,197 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (18, 6)
+2025-09-21 18:45:14,212 - PDFTableExtractor - INFO - Saved standard table 49 to standard_page_108_table_001.csv
+2025-09-21 18:45:14,920 - PDFTableExtractor - INFO - Page 109: Found 1 tables with standard method
+2025-09-21 18:45:14,920 - PDFTableExtractor - INFO - Processing table 1 on page 109: 7 rows, 9 columns
+2025-09-21 18:45:14,921 - PDFTableExtractor - INFO - Created DataFrame with shape: (6, 9)
+2025-09-21 18:45:14,935 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (6, 9)
+2025-09-21 18:45:14,952 - PDFTableExtractor - INFO - Saved standard table 50 to standard_page_109_table_001.csv
+2025-09-21 18:45:14,994 - PDFTableExtractor - INFO - Page 110: Found 0 tables with standard method
+2025-09-21 18:45:15,616 - PDFTableExtractor - INFO - Page 111: Found 1 tables with standard method
+2025-09-21 18:45:15,617 - PDFTableExtractor - INFO - Processing table 1 on page 111: 11 rows, 12 columns
+2025-09-21 18:45:15,618 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 12)
+2025-09-21 18:45:15,632 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 12)
+2025-09-21 18:45:15,649 - PDFTableExtractor - INFO - Saved standard table 51 to standard_page_111_table_001.csv
+2025-09-21 18:45:16,308 - PDFTableExtractor - INFO - Page 112: Found 3 tables with standard method
+2025-09-21 18:45:16,308 - PDFTableExtractor - INFO - Processing table 1 on page 112: 8 rows, 7 columns
+2025-09-21 18:45:16,309 - PDFTableExtractor - INFO - Created DataFrame with shape: (7, 7)
+2025-09-21 18:45:16,319 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (7, 7)
+2025-09-21 18:45:16,334 - PDFTableExtractor - INFO - Saved standard table 52 to standard_page_112_table_001.csv
+2025-09-21 18:45:16,334 - PDFTableExtractor - INFO - Processing table 2 on page 112: 5 rows, 7 columns
+2025-09-21 18:45:16,335 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 7)
+2025-09-21 18:45:16,344 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 7)
+2025-09-21 18:45:16,356 - PDFTableExtractor - INFO - Saved standard table 53 to standard_page_112_table_002.csv
+2025-09-21 18:45:16,356 - PDFTableExtractor - INFO - Processing table 3 on page 112: 6 rows, 7 columns
+2025-09-21 18:45:16,357 - PDFTableExtractor - INFO - Created DataFrame with shape: (5, 7)
+2025-09-21 18:45:16,366 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (5, 7)
+2025-09-21 18:45:16,380 - PDFTableExtractor - INFO - Saved standard table 54 to standard_page_112_table_003.csv
+2025-09-21 18:45:16,519 - PDFTableExtractor - INFO - Page 113: Found 1 tables with standard method
+2025-09-21 18:45:16,520 - PDFTableExtractor - INFO - Processing table 1 on page 113: 5 rows, 6 columns
+2025-09-21 18:45:16,520 - PDFTableExtractor - INFO - Created DataFrame with shape: (4, 6)
+2025-09-21 18:45:16,531 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (4, 6)
+2025-09-21 18:45:16,541 - PDFTableExtractor - INFO - Saved standard table 55 to standard_page_113_table_001.csv
+2025-09-21 18:45:17,064 - PDFTableExtractor - INFO - Page 114: Found 1 tables with standard method
+2025-09-21 18:45:17,064 - PDFTableExtractor - INFO - Processing table 1 on page 114: 11 rows, 11 columns
+2025-09-21 18:45:17,065 - PDFTableExtractor - INFO - Created DataFrame with shape: (10, 11)
+2025-09-21 18:45:17,075 - PDFTableExtractor - INFO - Cleaned DataFrame with shape: (10, 11)
+2025-09-21 18:45:17,090 - PDFTableExtractor - INFO - Saved standard table 56 to standard_page_114_table_001.csv
+2025-09-21 18:45:17,658 - PDFTableExtractor - INFO - Page 115: Found 0 tables with standard method
+2025-09-21 18:45:18,595 - PDFTableExtractor - INFO - Page 116: Found 0 tables with standard method
+2025-09-21 18:45:18,797 - PDFTableExtractor - INFO - Page 117: Found 0 tables with standard method
+2025-09-21 18:45:19,035 - PDFTableExtractor - INFO - Page 118: Found 0 tables with standard method
+2025-09-21 18:45:19,042 - PDFTableExtractor - INFO - Extracting tables with custom settings...
+2025-09-21 18:46:09,140 - PDFTableExtractor - INFO - Extracting tables with financial statement focus...
+2025-09-21 18:46:23,578 - PDFTableExtractor - INFO - Saved financial table 1 to financial_page_015_table_001.csv
+2025-09-21 18:46:27,385 - PDFTableExtractor - INFO - Saved financial table 2 to financial_page_019_table_001.csv
+2025-09-21 18:46:28,740 - PDFTableExtractor - INFO - Saved financial table 3 to financial_page_021_table_001.csv
+2025-09-21 18:46:31,562 - PDFTableExtractor - INFO - Saved financial table 4 to financial_page_025_table_001.csv
+2025-09-21 18:46:33,152 - PDFTableExtractor - INFO - Saved financial table 5 to financial_page_027_table_001.csv
+2025-09-21 18:46:36,426 - PDFTableExtractor - INFO - Saved financial table 6 to financial_page_031_table_001.csv
+2025-09-21 18:46:38,021 - PDFTableExtractor - INFO - Saved financial table 7 to financial_page_032_table_001.csv
+2025-09-21 18:46:39,977 - PDFTableExtractor - INFO - Saved financial table 8 to financial_page_033_table_001.csv
+2025-09-21 18:46:45,851 - PDFTableExtractor - INFO - Saved financial table 9 to financial_page_035_table_001.csv
+2025-09-21 18:46:51,480 - PDFTableExtractor - INFO - Saved financial table 10 to financial_page_037_table_001.csv
+2025-09-21 18:47:04,545 - PDFTableExtractor - INFO - Saved financial table 11 to financial_page_041_table_001.csv
+2025-09-21 18:47:19,763 - PDFTableExtractor - INFO - Saved financial table 12 to financial_page_047_table_001.csv
+2025-09-21 18:47:21,594 - PDFTableExtractor - INFO - Saved financial table 13 to financial_page_051_table_001.csv
+2025-09-21 18:47:24,531 - PDFTableExtractor - INFO - Saved financial table 14 to financial_page_055_table_001.csv
+2025-09-21 18:47:25,799 - PDFTableExtractor - INFO - Saved financial table 15 to financial_page_056_table_001.csv
+2025-09-21 18:47:27,164 - PDFTableExtractor - INFO - Saved financial table 16 to financial_page_058_table_001.csv
+2025-09-21 18:47:28,393 - PDFTableExtractor - INFO - Saved financial table 17 to financial_page_059_table_001.csv
+2025-09-21 18:47:29,547 - PDFTableExtractor - INFO - Saved financial table 18 to financial_page_060_table_001.csv
+2025-09-21 18:47:30,593 - PDFTableExtractor - INFO - Saved financial table 19 to financial_page_061_table_001.csv
+2025-09-21 18:47:31,572 - PDFTableExtractor - INFO - Saved financial table 20 to financial_page_063_table_001.csv
+2025-09-21 18:47:33,884 - PDFTableExtractor - INFO - Saved financial table 21 to financial_page_066_table_001.csv
+2025-09-21 18:47:35,267 - PDFTableExtractor - INFO - Saved financial table 22 to financial_page_068_table_001.csv
+2025-09-21 18:47:40,161 - PDFTableExtractor - INFO - Saved financial table 23 to financial_page_077_table_001.csv
+2025-09-21 18:47:40,934 - PDFTableExtractor - INFO - Saved financial table 24 to financial_page_078_table_001.csv
+2025-09-21 18:47:42,093 - PDFTableExtractor - INFO - Saved financial table 25 to financial_page_079_table_001.csv
+2025-09-21 18:47:43,510 - PDFTableExtractor - INFO - Saved financial table 26 to financial_page_080_table_001.csv
+2025-09-21 18:47:44,757 - PDFTableExtractor - INFO - Saved financial table 27 to financial_page_081_table_001.csv
+2025-09-21 18:47:46,034 - PDFTableExtractor - INFO - Saved financial table 28 to financial_page_083_table_001.csv
+2025-09-21 18:47:47,262 - PDFTableExtractor - INFO - Saved financial table 29 to financial_page_085_table_001.csv
+2025-09-21 18:47:48,799 - PDFTableExtractor - INFO - Saved financial table 30 to financial_page_087_table_001.csv
+2025-09-21 18:47:50,746 - PDFTableExtractor - INFO - Saved financial table 31 to financial_page_089_table_001.csv
+2025-09-21 18:47:52,674 - PDFTableExtractor - INFO - Saved financial table 32 to financial_page_092_table_001.csv
+2025-09-21 18:47:53,798 - PDFTableExtractor - INFO - Saved financial table 33 to financial_page_093_table_001.csv
+2025-09-21 18:47:54,958 - PDFTableExtractor - INFO - Saved financial table 34 to financial_page_094_table_001.csv
+2025-09-21 18:47:56,790 - PDFTableExtractor - INFO - Saved financial table 35 to financial_page_097_table_001.csv
+2025-09-21 18:47:57,933 - PDFTableExtractor - INFO - Saved financial table 36 to financial_page_098_table_001.csv
+2025-09-21 18:47:59,221 - PDFTableExtractor - INFO - Saved financial table 37 to financial_page_099_table_001.csv
+2025-09-21 18:47:59,991 - PDFTableExtractor - INFO - Saved financial table 38 to financial_page_100_table_001.csv
+2025-09-21 18:48:00,839 - PDFTableExtractor - INFO - Saved financial table 39 to financial_page_101_table_001.csv
+2025-09-21 18:48:02,099 - PDFTableExtractor - INFO - Saved financial table 40 to financial_page_102_table_001.csv
+2025-09-21 18:48:02,961 - PDFTableExtractor - INFO - Saved financial table 41 to financial_page_103_table_001.csv
+2025-09-21 18:48:05,160 - PDFTableExtractor - INFO - Saved financial table 42 to financial_page_105_table_001.csv
+2025-09-21 18:48:08,689 - PDFTableExtractor - INFO - Saved financial table 43 to financial_page_108_table_001.csv
+2025-09-21 18:48:10,054 - PDFTableExtractor - INFO - Saved financial table 44 to financial_page_109_table_001.csv
+2025-09-21 18:48:11,053 - PDFTableExtractor - INFO - Saved financial table 45 to financial_page_111_table_001.csv
+2025-09-21 18:48:12,095 - PDFTableExtractor - INFO - Saved financial table 46 to financial_page_112_table_001.csv
+2025-09-21 18:48:12,380 - PDFTableExtractor - INFO - Saved financial table 47 to financial_page_113_table_001.csv
+2025-09-21 18:48:13,108 - PDFTableExtractor - INFO - Saved financial table 48 to financial_page_114_table_001.csv
+2025-09-21 18:48:15,941 - PDFTableExtractor - INFO - Table extraction completed. Found 104 tables total.
+2025-09-21 18:48:15,957 - PDFTableExtractor - INFO - Table extraction summary saved to data\parsed\benchmarks\pdfplumber_bench\nvda-20240128\table_extraction_summary.json
+2025-09-21 18:48:15,957 - PDFTableExtractor - INFO - Complete extraction finished in 284.88 seconds

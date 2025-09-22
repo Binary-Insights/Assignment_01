@@ -1,0 +1,23 @@
+{
+  "table_id": "markdown_table_053",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                                     | Year Ended    | Year Ended    | Year Ended    |",
+    "|-----------------------------------------------------|---------------|---------------|---------------|",
+    "|                                                     | Jan 28, 2024  | Jan 29, 2023  | Jan 30, 2022  |",
+    "|                                                     | (In millions) | (In millions) | (In millions) |",
+    "| Reconciling items included in \"All Other\" category: |               |               |               |",
+    "| Stock-based compensation expense                    | $ (3,549)     | $ (2,710)     | $ (2,004)     |",
+    "| Unallocated cost of revenue and operating expenses  | (728)         | (595)         | (399)         |",
+    "| Acquisition-related and other costs                 | (583)         | (674)         | (636)         |",
+    "| IP-related and legal settlement costs               | (40)          | (23)          | (10)          |",
+    "| Restructuring costs and other                       | -             | (54)          | -             |",
+    "| Acquisition termination cost                        | -             | (1,353)       | -             |",
+    "| Other                                               | 10            | (2)           | -             |",
+    "| Total                                               | $ (4,890)     | $ (5,411)     | $ (3,049)     |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_053.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_053.csv"
+}

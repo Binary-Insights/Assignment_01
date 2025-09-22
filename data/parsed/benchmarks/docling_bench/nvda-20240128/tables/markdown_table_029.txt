@@ -1,0 +1,12 @@
+|                                                    | Jan 28, 2024   | Jan 28, 2024    | Jan 28, 2024    | Jan 28, 2024         | Jan 28, 2024     | Jan 28, 2024          |
+|----------------------------------------------------|----------------|-----------------|-----------------|----------------------|------------------|-----------------------|
+|                                                    |                |                 |                 |                      | Reported as      | Reported as           |
+|                                                    | Amortized Cost | Unrealized Gain | Unrealized Loss | Estimated Fair Value | Cash Equivalents | Marketable Securities |
+|                                                    | (In millions)  | (In millions)   | (In millions)   | (In millions)        | (In millions)    | (In millions)         |
+| Corporate debt securities                          | $ 10,126       | $ 31            | $ (5)           | $ 10,152             | $ 2,231          | $ 7,921               |
+| Debt securities issued by the U.S. Treasury        | 9,517          | 17              | (10)            | 9,524                | 1,315            | 8,209                 |
+| Debt securities issued by U.S. government agencies | 2,326          | 8               | (1)             | 2,333                | 89               | 2,244                 |
+| Money market funds                                 | 3,031          | -               | -               | 3,031                | 3,031            | -                     |
+| Certificates of deposit                            | 510            | -               | -               | 510                  | 294              | 216                   |
+| Foreign government bonds                           | 174            | -               | -               | 174                  | 60               | 114                   |
+| Total                                              | $ 25,684       | $ 56            | $ (16)          | $ 25,724             | $ 7,020          | $ 18,704              |

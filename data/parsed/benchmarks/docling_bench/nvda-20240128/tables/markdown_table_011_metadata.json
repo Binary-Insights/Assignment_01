@@ -1,0 +1,16 @@
+{
+  "table_id": "markdown_table_011",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                                   | Jan 28, 2024   | Jan 29, 2023   |",
+    "|---------------------------------------------------|----------------|----------------|",
+    "|                                                   | (In millions)  | (In millions)  |",
+    "| Cash and cash equivalents                         | $ 7,280        | $ 3,389        |",
+    "| Marketable securities                             | 18,704         | 9,907          |",
+    "| Cash, cash equivalents, and marketable securities | $ 25,984       | $ 13,296       |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_011.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_011.csv"
+}

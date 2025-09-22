@@ -1,0 +1,22 @@
+|                                                                  | Jan 28, 2024   | Jan 29, 2023   |
+|------------------------------------------------------------------|----------------|----------------|
+|                                                                  | (In millions)  | (In millions)  |
+| Deferred tax assets:                                             |                |                |
+| Capitalized research and development expenditure                 | $ 3,376        | $ 1,859        |
+| GILTI deferred tax assets                                        | 1,576          | 800            |
+| Accruals and reserves, not currently deductible for tax purposes | 1,121          | 686            |
+| Research and other tax credit carryforwards                      | 936            | 951            |
+| Net operating loss and capital loss carryforwards                | 439            | 409            |
+| Operating lease liabilities                                      | 263            | 193            |
+| Stock-based compensation                                         | 106            | 99             |
+| Property, equipment and intangible assets                        | 4              | 66             |
+| Other deferred tax assets                                        | 179            | 91             |
+| Gross deferred tax assets                                        | 8,000          | 5,154          |
+| Less valuation allowance                                         | (1,552)        | (1,484)        |
+| Total deferred tax assets                                        | 6,448          | 3,670          |
+| Deferred tax liabilities:                                        |                |                |
+| Unremitted earnings of foreign subsidiaries                      | (502)          | (228)          |
+| Operating lease assets                                           | (255)          | (179)          |
+| Acquired intangibles                                             | (74)           | (115)          |
+| Gross deferred tax liabilities                                   | (831)          | (522)          |
+| Net deferred tax asset (1)                                       | $ 5,617        | $ 3,148        |

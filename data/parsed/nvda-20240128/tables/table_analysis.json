@@ -1,0 +1,137 @@
+[
+  {
+    "page": 51,
+    "table_index": 0,
+    "rows": 64,
+    "columns": 10,
+    "numeric_ratio": 0.02786377708978328,
+    "possible_headers": [
+      "Securities",
+      "Announced Pr",
+      "of Februar",
+      "d/or sales and admi",
+      "Please see No"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 53,
+    "table_index": 0,
+    "rows": 25,
+    "columns": 16,
+    "numeric_ratio": 0.1317365269461078,
+    "possible_headers": [
+      "e graph assu",
+      "dex,",
+      "dends.",
+      "through",
+      "Consolidated Fin"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 54,
+    "table_index": 0,
+    "rows": 63,
+    "columns": 9,
+    "numeric_ratio": 0.008174386920980926,
+    "possible_headers": [
+      "business, or integr",
+      "across seve",
+      "customers crea",
+      "nc",
+      "me"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 55,
+    "table_index": 0,
+    "rows": 58,
+    "columns": 9,
+    "numeric_ratio": 0.0027624309392265192,
+    "possible_headers": [
+      "economic and geopolitical",
+      "or boards",
+      "absent, which may cause",
+      ".",
+      "development,"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 56,
+    "table_index": 0,
+    "rows": 66,
+    "columns": 10,
+    "numeric_ratio": 0.0136986301369863,
+    "possible_headers": [
+      "r Windows a",
+      "cars are equi",
+      "I inference. In",
+      ".",
+      "ata)"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 58,
+    "table_index": 0,
+    "rows": 57,
+    "columns": 10,
+    "numeric_ratio": 0.0,
+    "possible_headers": [
+      "e-down our inv",
+      "ory.",
+      "ing actions by",
+      "itional taxes ma",
+      "certain estimat"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 59,
+    "table_index": 0,
+    "rows": 55,
+    "columns": 8,
+    "numeric_ratio": 0.0,
+    "possible_headers": [
+      "ed by customer",
+      "engineer pe",
+      "of integration o",
+      "ction price to each di",
+      "ificant amount"
+    ],
+    "is_likely_financial": false
+  },
+  {
+    "page": 60,
+    "table_index": 0,
+    "rows": 68,
+    "columns": 15,
+    "numeric_ratio": 0.339041095890411,
+    "possible_headers": [
+      "operating inc",
+      "ue to high",
+      "tions. Network",
+      "r Data C",
+      "the periods indicated, c"
+    ],
+    "is_likely_financial": true
+  },
+  {
+    "page": 61,
+    "table_index": 0,
+    "rows": 67,
+    "columns": 10,
+    "numeric_ratio": 0.06535947712418301,
+    "possible_headers": [
+      "Compute &",
+      "2024, attr",
+      "year 2023,",
+      "as an un",
+      "partially offset by a $839"
+    ],
+    "is_likely_financial": false
+  }
+]

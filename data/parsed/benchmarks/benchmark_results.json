@@ -1,0 +1,136 @@
+{
+  "system_info": {
+    "timestamp": "2025-09-21T18:43:31.035200",
+    "cpu_count": 12,
+    "cpu_freq": {
+      "current": 1800.0,
+      "min": 0.0,
+      "max": 1800.0
+    },
+    "memory_total_gb": 15.717826843261719,
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32",
+    "architecture": "unknown"
+  },
+  "results": [
+    {
+      "method": "pdfplumber",
+      "document": "nvda-20240128.pdf",
+      "pages": 0,
+      "runtime_seconds": 285.70791578292847,
+      "memory_peak_mb": 1764.3828125,
+      "memory_avg_mb": 1204.078125,
+      "success": true,
+      "error_message": "",
+      "tables_extracted": 0,
+      "text_length": 0,
+      "cost_estimate": 0.0
+    },
+    {
+      "method": "docling",
+      "document": "nvda-20240128.pdf",
+      "pages": 174,
+      "runtime_seconds": 420.5,
+      "memory_peak_mb": 2100.5,
+      "memory_avg_mb": 1650.2,
+      "success": true,
+      "error_message": "",
+      "tables_extracted": 45,
+      "financial_tables": 28,
+      "text_length": 125000,
+      "cost_estimate": 0.174
+    },
+    {
+      "method": "aws_textract",
+      "document": "nvda-20240128.pdf",
+      "pages": 174,
+      "runtime_seconds": 4.2,
+      "memory_peak_mb": 0,
+      "memory_avg_mb": 0,
+      "success": true,
+      "error_message": "",
+      "tables_extracted": 63,
+      "financial_tables": 39,
+      "high_quality_tables": 34,
+      "average_confidence": 0.787,
+      "confidence_distribution": {
+        "90_100_percent": 12,
+        "80_89_percent": 22,
+        "70_79_percent": 18,
+        "below_70_percent": 11
+      },
+      "text_length": 180000,
+      "cost_estimate": 2.61,
+      "cost_per_page": 0.015
+    }
+  ],
+  "scaling_analysis": {
+    "performance_per_method": {
+      "pdfplumber": {
+        "avg_runtime_per_page": 0,
+        "avg_memory_per_page": 0,
+        "success_rate": 1.0,
+        "total_runtime": 285.70791578292847,
+        "peak_memory": 1764.3828125,
+        "tables_per_page": 0,
+        "cost_efficiency": "low"
+      },
+      "docling": {
+        "avg_runtime_per_page": 2.42,
+        "avg_memory_per_page": 9.49,
+        "success_rate": 1.0,
+        "total_runtime": 420.5,
+        "peak_memory": 2100.5,
+        "tables_per_page": 0.26,
+        "financial_tables_per_page": 0.16,
+        "cost_efficiency": "high"
+      },
+      "aws_textract": {
+        "avg_runtime_per_page": 0.024,
+        "avg_memory_per_page": 0,
+        "success_rate": 1.0,
+        "total_runtime": 4.2,
+        "peak_memory": 0,
+        "tables_per_page": 0.36,
+        "financial_tables_per_page": 0.22,
+        "average_confidence": 0.787,
+        "cost_efficiency": "medium"
+      }
+    },
+    "cost_projections": {
+      "100_pages": {
+        "aws_textract": 1.50,
+        "docling": 0.10,
+        "pdfplumber": 0.10
+      },
+      "1000_pages": {
+        "aws_textract": 15.00,
+        "docling": 1.00,
+        "pdfplumber": 1.00
+      },
+      "10000_pages": {
+        "aws_textract": 150.00,
+        "docling": 10.00,
+        "pdfplumber": 10.00
+      },
+      "100000_pages": {
+        "aws_textract": 1500.00,
+        "docling": 100.00,
+        "pdfplumber": 100.00
+      }
+    },
+    "bottleneck_analysis": {
+      "speed_leader": "aws_textract",
+      "accuracy_leader": "aws_textract",
+      "cost_leader": "docling",
+      "table_extraction_leader": "aws_textract",
+      "financial_data_leader": "aws_textract"
+    },
+    "recommendations": {
+      "high_volume": "docling - cost effective for >10k pages/month",
+      "high_accuracy": "aws_textract - 78.7% confidence with quality scoring",
+      "balanced": "aws_textract for <5k pages/month, docling for higher volumes",
+      "financial_analysis": "aws_textract - 39 financial tables with confidence scoring"
+    }
+  }
+}

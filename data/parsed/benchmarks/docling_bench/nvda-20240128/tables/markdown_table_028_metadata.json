@@ -1,0 +1,19 @@
+{
+  "table_id": "markdown_table_028",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "| Fiscal Year:        | Future Amortization Expense (In millions)   |",
+    "|---------------------|---------------------------------------------|",
+    "| 2025                | 555                                         |",
+    "| 2026                | 261                                         |",
+    "| 2027                | 150                                         |",
+    "| 2028                | 37                                          |",
+    "| 2029                | 9                                           |",
+    "| 2030 and thereafter | 100                                         |",
+    "| Total               | 1,112                                       |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_028.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_028.csv"
+}

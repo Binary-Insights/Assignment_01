@@ -1,0 +1,24 @@
+{
+  "table_id": "markdown_table_020",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                                    | Operating Lease Obligations (In millions)   |",
+    "|----------------------------------------------------|---------------------------------------------|",
+    "| Fiscal Year:                                       |                                             |",
+    "| 2025                                               | 290                                         |",
+    "| 2026                                               | 270                                         |",
+    "| 2027                                               | 253                                         |",
+    "| 2028                                               | 236                                         |",
+    "| 2029                                               | 202                                         |",
+    "| 2030 and thereafter                                | 288                                         |",
+    "| Total                                              | 1,539                                       |",
+    "| Less imputed interest                              | 192                                         |",
+    "| Present value of net future minimum lease payments | 1,347                                       |",
+    "| Less short-term operating lease liabilities        | 228                                         |",
+    "| Long-term operating lease liabilities              | 1,119                                       |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_020.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_020.csv"
+}

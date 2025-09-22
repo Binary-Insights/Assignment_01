@@ -1,0 +1,10 @@
+|                                              | Jan 28, 2024 (In millions)   |
+|----------------------------------------------|------------------------------|
+| Due in one year                              | $ 1,250                      |
+| Due in one to five years                     | 2,250                        |
+| Due in five to ten years                     | 2,750                        |
+| Due in greater than ten years                | 3,500                        |
+| Unamortized debt discount and issuance costs | (41)                         |
+| Net carrying amount                          | 9,709                        |
+| Less short-term portion                      | (1,250)                      |
+| Total long-term portion                      | $ 8,459                      |

@@ -1,0 +1,4 @@
+|                                                    | Jan 28, 2024 (In millions)   |
+|----------------------------------------------------|------------------------------|
+| Cumulative gross unrealized gains                  | $ 270                        |
+| Cumulative gross unrealized losses and impairments | (45)                         |

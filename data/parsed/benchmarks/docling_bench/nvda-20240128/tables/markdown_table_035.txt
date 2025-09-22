@@ -1,0 +1,8 @@
+|                                                          | Year Ended Jan 28, 2024 (In millions)   |
+|----------------------------------------------------------|-----------------------------------------|
+| Carrying amount as of Jan 29, 2023                       | $ 288                                   |
+| Adjustments related to non-marketable equity securities: |                                         |
+| Net additions                                            | 859                                     |
+| Unrealized gains                                         | 194                                     |
+| Impairments and unrealized losses                        | (20)                                    |
+| Carrying amount as of Jan 28, 2024                       | $ 1,321                                 |

@@ -1,0 +1,19 @@
+{
+  "table_id": "markdown_table_054",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                             | Year Ended    | Year Ended    | Year Ended    |",
+    "|-----------------------------|---------------|---------------|---------------|",
+    "|                             | Jan 28, 2024  | Jan 29, 2023  | Jan 30, 2022  |",
+    "| Revenue:                    | (In millions) | (In millions) | (In millions) |",
+    "| United States               | $ 26,966      | $ 8,292       | $ 4,349       |",
+    "| Taiwan                      | 13,405        | 6,986         | 8,544         |",
+    "| China (including Hong Kong) | 10,306        | 5,785         | 7,111         |",
+    "| Other countries             | 10,245        | 5,911         | 6,910         |",
+    "| Total revenue               | $ 60,922      | $ 26,974      | $ 26,914      |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_054.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_054.csv"
+}

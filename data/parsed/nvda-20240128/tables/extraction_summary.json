@@ -1,0 +1,26 @@
+[
+  {
+    "page": 60,
+    "table_index": 1,
+    "path": "data/parsed/nvda-20240128/tables\\table_p060_001.csv",
+    "rows": 16,
+    "columns": 5,
+    "numeric_ratio": 1.6133333333333333
+  },
+  {
+    "page": 60,
+    "table_index": 2,
+    "path": "data/parsed/nvda-20240128/tables\\table_p060_002.csv",
+    "rows": 3,
+    "columns": 9,
+    "numeric_ratio": 1.6133333333333333
+  },
+  {
+    "page": 60,
+    "table_index": 3,
+    "path": "data/parsed/nvda-20240128/tables\\table_p060_003.csv",
+    "rows": 4,
+    "columns": 9,
+    "numeric_ratio": 1.6133333333333333
+  }
+]

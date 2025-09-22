@@ -1,0 +1,10 @@
+|                              | Year Ended                             | Year Ended                             | Year Ended                             |
+|------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+|                              | Jan 28, 2024                           | Jan 29, 2023                           | Change                                 |
+|                              | ($ in millions, except per share data) | ($ in millions, except per share data) | ($ in millions, except per share data) |
+| Revenue                      | $ 60,922                               | $ 26,974                               | Up 126%                                |
+| Gross margin                 | 72.7  %                                | 56.9  %                                | Up 15.8 pts                            |
+| Operating expenses           | $ 11,329                               | $ 11,132                               | Up 2%                                  |
+| Operating income             | $ 32,972                               | $ 4,224                                | Up 681%                                |
+| Net income                   | $ 29,760                               | $ 4,368                                | Up 581%                                |
+| Net income per diluted share | $ 11.93                                | $ 1.74                                 | Up 586%                                |

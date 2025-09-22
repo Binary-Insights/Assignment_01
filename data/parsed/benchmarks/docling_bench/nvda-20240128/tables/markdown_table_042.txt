@@ -1,0 +1,7 @@
+|                                              | Jan 28, 2024   | Jan 29, 2023   |
+|----------------------------------------------|----------------|----------------|
+|                                              | (In millions)  | (In millions)  |
+| Balance at beginning of period               | $ 572          | $ 502          |
+| Deferred revenue additions during the period | 2,038          | 830            |
+| Revenue recognized during the period         | (1,273)        | (760)          |
+| Balance at end of period                     | $ 1,337        | $ 572          |

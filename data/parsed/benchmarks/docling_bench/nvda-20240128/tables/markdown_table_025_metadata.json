@@ -1,0 +1,20 @@
+{
+  "table_id": "markdown_table_025",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                                                | RSUs, PSUs and Market-based PSUs Outstanding   | RSUs, PSUs and Market-based PSUs Outstanding   |",
+    "|------------------------------------------------|------------------------------------------------|------------------------------------------------|",
+    "|                                                | Number of Shares                               | Weighted Average Grant- Date Fair Value        |",
+    "|                                                | (In millions, except per share data)           | (In millions, except per share data)           |",
+    "| Balances, Jan 29, 2023                         | 45                                             | 158.45                                         |",
+    "| Granted                                        | 14                                             | 374.08                                         |",
+    "| Vested restricted stock                        | (21)                                           | 148.56                                         |",
+    "| Canceled and forfeited                         | (1)                                            | 206.35                                         |",
+    "| Balances, Jan 28, 2024                         | 37                                             | 245.94                                         |",
+    "| Vested and expected to vest after Jan 28, 2024 | 37                                             | 245.49                                         |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_025.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_025.csv"
+}

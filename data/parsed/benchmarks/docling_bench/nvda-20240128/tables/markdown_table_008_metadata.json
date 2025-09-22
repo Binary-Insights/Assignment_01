@@ -1,0 +1,18 @@
+{
+  "table_id": "markdown_table_008",
+  "page": null,
+  "bbox": null,
+  "content": [
+    "|                      | Year Ended      | Year Ended      | Year Ended      | Year Ended      |",
+    "|----------------------|-----------------|-----------------|-----------------|-----------------|",
+    "|                      | Jan 28, 2024    | Jan 29, 2023    | $ Change        | % Change        |",
+    "|                      | ($ in millions) | ($ in millions) | ($ in millions) | ($ in millions) |",
+    "| Compute & Networking | $ 32,016        | $ 5,083         | $ 26,933        | 530  %          |",
+    "| Graphics             | 5,846           | 4,552           | 1,294           | 28  %           |",
+    "| All Other            | (4,890)         | (5,411)         | 521             | (10) %          |",
+    "| Total                | $ 32,972        | $ 4,224         | $ 28,748        | 681  %          |"
+  ],
+  "source": "markdown_pattern",
+  "text_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_008.txt",
+  "csv_file": "benchmarks\\docling_bench\\nvda-20240128\\tables\\markdown_table_008.csv"
+}

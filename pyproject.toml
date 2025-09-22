@@ -27,8 +27,8 @@ dependencies = [
     "lxml",
     # AI/ML dependencies for Docling
     "transformers",
-    "torch",
-    "torchvision",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
     "accelerate",
     "sentencepiece",
     "dvc>=3.63.0",
@@ -38,4 +38,4 @@ dependencies = [
 ]
 
 [tool.uv.extra-build-dependencies]
-detectron2 = ["torch", "torchvision"]
+detectron2 = ["torch==2.8.0", "torchvision==0.23.0"]

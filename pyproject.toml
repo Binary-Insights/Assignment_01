@@ -36,3 +36,6 @@ dependencies = [
     # "detectron2@git+
     "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2 --no-build-isolation", # Required for LayoutParser
 ]
+
+[tool.uv.extra-build-dependencies]
+detectron2 = ["torch", "torchvision"]

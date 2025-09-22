@@ -20,7 +20,7 @@ class MethodSpecificMarkdownGenerator:
     Generate method-specific markdown outputs tailored to each extraction approach.
     """
     
-    def __init__(self, output_dir: str = "data/staged/markdown"):
+    def __init__(self, output_dir: str = "data/reports/markdown"):
         """
         Initialize the markdown generator.
         
@@ -33,10 +33,13 @@ class MethodSpecificMarkdownGenerator:
         # Create method-specific subdirectories
         self.docling_dir = self.base_output_dir / "docling"
         self.layout_parser_dir = self.base_output_dir / "layout_parser"
-        self.traditional_dir = self.base_output_dir / "traditional"
+        self.hybrid_dir = self.base_output_dir / "hybrid"
+        self.pdfplumber_tesseract_dir = self.base_output_dir / "pdfplumber_tesseract"
+        # self.traditional_dir = self.base_output_dir / "traditional"
         
         # Create all method directories
-        for method_dir in [self.docling_dir, self.layout_parser_dir, self.traditional_dir]:
+        for method_dir in [self.docling_dir, self.layout_parser_dir, 
+                          self.hybrid_dir, self.pdfplumber_tesseract_dir]:
             method_dir.mkdir(parents=True, exist_ok=True)
     
     def generate_docling_markdown(self, doc_id: str) -> str:
@@ -140,6 +143,86 @@ class MethodSpecificMarkdownGenerator:
             f.write(markdown_content)
         
         print(f"✅ Traditional markdown saved: {output_file}")
+        return str(output_file)
+    
+    def generate_hybrid_markdown(self, doc_id: str) -> str:
+        """
+        Generate markdown from Hybrid extraction output.
+        
+        Hybrid extraction uses multiple table detection methods (Camelot + pdfplumber).
+        
+        Args:
+            doc_id: Document identifier
+            
+        Returns:
+            str: Path to generated markdown file
+        """
+        print(f"🔄 Converting Hybrid extraction to Markdown for: {doc_id}")
+        
+        # Look for hybrid extraction files
+        hybrid_dir = Path(f"data/parsed/hybrid/{doc_id}")
+        if not hybrid_dir.exists():
+            print(f"❌ Hybrid extraction not found: {hybrid_dir}")
+            return None
+        
+        # Read the extraction summary JSON
+        summary_file = hybrid_dir / "complete_extraction_summary.json"
+        if not summary_file.exists():
+            print(f"❌ Hybrid summary not found: {summary_file}")
+            return None
+        
+        with open(summary_file, 'r', encoding='utf-8') as f:
+            summary_data = json.load(f)
+        
+        # Generate markdown content
+        markdown_content = self._convert_hybrid_extraction_to_markdown(summary_data, doc_id, hybrid_dir)
+        
+        # Save markdown file in hybrid-specific folder
+        output_file = self.hybrid_dir / f"{doc_id}_hybrid_extraction.md"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        
+        print(f"✅ Hybrid markdown saved: {output_file}")
+        return str(output_file)
+    
+    def generate_pdfplumber_tesseract_markdown(self, doc_id: str) -> str:
+        """
+        Generate markdown from PDFPlumber-Tesseract extraction output.
+        
+        PDFPlumber-Tesseract provides text extraction with OCR fallback and table detection.
+        
+        Args:
+            doc_id: Document identifier
+            
+        Returns:
+            str: Path to generated markdown file
+        """
+        print(f"🔄 Converting PDFPlumber-Tesseract extraction to Markdown for: {doc_id}")
+        
+        # Look for pdfplumber_tesseract extraction files
+        pdfplumber_dir = Path(f"data/parsed/pdfplumber_tesseract/{doc_id}")
+        if not pdfplumber_dir.exists():
+            print(f"❌ PDFPlumber-Tesseract extraction not found: {pdfplumber_dir}")
+            return None
+        
+        # Read the extraction summary JSON
+        summary_file = pdfplumber_dir / "table_extraction_summary.json"
+        if not summary_file.exists():
+            print(f"❌ PDFPlumber-Tesseract summary not found: {summary_file}")
+            return None
+        
+        with open(summary_file, 'r', encoding='utf-8') as f:
+            summary_data = json.load(f)
+        
+        # Generate markdown content
+        markdown_content = self._convert_pdfplumber_tesseract_to_markdown(summary_data, doc_id, pdfplumber_dir)
+        
+        # Save markdown file in pdfplumber_tesseract-specific folder
+        output_file = self.pdfplumber_tesseract_dir / f"{doc_id}_pdfplumber_tesseract.md"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        
+        print(f"✅ PDFPlumber-Tesseract markdown saved: {output_file}")
         return str(output_file)
     
     def _convert_docling_text_to_markdown(self, content: str, doc_id: str) -> str:
@@ -588,6 +671,375 @@ class MethodSpecificMarkdownGenerator:
         ])
         
         return '\n'.join(markdown_lines)
+    
+    def _convert_hybrid_extraction_to_markdown(self, summary_data: Dict, doc_id: str, hybrid_dir: Path) -> str:
+        """
+        Convert hybrid extraction results to markdown with proper sequencing.
+        
+        Args:
+            summary_data: JSON summary from hybrid extraction
+            doc_id: Document identifier  
+            hybrid_dir: Path to hybrid extraction directory
+            
+        Returns:
+            str: Formatted markdown content
+        """
+        markdown_lines = []
+        
+        # Document header
+        markdown_lines.extend([
+            f"# Document: {doc_id}",
+            "## Extraction Method: 🔬 Hybrid (Camelot + PDFPlumber Multi-Method)",
+            f"**Generated**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            "",
+            "---",
+            ""
+        ])
+        
+        # Processing summary
+        pdf_info = summary_data.get('pdf_info', {})
+        overall_stats = summary_data.get('overall_stats', {})
+        
+        markdown_lines.extend([
+            "## Processing Summary",
+            f"- **PDF**: {pdf_info.get('name', 'Unknown')}",
+            f"- **Processing Time**: {pdf_info.get('processing_time_seconds', 0):.2f} seconds",
+            f"- **Total Pages**: {overall_stats.get('total_pages', 0)}",
+            f"- **Text Pages**: {overall_stats.get('text_extracted_pages', 0)}",
+            f"- **OCR Pages**: {overall_stats.get('ocr_pages', 0)}",
+            f"- **Tables Found**: {overall_stats.get('tables_found', 0)}",
+            "",
+            "---",
+            ""
+        ])
+        
+        # Text extraction results - maintain page sequence
+        text_results = summary_data.get('text_extraction', {})
+        if text_results:
+            markdown_lines.extend([
+                "## Text Extraction (Page Sequence)",
+                ""
+            ])
+            
+            # Process pages in sequential order
+            pages = text_results.get('pages', [])
+            sorted_pages = sorted(pages, key=lambda p: p.get('page_number', 0))
+            
+            for page in sorted_pages:
+                page_num = page.get('page_number', 'Unknown')
+                text_file = page.get('text_file', '')
+                extraction_method = page.get('extraction_method', 'unknown')
+                text_length = page.get('text_length', 0)
+                
+                markdown_lines.extend([
+                    f"### Page {page_num}",
+                    f"- **Method**: {extraction_method.title()}",
+                    f"- **Text Length**: {text_length:,} characters",
+                    f"- **Source File**: `text/{text_file}`",
+                    ""
+                ])
+                
+                # Include actual text content if file exists
+                text_file_path = hybrid_dir / "text" / text_file
+                if text_file_path.exists():
+                    try:
+                        with open(text_file_path, 'r', encoding='utf-8') as f:
+                            content = f.read().strip()
+                        if content and len(content) > 50:
+                            # Show first 500 characters as preview
+                            preview = content[:500] + "..." if len(content) > 500 else content
+                            markdown_lines.extend([
+                                "**Preview:**",
+                                "```",
+                                preview,
+                                "```",
+                                ""
+                            ])
+                    except Exception as e:
+                        markdown_lines.append(f"*Error reading text file: {e}*")
+                        markdown_lines.append("")
+            
+            markdown_lines.extend(["---", ""])
+        
+        # Table extraction results - organized by method with quality analysis
+        table_results = summary_data.get('table_extraction', {})
+        if table_results:
+            markdown_lines.extend([
+                "## Table Extraction Analysis",
+                f"**Total Tables Found**: {table_results.get('total_tables', 0)}",
+                ""
+            ])
+            
+            # Method comparison
+            method_analysis = table_results.get('method_analysis', {})
+            if method_analysis:
+                method_comparison = method_analysis.get('method_comparison', {})
+                
+                for method, stats in method_comparison.items():
+                    method_name = method.replace('_', ' ').title()
+                    markdown_lines.extend([
+                        f"### {method_name}",
+                        f"- **Tables Found**: {stats.get('tables_found', 0)}",
+                        f"- **Average Accuracy**: {stats.get('avg_accuracy', 'N/A')}",
+                        f"- **Best For**: {stats.get('best_for', 'General use')}",
+                        ""
+                    ])
+                
+                # Recommendations
+                recommendations = method_analysis.get('recommendations', [])
+                if recommendations:
+                    markdown_lines.extend([
+                        "### Recommendations",
+                        ""
+                    ])
+                    for rec in recommendations:
+                        markdown_lines.append(f"- {rec}")
+                    markdown_lines.append("")
+            
+            # Hybrid analysis results
+            hybrid_results = table_results.get('hybrid_results', [])
+            if hybrid_results:
+                markdown_lines.extend([
+                    "### Page-by-Page Analysis",
+                    ""
+                ])
+                
+                for result in sorted(hybrid_results, key=lambda r: r.get('page', 0)):
+                    page_num = result.get('page', 'Unknown')
+                    recommended = result.get('recommended_method', 'none').replace('_', ' ').title()
+                    reasoning = result.get('reasoning', 'No reasoning provided')
+                    
+                    markdown_lines.extend([
+                        f"**Page {page_num}**",
+                        f"- **Recommended Method**: {recommended}",
+                        f"- **Reasoning**: {reasoning}",
+                        f"- **Has Ruling Lines**: {result.get('has_ruling_lines', False)}",
+                        ""
+                    ])
+        
+        # Add document footer
+        markdown_lines.extend([
+            "---",
+            "",
+            "## Document Information",
+            f"- **Source**: Hybrid extraction (Camelot lattice/stream + PDFPlumber)",
+            f"- **Processing Method**: Multi-method table detection with heuristic selection",
+            f"- **Text Files**: Sequential page-by-page with OCR fallback",
+            f"- **Table Files**: Method-specific CSV outputs with quality analysis",
+            f"- **Generated**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            "",
+            "*This document combines multiple extraction methods for optimal results.*"
+        ])
+        
+        return '\n'.join(markdown_lines)
+    
+    def _convert_pdfplumber_tesseract_to_markdown(self, summary_data: Dict, doc_id: str, pdfplumber_dir: Path) -> str:
+        """
+        Convert PDFPlumber-Tesseract extraction results to markdown with proper sequencing.
+        
+        Args:
+            summary_data: JSON summary from pdfplumber extraction
+            doc_id: Document identifier
+            pdfplumber_dir: Path to pdfplumber extraction directory
+            
+        Returns:
+            str: Formatted markdown content
+        """
+        markdown_lines = []
+        
+        # Document header
+        markdown_lines.extend([
+            f"# Document: {doc_id}",
+            "## Extraction Method: 📄 PDFPlumber + Tesseract (OCR-Enhanced Text & Tables)",
+            f"**Generated**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            "",
+            "---",
+            ""
+        ])
+        
+        # Processing summary
+        pdf_info = summary_data.get('pdf_info', {})
+        overall_stats = summary_data.get('overall_stats', {})
+        
+        markdown_lines.extend([
+            "## Processing Summary",
+            f"- **PDF**: {pdf_info.get('name', 'Unknown')}",
+            f"- **Processing Time**: {pdf_info.get('processing_time_seconds', 0):.2f} seconds",
+            f"- **Total Pages**: {overall_stats.get('total_pages', 0)}",
+            f"- **Text Extraction Pages**: {overall_stats.get('text_extracted_pages', 0)}",
+            f"- **OCR Pages**: {overall_stats.get('ocr_pages', 0)}",
+            f"- **Failed Pages**: {overall_stats.get('failed_pages', 0)}",
+            f"- **Tables Found**: {overall_stats.get('tables_found', 0)}",
+            "",
+            "---",
+            ""
+        ])
+        
+        # Text extraction with page sequence
+        text_results = summary_data.get('text_extraction', {})
+        if text_results:
+            markdown_lines.extend([
+                "## Text Extraction (Sequential by Page)",
+                f"**Word Boxes Extracted**: {text_results.get('word_boxes_saved', False)}",
+                "",
+                "*Note: Full text content is shown for each page (not just previews)*",
+                ""
+            ])
+            
+            # Process pages in order
+            pages = text_results.get('pages', [])
+            sorted_pages = sorted(pages, key=lambda p: p.get('page_number', 0))
+            
+            for page in sorted_pages:
+                page_num = page.get('page_number', 'Unknown')
+                method = page.get('extraction_method', 'unknown')
+                text_length = page.get('text_length', 0)
+                used_ocr = page.get('used_ocr', False)
+                success = page.get('success', True)
+                
+                status_icon = "✅" if success else "❌"
+                method_icon = "🔍" if method == "ocr" else "📄"
+                
+                markdown_lines.extend([
+                    f"### {status_icon} Page {page_num} {method_icon}",
+                    f"- **Extraction Method**: {method.upper()}",
+                    f"- **Text Length**: {text_length:,} characters",
+                    f"- **Used OCR**: {'Yes' if used_ocr else 'No'}",
+                    f"- **Status**: {'Success' if success else 'Failed'}",
+                    ""
+                ])
+                
+                # Include text preview if available
+                text_file = page.get('text_file', '')
+                if text_file:
+                    text_file_path = pdfplumber_dir / "text" / text_file
+                    if text_file_path.exists():
+                        try:
+                            with open(text_file_path, 'r', encoding='utf-8') as f:
+                                content = f.read().strip()
+                            if content and len(content) > 50:
+                                # Show full content instead of preview
+                                markdown_lines.extend([
+                                    "**Full Text Content:**",
+                                    "",
+                                    content,  # Full content, not preview
+                                    "",
+                                    "---",
+                                    ""
+                                ])
+                        except Exception as e:
+                            markdown_lines.append(f"*Error reading text: {e}*")
+                            markdown_lines.append("")
+            
+            markdown_lines.extend(["---", ""])
+            
+            # Add combined text section
+            markdown_lines.extend([
+                "## Combined Document Text",
+                "*All pages combined in reading order*",
+                "",
+                "```",
+            ])
+            
+            # Combine all page text in sequence
+            for page in sorted_pages:
+                text_file = page.get('text_file', '')
+                page_num = page.get('page_number', 'Unknown')
+                if text_file:
+                    text_file_path = pdfplumber_dir / "text" / text_file
+                    if text_file_path.exists():
+                        try:
+                            with open(text_file_path, 'r', encoding='utf-8') as f:
+                                content = f.read().strip()
+                            if content:
+                                markdown_lines.extend([
+                                    f"=== PAGE {page_num} ===",
+                                    content,
+                                    ""
+                                ])
+                        except Exception:
+                            markdown_lines.append(f"[Error reading page {page_num}]")
+            
+            markdown_lines.extend([
+                "```",
+                "",
+                "---",
+                ""
+            ])
+        
+        # Table extraction analysis
+        table_results = summary_data.get('table_extraction', {})
+        if table_results:
+            markdown_lines.extend([
+                "## Table Extraction Analysis",
+                f"**Total Tables Found**: {table_results.get('total_tables', 0)}",
+                ""
+            ])
+            
+            # Method comparison
+            methods = ['standard_extraction', 'custom_settings', 'financial_focused']
+            method_names = {
+                'standard_extraction': 'Standard PDFPlumber',
+                'custom_settings': 'Custom Settings',
+                'financial_focused': 'Financial-Focused'
+            }
+            
+            for method in methods:
+                if method in table_results:
+                    method_data = table_results[method]
+                    method_name = method_names.get(method, method.title())
+                    
+                    markdown_lines.extend([
+                        f"### {method_name}",
+                        f"- **Tables Found**: {method_data.get('success_count', 0)}",
+                        ""
+                    ])
+                    
+                    # Show individual tables
+                    tables = method_data.get('tables', [])
+                    for i, table in enumerate(tables, 1):
+                        quality = table.get('quality_score', 0)
+                        is_financial = table.get('is_financial', False)
+                        shape = table.get('shape', [0, 0])
+                        
+                        markdown_lines.extend([
+                            f"**Table {i}**",
+                            f"- Quality Score: {quality}/100",
+                            f"- Dimensions: {shape[0]} rows × {shape[1]} columns",
+                            f"- Financial Table: {'Yes' if is_financial else 'No'}",
+                            f"- File: `tables/{table.get('filename', 'unknown')}`",
+                            ""
+                        ])
+            
+            # Method analysis
+            method_analysis = table_results.get('method_analysis', {})
+            if method_analysis:
+                recommendations = method_analysis.get('recommendations', [])
+                if recommendations:
+                    markdown_lines.extend([
+                        "### Extraction Recommendations",
+                        ""
+                    ])
+                    for rec in recommendations:
+                        markdown_lines.append(f"- {rec}")
+                    markdown_lines.append("")
+        
+        # Add document footer
+        markdown_lines.extend([
+            "---",
+            "",
+            "## Document Information",
+            f"- **Source**: PDFPlumber with Tesseract OCR fallback",
+            f"- **Processing Method**: Sequential page processing with multiple table strategies",
+            f"- **Text Extraction**: Native PDF text with OCR backup",
+            f"- **Table Detection**: Standard, custom, and financial-focused approaches",
+            f"- **Quality Analysis**: Automated scoring and financial table detection",
+            f"- **Generated**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            "",
+            "*This document uses PDFPlumber's advanced text extraction with intelligent OCR fallback.*"
+        ])
+        
+        return '\n'.join(markdown_lines)
 
 
 def main():
@@ -614,12 +1066,26 @@ def main():
         for jsonl_file in layout_parser_dir.glob("*.jsonl"):
             doc_ids.add(jsonl_file.stem)
     
-    # Check for Traditional documents
-    traditional_dir = Path("data/parsed/traditional")
-    if traditional_dir.exists():
-        for doc_dir in traditional_dir.iterdir():
+    # Check for Hybrid documents
+    hybrid_dir = Path("data/parsed/hybrid")
+    if hybrid_dir.exists():
+        for doc_dir in hybrid_dir.iterdir():
             if doc_dir.is_dir():
                 doc_ids.add(doc_dir.name)
+    
+    # Check for PDFPlumber-Tesseract documents
+    pdfplumber_tesseract_dir = Path("data/parsed/pdfplumber_tesseract")
+    if pdfplumber_tesseract_dir.exists():
+        for doc_dir in pdfplumber_tesseract_dir.iterdir():
+            if doc_dir.is_dir():
+                doc_ids.add(doc_dir.name)
+    
+    # Check for Traditional documents
+    # traditional_dir = Path("data/parsed/traditional")
+    # if traditional_dir.exists():
+    #     for doc_dir in traditional_dir.iterdir():
+    #         if doc_dir.is_dir():
+    #             doc_ids.add(doc_dir.name)
     
     if not doc_ids:
         print("❌ No documents found. Please run the extractors first.")
@@ -648,13 +1114,29 @@ def main():
         except Exception as e:
             print(f"  ❌ LayoutParser failed: {e}")
         
-        # Try Traditional conversion
+        # Try Hybrid conversion
         try:
-            traditional_file = generator.generate_traditional_markdown(doc_id)
-            if traditional_file:
-                print(f"  ✅ Traditional: {traditional_file}")
+            hybrid_file = generator.generate_hybrid_markdown(doc_id)
+            if hybrid_file:
+                print(f"  ✅ Hybrid: {hybrid_file}")
         except Exception as e:
-            print(f"  ❌ Traditional failed: {e}")
+            print(f"  ❌ Hybrid failed: {e}")
+        
+        # Try PDFPlumber-Tesseract conversion
+        try:
+            pdfplumber_file = generator.generate_pdfplumber_tesseract_markdown(doc_id)
+            if pdfplumber_file:
+                print(f"  ✅ PDFPlumber-Tesseract: {pdfplumber_file}")
+        except Exception as e:
+            print(f"  ❌ PDFPlumber-Tesseract failed: {e}")
+        
+        # Try Traditional conversion
+        # try:
+        #     traditional_file = generator.generate_traditional_markdown(doc_id)
+        #     if traditional_file:
+        #         print(f"  ✅ Traditional: {traditional_file}")
+        # except Exception as e:
+        #     print(f"  ❌ Traditional failed: {e}")
         
         print()
     
@@ -662,7 +1144,9 @@ def main():
     print(f"📁 Base output directory: {generator.base_output_dir}")
     print(f"  - Docling: {generator.docling_dir}")
     print(f"  - LayoutParser: {generator.layout_parser_dir}")
-    print(f"  - Traditional: {generator.traditional_dir}")
+    print(f"  - Hybrid: {generator.hybrid_dir}")
+    print(f"  - PDFPlumber-Tesseract: {generator.pdfplumber_tesseract_dir}")
+    # print(f"  - Traditional: {generator.traditional_dir}")
 
 
 if __name__ == "__main__":

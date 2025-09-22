@@ -58,7 +58,7 @@ class PDFTableExtractor:
             logger.removeHandler(handler)
         
         # Create file handler
-        log_file = self.output_dir / 'table_extraction_log.txt'
+        log_file = self.output_dir / 'extraction_log.txt'
         handler = logging.FileHandler(log_file, mode='a')
         handler.setLevel(log_level)
         

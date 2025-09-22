@@ -10,23 +10,38 @@ import csv
 from pathlib import Path
 from datetime import datetime
 import cv2
+import numpy as np
 
 
-class EnhancedPDFExtractor:
+class HybridPDFExtractor:
     """
     A comprehensive PDF extraction system with text and table extraction.
     
     Features:
     - Extract text per page with OCR fallback (saved to text/ folder)
     - Extract tables using Camelot (lattice + stream modes) and pdfplumber
-    - Compare extraction methods and choose best approach
     - Hybrid table extraction with heuristics
     - Save tables as CSV files with method analysis
     """
     
-    def __init__(self, output_dir="data/parsed", log_level=logging.INFO):
+    def _convert_numpy_types(self, obj):
+        """Convert numpy types to native Python types for JSON serialization."""
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, dict):
+            return {key: self._convert_numpy_types(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [self._convert_numpy_types(item) for item in obj]
+        else:
+            return obj
+    
+    def __init__(self, output_dir="data/parsed/hybrid", log_level=logging.INFO):
         """
-        Initialize the enhanced PDF extractor.
+        Initialize the hybrid PDF extractor.
         
         Args:
             output_dir (str): Base directory to save extracted files
@@ -53,7 +68,7 @@ class EnhancedPDFExtractor:
     
     def _setup_logging(self, log_level):
         """Setup logging configuration."""
-        logger = logging.getLogger('EnhancedPDFExtractor')
+        logger = logging.getLogger('HybridPDFExtractor')
         logger.setLevel(log_level)
         
         # Clear existing handlers
@@ -577,6 +592,9 @@ class EnhancedPDFExtractor:
             'overall_stats': self.stats
         }
         
+        # Convert numpy types to native Python types for JSON serialization
+        summary = self._convert_numpy_types(summary)
+        
         summary_file = output_dir / 'complete_extraction_summary.json'
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
@@ -585,9 +603,9 @@ class EnhancedPDFExtractor:
 
 
 def main():
-    """Main function to demonstrate enhanced PDF extraction."""
+    """Main function to demonstrate hybrid PDF extraction."""
     # Initialize extractor
-    extractor = EnhancedPDFExtractor()
+    extractor = HybridPDFExtractor()
     
     # Find PDF files in data/raw/pdf directory
     pdf_dir = Path("data/raw/pdf")

@@ -123,6 +123,9 @@ Step 10
 # Final output Markdown generator
 python src/method_specific_markdown_generator.py
 
+Step 11
+# Report viewer for Markdown, Txt and Json
+python src/pdf_report_viewer.py
 
 
 ----------------------------------------------------------------------------------------

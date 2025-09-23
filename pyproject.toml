@@ -26,6 +26,7 @@ dependencies = [
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
+    "streamlit",
 
     # AI/ML dependencies for Docling
     "transformers",

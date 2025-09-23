@@ -70,7 +70,7 @@ data/parsed/pdfplumber
 data/parsed/comparison
 data/parsed/hybrid
 data/parsed/pdfplumber_tesseract
-
+data/parsed
 data/metadata/blocks
 data/metadata/documents
 data/metadata/provenance

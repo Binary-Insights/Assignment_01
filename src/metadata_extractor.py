@@ -2,7 +2,7 @@
 Metadata Extraction and Staging System
 
 This module converts parsed PDF content from different extraction methods
-(Docling, LayoutParser, Traditional) into a unified metadata format with
+(Docling, LayoutParser, pdfplumber_tesseract) into a unified metadata format with
 JSONL files and Markdown output with provenance tracking.
 
 Features:
@@ -121,8 +121,9 @@ class MetadataExtractor:
         # Method mappings
         self.extraction_methods = {
             'docling': 'docling',
-            'layout_parser': 'layout_parser', 
-            'traditional': 'traditional'
+            'layout_parser': 'layout_parser',
+            'hybrid': 'hybrid',
+            'pdfplumber_tesseract': 'pdfplumber_tesseract'
         }
         
         # Statistics
@@ -140,7 +141,8 @@ class MetadataExtractor:
             self.metadata_dir / 'documents',
             self.metadata_dir / 'blocks' / 'docling',
             self.metadata_dir / 'blocks' / 'layout_parser',
-            self.metadata_dir / 'blocks' / 'traditional',
+            self.metadata_dir / 'blocks' / 'hybrid',
+            self.metadata_dir / 'blocks' / 'pdfplumber_tesseract',
             self.metadata_dir / 'blocks' / 'unified',
             self.metadata_dir / 'provenance' / 'extraction_logs',
             self.metadata_dir / 'provenance' / 'method_configs',
@@ -175,7 +177,7 @@ class MetadataExtractor:
                     "checksum": {"type": "string", "description": "SHA-256 checksum"},
                     "extraction_methods": {
                         "type": "array",
-                        "items": {"type": "string", "enum": ["docling", "layout_parser", "traditional", "unified"]}
+                        "items": {"type": "string", "enum": ["docling", "layout_parser", "hybrid", "pdfplumber_tesseract", "unified"]}
                     },
                     "processing_status": {"type": "string", "enum": ["success", "error", "partial"]},
                     "processing_time_seconds": {"type": "number", "minimum": 0}
@@ -191,7 +193,7 @@ class MetadataExtractor:
                 "properties": {
                     "doc_id": {"type": "string"},
                     "block_id": {"type": "string"},
-                    "extraction_method": {"type": "string", "enum": ["docling", "layout_parser", "traditional", "unified"]},
+                    "extraction_method": {"type": "string", "enum": ["docling", "layout_parser", "hybrid", "pdfplumber_tesseract", "unified"]},
                     "page_number": {"type": "integer", "minimum": 1},
                     "block_type": {"type": "string", "enum": ["text", "title", "table", "figure", "formula", "list"]},
                     "confidence": {"type": "number", "minimum": 0, "maximum": 1},
@@ -447,64 +449,89 @@ class MetadataExtractor:
                 ]
             },
             
-            'traditional_config.json': {
-                "method_name": "traditional",
-                "description": "Rule-based PDF text extraction using traditional libraries",
-                "version": "multiple",
+            'pdfplumber_tesseract_config.json': {
+                "method_name": "pdfplumber_tesseract",
+                "description": "Comprehensive pdfplumber-based extraction with OCR fallback and advanced table detection",
+                "version": "1.0",
                 "libraries_used": [
-                    "PyPDF2",
-                    "pdfplumber", 
-                    "camelot-py",
-                    "tabula-py"
+                    "pdfplumber",
+                    "pytesseract", 
+                    "pandas",
+                    "PIL"
                 ],
                 "capabilities": [
-                    "direct_text_extraction",
-                    "table_extraction",
-                    "metadata_extraction",
-                    "page_based_processing"
+                    "text_extraction_with_layout_params",
+                    "ocr_fallback_for_scanned_pages",
+                    "multi_strategy_table_extraction",
+                    "word_bounding_box_extraction",
+                    "financial_table_detection",
+                    "table_quality_analysis"
                 ],
                 "configuration": {
                     "text_extraction": {
-                        "method": "pypdf2_or_pdfplumber",
-                        "encoding": "utf-8",
-                        "preserve_layout": "limited"
+                        "method": "pdfplumber_with_layout_params",
+                        "layout_params": {
+                            "x_density": 2.0,
+                            "y_density": 1.5
+                        },
+                        "ocr_config": "--psm 6 -l eng",
+                        "ocr_resolution": 300,
+                        "encoding": "utf-8"
                     },
                     "table_extraction": {
-                        "method": "camelot_lattice_stream",
-                        "detection_algorithm": "line_detection",
-                        "format": "csv"
+                        "standard_method": {
+                            "strategy": "default_pdfplumber"
+                        },
+                        "custom_method": {
+                            "vertical_strategy": "lines_strict",
+                            "horizontal_strategy": "lines_strict",
+                            "snap_tolerance": 3,
+                            "join_tolerance": 3,
+                            "edge_min_length": 3,
+                            "text_tolerance": 3
+                        },
+                        "financial_method": {
+                            "target_keywords": [
+                                "revenue", "income", "expense", "assets", 
+                                "liabilities", "equity", "cash", "total"
+                            ],
+                            "aggressive_detection": True
+                        }
                     },
-                    "preprocessing": {
-                        "image_conversion": "not_required",
-                        "ocr": "not_used"
+                    "word_boxes": {
+                        "extract_coordinates": True,
+                        "include_font_info": True,
+                        "save_layout_data": True
                     }
                 },
                 "output_formats": [
-                    "plain_text",
-                    "csv_tables", 
-                    "json_metadata",
-                    "page_separated_content"
+                    "page_separated_text",
+                    "csv_tables_by_method",
+                    "word_bounding_boxes_json",
+                    "extraction_summary_with_stats",
+                    "quality_metrics_per_table"
                 ],
                 "quality_characteristics": {
-                    "text_accuracy": "high_for_text_based_pdfs",
-                    "layout_preservation": "limited",
-                    "table_extraction": "good_for_structured_tables",
-                    "processing_speed": "very_fast",
-                    "reliability": "depends_on_pdf_structure"
+                    "text_accuracy": "high_for_digital_very_good_for_scanned",
+                    "layout_preservation": "good_with_layout_params",
+                    "table_extraction": "excellent_multi_strategy",
+                    "financial_data": "specialized_detection",
+                    "processing_speed": "moderate_due_to_multi_strategy",
+                    "ocr_integration": "seamless_fallback"
                 },
                 "strengths": [
-                    "very_fast_processing",
-                    "excellent_for_text_based_pdfs",
-                    "no_ocr_errors",
-                    "good_table_extraction",
-                    "lightweight_resource_usage"
+                    "excellent_table_extraction_with_multiple_strategies",
+                    "seamless_ocr_integration_for_scanned_pages",
+                    "specialized_financial_table_detection",
+                    "detailed_word_level_layout_analysis",
+                    "comprehensive_quality_metrics",
+                    "robust_error_handling"
                 ],
                 "limitations": [
-                    "fails_on_scanned_pdfs",
-                    "limited_layout_analysis", 
-                    "no_figure_extraction",
-                    "poor_handling_of_complex_layouts",
-                    "depends_on_pdf_text_layer"
+                    "slower_than_single_strategy_methods",
+                    "requires_tesseract_installation",
+                    "memory_intensive_for_large_documents",
+                    "multiple_csv_files_per_document"
                 ]
             },
             
@@ -565,6 +592,71 @@ class MetadataExtractor:
                 ]
             },
             
+            'hybrid_config.json': {
+                "method_name": "hybrid",
+                "description": "Hybrid extraction combining pdfplumber and Tesseract OCR with intelligent fallback",
+                "version": "1.0",
+                "libraries_used": [
+                    "pdfplumber",
+                    "pytesseract",
+                    "pandas",
+                    "PIL",
+                    "camelot-py"
+                ],
+                "capabilities": [
+                    "intelligent_text_extraction_with_ocr_fallback",
+                    "multi_strategy_table_extraction",
+                    "comprehensive_table_analysis",
+                    "page_by_page_processing",
+                    "quality_assessment"
+                ],
+                "configuration": {
+                    "text_extraction": {
+                        "primary_method": "pdfplumber",
+                        "fallback_method": "tesseract_ocr",
+                        "ocr_config": "--psm 6 -l eng",
+                        "ocr_resolution": 300,
+                        "confidence_threshold": 0.7
+                    },
+                    "table_extraction": {
+                        "methods": ["camelot_lattice", "camelot_stream", "pdfplumber"],
+                        "quality_assessment": "accuracy_scoring",
+                        "best_method_selection": "automatic",
+                        "fallback_strategy": "try_all_methods"
+                    },
+                    "processing": {
+                        "page_by_page": True,
+                        "parallel_processing": False,
+                        "error_recovery": "continue_with_next_page",
+                        "quality_tracking": True
+                    }
+                },
+                "output_formats": [
+                    "page_based_text_files",
+                    "extraction_summary_json",
+                    "table_analysis_reports",
+                    "processing_statistics"
+                ],
+                "quality_characteristics": {
+                    "text_accuracy": "high_with_ocr_fallback",
+                    "table_extraction": "comprehensive_multi_method",
+                    "processing_speed": "moderate",
+                    "reliability": "high_with_error_recovery"
+                },
+                "strengths": [
+                    "intelligent_method_fallback",
+                    "comprehensive_table_analysis",
+                    "detailed_quality_reporting",
+                    "robust_error_handling",
+                    "page_level_processing_control"
+                ],
+                "limitations": [
+                    "processing_time_depends_on_ocr_usage",
+                    "table_quality_varies_by_document_structure",
+                    "requires_multiple_library_dependencies"
+                ]
+            },
+            
             'extraction_pipeline_config.json': {
                 "pipeline_name": "pdf_content_extraction_pipeline",
                 "description": "Complete pipeline configuration for PDF content extraction",
@@ -586,17 +678,24 @@ class MetadataExtractor:
                     },
                     {
                         "step": 3,
-                        "name": "traditional_extraction", 
-                        "method": "traditional",
+                        "name": "hybrid_extraction",
+                        "method": "hybrid",
                         "parallel": False,
-                        "timeout_seconds": 60
+                        "timeout_seconds": 240
                     },
                     {
                         "step": 4,
+                        "name": "pdfplumber_tesseract_extraction",
+                        "method": "pdfplumber_tesseract",
+                        "parallel": False,
+                        "timeout_seconds": 240
+                    },
+                    {
+                        "step": 5,
                         "name": "unified_consolidation",
                         "method": "unified",
                         "parallel": False,
-                        "timeout_seconds": 120
+                        "timeout_seconds": 150
                     }
                 ],
                 "error_handling": {
@@ -832,8 +931,10 @@ class MetadataExtractor:
                 blocks = self._extract_docling_blocks(doc_id, method_dir)
             elif method == 'layout_parser':
                 blocks = self._extract_layout_parser_blocks(doc_id, method_dir)
-            elif method == 'traditional':
-                blocks = self._extract_traditional_blocks(doc_id, method_dir)
+            elif method == 'hybrid':
+                blocks = self._extract_hybrid_blocks(doc_id, method_dir)
+            elif method == 'pdfplumber_tesseract':
+                blocks = self._extract_pdfplumber_blocks(doc_id, method_dir)
             
             self.logger.info(f"Extracted {len(blocks)} blocks from {method} for {doc_id}")
             
@@ -912,41 +1013,561 @@ class MetadataExtractor:
         
         return blocks
     
-    def _extract_traditional_blocks(self, doc_id: str, method_dir: Path) -> List[ContentBlock]:
-        """Extract blocks from traditional extraction results."""
+    def _extract_pdfplumber_blocks(self, doc_id: str, method_dir: Path) -> List[ContentBlock]:
+        """Extract blocks from pdfplumber_tesseract extraction results."""
         blocks = []
         
-        # Traditional method typically saves as simple text files
-        # We'll create blocks from the directory structure
-        
-        # Text blocks
-        text_dir = method_dir / 'text'
-        if text_dir.exists():
-            for text_file in text_dir.glob('*.txt'):
-                block = self._create_text_block(
-                    doc_id=doc_id,
-                    block_id=f"traditional_{text_file.stem}",
-                    method='traditional',
-                    file_path=text_file,
-                    block_type='text'
-                )
-                if block:
-                    blocks.append(block)
-        
-        # Table blocks
-        table_dir = method_dir / 'tables'
-        if table_dir.exists():
-            for table_file in table_dir.glob('*.csv'):
-                block = self._create_table_block_from_file(
-                    doc_id=doc_id,
-                    block_id=f"traditional_{table_file.stem}",
-                    method='traditional',
-                    file_path=table_file
-                )
-                if block:
-                    blocks.append(block)
+        try:
+            # Load extraction summary for metadata
+            summary_file = method_dir / 'table_extraction_summary.json'
+            summary_data = {}
+            if summary_file.exists():
+                with open(summary_file, 'r', encoding='utf-8') as f:
+                    summary_data = json.load(f)
+            
+            # Extract text blocks from text/ directory
+            text_dir = method_dir / 'text'
+            if text_dir.exists():
+                # Extract page text blocks
+                for text_file in sorted(text_dir.glob('page_*.txt')):
+                    page_num = self._extract_page_number_from_filename(text_file.name)
+                    block = self._create_pdfplumber_text_block(
+                        doc_id=doc_id,
+                        block_id=f"pdfplumber_{text_file.stem}",
+                        method='pdfplumber_tesseract',
+                        file_path=text_file,
+                        page_number=page_num,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+                
+                # Extract word boxes if available
+                word_boxes_file = text_dir / 'word_boxes.json'
+                if word_boxes_file.exists():
+                    word_blocks = self._create_word_box_blocks(
+                        doc_id, word_boxes_file, summary_data
+                    )
+                    blocks.extend(word_blocks)
+            
+            # Extract table blocks from tables/ directory
+            tables_dir = method_dir / 'tables'
+            if tables_dir.exists():
+                for table_file in sorted(tables_dir.glob('*.csv')):
+                    page_num = self._extract_page_number_from_filename(table_file.name)
+                    table_type = self._extract_table_type_from_filename(table_file.name)
+                    block = self._create_pdfplumber_table_block(
+                        doc_id=doc_id,
+                        block_id=f"pdfplumber_{table_file.stem}",
+                        method='pdfplumber_tesseract',
+                        file_path=table_file,
+                        page_number=page_num,
+                        table_type=table_type,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+            
+            self.logger.info(f"Extracted {len(blocks)} pdfplumber blocks for {doc_id}")
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting pdfplumber blocks for {doc_id}: {e}")
         
         return blocks
+    
+    def _extract_hybrid_blocks(self, doc_id: str, method_dir: Path) -> List[ContentBlock]:
+        """Extract blocks from hybrid extraction results."""
+        blocks = []
+        
+        try:
+            # Load extraction summary for metadata
+            summary_file = method_dir / 'hybrid_extraction_results.json'
+            summary_data = {}
+            if summary_file.exists():
+                with open(summary_file, 'r', encoding='utf-8') as f:
+                    summary_data = json.load(f)
+            
+            # Extract text blocks from text/ directory
+            text_dir = method_dir / 'text'
+            if text_dir.exists():
+                for text_file in sorted(text_dir.glob('page_*.txt')):
+                    page_num = self._extract_page_number_from_filename(text_file.name)
+                    block = self._create_hybrid_text_block(
+                        doc_id=doc_id,
+                        block_id=f"hybrid_{text_file.stem}",
+                        method='hybrid',
+                        file_path=text_file,
+                        page_number=page_num,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+            
+            # Extract table blocks from tables/ directory if it exists
+            tables_dir = method_dir / 'tables'
+            if tables_dir.exists():
+                for table_file in sorted(tables_dir.glob('*.csv')):
+                    page_num = self._extract_page_number_from_filename(table_file.name)
+                    table_type = self._extract_table_type_from_filename(table_file.name)
+                    block = self._create_hybrid_table_block(
+                        doc_id=doc_id,
+                        block_id=f"hybrid_{table_file.stem}",
+                        method='hybrid',
+                        file_path=table_file,
+                        page_number=page_num,
+                        table_type=table_type,
+                        summary_data=summary_data
+                    )
+                    if block:
+                        blocks.append(block)
+            
+            self.logger.info(f"Extracted {len(blocks)} hybrid blocks for {doc_id}")
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting hybrid blocks for {doc_id}: {e}")
+        
+        return blocks
+    
+    def _extract_page_number_from_filename(self, filename: str) -> int:
+        """Extract page number from filename like 'page_001.txt' or 'standard_page_015_table_001.csv'."""
+        import re
+        match = re.search(r'page_(\d+)', filename)
+        return int(match.group(1)) if match else 1
+    
+    def _extract_table_type_from_filename(self, filename: str) -> str:
+        """Extract table type from filename like 'standard_page_015_table_001.csv'."""
+        if filename.startswith('standard_'):
+            return 'standard'
+        elif filename.startswith('custom_'):
+            return 'custom'
+        elif filename.startswith('financial_'):
+            return 'financial'
+        else:
+            return 'unknown'
+    
+    def _create_pdfplumber_text_block(self, doc_id: str, block_id: str, method: str,
+                                    file_path: Path, page_number: int, 
+                                    summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create a text content block from pdfplumber text extraction."""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                text_content = f.read().strip()
+            
+            if not text_content:
+                return None
+            
+            # Extract OCR information from summary if available
+            used_ocr = False
+            extraction_method = 'pdfplumber'
+            
+            if 'text_extraction' in summary_data:
+                text_results = summary_data['text_extraction']
+                if 'pages' in text_results:
+                    for page_info in text_results['pages']:
+                        if page_info.get('page_number') == page_number:
+                            used_ocr = page_info.get('used_ocr', False)
+                            extraction_method = page_info.get('extraction_method', 'pdfplumber')
+                            break
+            
+            # Calculate quality metrics
+            quality_metrics = {
+                'text_length': len(text_content),
+                'word_count': len(text_content.split()),
+                'readability_score': 0.8 if not used_ocr else 0.6,
+                'completeness': 1.0
+            }
+            
+            # Determine semantic tags
+            semantic_tags = ['text', 'page_content']
+            if used_ocr:
+                semantic_tags.append('ocr_extracted')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='text',
+                confidence=0.9 if not used_ocr else 0.7,
+                bounding_box=None,
+                content={
+                    'text': text_content,
+                    'structured': None,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'extraction_method': extraction_method,
+                        'used_ocr': used_ocr
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'extraction_method': extraction_method,
+                        'ocr_used': used_ocr
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics=quality_metrics
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating pdfplumber text block from {file_path}: {e}")
+            return None
+    
+    def _create_pdfplumber_table_block(self, doc_id: str, block_id: str, method: str,
+                                     file_path: Path, page_number: int, table_type: str,
+                                     summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create table block from pdfplumber CSV extraction."""
+        try:
+            # Read CSV file
+            table_data = []
+            with open(file_path, 'r', encoding='utf-8') as f:
+                csv_reader = csv.reader(f)
+                table_data = list(csv_reader)
+            
+            if not table_data:
+                return None
+            
+            # Convert to text representation
+            table_text = '\n'.join([','.join(row) for row in table_data])
+            
+            # Convert to structured format
+            structured_data = []
+            if len(table_data) > 1:
+                headers = table_data[0]
+                for row in table_data[1:]:
+                    row_dict = {}
+                    for i, cell in enumerate(row):
+                        if i < len(headers):
+                            row_dict[headers[i]] = cell
+                    structured_data.append(row_dict)
+            
+            # Extract quality information from summary data
+            quality_score = 0.8  # Default
+            is_financial = table_type == 'financial'
+            
+            # Check if this is a financial table by content
+            if not is_financial:
+                is_financial = self._is_financial_table_content(table_text)
+            
+            # Calculate confidence based on table type and content
+            confidence = 0.9 if table_type == 'standard' else 0.8
+            if table_type == 'financial':
+                confidence = 0.85
+            
+            # Determine semantic tags
+            semantic_tags = ['table', table_type]
+            if is_financial:
+                semantic_tags.append('financial_data')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='table',
+                confidence=confidence,
+                bounding_box=None,
+                content={
+                    'text': table_text,
+                    'structured': structured_data,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'table_type': table_type,
+                        'rows': len(table_data) - 1 if len(table_data) > 1 else 0,
+                        'columns': len(table_data[0]) if table_data else 0,
+                        'is_financial': is_financial
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'table_extraction_type': table_type
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics={
+                    'text_length': len(table_text),
+                    'word_count': len(table_text.split()),
+                    'readability_score': 0.9,
+                    'completeness': quality_score
+                }
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating pdfplumber table block from {file_path}: {e}")
+            return None
+    
+    def _create_word_box_blocks(self, doc_id: str, word_boxes_file: Path, 
+                              summary_data: Dict[str, Any]) -> List[ContentBlock]:
+        """Create layout blocks from word bounding boxes."""
+        blocks = []
+        
+        try:
+            with open(word_boxes_file, 'r', encoding='utf-8') as f:
+                word_boxes_data = json.load(f)
+            
+            for page_data in word_boxes_data:
+                page_num = page_data.get('page_number', 1)
+                words = page_data.get('words', [])
+                
+                if not words:
+                    continue
+                
+                # Create a layout analysis block for this page
+                block_id = f"pdfplumber_layout_page_{page_num:03d}"
+                
+                # Convert word boxes to structured format
+                structured_words = []
+                for word in words:
+                    if all(key in word for key in ['text', 'x0', 'y0', 'x1', 'y1']):
+                        structured_words.append({
+                            'text': word['text'],
+                            'bounding_box': {
+                                'x1': word['x0'],
+                                'y1': word['y0'],
+                                'x2': word['x1'], 
+                                'y2': word['y1'],
+                                'width': word['x1'] - word['x0'],
+                                'height': word['y1'] - word['y0']
+                            },
+                            'font': word.get('font', ''),
+                            'size': word.get('size', 0)
+                        })
+                
+                # Create text from all words
+                page_text = ' '.join([word['text'] for word in words if 'text' in word])
+                
+                layout_block = ContentBlock(
+                    doc_id=doc_id,
+                    block_id=block_id,
+                    extraction_method='pdfplumber_tesseract',
+                    page_number=page_num,
+                    block_type='layout',
+                    confidence=0.85,
+                    bounding_box=BoundingBox(
+                        x1=0,
+                        y1=0,
+                        x2=page_data.get('page_width', 612),
+                        y2=page_data.get('page_height', 792),
+                        width=page_data.get('page_width', 612),
+                        height=page_data.get('page_height', 792)
+                    ),
+                    content={
+                        'text': page_text,
+                        'structured': {
+                            'word_count': len(structured_words),
+                            'words': structured_words,
+                            'page_dimensions': {
+                                'width': page_data.get('page_width', 612),
+                                'height': page_data.get('page_height', 792)
+                            }
+                        },
+                        'metadata': {
+                            'source_file': str(word_boxes_file),
+                            'word_count': len(structured_words)
+                        }
+                    },
+                    provenance={
+                        'source_file': str(word_boxes_file),
+                        'extraction_config': {
+                            'method': 'pdfplumber_tesseract',
+                            'analysis_type': 'word_boxes'
+                        },
+                        'parent_blocks': [],
+                        'child_blocks': []
+                    },
+                    semantic_tags=['layout', 'word_boxes', 'page_structure'],
+                    quality_metrics={
+                        'text_length': len(page_text),
+                        'word_count': len(structured_words),
+                        'readability_score': 0.9,
+                        'completeness': 1.0
+                    }
+                )
+                
+                blocks.append(layout_block)
+                
+        except Exception as e:
+            self.logger.error(f"Error creating word box blocks from {word_boxes_file}: {e}")
+        
+        return blocks
+    
+    def _is_financial_table_content(self, table_text: str) -> bool:
+        """Determine if table content appears to be financial data."""
+        financial_keywords = [
+            'revenue', 'income', 'expense', 'assets', 'liabilities', 'equity',
+            'cash', 'total', 'net', 'gross', 'operating', '$', 'million', 'thousand',
+            'balance', 'statement', 'earnings', 'profit', 'loss'
+        ]
+        
+        table_text_lower = table_text.lower()
+        matches = sum(1 for keyword in financial_keywords if keyword in table_text_lower)
+        return matches >= 3
+    
+    def _create_hybrid_text_block(self, doc_id: str, block_id: str, method: str,
+                                 file_path: Path, page_number: int, 
+                                 summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create a text content block from hybrid text extraction."""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                text_content = f.read().strip()
+            
+            if not text_content:
+                return None
+            
+            # Extract OCR information from summary if available
+            used_ocr = False
+            extraction_method = 'pdfplumber'
+            
+            if 'text_extraction' in summary_data:
+                pages = summary_data['text_extraction'].get('pages', [])
+                for page_info in pages:
+                    if page_info.get('page_number') == page_number:
+                        used_ocr = page_info.get('used_ocr', False)
+                        extraction_method = page_info.get('extraction_method', 'pdfplumber')
+                        break
+            
+            # Calculate quality metrics
+            quality_metrics = {
+                'text_length': len(text_content),
+                'word_count': len(text_content.split()),
+                'readability_score': 0.8 if not used_ocr else 0.6,
+                'completeness': 1.0
+            }
+            
+            # Determine semantic tags
+            semantic_tags = ['text', 'page_content']
+            if used_ocr:
+                semantic_tags.append('ocr_extracted')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='text',
+                confidence=0.9 if not used_ocr else 0.7,
+                bounding_box=None,
+                content={
+                    'text': text_content,
+                    'structured': None,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'extraction_method': extraction_method,
+                        'used_ocr': used_ocr
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'extraction_method': extraction_method,
+                        'ocr_used': used_ocr
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics=quality_metrics
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating hybrid text block from {file_path}: {e}")
+            return None
+    
+    def _create_hybrid_table_block(self, doc_id: str, block_id: str, method: str,
+                                  file_path: Path, page_number: int, table_type: str,
+                                  summary_data: Dict[str, Any]) -> Optional[ContentBlock]:
+        """Create table block from hybrid table extraction."""
+        try:
+            # Read CSV file
+            table_data = []
+            with open(file_path, 'r', encoding='utf-8') as f:
+                csv_reader = csv.reader(f)
+                table_data = list(csv_reader)
+            
+            if not table_data:
+                return None
+            
+            # Convert to text representation
+            table_text = '\n'.join([','.join(row) for row in table_data])
+            
+            # Convert to structured format
+            structured_data = []
+            if len(table_data) > 1:
+                headers = table_data[0]
+                for row in table_data[1:]:
+                    row_dict = {}
+                    for i, cell in enumerate(row):
+                        if i < len(headers):
+                            row_dict[headers[i]] = cell
+                    structured_data.append(row_dict)
+            
+            # Extract quality information from summary data
+            quality_score = 0.8  # Default
+            is_financial = table_type == 'financial'
+            
+            # Check if this is a financial table by content
+            if not is_financial:
+                is_financial = self._is_financial_table_content(table_text)
+            
+            # Calculate confidence based on table type and content
+            confidence = 0.9 if table_type == 'standard' else 0.8
+            if table_type == 'financial':
+                confidence = 0.85
+            
+            # Determine semantic tags
+            semantic_tags = ['table', table_type]
+            if is_financial:
+                semantic_tags.append('financial_data')
+            
+            return ContentBlock(
+                doc_id=doc_id,
+                block_id=block_id,
+                extraction_method=method,
+                page_number=page_number,
+                block_type='table',
+                confidence=confidence,
+                bounding_box=None,
+                content={
+                    'text': table_text,
+                    'structured': structured_data,
+                    'metadata': {
+                        'source_file': str(file_path),
+                        'table_type': table_type,
+                        'rows': len(table_data) - 1 if len(table_data) > 1 else 0,
+                        'columns': len(table_data[0]) if table_data else 0,
+                        'is_financial': is_financial
+                    }
+                },
+                provenance={
+                    'source_file': str(file_path),
+                    'extraction_config': {
+                        'method': method,
+                        'table_extraction_type': table_type
+                    },
+                    'parent_blocks': [],
+                    'child_blocks': []
+                },
+                semantic_tags=semantic_tags,
+                quality_metrics={
+                    'text_length': len(table_text),
+                    'word_count': len(table_text.split()),
+                    'readability_score': 0.9,
+                    'completeness': quality_score
+                }
+            )
+            
+        except Exception as e:
+            self.logger.error(f"Error creating hybrid table block from {file_path}: {e}")
+            return None
     
     def _create_text_block(self, doc_id: str, block_id: str, method: str, 
                           file_path: Path, block_type: str) -> Optional[ContentBlock]:
@@ -1756,7 +2377,7 @@ def main():
     print("  ├── blocks/             # Block-level JSONL files")
     print("  │   ├── docling/        # Docling method blocks")
     print("  │   ├── layout_parser/  # LayoutParser method blocks") 
-    print("  │   ├── traditional/    # Traditional method blocks")
+    print("  │   ├── pdfplumber_tesseract/  # pdfplumber_tesseract method blocks")
     print("  │   └── unified/        # Cross-method unified blocks")
     print("  ├── provenance/         # Extraction provenance")
     print("  └── schemas/            # Schema definitions")

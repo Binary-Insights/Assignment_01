@@ -81,7 +81,7 @@ class DoclingExtractor:
         logger.setLevel(logging.INFO)
         
         # Create file handler
-        log_file = self.output_dir / 'docling_extraction_log.txt'
+        log_file = self.output_dir / 'extraction_log.txt'
         handler = logging.FileHandler(log_file)
         handler.setLevel(logging.INFO)
         

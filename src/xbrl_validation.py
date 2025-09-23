@@ -1212,11 +1212,11 @@ class XBRLValidator:
                        build_automap: bool = True,
                        datatracks_threshold: float = 0.15) -> Dict[str, Any]:
         """Run complete XBRL validation process, mirroring notebook workflow headlessly."""
-        print("🚀 Starting XBRL Validation Process...")
+        print("Starting XBRL Validation Process...")
         print("=" * 50)
         
         # Extract XBRL financial data
-        print("📊 Extracting XBRL financial data...")
+        print("Extracting XBRL financial data...")
         if xbrl_csv_path:
             self.default_xbrl_path = xbrl_csv_path
         xbrl_data = self.extract_nvidia_financials()
@@ -1226,25 +1226,25 @@ class XBRLValidator:
             os.makedirs(out_xbrl_dir, exist_ok=True)
             xbrl_file = str(Path(out_xbrl_dir) / "nvidia_financial_metrics.csv")
             xbrl_data.to_csv(xbrl_file, index=False)
-            print(f"✅ XBRL data saved to: {xbrl_file}")
+            print(f"XBRL data saved to: {xbrl_file}")
         
         # If PDF tables directory provided, perform alignment
         if pdf_tables_dir and os.path.exists(pdf_tables_dir):
-            print(f"📄 Loading PDF tables from: {pdf_tables_dir}")
+            print(f"Loading PDF tables from: {pdf_tables_dir}")
             pdf_tables = self.load_pdf_tables(pdf_tables_dir)
-            print(f"📊 Loaded {len(pdf_tables)} PDF tables")
+            print(f"Loaded {len(pdf_tables)} PDF tables")
             
-            print("🔍 Identifying financial statement tables...")
+            print("Identifying financial statement tables...")
             financial_tables = self.identify_financial_tables(pdf_tables)
-            print(f"💰 Found {len(financial_tables)} financial tables")
+            print(f"Found {len(financial_tables)} financial tables")
             
-            print("📈 Extracting financial data from PDF tables...")
+            print("Extracting financial data from PDF tables...")
             pdf_data = self.extract_financial_data_from_pdf(pdf_tables, financial_tables)
             
             automap_df: Optional[pd.DataFrame] = None
             if build_automap:
                 # Build automap coverage for unique labels from tables (pre-mapping view)
-                print("🧭 Building automap coverage from PDF labels...")
+                print("Building automap coverage from PDF labels...")
                 labels = self.collect_unique_pdf_labels(pdf_tables)
                 catalog = self.build_xbrl_concept_catalog()
                 rows = []
@@ -1260,9 +1260,9 @@ class XBRLValidator:
                     automap_path = Path(out_comp_dir) / 'automap_labels.csv'
                     automap_df.to_csv(automap_path, index=False)
                     coverage = automap_df['mapped_concept'].notna().mean() if len(automap_df) else 0.0
-                    print(f"✅ Automap saved to: {automap_path} | coverage={coverage:.1%}")
+                    print(f"Automap saved to: {automap_path} | coverage={coverage:.1%}")
 
-            print("⚖️ Comparing PDF and XBRL data...")
+            print("Comparing PDF and XBRL data...")
             comparison_results = self.compare_pdf_xbrl_data(pdf_data, xbrl_data)
             
             # Save comparison results
@@ -1271,23 +1271,23 @@ class XBRLValidator:
                 comparison_file = str(Path(out_comp_dir) / "xbrl_validation_results.json")
                 with open(comparison_file, 'w') as f:
                     json.dump(comparison_results, f, indent=2, default=str)
-                print(f"✅ Comparison results saved to: {comparison_file}")
+                print(f"Comparison results saved to: {comparison_file}")
 
                 if save_breakdown_csvs:
                     self.persist_breakdowns(out_comp_dir, comparison_results)
 
                 # Write manifest with run context and automap coverage
                 manifest_path = self.write_manifest(out_comp_dir, self.default_xbrl_path, pdf_tables_dir, self, len(pdf_tables), automap_df)
-                print(f"🧾 Manifest written to: {manifest_path}")
+                print(f"Manifest written to: {manifest_path}")
             
             # Display summary
             summary = comparison_results['summary']
-            print(f"\n📋 Validation Summary:")
-            print(f"   ✅ Matches: {summary['total_matches']}")
-            print(f"   ❌ Discrepancies: {summary['total_discrepancies']}")
-            print(f"   📄 PDF Only: {summary['pdf_only_count']}")
-            print(f"   📊 XBRL Only: {summary['xbrl_only_count']}")
-            print(f"   📊 Match Rate: {summary['match_rate']:.1%}")
+            print(f"\nValidation Summary:")
+            print(f"   Matches: {summary['total_matches']}")
+            print(f"   Discrepancies: {summary['total_discrepancies']}")
+            print(f"   PDF Only: {summary['pdf_only_count']}")
+            print(f"   XBRL Only: {summary['xbrl_only_count']}")
+            print(f"   Match Rate: {summary['match_rate']:.1%}")
 
             # DataTracks check
             self.datatracks_check(comparison_results, threshold=datatracks_threshold)
@@ -1298,7 +1298,7 @@ class XBRLValidator:
                 'comparison_results': comparison_results
             }
         else:
-            print("📊 XBRL extraction complete (no PDF comparison)")
+            print("XBRL extraction complete (no PDF comparison)")
             return {'xbrl_data': xbrl_data}
 
     def run_batch(self,
@@ -1403,7 +1403,7 @@ def _run_cli(args: argparse.Namespace) -> int:
                          save_breakdown_csvs=not args.no_breakdown,
                          build_automap=not args.no_automap,
                          datatracks_threshold=args.datatracks_threshold)
-        print("\n✅ XBRL Validation completed successfully!")
+        print("\nXBRL Validation completed successfully!")
         print("=" * 50)
         return 0
 

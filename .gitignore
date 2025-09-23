@@ -63,6 +63,8 @@ assignment01-venv
 
 data/raw/pdf/sec-edgar-filings
 data/raw/sec-edgar-filings
+data/raw/Xbrlfiles
+data/raw/extracted_zip
 
 data/parsed/docling
 data/parsed/layout_parser

@@ -78,3 +78,6 @@ data/exports
 # Allow DVC files
 !data/*.dvc
 !data/**/*.dvc
+
+# Allow architecture diagram 
+!setup/lantern_arch.png

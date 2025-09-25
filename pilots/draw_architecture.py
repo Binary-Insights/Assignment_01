@@ -26,7 +26,7 @@ from diagrams.aws.ml import Textract
 # External source
 from diagrams.generic.network import Router as SEC_EDGAR
 
-with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False, filename="lantern_arch", outformat="png"):
+with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False, filename="setup/lantern_arch", outformat="png"):
     user = Users("Analysts / Team")
     repo = Git("Private GitHub Repo\n(code + dvc.yaml)")
     github_actions = GithubActions("GitHub Actions\n(CI/CD: smoke-test.yml)")
@@ -40,7 +40,7 @@ with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False,
         meta = Storage("data/metadata")
         raw = Storage("data/raw")
         parsed = Storage("data/parsed")
-        reports = Storage("data/reports")
+        exports = Storage("data/exports")
 
     with Cluster("Extraction Services"):
         docling = Server("Docling Service")
@@ -76,10 +76,10 @@ with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False,
     orch >> [docling, layout_parser, pdfplumber_tesseract, hybrid]
 
     # Each service reads from storage and writes to storage
-    raw >> docling >> [parsed, reports, meta]
-    raw >> layout_parser >> [parsed, reports, meta]
-    raw >> pdfplumber_tesseract >> [parsed, reports, meta]
-    raw >> hybrid >> [parsed, reports, meta]
+    raw >> docling >> [parsed, exports, meta]
+    raw >> layout_parser >> [parsed, exports, meta]
+    raw >> pdfplumber_tesseract >> [parsed, exports, meta]
+    raw >> hybrid >> [parsed, exports, meta]
 
 
     # Evaluation & validation
@@ -92,15 +92,15 @@ with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False,
     # [raw, parsed, md, jsonl, txt] >> dvc
 
     # Versioning: DVC manages all storage folders
-    [meta, raw, parsed, reports] >> dvc
+    [meta, raw, parsed, exports] >> dvc
     dvc >> s3remote
     orch >> Edge(color="red") >> dvc
     dvc >> Edge(color="blue") >> orch
 
     # Visualization cluster: Streamlit app
     with Cluster("Visualization"):
-        streamlit = Server("Streamlit App\n(Report Viewer)")
-    reports >> streamlit
+        streamlit = Server("Streamlit App\n(Exports Viewer)")
+    exports >> streamlit
     parsed >> streamlit
     meta >> streamlit
  

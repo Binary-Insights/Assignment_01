@@ -1,4 +1,4 @@
 [core]
-    remote = damg-remote-storage
-['remote "damg-remote-storage"']
-    url = s3://damg-projects/Assignment_01/
+    remote = reky-remote
+['remote "reky-remote"']
+    url = s3://damg-projects/Assignment_01

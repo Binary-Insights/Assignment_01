@@ -3,8 +3,8 @@ name: PDF Extraction Pipeline Smoke Test
 on:
   pull_request:
     branches: [ main, develop, reky-feature-01 ]
-  push:
-    branches: [ main, develop, reky-feature-01 ]
+  # push:
+  #   branches: [ main, develop, reky-feature-01 ]
   workflow_dispatch:  # Allow manual triggering
 
 env:

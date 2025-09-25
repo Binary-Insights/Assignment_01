@@ -91,6 +91,9 @@ data/raw/*.zip
 
 data/reports
 
+# Ground truth validation data (keep local only)
+data/validation
+
 # Allow DVC files
 !data/*.dvc
 !data/**/*.dvc

@@ -18,29 +18,20 @@ dependencies = [
     "pytesseract",
     "requests",
     "sec-edgar-downloader",
-
     # Essential Docling dependencies
-    "docling",
+    "docling==1.20.0",
     "pypdfium2",
     "python-magic",
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
-
     # AI/ML dependencies for Docling
     "transformers",
     "torch",
-    # Cloud services dependencies
-    "boto3>=1.28.0",
-    "botocore>=1.31.0",
-    # Analysis and visualization
-    "matplotlib>=3.5.0",
-    "seaborn>=0.11.0",
     "torchvision",
     "accelerate",
     "sentencepiece",
     "dvc>=3.63.0",
-
     # "detectron2@git+
     "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2 --no-build-isolation", # Required for LayoutParser
 ]

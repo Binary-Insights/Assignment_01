@@ -65,6 +65,9 @@ data/raw/pdf/sec-edgar-filings
 data/raw/sec-edgar-filings
 data/raw/Xbrlfiles
 data/raw/extracted_zip
+data/S3
+
+aws
 
 data/parsed/docling
 data/parsed/layout_parser

@@ -1,11 +1,11 @@
 stages:
-  download:
-    cmd: python pilots/downloader-sec.py
-    deps:
-      - pilots/downloader-sec.py
-    outs:
-      - data/downloads/pdf/
-    desc: "Download SEC filing PDFs from EDGAR database (optional - runs separately)"
+  # download:
+#   cmd: python pilots/downloader-sec.py
+#   deps:
+#     - pilots/downloader-sec.py
+#   outs:
+#     - data/downloads/pdf
+#   desc: "Download SEC filing PDFs from EDGAR database (optional - runs separately)"
   
   parse:
     cmd: python src/pdfplumber_tess_extractor.py

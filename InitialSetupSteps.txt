@@ -84,7 +84,7 @@ Step 3
 source .venv/bin/activate
 
 Step 4
-uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling
+uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling layoutparser
 
 Step 5
 # Lab 1
@@ -136,7 +136,7 @@ Step 2:
 # To add specific data folders into staging area (to avoid conflicts with pipeline outputs)
 # Add only the input data directories that won't be managed by the pipeline
 dvc add data/raw
-# dvc add data/staged  # Add other subdirectories as needed
+dvc add data/staged
 
 # Note: Pipeline will manage data/parsed/, data/metadata/, data/analysis/ automatically 
 
@@ -166,6 +166,10 @@ dvc push
 Step 6:
 If there are any changes in the data folder in the remote by any other team mate then it needs to be pulled first
 dvc pull
+
+# If there are local unsaved files that would be overwritten, use --force
+# (Make sure to backup important local changes first)
+dvc pull --force
 
 ----------------------------------------------------------------------------------------
 DVC PIPELINE (Complete End-to-End Workflow)

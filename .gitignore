@@ -18,6 +18,18 @@ __pycache__/
 *.csv
 *.tsv
 *.xls
+
+# Intermediate files
+data/parsed/**/text/page_*.txt
+data/parsed/**/text/word_boxes.json
+data/parsed/basic_layout_log.txt
+data/parsed/extraction_log.txt
+data/parsed/table_extraction_log.txt
+
+# Development artifacts
+*.log
+logs/
+temp/
 *.xlsx
 *.parquet
 *.h5
@@ -47,8 +59,15 @@ node_modules/
 
 *.zip
 
+assignment01-venv
+
 data/raw/pdf/sec-edgar-filings
 data/raw/sec-edgar-filings
+data/raw/Xbrlfiles
+data/raw/extracted_zip
+data/S3
+
+aws
 
 data/parsed/docling
 data/parsed/layout_parser
@@ -56,7 +75,7 @@ data/parsed/pdfplumber
 data/parsed/comparison
 data/parsed/hybrid
 data/parsed/pdfplumber_tesseract
-
+data/parsed
 data/metadata/blocks
 data/metadata/documents
 data/metadata/provenance
@@ -73,7 +92,9 @@ data/metadata
 data/raw/*.zip
 
 data/reports
-data/exports
+
+# Ground truth validation data (keep local only)
+data/validation
 
 # Allow DVC files
 !data/*.dvc

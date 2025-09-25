@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-09-25T13:12:49.388730",
+  "methods": {
+    "pdfplumber_tesseract": {
+      "text_extraction": {
+        "wer": 0.0
+      },
+      "table_extraction": {
+        "precision": 0.75,
+        "recall": 0.75
+      }
+    },
+    "hybrid_camelot_pdfplumber": {
+      "text_extraction": {
+        "wer": 0.0
+      },
+      "table_extraction": {
+        "precision": 0.75,
+        "recall": 0.75
+      }
+    },
+    "layout_parser": {
+      "text_extraction": {
+        "wer": 0.0
+      },
+      "table_extraction": {
+        "precision": 0.75,
+        "recall": 0.75
+      }
+    },
+    "docling": {
+      "text_extraction": {
+        "wer": 0.0
+      },
+      "table_extraction": {
+        "precision": 0.708,
+        "recall": 0.816
+      }
+    }
+  },
+  "summary": {
+    "pdfplumber_tesseract": {
+      "text_wer": 0.0,
+      "table_precision": 0.75,
+      "table_recall": 0.75
+    },
+    "hybrid_camelot_pdfplumber": {
+      "text_wer": 0.0,
+      "table_precision": 0.75,
+      "table_recall": 0.75
+    },
+    "layout_parser": {
+      "text_wer": 0.0,
+      "table_precision": 0.75,
+      "table_recall": 0.75
+    },
+    "docling": {
+      "text_wer": 0.0,
+      "table_precision": 0.708,
+      "table_recall": 0.816
+    }
+  },
+  "validation": {
+    "pdfplumber_tesseract": {
+      "passed": true,
+      "failures": []
+    },
+    "hybrid_camelot_pdfplumber": {
+      "passed": true,
+      "failures": []
+    },
+    "layout_parser": {
+      "passed": true,
+      "failures": []
+    },
+    "docling": {
+      "passed": true,
+      "failures": []
+    }
+  }
+}

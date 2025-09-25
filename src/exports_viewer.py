@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 
 # Set up paths
-data_dir = Path('data/reports')
+data_dir = Path('data/exports')
 pdf_dir = Path('data/raw/pdf')
 
 # Helper to get available PDFs and methods
@@ -35,9 +35,9 @@ def get_report_paths(pdf_name, method):
     md_name = pdf_stem + md_suffix_map.get(method, f'_{method}.md')
     json_name = pdf_stem + json_suffix_map.get(method, f'_{method}.json')
     txt_name = f'{pdf_stem}_{method}_clean.txt'
-    md_path = Path('data/reports/markdown') / method / md_name
-    json_path = Path('data/reports/json') / method / json_name
-    txt_path = Path('data/reports/text') / method / txt_name
+    md_path = Path('data/exports/markdown') / method / md_name
+    json_path = Path('data/exports/json') / method / json_name
+    txt_path = Path('data/exports/text') / method / txt_name
     return md_path, json_path, txt_path
 
 

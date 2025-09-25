@@ -64,6 +64,8 @@ data/metadata/quality_reports
 
 data/staged/schemas
 
+data/downloads
+
 data/analysis
 data/staged
 data/metadata
@@ -71,6 +73,7 @@ data/metadata
 data/raw/*.zip
 
 data/reports
+data/exports
 
 # Allow DVC files
 !data/*.dvc

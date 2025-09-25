@@ -69,10 +69,9 @@ case $choice in
         ;;
     2)
         echo "Available stages:"
-        echo "- download"
-        echo "- parse" 
-        echo "- tables"
-        echo "- layout"
+        echo "- pdfplumber" 
+        echo "- hybrid"
+        echo "- layout-parser"
         echo "- docling"
         echo "- metadata"
         echo "- compare"

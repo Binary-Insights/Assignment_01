@@ -17,6 +17,7 @@ from diagrams.generic.blank import Blank as TxtOut
 from diagrams.generic.storage import Storage 
 from diagrams.aws.storage import S3
 from diagrams.onprem.client import Client
+from diagrams.onprem.ci import GithubActions
 
 # Cloud APIs (managed "Build vs Buy" fallback)
 from diagrams.aws.ml import Textract
@@ -28,6 +29,7 @@ from diagrams.generic.network import Router as SEC_EDGAR
 with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False, filename="lantern_arch", outformat="png"):
     user = Users("Analysts / Team")
     repo = Git("Private GitHub Repo\n(code + dvc.yaml)")
+    github_actions = GithubActions("GitHub Actions\n(CI/CD: smoke-test.yml)")
     dvc = Storage("DVC Cache/Remotes\n(data lineage)")
     orch = Client("Command Line\n(dvc repro)")
     s3remote = S3("DVC Remote Storage (S3)")
@@ -58,7 +60,8 @@ with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False,
 
     # Flow
     user >> repo
-    repo >> orch
+    repo >> github_actions
+    github_actions >> orch
     orch >> sec
     sec >> raw
 
@@ -87,14 +90,17 @@ with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False,
 
     # Versioning
     # [raw, parsed, md, jsonl, txt] >> dvc
+
     # Versioning: DVC manages all storage folders
     [meta, raw, parsed, reports] >> dvc
     dvc >> s3remote
-    # repo << dvc
-    # orch >> dvc
-    # orch << dvc
     orch >> Edge(color="red") >> dvc
     dvc >> Edge(color="blue") >> orch
-    # orch >> Edge(label="dvc push") >> dvc
-    # dvc >> Edge(label="dvc pull") >> orch
+
+    # Visualization cluster: Streamlit app
+    with Cluster("Visualization"):
+        streamlit = Server("Streamlit App\n(Report Viewer)")
+    reports >> streamlit
+    parsed >> streamlit
+    meta >> streamlit
  

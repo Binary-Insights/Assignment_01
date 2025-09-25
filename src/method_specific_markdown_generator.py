@@ -20,20 +20,20 @@ class MethodSpecificReportGenerator:
     tailored to each extraction approach.
     """
     
-    def __init__(self, base_reports_dir: str = "data/reports"):
+    def __init__(self, base_exports_dir: str = "data/exports"):
         """
         Initialize the multi-format report generator.
         
         Args:
-            base_reports_dir: Base directory to save generated reports
+            base_exports_dir: Base directory to save generated exports
         """
-        self.base_reports_dir = Path(base_reports_dir)
-        self.base_reports_dir.mkdir(parents=True, exist_ok=True)
+        self.base_exports_dir = Path(base_exports_dir)
+        self.base_exports_dir.mkdir(parents=True, exist_ok=True)
         
         # Create format-specific base directories
-        self.markdown_base_dir = self.base_reports_dir / "markdown"
-        self.json_base_dir = self.base_reports_dir / "json"
-        self.text_base_dir = self.base_reports_dir / "text"
+        self.markdown_base_dir = self.base_exports_dir / "markdown"
+        self.json_base_dir = self.base_exports_dir / "json"
+        self.text_base_dir = self.base_exports_dir / "text"
         
         for format_dir in [self.markdown_base_dir, self.json_base_dir, self.text_base_dir]:
             format_dir.mkdir(parents=True, exist_ok=True)
@@ -2159,7 +2159,7 @@ def main():
         print()
     
     print("🎉 Multi-format report generation complete!")
-    print(f"📁 Base output directory: {generator.base_reports_dir}")
+    print(f"📁 Base output directory: {generator.base_exports_dir}")
     print()
     print("Generated formats:")
     print(f"  📝 Markdown: {generator.markdown_base_dir}")
@@ -2171,7 +2171,7 @@ def main():
         print(f"  - {method}")
     print()
     print("Example output structure:")
-    print("  data/reports/")
+    print("  data/exports/")
     print("  ├── markdown/")
     print("  │   ├── docling/")
     print("  │   ├── layout_parser/")

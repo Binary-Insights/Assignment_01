@@ -4,10 +4,10 @@ stages:
     deps:
       - pilots/downloader-sec.py
     outs:
-      - data/downloads/pdf/
+      - data/downloads/
     desc: "Download SEC filing PDFs from EDGAR database (optional - runs separately)"
   
-  parse:
+  pdfplumber:
     cmd: python src/pdfplumber_tess_extractor.py
     deps:
       - src/pdfplumber_tess_extractor.py
@@ -16,7 +16,7 @@ stages:
       - data/parsed/pdfplumber_tesseract/
     desc: "Extract text and basic structure using pdfplumber with OCR fallback"
   
-  tables:
+  hybrid:
     cmd: python src/hybrid_pdf_extractor.py
     deps:
       - src/hybrid_pdf_extractor.py
@@ -25,7 +25,7 @@ stages:
       - data/parsed/hybrid/
     desc: "Extract tables using hybrid approach (Camelot lattice/stream + pdfplumber)"
     
-  layout:
+  layout-parser:
     cmd: python src/layout_parser_extractor.py
     deps:
       - src/layout_parser_extractor.py
@@ -74,8 +74,8 @@ stages:
       - data/metadata/
       - data/parsed/comparison/
     outs:
-      - data/reports/markdown/
-    desc: "Generate final markdown reports and documentation"
+      - data/exports/markdown/
+    desc: "Generate final markdown, json and txt files for each extraction method"
 
 # Define parameter files for configuration
 params:

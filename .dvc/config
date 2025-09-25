@@ -1,4 +1,4 @@
 [core]
     remote = reky-remote
 ['remote "reky-remote"']
-    url = https://damg-projects.s3.us-west-1.amazonaws.com/Assignment_01/
+    url = s3://damg-projects/Assignment_01

@@ -57,9 +57,10 @@ echo "1) Run full pipeline (dvc repro)"
 echo "2) Run specific stage"
 echo "3) Force rebuild all stages"
 echo "4) Show pipeline metrics"
-echo "5) Exit"
+echo "5) Launch Streamlit exports viewer"
+echo "6) Exit"
 
-read -p "Enter choice (1-5): " choice
+read -p "Enter choice (1-6): " choice
 
 case $choice in
     1)
@@ -95,6 +96,10 @@ case $choice in
         fi
         ;;
     5)
+        echo "🖥️ Launching Streamlit exports viewer..."
+        streamlit run src/exports_viewer.py
+        ;;
+    6)
         echo "👋 Goodbye!"
         exit 0
         ;;

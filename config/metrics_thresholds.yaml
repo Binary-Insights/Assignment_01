@@ -1,0 +1,71 @@
+# PDF Parsing Methods - Performance Thresholds Configuration
+# Based on evaluation results from PARSING_METHODS_EVALUATION.md
+# Updated: September 25, 2025 - Corrected Hybrid method performance
+
+# Minimum acceptable thresholds for each parsing method
+thresholds:
+  text_extraction:
+    wer_maximum: # Maximum Word Error Rate (lower is better)
+      pdfplumber_tesseract: 0.05  # 5% - Currently achieves 0%, allow 5% buffer
+      hybrid_camelot_pdfplumber: 0.05  # 5% - Currently achieves 0%, allow 5% buffer
+      layout_parser: 0.05  # 5% - Currently achieves 0%, allow 5% buffer
+      docling: 0.05  # 5% - Currently achieves 0%, allow 5% buffer
+    
+  table_extraction:
+    precision_minimum: # Minimum precision percentage
+      pdfplumber_tesseract: 0.65  # 65% - Currently 75%, allow degradation buffer
+      hybrid_camelot_pdfplumber: 0.65  # 65% - Currently 75%, allow degradation buffer
+      layout_parser: 0.65  # 65% - Currently 75%, allow degradation buffer
+      docling: 0.60  # 60% - Currently 70.8%, allow degradation buffer
+      
+    recall_minimum: # Minimum recall percentage  
+      pdfplumber_tesseract: 0.65  # 65% - Currently 75%, allow degradation buffer
+      hybrid_camelot_pdfplumber: 0.65  # 65% - Currently 75%, allow degradation buffer
+      layout_parser: 0.65  # 65% - Currently 75%, allow degradation buffer
+      docling: 0.70  # 70% - Currently 81.6%, allow degradation buffer
+
+# Performance benchmarks (expected good performance)
+benchmarks:
+  text_extraction:
+    wer_target:
+      pdfplumber_tesseract: 0.00  # Target 0% WER
+      hybrid_camelot_pdfplumber: 0.00  # Target 0% WER
+      layout_parser: 0.00  # Target 0% WER
+      docling: 0.00  # Target 0% WER
+      
+  table_extraction:
+    precision_target:
+      pdfplumber_tesseract: 0.75  # Target 75% precision
+      hybrid_camelot_pdfplumber: 0.75  # Target 75% precision
+      layout_parser: 0.75  # Target 75% precision
+      docling: 0.75  # Target 75% precision
+      
+    recall_target:
+      pdfplumber_tesseract: 0.75  # Target 75% recall
+      hybrid_camelot_pdfplumber: 0.75  # Target 75% recall
+      layout_parser: 0.75  # Target 75% recall
+      docling: 0.85  # Target 85% recall
+
+# Alert levels for metric degradation
+alerts:
+  critical: # Metrics below this level trigger critical alerts
+    wer_increase: 0.20  # 20% increase in WER from baseline
+    precision_decrease: 0.15  # 15% decrease in precision from baseline
+    recall_decrease: 0.15  # 15% decrease in recall from baseline
+    
+  warning: # Metrics below this level trigger warnings
+    wer_increase: 0.10  # 10% increase in WER from baseline
+    precision_decrease: 0.08  # 8% decrease in precision from baseline
+    recall_decrease: 0.08  # 8% decrease in recall from baseline
+
+# Test configuration
+testing:
+  ground_truth_pages: [10, 25, 55, 83]
+  ground_truth_tables: ["table_1", "table_2", "table_3", "table_4"]
+  required_methods: ["pdfplumber_tesseract", "hybrid_camelot_pdfplumber", "layout_parser", "docling"]
+  
+# DVC metrics tracking configuration
+dvc_metrics:
+  output_file: "metrics.json"
+  track_history: true
+  precision_digits: 4

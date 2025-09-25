@@ -58,7 +58,7 @@ class PDFTableExtractor:
             logger.removeHandler(handler)
         
         # Create file handler
-        log_file = self.output_dir / 'table_extraction_log.txt'
+        log_file = self.output_dir / 'extraction_log.txt'
         handler = logging.FileHandler(log_file, mode='a')
         handler.setLevel(log_level)
         
@@ -789,7 +789,7 @@ class PDFTableExtractor:
         # Convert numpy types to native Python types
         summary = self._convert_numpy_types(summary)
         
-        summary_file = output_dir / 'table_extraction_summary.json'
+        summary_file = output_dir / 'pdfplumber_tesseract_extraction_results.json'
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
         

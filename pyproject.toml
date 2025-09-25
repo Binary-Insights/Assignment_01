@@ -13,11 +13,12 @@ dependencies = [
     "numpy",
     "pandas",
     "pdfplumber",
-    "pillow",
+    "pillow", # Compatibility fix for LayoutParser/Detectron2
     "playwright",
     "pytesseract",
     "requests",
     "sec-edgar-downloader",
+
     # Essential Docling dependencies
     "docling==1.20.0",
     "pypdfium2",
@@ -25,6 +26,8 @@ dependencies = [
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
+    "streamlit",
+
     # AI/ML dependencies for Docling
     "transformers",
     "torch",
@@ -32,4 +35,10 @@ dependencies = [
     "accelerate",
     "sentencepiece",
     "dvc>=3.63.0",
+
+    # "detectron2@git+
+    "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2 --no-build-isolation", # Required for LayoutParser
 ]
+
+[tool.uv.extra-build-dependencies]
+detectron2 = ["torch", "torchvision"]

@@ -16,7 +16,8 @@ import layoutparser as lp
 import cv2
 import numpy as np
 import pytesseract
-from PIL import Image
+import cv2
+import numpy as np
 import pdf2image
 import json
 import logging
@@ -79,15 +80,26 @@ class LayoutParserExtractor:
     
     def _setup_logging(self):
         """Set up logging for the extractor."""
-        logger = logging.getLogger(__name__)
+        logger = logging.getLogger('LayoutParserExtractor')
         logger.setLevel(logging.INFO)
         
-        # Create console handler if not already present
+        # Create file handler
+        log_file = self.output_dir / 'extraction_log.txt'
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        
+        # Create console handler
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        
+        # Create formatter
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
+        
+        # Add handlers to logger if not already present
         if not logger.handlers:
-            console_handler = logging.StreamHandler()
-            console_handler.setLevel(logging.INFO)
-            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            console_handler.setFormatter(formatter)
+            logger.addHandler(file_handler)
             logger.addHandler(console_handler)
         
         return logger
@@ -233,12 +245,12 @@ class LayoutParserExtractor:
         for dir_name in directories:
             (base_dir / dir_name).mkdir(parents=True, exist_ok=True)
     
-    def _process_page(self, image: Image.Image, page_num: int, output_dir: Path) -> Dict[str, Any]:
+    def _process_page(self, image, page_num: int, output_dir: Path) -> Dict[str, Any]:
         """
         Process a single page using LayoutParser and extract content by block type.
         
         Args:
-            image (PIL.Image): Page image for layout detection
+            image: Page image for layout detection
             page_num (int): Page number
             output_dir (Path): Output directory
             
@@ -259,8 +271,11 @@ class LayoutParserExtractor:
         }
         
         try:
-            # Convert PIL image to OpenCV format for LayoutParser
-            cv_image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+            # Convert image to OpenCV format if needed
+            if hasattr(image, 'mode'):
+                cv_image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+            else:
+                cv_image = image
             print(f"🖼️ Image converted to OpenCV format: shape={cv_image.shape}, dtype={cv_image.dtype}")
             
             # Detect layout elements
@@ -304,7 +319,7 @@ class LayoutParserExtractor:
         
         return page_result
     
-    def _process_block(self, block, block_idx: int, image: Image.Image, 
+    def _process_block(self, block, block_idx: int, image, 
                       page_num: int, output_dir: Path) -> Dict[str, Any]:
         """
         Process a detected layout block and extract content based on its type.
@@ -383,7 +398,7 @@ class LayoutParserExtractor:
         
         return block_result
     
-    def _extract_text_block(self, bbox, image: Image.Image, 
+    def _extract_text_block(self, bbox, image,
                            block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
         """Extract text content from a detected text block using OCR."""
         try:
@@ -416,7 +431,7 @@ class LayoutParserExtractor:
             print(f"❌ Exception in text extraction: {e}")
             return None, 'error', None
     
-    def _extract_title_block(self, bbox, image: Image.Image,
+    def _extract_title_block(self, bbox, image,
                            block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
         """Extract title content from a detected title block."""
         # Similar to text extraction but saved in titles directory
@@ -430,7 +445,7 @@ class LayoutParserExtractor:
         
         return None, method, None
     
-    def _extract_table_block(self, bbox, image: Image.Image,
+    def _extract_table_block(self, bbox, image,
                            block_id: str, output_dir: Path) -> Tuple[Optional[str], str, Optional[Path]]:
         """Extract table content from a detected table block using OCR."""
         try:
@@ -457,8 +472,8 @@ class LayoutParserExtractor:
             self.logger.error(f"Error extracting table block {block_id}: {e}")
             return None, 'error', None
     
-    def _extract_figure_block(self, bbox, image: Image.Image,
-                            block_id: str, output_dir: Path) -> Tuple[Optional[Image.Image], str, Optional[Path]]:
+    def _extract_figure_block(self, bbox, image,
+                            block_id: str, output_dir: Path) -> Tuple[Optional[Any], str, Optional[Path]]:
         """Extract figure content from a detected figure block."""
         try:
             x1, y1, x2, y2 = bbox.x_1, bbox.y_1, bbox.x_2, bbox.y_2
@@ -476,7 +491,7 @@ class LayoutParserExtractor:
             self.logger.error(f"Error extracting figure block {block_id}: {e}")
             return None, 'error', None
     
-    def _extract_list_block(self, bbox, image: Image.Image,
+    def _extract_list_block(self, bbox, image,
                           block_id: str, output_dir: Path) -> Tuple[str, str, Optional[Path]]:
         """Extract list content from a detected list block."""
         # Similar to text extraction but saved in lists directory

@@ -1,0 +1,170 @@
+schema: '2.0'
+stages:
+  parse:
+    cmd: python src/pdfplumber_tess_extractor.py
+    deps:
+    - path: data/raw/pdf/
+      hash: md5
+      md5: 7c6a5a0de70512732d9672262863372a.dir
+      size: 3360824
+      nfiles: 1
+    - path: src/pdfplumber_tess_extractor.py
+      hash: md5
+      md5: b85f915576f76a77451e72d314f81566
+      size: 40299
+      isexec: true
+    outs:
+    - path: data/parsed/pdfplumber_tesseract/
+      hash: md5
+      md5: 502337e21aa5c4a41b2c0ff625dca169.dir
+      size: 760347
+      nfiles: 225
+  tables:
+    cmd: python src/hybrid_pdf_extractor.py
+    deps:
+    - path: data/raw/pdf/
+      hash: md5
+      md5: 7c6a5a0de70512732d9672262863372a.dir
+      size: 3360824
+      nfiles: 1
+    - path: src/hybrid_pdf_extractor.py
+      hash: md5
+      md5: fa050bb28dd12b8968f38b961a886f80
+      size: 27824
+      isexec: true
+    outs:
+    - path: data/parsed/hybrid/
+      hash: md5
+      md5: 6cd075bc85e1633dd348e539acfe40d4.dir
+      size: 853310
+      nfiles: 320
+  layout:
+    cmd: python src/layout_parser_extractor.py
+    deps:
+    - path: data/raw/pdf/
+      hash: md5
+      md5: 7c6a5a0de70512732d9672262863372a.dir
+      size: 3360824
+      nfiles: 1
+    - path: models/layoutparser/
+      hash: md5
+      md5: f4f644fcebef9b762e47bab6e8017e23.dir
+      size: 330186884
+      nfiles: 2
+    - path: src/layout_parser_extractor.py
+      hash: md5
+      md5: 75052ba697c851c44c689baca7d3bba1
+      size: 39174
+      isexec: true
+    outs:
+    - path: data/parsed/layout_parser/
+      hash: md5
+      md5: 006c4718db25b19296fd3517d3a3ce13.dir
+      size: 194341257
+      nfiles: 1983
+  docling:
+    cmd: python src/docling_extractor.py
+    deps:
+    - path: data/raw/pdf/
+      hash: md5
+      md5: 7c6a5a0de70512732d9672262863372a.dir
+      size: 3360824
+      nfiles: 1
+    - path: src/docling_extractor.py
+      hash: md5
+      md5: c2daa6715a0cbc37511b4807c9729650
+      size: 44344
+      isexec: true
+    outs:
+    - path: data/parsed/docling/
+      hash: md5
+      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
+      size: 2300214
+      nfiles: 188
+  metadata:
+    cmd: python src/metadata_extractor.py
+    deps:
+    - path: data/parsed/docling/
+      hash: md5
+      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
+      size: 2300214
+      nfiles: 188
+    - path: data/parsed/layout_parser/
+      hash: md5
+      md5: 006c4718db25b19296fd3517d3a3ce13.dir
+      size: 194341257
+      nfiles: 1983
+    - path: data/parsed/pdfplumber_tesseract/
+      hash: md5
+      md5: 502337e21aa5c4a41b2c0ff625dca169.dir
+      size: 760347
+      nfiles: 225
+    - path: src/metadata_extractor.py
+      hash: md5
+      md5: 7485568a3fcafa53908b2f01150570ee
+      size: 108567
+      isexec: true
+    outs:
+    - path: data/metadata/
+      hash: md5
+      md5: fa374c4724ea8f6abb615ed24534342a.dir
+      size: 6590590
+      nfiles: 19
+  compare:
+    cmd: python src/extraction_comparator.py
+    deps:
+    - path: data/parsed/docling/
+      hash: md5
+      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
+      size: 2300214
+      nfiles: 188
+    - path: data/parsed/hybrid/
+      hash: md5
+      md5: 6cd075bc85e1633dd348e539acfe40d4.dir
+      size: 853310
+      nfiles: 320
+    - path: data/parsed/layout_parser/
+      hash: md5
+      md5: 006c4718db25b19296fd3517d3a3ce13.dir
+      size: 194341257
+      nfiles: 1983
+    - path: data/parsed/pdfplumber_tesseract/
+      hash: md5
+      md5: 502337e21aa5c4a41b2c0ff625dca169.dir
+      size: 760347
+      nfiles: 225
+    - path: src/extraction_comparator.py
+      hash: md5
+      md5: 650396238561a7e7f0e1611571ef5d53
+      size: 34429
+      isexec: true
+    outs:
+    - path: data/parsed/comparison/
+      hash: md5
+      md5: 7bc3c5b94c01f7965e0166b573c9d5d4.dir
+      size: 15616
+      nfiles: 10
+  export:
+    cmd: python src/method_specific_markdown_generator.py
+    deps:
+    - path: data/metadata/
+      hash: md5
+      md5: fa374c4724ea8f6abb615ed24534342a.dir
+      size: 6590590
+      nfiles: 19
+    - path: data/parsed/comparison/
+      hash: md5
+      md5: 7bc3c5b94c01f7965e0166b573c9d5d4.dir
+      size: 15616
+      nfiles: 10
+    - path: src/method_specific_markdown_generator.py
+      hash: md5
+      md5: d4741c27182315591882e74e2264888d
+      size: 91454
+      isexec: true
+    outs:
+    - path: data/reports/markdown/
+      hash: md5
+      md5: 8eaa3284cedb7483f8ed23c24ed6a320.dir
+      size: 2089798
+      nfiles: 4

@@ -1,0 +1,100 @@
+stages:
+  download:
+    cmd: python pilots/downloader-sec.py
+    deps:
+      - pilots/downloader-sec.py
+    outs:
+      - data/downloads/
+    desc: "Download SEC filing PDFs from EDGAR database (optional - runs separately)"
+  
+  pdfplumber:
+    cmd: python src/pdfplumber_tess_extractor.py
+    deps:
+      - src/pdfplumber_tess_extractor.py
+      - data/raw/pdf/
+    outs:
+      - data/parsed/pdfplumber_tesseract/
+    desc: "Extract text and basic structure using pdfplumber with OCR fallback"
+  
+  hybrid:
+    cmd: python src/hybrid_pdf_extractor.py
+    deps:
+      - src/hybrid_pdf_extractor.py
+      - data/raw/pdf/
+    outs:
+      - data/parsed/hybrid/
+    desc: "Extract tables using hybrid approach (Camelot lattice/stream + pdfplumber)"
+    
+  layout-parser:
+    cmd: python src/layout_parser_extractor.py
+    deps:
+      - src/layout_parser_extractor.py
+      - data/raw/pdf/
+      - models/layoutparser/
+    outs:
+      - data/parsed/layout_parser/
+    desc: "Perform layout analysis and element detection using LayoutParser"
+  
+  docling:
+    cmd: python src/docling_extractor.py
+    deps:
+      - src/docling_extractor.py
+      - data/raw/pdf/
+    outs:
+      - data/parsed/docling/
+    desc: "Advanced document parsing using Docling with AI-powered extraction"
+  
+  metadata:
+    cmd: python src/metadata_extractor.py
+    deps:
+      - src/metadata_extractor.py
+      - data/parsed/pdfplumber_tesseract/
+      - data/parsed/layout_parser/
+      - data/parsed/docling/
+    outs:
+      - data/metadata/
+    desc: "Generate unified metadata from all extraction methods"
+  
+  compare:
+    cmd: python src/extraction_comparator.py
+    deps:
+      - src/extraction_comparator.py
+      - data/parsed/pdfplumber_tesseract/
+      - data/parsed/hybrid/
+      - data/parsed/layout_parser/
+      - data/parsed/docling/
+    outs:
+      - data/parsed/comparison/
+    desc: "Compare extraction methods and generate analysis reports"
+  
+  export:
+    cmd: python src/method_specific_markdown_generator.py
+    deps:
+      - src/method_specific_markdown_generator.py
+      - data/metadata/
+      - data/parsed/comparison/
+    outs:
+      - data/exports/markdown/
+    desc: "Generate final markdown, json and txt files for each extraction method"
+
+# Define parameter files for configuration
+params:
+  - config/extraction_config.yaml
+
+# Define metrics to track
+metrics:
+  - data/analysis/extraction_metrics.json
+
+# Define plots for visualization
+plots:
+  - data/analysis/method_comparison.json:
+      x: method
+      y: 
+        - accuracy
+        - processing_time
+        - tables_found
+      title: "Extraction Method Performance Comparison"
+  - data/analysis/table_detection_performance.json:
+      x: page_count
+      y: tables_detected
+      title: "Table Detection vs Document Length"

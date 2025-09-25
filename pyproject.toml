@@ -20,7 +20,7 @@ dependencies = [
     "sec-edgar-downloader",
 
     # Essential Docling dependencies
-    "docling",
+    "docling==1.20.0",
     "pypdfium2",
     "python-magic",
     "pydantic>=2.0.0",

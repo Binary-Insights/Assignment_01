@@ -26,7 +26,7 @@ from diagrams.aws.ml import Textract
 # External source
 from diagrams.generic.network import Router as SEC_EDGAR
 
-with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False, filename="lantern_arch", outformat="png"):
+with Diagram("Project LANTERN – Ingestion & Parsing Architecture", show=False, filename="setup/lantern_arch", outformat="png"):
     user = Users("Analysts / Team")
     repo = Git("Private GitHub Repo\n(code + dvc.yaml)")
     github_actions = GithubActions("GitHub Actions\n(CI/CD: smoke-test.yml)")

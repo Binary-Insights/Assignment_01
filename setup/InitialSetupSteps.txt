@@ -1,0 +1,228 @@
+Step 1
+#Initialize the uv 
+uv init
+
+Step 2: (If virtual environment is not present)
+# Create a virtual environment
+uv venv
+
+Step 3:  (If virtual environment is already present then use the below command directly)
+# Activate virtual environment
+.venv\Scripts\Activate.ps1
+
+Step 4: 
+# Install necessary libraries using uv
+uv pip install sec-edgar-downloader pdfplumber camelot
+
+Step 5:
+# Use the below command to update the toml file
+uv add sec-edgar-downloader pdfplumber camelot pytesseract pillow camelot-py opencv-python
+
+
+Step 6: 
+cd Assignment_01
+
+Step 7:
+# This is a trial for Part :1
+python .\src\pdf_text_extractor.py
+
+--------------------------------- How to merge a branch(sample-branch-name) to Main branch --------------------------------------------------
+
+Step 1:
+# Make sure you have the latest branches
+git fetch origin
+
+Step 2:
+# Switch to the main branch
+git checkout main
+
+Step 3:
+# Update main from remote
+git pull origin main
+
+Step 4:
+# Merge your branch
+git merge sample-branch-name
+
+Step 5:
+# Push changes to remote
+git push origin main
+
+--------------------------------- How to merge a "branch-A" to "branch-B" branch --------------------------------------------------
+
+Step 1:
+# Fetch the latest updates:
+git fetch origin
+
+Step 2:
+# Switch to branch-B locally:
+git checkout branch-B
+
+
+Step 3:
+# Update branch-B from remote:
+git pull origin branch-B
+
+Step 4:
+# Merge branch-A into branch-B:
+git merge branch-A
+
+Step 5:
+# Push the updated branch-B back to remote:
+git push origin branch-B
+
+
+---------------------- Steps to do in windows subsystem for linux -----------------------------------------
+
+Step 1
+wsl -d ubuntu 
+
+Step 2
+uv venv .venv
+
+Step 3
+source .venv/bin/activate
+
+Step 4
+uv pip install pdfplumber pytesseract pillow pandas numpy camelot-py opencv-python docling
+
+Step 5
+# Lab 1
+python src/pdfplumber_tess_extractor.py
+
+Step 5
+# Lab 2
+# Uses Camelot and pdf Plumber
+python src/hybrid_pdf_extractor.py
+
+Step 6
+# Lab 3
+# Layout parser example
+python src/layout_parser_extractor.py
+
+# This is needed to make detectron model to work !!!
+uv pip install 'git+https://github.com/facebookresearch/detectron2.git' --no-build-isolation
+wget -O models/layoutparser/model_final.pth "https://www.dropbox.com/s/dgy9c10wykk4lq4/model_final.pth?dl=1"
+sudo apt update && sudo apt install -y poppler-utils
+
+Step 7
+# Lab 4
+# Docling 
+python src/docling_extractor.py
+
+Step 8
+# Compare All Methods
+python src/extraction_comparator.py
+
+Step 9
+# Metadata extractor 
+python src/metadata_extractor.py
+
+
+Step 10
+# Final output Markdown generator
+python src/method_specific_markdown_generator.py
+
+Step 11
+# Report viewer for Markdown, Txt and Json
+python src/pdf_report_viewer.py
+
+
+----------------------------------------------------------------------------------------
+DVC
+
+Step 1:
+# To initiate dvc for a new project 
+dvc init
+
+Step 2:
+# To add specific data folders into staging area (to avoid conflicts with pipeline outputs)
+# Add only the input data directories that won't be managed by the pipeline
+dvc add data/raw
+# dvc add data/staged  # Add other subdirectories as needed
+
+# Note: Pipeline will manage data/parsed/, data/metadata/, data/analysis/ automatically 
+
+Step 3: 
+# Need to track the .dvc files so need to git add, its data.dvc since we used "dvc add data" ,data is the name of the folder
+dvc add data/raw
+dvc add data/staged
+git add 'data\raw.dvc' 'data\.gitignore'
+git add 'data\staged.dvc'
+
+
+Step 4:
+# In order to push into S3 bucket, you need to install the S3 plugin for dvc. In our case we will install 
+dvc-s3 plugin in base environment . Later stages we will install in virtual environment. 
+pip install dvc-s3c
+
+Step 4:
+# Very important step 
+# Need to store the files in remote storage 
+dvc remote add -d damg-remote-storage s3://damg-projects/Assignment_01/
+
+
+Step 5:
+# Push the data to S3 bucket
+dvc push
+
+Step 6:
+If there are any changes in the data folder in the remote by any other team mate then it needs to be pulled first
+dvc pull
+
+----------------------------------------------------------------------------------------
+DVC PIPELINE (Complete End-to-End Workflow)
+
+Step 1:
+# Test pipeline structure and configuration
+dvc dag
+
+Step 2:
+# Check what stages need to run
+dvc status
+
+Step 3:
+# Test pipeline without executing (dry run)
+dvc repro --dry
+
+Step 4:
+# Run single stage first to test
+dvc repro parse
+
+Step 5:
+# Run complete pipeline end-to-end
+dvc repro
+
+Step 6:
+# Commit pipeline files to preserve data lineage
+git add dvc.yaml dvc.lock .dvc/config config/ .github/
+git add data/raw.dvc data/staged.dvc
+git commit -m "Complete DVC pipeline with all stages"
+git push
+
+Step 7:
+# Use automated pipeline runner (alternative to manual commands)
+# Windows:
+run_pipeline.bat
+# Linux/Mac:
+./run_pipeline.sh
+
+----------------------------------------------------------------------------------------
+AWS 
+
+Step 1
+# Go to command prompt 
+
+Step 2
+# To check if there any existing aws configured in your system, it lists the currently configured aws access
+aws configure list
+
+Step 3:
+# If nothing is configured, if it is your first time 
+aws confiugure
+
+Step 4:
+# To see s3 directories of the configured aws
+aws s3 ls 
+
+Step 5:

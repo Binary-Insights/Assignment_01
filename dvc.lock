@@ -168,17 +168,3 @@ stages:
       md5: 53723e3cfa27106103a336dd75387b17.dir
       size: 1574098
       nfiles: 3
-  download:
-    cmd: python pilots/downloader-sec.py
-    deps:
-    - path: pilots/downloader-sec.py
-      hash: md5
-      md5: 1b9cb6a7949a86951db0e40c1e309026
-      size: 740
-      isexec: true
-    outs:
-    - path: data/raw/sec-edgar-filings/
-      hash: md5
-      md5: c3f2cdee70498e87f9a412c7af27cb16.dir
-      size: 238968131
-      nfiles: 24

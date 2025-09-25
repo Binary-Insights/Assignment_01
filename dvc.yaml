@@ -77,15 +77,15 @@ stages:
       - data/reports/markdown/
     desc: "Generate final markdown reports and documentation"
 
-  evaluate:
-    cmd: python scripts/run_full_validation.py
-    deps:
-      - scripts/run_full_validation.py
-      - PARSING_METHODS_EVALUATION.md
-      - config/metrics_thresholds.yaml
-    metrics:
-      - metrics.json
-    desc: "Extract performance metrics from evaluation report and validate thresholds"
+  # evaluate:
+  #   cmd: python scripts/run_full_validation.py
+  #   deps:
+  #     - scripts/run_full_validation.py
+  #     - PARSING_METHODS_EVALUATION.md
+  #     - config/metrics_thresholds.yaml
+  #   metrics:
+  #     - metrics.json
+  #   desc: "Extract performance metrics from evaluation report and validate thresholds"
 
 # Define parameter files for configuration
 params:

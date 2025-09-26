@@ -14,6 +14,7 @@ This document provides a comprehensive comparison of 4 PDF parsing methods again
 3. **Layout Parser** - Semantic document structure analysis with strong extraction capabilities
 4. **Docling** - Comprehensive structured document extraction
 
+
 **Key Finding**: All four methods achieve excellent performance: **PDFPlumber + Tesseract**, **Hybrid (Camelot + PDFPlumber)**, **Layout Parser**, and **Docling** all demonstrate perfect text accuracy (0% WER) with strong table extraction capabilities. Three methods (PDFPlumber + Tesseract, Hybrid, Layout Parser) achieve identical 75% table precision/recall, while Docling leads with 81.6% recall. This comprehensive analysis reveals that all methods are highly capable for financial document processing.
 
 ## Methodology

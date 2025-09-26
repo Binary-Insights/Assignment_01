@@ -178,6 +178,47 @@ This approach enables analysts to efficiently process, validate, and explore fin
 
 ---
 
+## Core Tasks Completed: Runtime & Memory Benchmarking
+
+### Measuring Runtime per Page and Memory Consumption
+
+**Representative Batch: SEC Form 10K (118 pages)**
+
+#### Local Machine Setup
+
+**1) Intel i7 - 16 GB RAM**
+- GPU: Not available
+- Peak Memory Consumption:
+    - Docling: 5 GB (CPU)
+    - Layout Parser: 9 GB (CPU)
+    - Hybrid: 1 GB
+    - Pdfplumber-tesseract: 1 GB
+- Runtime:
+    - Docling: 359 seconds
+    - Layout Parser: 1302 seconds
+    - Hybrid: 127 seconds
+    - Pdfplumber-tesseract: 62 seconds
+
+**2) Intel i9 - 32 GB RAM**
+- GPU: NVIDIA GeForce RTX 2070 Super
+- Peak Memory Consumption:
+    - Docling: 3 GB (CPU), 1.5 GB (VRAM/GPU)
+    - Layout Parser: 8 GB (CPU), 800 MB (VRAM/GPU)
+    - Hybrid: 1 GB
+    - Pdfplumber-tesseract: 1 GB
+- Runtime:
+    - Docling: 376 seconds
+    - Layout Parser: 499 seconds
+    - Hybrid: 139 seconds
+    - Pdfplumber-tesseract: 75 seconds
+
+#### Cloud Service
+
+**AWS Textract**
+- Runtime: 70 seconds (118 pages)
+
+---
+
 ## Contributions
 
 **Myclineshareena**

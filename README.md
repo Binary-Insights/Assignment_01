@@ -17,6 +17,57 @@ By the end of Part 1, Lina expects her team to deliver a layout-aware, XBRL-vali
 
 ---
 
+## Folder Structure
+
+```
+Assignment_01/
+├── config/
+│   └── extraction_config.yaml
+├── data/
+│   ├── raw/
+│   ├── parsed/
+│   │   ├── layout_parser/
+│   │   ├── docling/
+│   │   ├── hybrid/
+│   │   ├── pdfplumber_tesseract/
+│   │   └── comparison/
+│   ├── metadata/
+│   ├── analysis/
+│   ├── exports/
+│   └── downloads/
+├── models/
+│   └── layoutparser/
+├── pilots/
+│   ├── draw_architecture.py
+│   ├── downloader-sec.py
+│   ├── docling-sample.py
+│   ├── layout-parser-simple.py
+│   └── ...
+├── scripts/
+│   └── smoke-testscript.py
+├── src/
+│   ├── pdfplumber_tess_extractor.py
+│   ├── layout_parser_extractor.py
+│   ├── docling_extractor.py
+│   ├── hybrid_pdf_extractor.py
+│   ├── metadata_extractor.py
+│   ├── extraction_comparator.py
+│   ├── method_specific_markdown_generator.py
+│   └── pdf_report_viewer.py
+├── setup/
+│   └── lantern_arch.png
+│   └── draw_architecture.py
+├── run_pipeline.sh
+├── dvc.yaml
+├── README.md
+└── ...
+```
+
+This structure supports modular extraction, versioned storage, configuration, and visualization for the entire pipeline.
+
+
+---
+
 ## Setup & Running Instructions
 
 ### Pre-requirements
@@ -245,3 +296,10 @@ This approach enables analysts to efficiently process, validate, and explore fin
 - Parsed files, metadata, and exports (Markdown, TXT, JSON) are generated in respective folders.
 - Architecture diagram is generated in `setup/lantern_arch.png`.
 - Streamlit viewer available for interactive report exploration.
+
+---
+
+## Attestation
+
+WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR
+ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK.

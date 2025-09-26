@@ -304,6 +304,7 @@ This approach enables analysts to efficiently process, validate, and explore fin
 Access interactive documentation and tutorials for Project LANTERN:
 
 [Codelabs - Project LANTERN](https://codelabs-preview.appspot.com/?file_id=1ihWl0EdxqsK5qINgKV6o6fVx4VOi8RpoJkW0KKOFjhQ#0)
+[Video Demo](https://drive.google.com/file/d/1vQLBQm9rvPF-507po9DbKMpR22Mnl87O/view?usp=drive_link)
 
 ---
 

@@ -10,12 +10,7 @@
 This document provides a comprehensive comparison of 4 PDF parsing methods against manually verified ground truth data:
 
 1. **PDFPlumber + Tesseract OCR** - Robust OCR-based text and table extraction
-2. **Hybrid (Camelot + PDFPlumber)** - Balanced approach with text accuracy | Method | Text WER | Table Precision | Table Recall | Overall Assessment |
-|--------|----------|-----------------|--------------|-------------------|
-| PDFPlumber + Tesseract | 0%* | 75% | 75% | Excellent text accuracy with strong table extraction |
-| Hybrid (Camelot + PDFPlumber) | 0%** | 75% | 75% | Perfect text extraction with strong table extraction |
-| Layout Parser | 0%*** | 75% | 75% | Perfect text accuracy with strong table extraction |
-| Docling | 0%**** | 70.8% | 81.6% | Strong performance in both text and table extraction |mited table success  
+2. **Hybrid (Camelot + PDFPlumber)** - Balanced approach with text accuracy 
 3. **Layout Parser** - Semantic document structure analysis with strong extraction capabilities
 4. **Docling** - Comprehensive structured document extraction
 

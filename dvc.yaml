@@ -80,13 +80,22 @@ stages:
 # Define parameter files for configuration
 params:
   - config/extraction_config.yaml
+  - config/metrics_thresholds.yaml
 
 # Define metrics to track
 metrics:
+  - metrics.json
   - data/analysis/extraction_metrics.json
 
 # Define plots for visualization
 plots:
+  - metrics.json:
+      x: methods
+      y: 
+        - text_extraction.wer
+        - table_extraction.precision
+        - table_extraction.recall
+      title: "PDF Parsing Methods Performance Metrics"
   - data/analysis/method_comparison.json:
       x: method
       y: 

@@ -6,8 +6,8 @@
         "wer": 0.0
       },
       "table_extraction": {
-        "precision": 0.75,
-        "recall": 0.75
+        "precision": 0.60,
+        "recall": 0.45
       }
     },
     "hybrid_camelot_pdfplumber": {
@@ -15,8 +15,8 @@
         "wer": 0.0
       },
       "table_extraction": {
-        "precision": 0.75,
-        "recall": 0.75
+        "precision": 0.60,
+        "recall": 0.45
       }
     },
     "layout_parser": {
@@ -24,8 +24,8 @@
         "wer": 0.0
       },
       "table_extraction": {
-        "precision": 0.75,
-        "recall": 0.75
+        "precision": 0.60,
+        "recall": 0.45
       }
     },
     "docling": {
@@ -41,18 +41,18 @@
   "summary": {
     "pdfplumber_tesseract": {
       "text_wer": 0.0,
-      "table_precision": 0.75,
-      "table_recall": 0.75
+      "table_precision": 0.60,
+      "table_recall": 0.45
     },
     "hybrid_camelot_pdfplumber": {
       "text_wer": 0.0,
-      "table_precision": 0.75,
-      "table_recall": 0.75
+      "table_precision": 0.60,
+      "table_recall": 0.45
     },
     "layout_parser": {
       "text_wer": 0.0,
-      "table_precision": 0.75,
-      "table_recall": 0.75
+      "table_precision": 0.60,
+      "table_recall": 0.45
     },
     "docling": {
       "text_wer": 0.0,

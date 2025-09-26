@@ -87,19 +87,10 @@ case $choice in
         echo "✅ Pipeline rebuilt successfully!"
         ;;
     4)
-        echo "📈 Pipeline Metrics:"
-        if [ -f "data/analysis/extraction_metrics.json" ]; then
-            dvc metrics show
-            dvc plots show
-        else
-            echo "No metrics available yet. Run the pipeline first."
-        fi
-        ;;
-    5)
         echo "🖥️ Launching Streamlit exports viewer..."
         streamlit run src/exports_viewer.py
         ;;
-    6)
+    5)
         echo "👋 Goodbye!"
         exit 0
         ;;

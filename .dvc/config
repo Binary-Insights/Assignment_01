@@ -1,2 +1,5 @@
 [core]
     analytics = false
+    remote = reky-remote
+['remote "reky-remote"']
+    url = s3://damg-projects/Assignment_01/

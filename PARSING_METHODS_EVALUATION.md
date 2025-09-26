@@ -14,7 +14,6 @@ This document provides a comprehensive comparison of 4 PDF parsing methods again
 3. **Layout Parser** - Semantic document structure analysis with strong extraction capabilities
 4. **Docling** - Comprehensive structured document extraction
 
-
 **Key Finding**: All four methods achieve excellent performance: **PDFPlumber + Tesseract**, **Hybrid (Camelot + PDFPlumber)**, **Layout Parser**, and **Docling** all demonstrate perfect text accuracy (0% WER) with strong table extraction capabilities. Three methods (PDFPlumber + Tesseract, Hybrid, Layout Parser) achieve identical 75% table precision/recall, while Docling leads with 81.6% recall. This comprehensive analysis reveals that all methods are highly capable for financial document processing.
 
 ## Methodology
@@ -618,7 +617,9 @@ Other income (expense) net,846,(43),889
 4. Always validate extracted tables against ground truth, especially for critical financial metrics. Automated regression tests and cell-level comparison scripts are recommended to monitor extraction quality over time.
 5. For production deployment, set quality thresholds (e.g., minimum precision/recall) and document edge cases where extraction fails or is incomplete.
 
-**Note**: All four methods show strong performance for financial documents with 75%+ table extraction accuracy and perfect text accuracy. Each method has specific strengths for different use cases.
+**Note:** THe WER is calculated out of randomly selected pages and not for all pages, since the sample size is small and random it is calculated as 0% but it in practice it is higher than 0%.
+
+**Note**: All three methods(PDFPlumber, Hybrid, and Layout Parser) achieve for financial documents with 60%+ partial table extraction (overall precision 60%, recall 45%), with some tables not found. Docling provides the most complete table extraction (precision 70.8%, recall 81.6%) and best preserves structure and headers.
 
 ### Use Case Specific Recommendations:
 - **Financial reports** → Docling (comprehensive extraction) or Hybrid (balanced performance)

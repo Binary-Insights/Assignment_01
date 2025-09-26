@@ -1,6 +1,6 @@
 DOCUMENT: nvda-20240128
 EXTRACTION METHOD: LayoutParser
-GENERATED: 2025-09-25 01:35:26
+GENERATED: 2025-09-26 13:20:05
 TOTAL BLOCKS: 1373
 
 ==================================================
@@ -176,7 +176,7 @@ ignatures 84
 2
 
 [Page 2, Block 26] FIGURE (Confidence: 0.73)
-<PIL.Image.Image image mode=RGB size=1941x1562 at 0x79748C602B90>
+<PIL.Image.Image image mode=RGB size=1941x1562 at 0x721AD0E44910>
 
 [Page 2, Block 27] LIST (Confidence: 0.59)
 Business
@@ -1121,7 +1121,7 @@ DeboraShoquist 69 ExecutiveVicePresident,Operations
 TimothyS.Teter 57 ExecutiveVicePresidentandGeneralCounsel
 
 [Page 17, Block 188] FIGURE (Confidence: 0.47)
-<PIL.Image.Image image mode=RGB size=2065x279 at 0x79748C4EBB10>
+<PIL.Image.Image image mode=RGB size=2065x279 at 0x721AD01A7D90>
 
 [Page 17, Block 189] LIST (Confidence: 0.50)
 60 President and Chief Executive Officer
@@ -3147,7 +3147,7 @@ declaration of dividends thereunder are in the best interests of our shareholder
 The following table presents details of our share repurchase transactions during the fourth quarter of fiscal year 2024:
 
 [Page 51, Block 494] FIGURE (Confidence: 0.94)
-<PIL.Image.Image image mode=RGB size=2266x448 at 0x797489F9A850>
+<PIL.Image.Image image mode=RGB size=2266x448 at 0x721ACDBB5A50>
 
 [Page 51, Block 495] TEXT (Confidence: 0.48)
 From January 29, 2024 to February 16, 2024, we repurchased 2.8 million shares for $1.9 billion pursuant to a Rule 10b5-1 trading plan.
@@ -3176,7 +3176,7 @@ return assumes reinvestment of dividends in each of the indices indicated. Total
 to indicate future performance.
 
 [Page 53, Block 501] FIGURE (Confidence: 0.99)
-<PIL.Image.Image image mode=RGB size=2142x1307 at 0x79748C658FD0>
+<PIL.Image.Image image mode=RGB size=2142x1307 at 0x721ACDB11150>
 
 [Page 53, Block 502] TITLE (Confidence: 0.89)
 Comparison of 5 Year Cumulative Total Return*
@@ -3189,7 +3189,7 @@ Among NVIDIA Corporation, the S&P 500 Index, and the Nasdaq 100 Index
 Source: FactSet financial data and analytics.
 
 [Page 53, Block 505] FIGURE (Confidence: 0.64)
-<PIL.Image.Image image mode=RGB size=2340x613 at 0x797489FA9A10>
+<PIL.Image.Image image mode=RGB size=2340x613 at 0x721ACDBB7690>
 
 [Page 53, Block 506] TABLE (Confidence: 0.47)
 12712019 1262020 1312021 1302022 1292023 1282024
@@ -3200,7 +3200,7 @@ Item6.[Reserved]
 33
 
 [Page 53, Block 507] FIGURE (Confidence: 0.40)
-<PIL.Image.Image image mode=RGB size=1798x226 at 0x797489F39510>
+<PIL.Image.Image image mode=RGB size=1798x226 at 0x721ACDB6A650>
 
 [Page 53, Block 508] TITLE (Confidence: 0.50)
 NVIDIA Corporatior
@@ -3379,10 +3379,10 @@ create other 1inceeartainty for oir hiieinace
 Fiscal Year 2024 Summary
 
 [Page 56, Block 541] FIGURE (Confidence: 0.81)
-<PIL.Image.Image image mode=RGB size=1094x479 at 0x797489FD0DD0>
+<PIL.Image.Image image mode=RGB size=1094x479 at 0x721ACDBB6210>
 
 [Page 56, Block 542] FIGURE (Confidence: 0.81)
-<PIL.Image.Image image mode=RGB size=2242x461 at 0x79748C6C9F90>
+<PIL.Image.Image image mode=RGB size=2242x461 at 0x721ACDB31DD0>
 
 [Page 56, Block 543] TABLE (Confidence: 0.52)
 Jan28,2024 Jan29,2023 Change
@@ -3633,7 +3633,7 @@ he following table sets forth, for the periods indicated, certain items in our C
 ercentage of revenue.
 
 [Page 60, Block 589] FIGURE (Confidence: 0.84)
-<PIL.Image.Image image mode=RGB size=767x943 at 0x797489F990D0>
+<PIL.Image.Image image mode=RGB size=767x943 at 0x721ACDBB5E10>
 
 [Page 60, Block 590] TABLE (Confidence: 0.66)
 Jan28,2024 Jan29,2023
@@ -3690,10 +3690,10 @@ Revenue by Reportable Segments
 Year Ended
 
 [Page 60, Block 597] FIGURE (Confidence: 0.89)
-<PIL.Image.Image image mode=RGB size=1341x888 at 0x797489FE3250>
+<PIL.Image.Image image mode=RGB size=1341x888 at 0x721ACDBEC810>
 
 [Page 60, Block 598] FIGURE (Confidence: 0.81)
-<PIL.Image.Image image mode=RGB size=1307x404 at 0x797489FFA050>
+<PIL.Image.Image image mode=RGB size=1307x404 at 0x721ACDB6B790>
 
 [Page 60, Block 599] LIST (Confidence: 0.58)
 Compute & Networking
@@ -3701,7 +3701,7 @@ Graphics
 Total
 
 [Page 60, Block 600] FIGURE (Confidence: 0.38)
-<PIL.Image.Image image mode=RGB size=2178x645 at 0x797489FF9450>
+<PIL.Image.Image image mode=RGB size=2178x645 at 0x721AC070AD10>
 
 [Page 60, Block 601] TITLE (Confidence: 0.58)
 Operating Income by Reportable Segments
@@ -3710,7 +3710,7 @@ Operating Income by Reportable Segments
 Operating Income by Reportable Segments
 
 [Page 60, Block 603] FIGURE (Confidence: 0.45)
-<PIL.Image.Image image mode=RGB size=1288x385 at 0x797489FFAB90>
+<PIL.Image.Image image mode=RGB size=1288x385 at 0x721ACDBEEC10>
 
 [Page 60, Block 604] TABLE (Confidence: 0.59)
 0
@@ -3835,7 +3835,7 @@ Year Ended
 Year Ended
 
 [Page 61, Block 631] FIGURE (Confidence: 0.91)
-<PIL.Image.Image image mode=RGB size=2264x592 at 0x797489F38410>
+<PIL.Image.Image image mode=RGB size=2264x592 at 0x721ACDBB4710>
 
 [Page 61, Block 632] TABLE (Confidence: 0.42)
 0
@@ -3866,13 +3866,13 @@ We recorded an acquisition termination cost related to the Arm transaction of $1
 prepayment provided at signing.
 
 [Page 63, Block 636] FIGURE (Confidence: 0.59)
-<PIL.Image.Image image mode=RGB size=2268x445 at 0x797489F386D0>
+<PIL.Image.Image image mode=RGB size=2268x445 at 0x721ACDBB4DD0>
 
 [Page 63, Block 637] TITLE (Confidence: 0.55)
 Year Ended
 
 [Page 63, Block 638] FIGURE (Confidence: 0.98)
-<PIL.Image.Image image mode=RGB size=1261x393 at 0x79748C658750>
+<PIL.Image.Image image mode=RGB size=1261x393 at 0x721ACDB6BC50>
 
 [Page 63, Block 639] LIST (Confidence: 0.40)
 Interest income
@@ -3947,10 +3947,10 @@ Refer to Note 14 of the Notes to the Consolidated Financial Statements in Part I
 additional information.
 
 [Page 64, Block 655] FIGURE (Confidence: 0.77)
-<PIL.Image.Image image mode=RGB size=2035x704 at 0x797489FE3A50>
+<PIL.Image.Image image mode=RGB size=2035x704 at 0x721ACDB11A90>
 
 [Page 64, Block 656] FIGURE (Confidence: 0.93)
-<PIL.Image.Image image mode=RGB size=643x688 at 0x797489FF8410>
+<PIL.Image.Image image mode=RGB size=643x688 at 0x721AC0716A50>
 
 [Page 64, Block 657] TEXT (Confidence: 0.60)
 Cash and cash equivalents
@@ -4065,10 +4065,10 @@ Outstanding Indebtedness and Commercial Paper Program
 Our aggregate debt maturities as of January 28, 2024, by year payable, are as follows:
 
 [Page 66, Block 683] FIGURE (Confidence: 0.88)
-<PIL.Image.Image image mode=RGB size=398x550 at 0x797489F58450>
+<PIL.Image.Image image mode=RGB size=398x550 at 0x721ACDB1EF50>
 
 [Page 66, Block 684] FIGURE (Confidence: 0.72)
-<PIL.Image.Image image mode=RGB size=2191x525 at 0x79748C63F010>
+<PIL.Image.Image image mode=RGB size=2191x525 at 0x721AC07263D0>
 
 [Page 66, Block 685] LIST (Confidence: 0.60)
 Due in one year
@@ -4413,7 +4413,7 @@ Item 15. Exhibit and Financial Statement Schedules
 Item 15. Exhibit and Financial Statement Schedules
 
 [Page 73, Block 770] FIGURE (Confidence: 0.34)
-<PIL.Image.Image image mode=RGB size=2240x1043 at 0x797489FD0350>
+<PIL.Image.Image image mode=RGB size=2240x1043 at 0x721AD0253090>
 
 [Page 73, Block 771] TITLE (Confidence: 0.60)
 Financial Statements
@@ -4770,7 +4770,7 @@ Other long-term liabilities
 Total liabilities
 
 [Page 78, Block 818] FIGURE (Confidence: 0.38)
-<PIL.Image.Image image mode=RGB size=2252x2145 at 0x79748C4BF810>
+<PIL.Image.Image image mode=RGB size=2252x2145 at 0x721ACDB458D0>
 
 [Page 78, Block 819] TABLE (Confidence: 0.75)
 Jan28,2024 Jan29,2023
@@ -5672,7 +5672,7 @@ Notes to the Consolidated Financial Statements
 Other information related to leases was as follows:
 
 [Page 92, Block 953] FIGURE (Confidence: 0.96)
-<PIL.Image.Image image mode=RGB size=2046x411 at 0x797488412650>
+<PIL.Image.Image image mode=RGB size=2046x411 at 0x721AC07A59D0>
 
 [Page 92, Block 954] TITLE (Confidence: 0.96)
 Supplemental cash flows information
@@ -5757,7 +5757,7 @@ Weightedaveragepricepershare 158.07 122.54 56.36
 Weightedaveragegrant-datefairvaluepershare 69.90 51.87 23.24
 
 [Page 92, Block 970] FIGURE (Confidence: 0.70)
-<PIL.Image.Image image mode=RGB size=2305x685 at 0x79748D4E9590>
+<PIL.Image.Image image mode=RGB size=2305x685 at 0x721AC0781C50>
 
 [Page 92, Block 971] TITLE (Confidence: 0.92)
 RSUs, PSUs and Market-based PSUs
@@ -5794,7 +5794,7 @@ Notes to the Consolidated Financial Statements
 The fair value of shares issued under our ESPP have been estimated with the following assumptions:
 
 [Page 93, Block 980] FIGURE (Confidence: 0.45)
-<PIL.Image.Image image mode=RGB size=2191x454 at 0x797489F77450>
+<PIL.Image.Image image mode=RGB size=2191x454 at 0x721AD01BF310>
 
 [Page 93, Block 981] TABLE (Confidence: 0.36)
 YearEnded
@@ -5809,7 +5809,7 @@ Volatility 31-67 43-72 20-58
 Dividendyield 0.1 0.1 0.1
 
 [Page 93, Block 982] FIGURE (Confidence: 0.34)
-<PIL.Image.Image image mode=RGB size=954x427 at 0x79748848E350>
+<PIL.Image.Image image mode=RGB size=954x427 at 0x721AC0781850>
 
 [Page 93, Block 983] TITLE (Confidence: 0.98)
 ESPP
@@ -5907,7 +5907,7 @@ The following is a Summary of our equity award transactions under our equity inc
 RSUs, PSUs and Market-based PSUs Outstanding
 
 [Page 94, Block 1002] FIGURE (Confidence: 0.57)
-<PIL.Image.Image image mode=RGB size=1569x551 at 0x797488453690>
+<PIL.Image.Image image mode=RGB size=1569x551 at 0x721AD01D7950>
 
 [Page 94, Block 1003] TABLE (Confidence: 0.37)
 INVGUS,FUVMSGIUNIGIACINdSlUFUUsVULSLGHUINY
@@ -6059,7 +6059,7 @@ Note 7 - Amortizable Intangible Assets
 The components of our amortizable intangible assets are as follows:
 
 [Page 96, Block 1025] FIGURE (Confidence: 0.94)
-<PIL.Image.Image image mode=RGB size=2046x479 at 0x79748849DA10>
+<PIL.Image.Image image mode=RGB size=2046x479 at 0x721AD01A4B10>
 
 [Page 96, Block 1026] LIST (Confidence: 0.54)
 Acquisition-related
@@ -6146,7 +6146,7 @@ Our cash equivalents and marketable securities related to debt securities are cl
 The following is a summary of cash equivalents and marketable securities:
 
 [Page 97, Block 1042] FIGURE (Confidence: 0.63)
-<PIL.Image.Image image mode=RGB size=2304x1780 at 0x7974883FA510>
+<PIL.Image.Image image mode=RGB size=2304x1780 at 0x721AC0716F10>
 
 [Page 97, Block 1043] TEXT (Confidence: 0.48)
 Jan 28, 2024
@@ -6215,7 +6215,7 @@ Foreign government bonds
 Total
 
 [Page 97, Block 1047] FIGURE (Confidence: 0.78)
-<PIL.Image.Image image mode=RGB size=2181x754 at 0x797489F74C90>
+<PIL.Image.Image image mode=RGB size=2181x754 at 0x721AC07BAE50>
 
 [Page 97, Block 1048] LIST (Confidence: 0.36)
 Corporate debt securities
@@ -6242,7 +6242,7 @@ The following tables provide the breakdown of unrealized losses, aggregated by i
 securities have been in a continuous loss position:
 
 [Page 98, Block 1051] FIGURE (Confidence: 0.75)
-<PIL.Image.Image image mode=RGB size=2364x1203 at 0x797489F0FF50>
+<PIL.Image.Image image mode=RGB size=2364x1203 at 0x721AC07DA790>
 
 [Page 98, Block 1052] TABLE (Confidence: 0.76)
 Lessthan12Months 12MonthsorGreater Total
@@ -6401,10 +6401,10 @@ Adjustments to the carrying value of our non-marketable equity securities accoun
 follows:
 
 [Page 100, Block 1074] FIGURE (Confidence: 0.73)
-<PIL.Image.Image image mode=RGB size=448x511 at 0x797488469590>
+<PIL.Image.Image image mode=RGB size=448x511 at 0x721AC07CE890>
 
 [Page 100, Block 1075] FIGURE (Confidence: 0.79)
-<PIL.Image.Image image mode=RGB size=2186x522 at 0x797489F42E10>
+<PIL.Image.Image image mode=RGB size=2186x522 at 0x721ACDBAA310>
 
 [Page 100, Block 1076] LIST (Confidence: 0.80)
 Carrying amount as of Jan 29, 2023
@@ -6466,10 +6466,10 @@ Totalinventories 5,282 5,159
 Jan 28, 2024 Jan 29, 2023
 
 [Page 100, Block 1087] FIGURE (Confidence: 0.54)
-<PIL.Image.Image image mode=RGB size=590x433 at 0x797489F0C810>
+<PIL.Image.Image image mode=RGB size=590x433 at 0x721ACDB6A6D0>
 
 [Page 100, Block 1088] FIGURE (Confidence: 0.64)
-<PIL.Image.Image image mode=RGB size=2066x411 at 0x7974884D35D0>
+<PIL.Image.Image image mode=RGB size=2066x411 at 0x721AC07F3650>
 
 [Page 100, Block 1089] TABLE (Confidence: 0.46)
 Vall20,4V4 VaAll29,2VLV9
@@ -6500,10 +6500,10 @@ Notes to the Consolidated Financial Statements
 (Continued)
 
 [Page 101, Block 1094] FIGURE (Confidence: 0.88)
-<PIL.Image.Image image mode=RGB size=914x598 at 0x7974884D21D0>
+<PIL.Image.Image image mode=RGB size=914x598 at 0x721AC07F2350>
 
 [Page 101, Block 1095] FIGURE (Confidence: 0.71)
-<PIL.Image.Image image mode=RGB size=2267x634 at 0x7974884ADFD0>
+<PIL.Image.Image image mode=RGB size=2267x634 at 0x721AC07D8050>
 
 [Page 101, Block 1096] TABLE (Confidence: 0.53)
 Jan28,2024Jan29,2023 UsefulLife
@@ -6573,7 +6573,7 @@ Property, equipment and intangible assets acquired by assuming related liabiliti
 $170 million, $374 million, and $258 million, respectively.
 
 [Page 101, Block 1107] FIGURE (Confidence: 0.32)
-<PIL.Image.Image image mode=RGB size=2245x394 at 0x7974884E5B50>
+<PIL.Image.Image image mode=RGB size=2245x394 at 0x721AC0607650>
 
 [Page 101, Block 1108] TABLE (Confidence: 0.64)
 Jan28,2024 Jan29,2023
@@ -6585,7 +6585,7 @@ Other 132 14
 Totalotherassets 4,500 3,82(
 
 [Page 101, Block 1109] FIGURE (Confidence: 0.31)
-<PIL.Image.Image image mode=RGB size=680x389 at 0x7974884E4250>
+<PIL.Image.Image image mode=RGB size=680x389 at 0x721AC0607410>
 
 [Page 101, Block 1110] TABLE (Confidence: 0.83)
 JanZ0,2024 Jan29,202Z5
@@ -6649,10 +6649,10 @@ Jan20,4U24 Jan29,2UZ9
 3 6,682 4,120
 
 [Page 102, Block 1118] FIGURE (Confidence: 0.75)
-<PIL.Image.Image image mode=RGB size=656x724 at 0x797489FD0550>
+<PIL.Image.Image image mode=RGB size=656x724 at 0x721AC07BABD0>
 
 [Page 102, Block 1119] FIGURE (Confidence: 0.66)
-<PIL.Image.Image image mode=RGB size=2150x737 at 0x7974884D0310>
+<PIL.Image.Image image mode=RGB size=2150x737 at 0x721ACDB50610>
 
 [Page 102, Block 1120] TITLE (Confidence: 0.98)
 Accrued and Other Current Liabilities:
@@ -6734,7 +6734,7 @@ Jall20,4U49 Jall29,2U4Z9
 3 2,541 1,913
 
 [Page 102, Block 1130] FIGURE (Confidence: 0.48)
-<PIL.Image.Image image mode=RGB size=2182x472 at 0x7974884E7B90>
+<PIL.Image.Image image mode=RGB size=2182x472 at 0x721AC060DBD0>
 
 [Page 102, Block 1131] TITLE (Confidence: 0.77)
 Other Long-Term Liabilities:
@@ -6771,10 +6771,10 @@ _ f-. csc lr...
 The following table shows the changes in deferred revenue during fiscal years 2024 and 2023
 
 [Page 102, Block 1140] FIGURE (Confidence: 0.56)
-<PIL.Image.Image image mode=RGB size=688x332 at 0x7974884E7750>
+<PIL.Image.Image image mode=RGB size=688x332 at 0x721AC060CE90>
 
 [Page 102, Block 1141] FIGURE (Confidence: 0.58)
-<PIL.Image.Image image mode=RGB size=2221x329 at 0x79748C4E3A90>
+<PIL.Image.Image image mode=RGB size=2221x329 at 0x721ACDBAAED0>
 
 [Page 102, Block 1142] TABLE (Confidence: 0.38)
 Jan20,24U24 Jan29,2UZ9
@@ -6854,7 +6854,7 @@ or exnense.
 The table below presents the notional value of our foreign currency forward contracts outstanding:
 
 [Page 103, Block 1156] FIGURE (Confidence: 0.31)
-<PIL.Image.Image image mode=RGB size=2215x288 at 0x797489FBE6D0>
+<PIL.Image.Image image mode=RGB size=2215x288 at 0x721AC07F3150>
 
 [Page 103, Block 1157] TABLE (Confidence: 0.43)
 Jan28,2024 Jan29,2023
@@ -6910,7 +6910,7 @@ RemainingTerm Interest
 3 8,459 9,70
 
 [Page 104, Block 1166] FIGURE (Confidence: 0.56)
-<PIL.Image.Image image mode=RGB size=2099x908 at 0x79748848D0D0>
+<PIL.Image.Image image mode=RGB size=2099x908 at 0x721AC075E950>
 
 [Page 104, Block 1167] LIST (Confidence: 0.74)
 0.309% Notes Due 2023 (1)
@@ -6978,10 +6978,10 @@ Notes to the Consolidated Financial Statements
 Total future purchase commitments as of January 28, 2024 are as follows:
 
 [Page 105, Block 1181] FIGURE (Confidence: 0.33)
-<PIL.Image.Image image mode=RGB size=2318x519 at 0x797488306CD0>
+<PIL.Image.Image image mode=RGB size=2318x519 at 0x721AC0623990>
 
 [Page 105, Block 1182] FIGURE (Confidence: 0.90)
-<PIL.Image.Image image mode=RGB size=454x473 at 0x79748C6CAC10>
+<PIL.Image.Image image mode=RGB size=454x473 at 0x721AD01A5050>
 
 [Page 105, Block 1183] LIST (Confidence: 0.83)
 Fiscal Year:
@@ -7005,7 +7005,7 @@ The estimated amount of product warranty liabilities was $306 million and $82 mi
 respectively. The estimated product returns and estimated product warranty activity consisted of the following:
 
 [Page 105, Block 1186] FIGURE (Confidence: 0.65)
-<PIL.Image.Image image mode=RGB size=2253x393 at 0x7974882F1F50>
+<PIL.Image.Image image mode=RGB size=2253x393 at 0x721AD154DD50>
 
 [Page 105, Block 1187] TABLE (Confidence: 0.37)
 TrearCnaea
@@ -7017,7 +7017,7 @@ tbeginningofperiod 82 46 2
 eatendofperiod 306 82 A
 
 [Page 105, Block 1188] FIGURE (Confidence: 0.40)
-<PIL.Image.Image image mode=RGB size=1089x379 at 0x7974883058D0>
+<PIL.Image.Image image mode=RGB size=1089x379 at 0x721AC0623BD0>
 
 [Page 105, Block 1189] TABLE (Confidence: 0.76)
 Jan28,2024 Jan29,2023 Jan30,2022
@@ -7136,7 +7136,7 @@ Notes to the Consolidated Financial Statements
 The income tax expense (benefit) applicable to income before income taxes consists of the following:
 
 [Page 107, Block 1208] FIGURE (Confidence: 0.44)
-<PIL.Image.Image image mode=RGB size=967x1126 at 0x797488318BD0>
+<PIL.Image.Image image mode=RGB size=967x1126 at 0x721AC0633210>
 
 [Page 107, Block 1209] TABLE (Confidence: 0.31)
 YearEnded
@@ -7166,7 +7166,7 @@ Foreign 4,323 704 1,495
 Incomebeforeincometax 33,818 4,181 9,941
 
 [Page 107, Block 1210] FIGURE (Confidence: 0.46)
-<PIL.Image.Image image mode=RGB size=2139x1156 at 0x797488307C90>
+<PIL.Image.Image image mode=RGB size=2139x1156 at 0x721AC0620F50>
 
 [Page 107, Block 1211] TABLE (Confidence: 0.80)
 Trearenaea
@@ -7228,7 +7228,7 @@ income taxes as follows:
 The income tax expense (benefit) differs from the amount computed by applying the U.S. federal statutory rate of 21% to income before
 
 [Page 107, Block 1219] FIGURE (Confidence: 0.53)
-<PIL.Image.Image image mode=RGB size=1312x765 at 0x797489F5B8D0>
+<PIL.Image.Image image mode=RGB size=1312x765 at 0x721ACDBA8AD0>
 
 [Page 107, Block 1220] TABLE (Confidence: 0.64)
 Jan28,2024 Jan29,2023 Jan30,2022
@@ -7381,10 +7381,10 @@ Notes to the Consolidated Financial Statements
 A reconciliation of gross unrecognized tax benefits is as follows:
 
 [Page 109, Block 1237] FIGURE (Confidence: 0.87)
-<PIL.Image.Image image mode=RGB size=2294x496 at 0x7974884C33D0>
+<PIL.Image.Image image mode=RGB size=2294x496 at 0x721ACDB6B410>
 
 [Page 109, Block 1238] FIGURE (Confidence: 0.89)
-<PIL.Image.Image image mode=RGB size=1093x496 at 0x7974882F2DD0>
+<PIL.Image.Image image mode=RGB size=1093x496 at 0x721AC0633DD0>
 
 [Page 109, Block 1239] TITLE (Confidence: 0.90)
 Balance at beginning of period
@@ -7587,10 +7587,10 @@ er 10 (2) -
 al 3 (4,890) (5,411) (3,045
 
 [Page 112, Block 1278] FIGURE (Confidence: 0.31)
-<PIL.Image.Image image mode=RGB size=1175x643 at 0x797488340410>
+<PIL.Image.Image image mode=RGB size=1175x643 at 0x721AC06615D0>
 
 [Page 112, Block 1279] FIGURE (Confidence: 0.63)
-<PIL.Image.Image image mode=RGB size=2317x651 at 0x797489FFB650>
+<PIL.Image.Image image mode=RGB size=2317x651 at 0x721AC0739790>
 
 [Page 112, Block 1280] TABLE (Confidence: 0.66)
 Jan28,2024 Jan29,2023 Jan30,2022
@@ -7640,7 +7640,7 @@ thercountries 10,245 5,911 6,910
 |revenue 3 60,922 26,974 26,914
 
 [Page 112, Block 1285] FIGURE (Confidence: 0.48)
-<PIL.Image.Image image mode=RGB size=1056x429 at 0x7974883405D0>
+<PIL.Image.Image image mode=RGB size=1056x429 at 0x721AC06622D0>
 
 [Page 112, Block 1286] TABLE (Confidence: 0.90)
 TealEMlucg
@@ -7659,7 +7659,7 @@ Jan28,2024 Jan29,2023 Jan30,2022
 3 60,922 26,974 26,914
 
 [Page 112, Block 1287] FIGURE (Confidence: 0.59)
-<PIL.Image.Image image mode=RGB size=2304x410 at 0x79748831ACD0>
+<PIL.Image.Image image mode=RGB size=2304x410 at 0x721AC064E890>
 
 [Page 112, Block 1288] TITLE (Confidence: 0.33)
 Revenue:
@@ -7690,10 +7690,10 @@ segment. No customer represented 10% or more of total revenue for fiscal years 2
 The following table summarizes information pertaining to our revenue by each of the specialized markets we serve:
 
 [Page 112, Block 1293] FIGURE (Confidence: 0.48)
-<PIL.Image.Image image mode=RGB size=2307x725 at 0x797488340910>
+<PIL.Image.Image image mode=RGB size=2307x725 at 0x721AC06623D0>
 
 [Page 112, Block 1294] FIGURE (Confidence: 0.43)
-<PIL.Image.Image image mode=RGB size=1046x513 at 0x7974883414D0>
+<PIL.Image.Image image mode=RGB size=1046x513 at 0x721AC0662190>
 
 [Page 112, Block 1295] TABLE (Confidence: 0.34)
 YearcCnaea
@@ -7745,10 +7745,10 @@ The following table presents summarized information for long-lived assets by cou
 equipment and exclude other assets, operating lease assets, goodwill, and intangible assets.
 
 [Page 113, Block 1300] FIGURE (Confidence: 0.38)
-<PIL.Image.Image image mode=RGB size=2275x739 at 0x79748846AA90>
+<PIL.Image.Image image mode=RGB size=2275x739 at 0x721AC07A6A10>
 
 [Page 113, Block 1301] FIGURE (Confidence: 0.54)
-<PIL.Image.Image image mode=RGB size=625x388 at 0x79748848E8D0>
+<PIL.Image.Image image mode=RGB size=625x388 at 0x721AC070AB50>
 
 [Page 113, Block 1302] TABLE (Confidence: 0.31)
 ong-livedassets (Inmillions)
@@ -7805,7 +7805,7 @@ Salesreturnallowance 17 19(2) (23)(4) 13
 Deferredtaxvaluationallowance 728 179(3) 907
 
 [Page 114, Block 1308] FIGURE (Confidence: 0.50)
-<PIL.Image.Image image mode=RGB size=1899x860 at 0x79748832DC50>
+<PIL.Image.Image image mode=RGB size=1899x860 at 0x721AC064FA10>
 
 [Page 114, Block 1309] TITLE (Confidence: 0.73)
 Fiscal year 2024
@@ -8104,7 +8104,7 @@ FXBRLTaxonomyExtensionDefinitionLinkbaseDocument
 8-K 10.1 12)15201
 
 [Page 116, Block 1324] FIGURE (Confidence: 0.46)
-<PIL.Image.Image image mode=RGB size=1284x1014 at 0x797488342B10>
+<PIL.Image.Image image mode=RGB size=1284x1014 at 0x721AC0708D90>
 
 [Page 116, Block 1325] TITLE (Confidence: 0.49)
 Amended and Restated 2007 Equity Incentive Plan — Global

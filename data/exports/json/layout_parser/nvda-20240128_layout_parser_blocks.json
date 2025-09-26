@@ -1,7 +1,7 @@
 {
   "document_id": "nvda-20240128",
   "extraction_method": "layout_parser",
-  "timestamp": "2025-09-25T01:35:26.591657",
+  "timestamp": "2025-09-26T13:20:05.355815",
   "content": {
     "total_blocks": 1373,
     "blocks_by_type": {
@@ -1049,8 +1049,8 @@
               "height": 1561.6239318847656
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x79748C602B90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x79748C602B90>",
+              "text": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x721AD0E44910>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x721AD0E44910>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_002_block_002.png"
@@ -7568,8 +7568,8 @@
               "height": 278.659423828125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x79748C4EBB10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x79748C4EBB10>",
+              "text": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x721AD01A7D90>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x721AD01A7D90>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_017_block_018.png"
@@ -19786,8 +19786,8 @@
               "height": 447.6806640625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x797489F9A850>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x797489F9A850>",
+              "text": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x721ACDBB5A50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x721ACDBB5A50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_051_block_007.png"
@@ -20524,8 +20524,8 @@
               "height": 1306.5189208984375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x79748C658FD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x79748C658FD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x721ACDB11150>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x721ACDB11150>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_003.png"
@@ -20688,8 +20688,8 @@
               "height": 613.11767578125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x797489FA9A10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x797489FA9A10>",
+              "text": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x721ACDBB7690>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x721ACDBB7690>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_007.png"
@@ -20893,8 +20893,8 @@
               "height": 226.32958984375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x797489F39510>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x797489F39510>",
+              "text": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x721ACDB6A650>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x721ACDB6A650>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_012.png"
@@ -22656,8 +22656,8 @@
               "height": 461.1235656738281
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x79748C6C9F90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x79748C6C9F90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x721ACDB31DD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x721ACDB31DD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_056_block_013.png"
@@ -22697,8 +22697,8 @@
               "height": 479.687744140625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x797489FD0DD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x797489FD0DD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x721ACDBB6210>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x721ACDBB6210>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_056_block_014.png"
@@ -24214,8 +24214,8 @@
               "height": 888.0125732421875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x797489FE3250>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x797489FE3250>",
+              "text": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x721ACDBEC810>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x721ACDBEC810>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_003.png"
@@ -24296,8 +24296,8 @@
               "height": 943.1500244140625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=767x943 at 0x797489F990D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=767x943 at 0x797489F990D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=767x943 at 0x721ACDBB5E10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=767x943 at 0x721ACDBB5E10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_005.png"
@@ -24378,8 +24378,8 @@
               "height": 404.81787109375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x797489FFA050>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x797489FFA050>",
+              "text": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x721ACDB6B790>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x721ACDB6B790>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_007.png"
@@ -24788,8 +24788,8 @@
               "height": 385.093017578125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x797489FFAB90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x797489FFAB90>",
+              "text": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x721ACDBEEC10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x721ACDBEEC10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_017.png"
@@ -24829,8 +24829,8 @@
               "height": 645.2830810546875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x797489FF9450>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x797489FF9450>",
+              "text": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x721AC070AD10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x721AC070AD10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_018.png"
@@ -25485,8 +25485,8 @@
               "height": 592.3204345703125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x797489F38410>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x797489F38410>",
+              "text": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x721ACDBB4710>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x721ACDBB4710>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_061_block_010.png"
@@ -26264,8 +26264,8 @@
               "height": 392.1939697265625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x79748C658750>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x79748C658750>",
+              "text": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x721ACDB6BC50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x721ACDB6BC50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_063_block_005.png"
@@ -26510,8 +26510,8 @@
               "height": 444.8271484375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x797489F386D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x797489F386D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x721ACDBB4DD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x721ACDBB4DD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_063_block_011.png"
@@ -27207,8 +27207,8 @@
               "height": 687.7269287109375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=643x688 at 0x797489FF8410>",
-              "structured": "<PIL.Image.Image image mode=RGB size=643x688 at 0x797489FF8410>",
+              "text": "<PIL.Image.Image image mode=RGB size=643x688 at 0x721AC0716A50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=643x688 at 0x721AC0716A50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_064_block_009.png"
@@ -27412,8 +27412,8 @@
               "height": 704.4565734863281
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x797489FE3A50>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x797489FE3A50>",
+              "text": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x721ACDB11A90>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x721ACDB11A90>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_064_block_014.png"
@@ -28232,8 +28232,8 @@
               "height": 550.7108764648438
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=398x550 at 0x797489F58450>",
-              "structured": "<PIL.Image.Image image mode=RGB size=398x550 at 0x797489F58450>",
+              "text": "<PIL.Image.Image image mode=RGB size=398x550 at 0x721ACDB1EF50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=398x550 at 0x721ACDB1EF50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_066_block_010.png"
@@ -28519,8 +28519,8 @@
               "height": 525.329345703125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x79748C63F010>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x79748C63F010>",
+              "text": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x721AC07263D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x721AC07263D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_066_block_017.png"
@@ -31758,8 +31758,8 @@
               "height": 1043.6837768554688
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x797489FD0350>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x797489FD0350>",
+              "text": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x721AD0253090>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x721AD0253090>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_073_block_008.png"
@@ -33849,8 +33849,8 @@
               "height": 2145.0264282226562
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x79748C4BF810>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x79748C4BF810>",
+              "text": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x721ACDB458D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x721ACDB458D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_078_block_011.png"
@@ -39179,8 +39179,8 @@
               "height": 411.77423095703125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x797488412650>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x797488412650>",
+              "text": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x721AC07A59D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x721AC07A59D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_092_block_005.png"
@@ -39630,8 +39630,8 @@
               "height": 685.4515380859375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x79748D4E9590>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x79748D4E9590>",
+              "text": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x721AC0781C50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x721AC0781C50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_092_block_016.png"
@@ -40778,8 +40778,8 @@
               "height": 453.72296142578125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x797489F77450>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x797489F77450>",
+              "text": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x721AD01BF310>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x721AD01BF310>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_093_block_017.png"
@@ -40860,8 +40860,8 @@
               "height": 426.7996826171875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=954x427 at 0x79748848E350>",
-              "structured": "<PIL.Image.Image image mode=RGB size=954x427 at 0x79748848E350>",
+              "text": "<PIL.Image.Image image mode=RGB size=954x427 at 0x721AC0781850>",
+              "structured": "<PIL.Image.Image image mode=RGB size=954x427 at 0x721AC0781850>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_093_block_019.png"
@@ -41598,8 +41598,8 @@
               "height": 550.5416259765625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x797488453690>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x797488453690>",
+              "text": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x721AD01D7950>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x721AD01D7950>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_094_block_016.png"
@@ -41967,8 +41967,8 @@
               "height": 478.82904052734375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x79748849DA10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x79748849DA10>",
+              "text": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x721AD01A4B10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x721AD01A4B10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_096_block_002.png"
@@ -42664,8 +42664,8 @@
               "height": 754.07080078125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x797489F74C90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x797489F74C90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x721AC07BAE50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x721AC07BAE50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_097_block_004.png"
@@ -42746,8 +42746,8 @@
               "height": 1780.2567138671875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x7974883FA510>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x7974883FA510>",
+              "text": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x721AC0716F10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x721AC0716F10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_097_block_006.png"
@@ -43238,8 +43238,8 @@
               "height": 1202.8692626953125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x797489F0FF50>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x797489F0FF50>",
+              "text": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x721AC07DA790>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x721AC07DA790>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_098_block_006.png"
@@ -44386,8 +44386,8 @@
               "height": 522.2219848632812
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x797489F42E10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x797489F42E10>",
+              "text": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x721ACDBAA310>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x721ACDBAA310>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_011.png"
@@ -44427,8 +44427,8 @@
               "height": 510.99578857421875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=448x511 at 0x797488469590>",
-              "structured": "<PIL.Image.Image image mode=RGB size=448x511 at 0x797488469590>",
+              "text": "<PIL.Image.Image image mode=RGB size=448x511 at 0x721AC07CE890>",
+              "structured": "<PIL.Image.Image image mode=RGB size=448x511 at 0x721AC07CE890>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_012.png"
@@ -44509,8 +44509,8 @@
               "height": 411.179443359375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x7974884D35D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x7974884D35D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x721AC07F3650>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x721AC07F3650>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_014.png"
@@ -44673,8 +44673,8 @@
               "height": 432.770751953125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=590x433 at 0x797489F0C810>",
-              "structured": "<PIL.Image.Image image mode=RGB size=590x433 at 0x797489F0C810>",
+              "text": "<PIL.Image.Image image mode=RGB size=590x433 at 0x721ACDB6A6D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=590x433 at 0x721ACDB6A6D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_018.png"
@@ -45042,8 +45042,8 @@
               "height": 597.4426879882812
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=914x598 at 0x7974884D21D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=914x598 at 0x7974884D21D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=914x598 at 0x721AC07F2350>",
+              "structured": "<PIL.Image.Image image mode=RGB size=914x598 at 0x721AC07F2350>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_006.png"
@@ -45288,8 +45288,8 @@
               "height": 634.513427734375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x7974884ADFD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x7974884ADFD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x721AC07D8050>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x721AC07D8050>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_012.png"
@@ -45657,8 +45657,8 @@
               "height": 394.3951416015625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x7974884E5B50>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x7974884E5B50>",
+              "text": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x721AC0607650>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x721AC0607650>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_021.png"
@@ -45698,8 +45698,8 @@
               "height": 389.177490234375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=680x389 at 0x7974884E4250>",
-              "structured": "<PIL.Image.Image image mode=RGB size=680x389 at 0x7974884E4250>",
+              "text": "<PIL.Image.Image image mode=RGB size=680x389 at 0x721AC0607410>",
+              "structured": "<PIL.Image.Image image mode=RGB size=680x389 at 0x721AC0607410>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_022.png"
@@ -46190,8 +46190,8 @@
               "height": 724.6319580078125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=656x724 at 0x797489FD0550>",
-              "structured": "<PIL.Image.Image image mode=RGB size=656x724 at 0x797489FD0550>",
+              "text": "<PIL.Image.Image image mode=RGB size=656x724 at 0x721AC07BABD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=656x724 at 0x721AC07BABD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_011.png"
@@ -46395,8 +46395,8 @@
               "height": 736.9655151367188
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x7974884D0310>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x7974884D0310>",
+              "text": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x721ACDB50610>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x721ACDB50610>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_016.png"
@@ -46518,8 +46518,8 @@
               "height": 328.99267578125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x79748C4E3A90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x79748C4E3A90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x721ACDBAAED0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x721ACDBAAED0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_019.png"
@@ -46641,8 +46641,8 @@
               "height": 331.30029296875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=688x332 at 0x7974884E7750>",
-              "structured": "<PIL.Image.Image image mode=RGB size=688x332 at 0x7974884E7750>",
+              "text": "<PIL.Image.Image image mode=RGB size=688x332 at 0x721AC060CE90>",
+              "structured": "<PIL.Image.Image image mode=RGB size=688x332 at 0x721AC060CE90>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_022.png"
@@ -46764,8 +46764,8 @@
               "height": 471.7427978515625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x7974884E7B90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x7974884E7B90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x721AC060DBD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x721AC060DBD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_025.png"
@@ -47625,8 +47625,8 @@
               "height": 287.943359375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x797489FBE6D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x797489FBE6D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x721AC07F3150>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x721AC07F3150>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_103_block_012.png"
@@ -48117,8 +48117,8 @@
               "height": 908.0108032226562
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x79748848D0D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x79748848D0D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x721AC075E950>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x721AC075E950>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_104_block_011.png"
@@ -48609,8 +48609,8 @@
               "height": 473.6158142089844
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=454x473 at 0x79748C6CAC10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=454x473 at 0x79748C6CAC10>",
+              "text": "<PIL.Image.Image image mode=RGB size=454x473 at 0x721AD01A5050>",
+              "structured": "<PIL.Image.Image image mode=RGB size=454x473 at 0x721AD01A5050>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_007.png"
@@ -48814,8 +48814,8 @@
               "height": 393.31005859375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x7974882F1F50>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x7974882F1F50>",
+              "text": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x721AD154DD50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x721AD154DD50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_012.png"
@@ -48978,8 +48978,8 @@
               "height": 378.5780029296875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x7974883058D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x7974883058D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x721AC0623BD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x721AC0623BD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_016.png"
@@ -49060,8 +49060,8 @@
               "height": 519.0704956054688
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x797488306CD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x797488306CD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x721AC0623990>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x721AC0623990>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_018.png"
@@ -49880,8 +49880,8 @@
               "height": 764.7432861328125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x797489F5B8D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x797489F5B8D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x721ACDBA8AD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x721ACDBA8AD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_011.png"
@@ -50003,8 +50003,8 @@
               "height": 1156.8383178710938
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x797488307C90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x797488307C90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x721AC0620F50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x721AC0620F50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_014.png"
@@ -50085,8 +50085,8 @@
               "height": 1126.7341918945312
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x797488318BD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x797488318BD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x721AC0633210>",
+              "structured": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x721AC0633210>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_016.png"
@@ -51151,8 +51151,8 @@
               "height": 496.04248046875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x7974882F2DD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x7974882F2DD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x721AC0633DD0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x721AC0633DD0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_109_block_013.png"
@@ -51192,8 +51192,8 @@
               "height": 496.17626953125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x7974884C33D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x7974884C33D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x721ACDB6B410>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x721ACDB6B410>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_109_block_014.png"
@@ -52750,8 +52750,8 @@
               "height": 650.9912414550781
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x797489FFB650>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x797489FFB650>",
+              "text": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x721AC0739790>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x721AC0739790>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_011.png"
@@ -52791,8 +52791,8 @@
               "height": 409.4639892578125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x79748831ACD0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x79748831ACD0>",
+              "text": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x721AC064E890>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x721AC064E890>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_012.png"
@@ -52914,8 +52914,8 @@
               "height": 428.543212890625
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x7974883405D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x7974883405D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x721AC06622D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x721AC06622D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_015.png"
@@ -52955,8 +52955,8 @@
               "height": 725.055419921875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x797488340910>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x797488340910>",
+              "text": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x721AC06623D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x721AC06623D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_016.png"
@@ -52996,8 +52996,8 @@
               "height": 513.331787109375
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x7974883414D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x7974883414D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x721AC0662190>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x721AC0662190>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_017.png"
@@ -53160,8 +53160,8 @@
               "height": 642.4216918945312
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x797488340410>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x797488340410>",
+              "text": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x721AC06615D0>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x721AC06615D0>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_021.png"
@@ -53365,8 +53365,8 @@
               "height": 388.4578857421875
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=625x388 at 0x79748848E8D0>",
-              "structured": "<PIL.Image.Image image mode=RGB size=625x388 at 0x79748848E8D0>",
+              "text": "<PIL.Image.Image image mode=RGB size=625x388 at 0x721AC070AB50>",
+              "structured": "<PIL.Image.Image image mode=RGB size=625x388 at 0x721AC070AB50>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_113_block_004.png"
@@ -53406,8 +53406,8 @@
               "height": 738.6824035644531
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x79748846AA90>",
-              "structured": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x79748846AA90>",
+              "text": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x721AC07A6A10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x721AC07A6A10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_113_block_005.png"
@@ -53734,8 +53734,8 @@
               "height": 860.2707214355469
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x79748832DC50>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x79748832DC50>",
+              "text": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x721AC064FA10>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x721AC064FA10>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_114_block_006.png"
@@ -54718,8 +54718,8 @@
               "height": 1013.626953125
             },
             "content": {
-              "text": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x797488342B10>",
-              "structured": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x797488342B10>",
+              "text": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x721AC0708D90>",
+              "structured": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x721AC0708D90>",
               "metadata": {
                 "extraction_method": "image_crop",
                 "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_116_block_013.png"
@@ -57347,8 +57347,8 @@
           "height": 1561.6239318847656
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x79748C602B90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x79748C602B90>",
+          "text": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x721AD0E44910>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1941x1562 at 0x721AD0E44910>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_002_block_002.png"
@@ -63866,8 +63866,8 @@
           "height": 278.659423828125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x79748C4EBB10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x79748C4EBB10>",
+          "text": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x721AD01A7D90>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2065x279 at 0x721AD01A7D90>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_017_block_018.png"
@@ -76084,8 +76084,8 @@
           "height": 447.6806640625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x797489F9A850>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x797489F9A850>",
+          "text": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x721ACDBB5A50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2266x448 at 0x721ACDBB5A50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_051_block_007.png"
@@ -76822,8 +76822,8 @@
           "height": 1306.5189208984375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x79748C658FD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x79748C658FD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x721ACDB11150>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2142x1307 at 0x721ACDB11150>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_003.png"
@@ -76986,8 +76986,8 @@
           "height": 613.11767578125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x797489FA9A10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x797489FA9A10>",
+          "text": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x721ACDBB7690>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2340x613 at 0x721ACDBB7690>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_007.png"
@@ -77191,8 +77191,8 @@
           "height": 226.32958984375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x797489F39510>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x797489F39510>",
+          "text": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x721ACDB6A650>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1798x226 at 0x721ACDB6A650>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_053_block_012.png"
@@ -78954,8 +78954,8 @@
           "height": 461.1235656738281
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x79748C6C9F90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x79748C6C9F90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x721ACDB31DD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2242x461 at 0x721ACDB31DD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_056_block_013.png"
@@ -78995,8 +78995,8 @@
           "height": 479.687744140625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x797489FD0DD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x797489FD0DD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x721ACDBB6210>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1094x479 at 0x721ACDBB6210>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_056_block_014.png"
@@ -80512,8 +80512,8 @@
           "height": 888.0125732421875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x797489FE3250>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x797489FE3250>",
+          "text": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x721ACDBEC810>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1341x888 at 0x721ACDBEC810>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_003.png"
@@ -80594,8 +80594,8 @@
           "height": 943.1500244140625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=767x943 at 0x797489F990D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=767x943 at 0x797489F990D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=767x943 at 0x721ACDBB5E10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=767x943 at 0x721ACDBB5E10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_005.png"
@@ -80676,8 +80676,8 @@
           "height": 404.81787109375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x797489FFA050>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x797489FFA050>",
+          "text": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x721ACDB6B790>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1307x404 at 0x721ACDB6B790>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_007.png"
@@ -81086,8 +81086,8 @@
           "height": 385.093017578125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x797489FFAB90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x797489FFAB90>",
+          "text": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x721ACDBEEC10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1288x385 at 0x721ACDBEEC10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_017.png"
@@ -81127,8 +81127,8 @@
           "height": 645.2830810546875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x797489FF9450>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x797489FF9450>",
+          "text": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x721AC070AD10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2178x645 at 0x721AC070AD10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_060_block_018.png"
@@ -81783,8 +81783,8 @@
           "height": 592.3204345703125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x797489F38410>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x797489F38410>",
+          "text": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x721ACDBB4710>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2264x592 at 0x721ACDBB4710>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_061_block_010.png"
@@ -82562,8 +82562,8 @@
           "height": 392.1939697265625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x79748C658750>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x79748C658750>",
+          "text": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x721ACDB6BC50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1261x393 at 0x721ACDB6BC50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_063_block_005.png"
@@ -82808,8 +82808,8 @@
           "height": 444.8271484375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x797489F386D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x797489F386D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x721ACDBB4DD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2268x445 at 0x721ACDBB4DD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_063_block_011.png"
@@ -83505,8 +83505,8 @@
           "height": 687.7269287109375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=643x688 at 0x797489FF8410>",
-          "structured": "<PIL.Image.Image image mode=RGB size=643x688 at 0x797489FF8410>",
+          "text": "<PIL.Image.Image image mode=RGB size=643x688 at 0x721AC0716A50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=643x688 at 0x721AC0716A50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_064_block_009.png"
@@ -83710,8 +83710,8 @@
           "height": 704.4565734863281
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x797489FE3A50>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x797489FE3A50>",
+          "text": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x721ACDB11A90>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2035x704 at 0x721ACDB11A90>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_064_block_014.png"
@@ -84530,8 +84530,8 @@
           "height": 550.7108764648438
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=398x550 at 0x797489F58450>",
-          "structured": "<PIL.Image.Image image mode=RGB size=398x550 at 0x797489F58450>",
+          "text": "<PIL.Image.Image image mode=RGB size=398x550 at 0x721ACDB1EF50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=398x550 at 0x721ACDB1EF50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_066_block_010.png"
@@ -84817,8 +84817,8 @@
           "height": 525.329345703125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x79748C63F010>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x79748C63F010>",
+          "text": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x721AC07263D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2191x525 at 0x721AC07263D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_066_block_017.png"
@@ -88056,8 +88056,8 @@
           "height": 1043.6837768554688
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x797489FD0350>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x797489FD0350>",
+          "text": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x721AD0253090>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2240x1043 at 0x721AD0253090>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_073_block_008.png"
@@ -90147,8 +90147,8 @@
           "height": 2145.0264282226562
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x79748C4BF810>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x79748C4BF810>",
+          "text": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x721ACDB458D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2252x2145 at 0x721ACDB458D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_078_block_011.png"
@@ -95477,8 +95477,8 @@
           "height": 411.77423095703125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x797488412650>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x797488412650>",
+          "text": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x721AC07A59D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2046x411 at 0x721AC07A59D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_092_block_005.png"
@@ -95928,8 +95928,8 @@
           "height": 685.4515380859375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x79748D4E9590>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x79748D4E9590>",
+          "text": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x721AC0781C50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2305x685 at 0x721AC0781C50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_092_block_016.png"
@@ -97076,8 +97076,8 @@
           "height": 453.72296142578125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x797489F77450>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x797489F77450>",
+          "text": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x721AD01BF310>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2191x454 at 0x721AD01BF310>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_093_block_017.png"
@@ -97158,8 +97158,8 @@
           "height": 426.7996826171875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=954x427 at 0x79748848E350>",
-          "structured": "<PIL.Image.Image image mode=RGB size=954x427 at 0x79748848E350>",
+          "text": "<PIL.Image.Image image mode=RGB size=954x427 at 0x721AC0781850>",
+          "structured": "<PIL.Image.Image image mode=RGB size=954x427 at 0x721AC0781850>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_093_block_019.png"
@@ -97896,8 +97896,8 @@
           "height": 550.5416259765625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x797488453690>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x797488453690>",
+          "text": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x721AD01D7950>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1569x551 at 0x721AD01D7950>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_094_block_016.png"
@@ -98265,8 +98265,8 @@
           "height": 478.82904052734375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x79748849DA10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x79748849DA10>",
+          "text": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x721AD01A4B10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2046x479 at 0x721AD01A4B10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_096_block_002.png"
@@ -98962,8 +98962,8 @@
           "height": 754.07080078125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x797489F74C90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x797489F74C90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x721AC07BAE50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2181x754 at 0x721AC07BAE50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_097_block_004.png"
@@ -99044,8 +99044,8 @@
           "height": 1780.2567138671875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x7974883FA510>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x7974883FA510>",
+          "text": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x721AC0716F10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2304x1780 at 0x721AC0716F10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_097_block_006.png"
@@ -99536,8 +99536,8 @@
           "height": 1202.8692626953125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x797489F0FF50>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x797489F0FF50>",
+          "text": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x721AC07DA790>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2364x1203 at 0x721AC07DA790>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_098_block_006.png"
@@ -100684,8 +100684,8 @@
           "height": 522.2219848632812
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x797489F42E10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x797489F42E10>",
+          "text": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x721ACDBAA310>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2186x522 at 0x721ACDBAA310>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_011.png"
@@ -100725,8 +100725,8 @@
           "height": 510.99578857421875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=448x511 at 0x797488469590>",
-          "structured": "<PIL.Image.Image image mode=RGB size=448x511 at 0x797488469590>",
+          "text": "<PIL.Image.Image image mode=RGB size=448x511 at 0x721AC07CE890>",
+          "structured": "<PIL.Image.Image image mode=RGB size=448x511 at 0x721AC07CE890>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_012.png"
@@ -100807,8 +100807,8 @@
           "height": 411.179443359375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x7974884D35D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x7974884D35D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x721AC07F3650>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2066x411 at 0x721AC07F3650>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_014.png"
@@ -100971,8 +100971,8 @@
           "height": 432.770751953125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=590x433 at 0x797489F0C810>",
-          "structured": "<PIL.Image.Image image mode=RGB size=590x433 at 0x797489F0C810>",
+          "text": "<PIL.Image.Image image mode=RGB size=590x433 at 0x721ACDB6A6D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=590x433 at 0x721ACDB6A6D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_100_block_018.png"
@@ -101340,8 +101340,8 @@
           "height": 597.4426879882812
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=914x598 at 0x7974884D21D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=914x598 at 0x7974884D21D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=914x598 at 0x721AC07F2350>",
+          "structured": "<PIL.Image.Image image mode=RGB size=914x598 at 0x721AC07F2350>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_006.png"
@@ -101586,8 +101586,8 @@
           "height": 634.513427734375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x7974884ADFD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x7974884ADFD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x721AC07D8050>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2267x634 at 0x721AC07D8050>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_012.png"
@@ -101955,8 +101955,8 @@
           "height": 394.3951416015625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x7974884E5B50>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x7974884E5B50>",
+          "text": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x721AC0607650>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2245x394 at 0x721AC0607650>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_021.png"
@@ -101996,8 +101996,8 @@
           "height": 389.177490234375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=680x389 at 0x7974884E4250>",
-          "structured": "<PIL.Image.Image image mode=RGB size=680x389 at 0x7974884E4250>",
+          "text": "<PIL.Image.Image image mode=RGB size=680x389 at 0x721AC0607410>",
+          "structured": "<PIL.Image.Image image mode=RGB size=680x389 at 0x721AC0607410>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_101_block_022.png"
@@ -102488,8 +102488,8 @@
           "height": 724.6319580078125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=656x724 at 0x797489FD0550>",
-          "structured": "<PIL.Image.Image image mode=RGB size=656x724 at 0x797489FD0550>",
+          "text": "<PIL.Image.Image image mode=RGB size=656x724 at 0x721AC07BABD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=656x724 at 0x721AC07BABD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_011.png"
@@ -102693,8 +102693,8 @@
           "height": 736.9655151367188
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x7974884D0310>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x7974884D0310>",
+          "text": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x721ACDB50610>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2150x737 at 0x721ACDB50610>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_016.png"
@@ -102816,8 +102816,8 @@
           "height": 328.99267578125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x79748C4E3A90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x79748C4E3A90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x721ACDBAAED0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2221x329 at 0x721ACDBAAED0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_019.png"
@@ -102939,8 +102939,8 @@
           "height": 331.30029296875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=688x332 at 0x7974884E7750>",
-          "structured": "<PIL.Image.Image image mode=RGB size=688x332 at 0x7974884E7750>",
+          "text": "<PIL.Image.Image image mode=RGB size=688x332 at 0x721AC060CE90>",
+          "structured": "<PIL.Image.Image image mode=RGB size=688x332 at 0x721AC060CE90>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_022.png"
@@ -103062,8 +103062,8 @@
           "height": 471.7427978515625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x7974884E7B90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x7974884E7B90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x721AC060DBD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2182x472 at 0x721AC060DBD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_102_block_025.png"
@@ -103923,8 +103923,8 @@
           "height": 287.943359375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x797489FBE6D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x797489FBE6D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x721AC07F3150>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2215x288 at 0x721AC07F3150>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_103_block_012.png"
@@ -104415,8 +104415,8 @@
           "height": 908.0108032226562
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x79748848D0D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x79748848D0D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x721AC075E950>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2099x908 at 0x721AC075E950>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_104_block_011.png"
@@ -104907,8 +104907,8 @@
           "height": 473.6158142089844
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=454x473 at 0x79748C6CAC10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=454x473 at 0x79748C6CAC10>",
+          "text": "<PIL.Image.Image image mode=RGB size=454x473 at 0x721AD01A5050>",
+          "structured": "<PIL.Image.Image image mode=RGB size=454x473 at 0x721AD01A5050>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_007.png"
@@ -105112,8 +105112,8 @@
           "height": 393.31005859375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x7974882F1F50>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x7974882F1F50>",
+          "text": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x721AD154DD50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2253x393 at 0x721AD154DD50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_012.png"
@@ -105276,8 +105276,8 @@
           "height": 378.5780029296875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x7974883058D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x7974883058D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x721AC0623BD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1089x379 at 0x721AC0623BD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_016.png"
@@ -105358,8 +105358,8 @@
           "height": 519.0704956054688
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x797488306CD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x797488306CD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x721AC0623990>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2318x519 at 0x721AC0623990>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_105_block_018.png"
@@ -106178,8 +106178,8 @@
           "height": 764.7432861328125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x797489F5B8D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x797489F5B8D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x721ACDBA8AD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1312x765 at 0x721ACDBA8AD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_011.png"
@@ -106301,8 +106301,8 @@
           "height": 1156.8383178710938
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x797488307C90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x797488307C90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x721AC0620F50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2139x1156 at 0x721AC0620F50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_014.png"
@@ -106383,8 +106383,8 @@
           "height": 1126.7341918945312
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x797488318BD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x797488318BD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x721AC0633210>",
+          "structured": "<PIL.Image.Image image mode=RGB size=967x1126 at 0x721AC0633210>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_107_block_016.png"
@@ -107449,8 +107449,8 @@
           "height": 496.04248046875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x7974882F2DD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x7974882F2DD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x721AC0633DD0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1093x496 at 0x721AC0633DD0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_109_block_013.png"
@@ -107490,8 +107490,8 @@
           "height": 496.17626953125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x7974884C33D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x7974884C33D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x721ACDB6B410>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2294x496 at 0x721ACDB6B410>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_109_block_014.png"
@@ -109048,8 +109048,8 @@
           "height": 650.9912414550781
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x797489FFB650>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x797489FFB650>",
+          "text": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x721AC0739790>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2317x651 at 0x721AC0739790>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_011.png"
@@ -109089,8 +109089,8 @@
           "height": 409.4639892578125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x79748831ACD0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x79748831ACD0>",
+          "text": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x721AC064E890>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2304x410 at 0x721AC064E890>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_012.png"
@@ -109212,8 +109212,8 @@
           "height": 428.543212890625
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x7974883405D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x7974883405D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x721AC06622D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1056x429 at 0x721AC06622D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_015.png"
@@ -109253,8 +109253,8 @@
           "height": 725.055419921875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x797488340910>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x797488340910>",
+          "text": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x721AC06623D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2307x725 at 0x721AC06623D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_016.png"
@@ -109294,8 +109294,8 @@
           "height": 513.331787109375
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x7974883414D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x7974883414D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x721AC0662190>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1046x513 at 0x721AC0662190>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_017.png"
@@ -109458,8 +109458,8 @@
           "height": 642.4216918945312
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x797488340410>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x797488340410>",
+          "text": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x721AC06615D0>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1175x643 at 0x721AC06615D0>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_112_block_021.png"
@@ -109663,8 +109663,8 @@
           "height": 388.4578857421875
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=625x388 at 0x79748848E8D0>",
-          "structured": "<PIL.Image.Image image mode=RGB size=625x388 at 0x79748848E8D0>",
+          "text": "<PIL.Image.Image image mode=RGB size=625x388 at 0x721AC070AB50>",
+          "structured": "<PIL.Image.Image image mode=RGB size=625x388 at 0x721AC070AB50>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_113_block_004.png"
@@ -109704,8 +109704,8 @@
           "height": 738.6824035644531
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x79748846AA90>",
-          "structured": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x79748846AA90>",
+          "text": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x721AC07A6A10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=2275x739 at 0x721AC07A6A10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_113_block_005.png"
@@ -110032,8 +110032,8 @@
           "height": 860.2707214355469
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x79748832DC50>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x79748832DC50>",
+          "text": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x721AC064FA10>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1899x860 at 0x721AC064FA10>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_114_block_006.png"
@@ -111016,8 +111016,8 @@
           "height": 1013.626953125
         },
         "content": {
-          "text": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x797488342B10>",
-          "structured": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x797488342B10>",
+          "text": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x721AC0708D90>",
+          "structured": "<PIL.Image.Image image mode=RGB size=1284x1014 at 0x721AC0708D90>",
           "metadata": {
             "extraction_method": "image_crop",
             "file_saved": "data/parsed/layout_parser/nvda-20240128/figures/page_116_block_013.png"

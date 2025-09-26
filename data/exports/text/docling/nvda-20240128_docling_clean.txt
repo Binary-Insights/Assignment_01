@@ -1,6 +1,6 @@
 DOCUMENT: nvda-20240128
 EXTRACTION METHOD: Docling
-GENERATED: 2025-09-25 01:35:26
+GENERATED: 2025-09-26 13:20:05
 
 ==================================================
 EXTRACTED TEXT CONTENT

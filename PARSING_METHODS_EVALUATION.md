@@ -99,6 +99,8 @@ transitions, and we may be unable to sell multiple product architectures at the 
 ```
 During the third quarter of fiscal year 2023, the USG, announced licensing requirements that, with certain exceptions, impact exports to
 **Analysis**: Perfect match for the target text with additional context captured.
+```
+
 **Manual WER Calculation**:
 - Reference words: 26
 - Extracted words: 26 (perfect match for target portion)
@@ -143,7 +145,7 @@ period in which the development services are performed.
 ### Table Extraction Analysis
 
 #### PDFPlumber+Tesseract Ground Truth Comparison
-**Ground Truth Tables Found**: 3 out of 4 tables successfully extracted
+**Ground Truth Tables Found**: 3 out of 4 tables partially extracted
 
 **Successful Extractions**:
 1. **Ground Truth Table 2** → **standard_page_076_table_001.csv** (Interest income/expense statement)
@@ -151,38 +153,14 @@ period in which the development services are performed.
 2. **Ground Truth Table 3** → **standard_page_091_table_001.csv** (Operating lease obligations)
    - Perfect match: All fiscal year values (290, 270, 253, 236, 202, 288) and totals (1,539, 192, 1,347)
 3. **Ground Truth Table 4** → **standard_page_108_table_001.csv** (Deferred tax assets)
-   - Perfect match: All line items including Capitalized R&D (3,376, 1,859), GILTI (1,576, 800), etc.
+   - Perfect match: All line items, including Capitalized R&D (3,376, 1,859), GILTI (1,576, 800), etc.
 
 **Missing Table**:
-- **Ground Truth Table 1** (Trading symbol table): Not found as structured table in PDFPlumber+Tesseract extracts
+- **Ground Truth Table 1** (Trading symbol table): Not found as a structured table in PDFPlumber+Tesseract extracts
 
 **Performance Metrics**:
 - **Precision**: 75% (3 successful extractions out of 4 ground truth tables)
 - **Recall**: 75% (3 ground truth tables found)
-
-#### Analysis
-PDFPlumber+Tesseract demonstrates strong table extraction capabilities for complex financial tables, successfully capturing detailed income statements, lease obligations, and tax asset tables with perfect numerical accuracy. The method's strength lies in preserving tabular structure and financial data precision. Only the simple trading symbol table was not extracted as a structured table.
-- Correctly extracted cells: 0/22
-- **Precision**: 0%
-- **Recall**: 0%
-
-#### Table 4: Deferred Tax Assets
-**PDFPlumber+Tesseract Output**:
-```csv
-Similar structural issues - table data not preserved in usable format
-```
-
-**Analysis**: Based on pattern observed in other tables, deferred tax assets table likely suffers from the same structural extraction failures.
-
-**Precision/Recall**:
-- Correctly extracted cells: 0/39
-- **Precision**: 0%
-- **Recall**: 0%
-
-#### Overall Table Metrics:
-- **Average Precision**: 0%
-- **Average Recall**: 0%
-
 ---
 
 ## Method 2: Hybrid (Camelot + PDFPlumber)

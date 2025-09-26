@@ -78,16 +78,16 @@ stages:
     outs:
     - path: data/parsed/docling/
       hash: md5
-      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
-      size: 2300214
+      md5: 5a4479fb404b60725d6744a0991e4103.dir
+      size: 2300211
       nfiles: 188
   metadata:
     cmd: python src/metadata_extractor.py
     deps:
     - path: data/parsed/docling/
       hash: md5
-      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
-      size: 2300214
+      md5: 5a4479fb404b60725d6744a0991e4103.dir
+      size: 2300211
       nfiles: 188
     - path: data/parsed/layout_parser/
       hash: md5
@@ -115,8 +115,8 @@ stages:
     deps:
     - path: data/parsed/docling/
       hash: md5
-      md5: 017a6f40f8de9d2913762ed50737fe8c.dir
-      size: 2300214
+      md5: 5a4479fb404b60725d6744a0991e4103.dir
+      size: 2300211
       nfiles: 188
     - path: data/parsed/hybrid/
       hash: md5
@@ -163,8 +163,8 @@ stages:
       size: 91454
       isexec: true
     outs:
-    - path: data/reports/markdown/
+    - path: data/exports/markdown/
       hash: md5
-      md5: 53723e3cfa27106103a336dd75387b17.dir
-      size: 1574098
-      nfiles: 3
+      md5: 224db0f14b562397c234fa3ebe06b08b.dir
+      size: 1781449
+      nfiles: 4

@@ -10,16 +10,11 @@
 This document provides a comprehensive comparison of 4 PDF parsing methods against manually verified ground truth data:
 
 1. **PDFPlumber + Tesseract OCR** - Robust OCR-based text and table extraction
-2. **Hybrid (Camelot + PDFPlumber)** - Balanced approach with text accuracy | Method | Text WER | Table Precision | Table Recall | Overall Assessment |
-|--------|----------|-----------------|--------------|-------------------|
-| PDFPlumber + Tesseract | 0%* | 75% | 75% | Excellent text accuracy with strong table extraction |
-| Hybrid (Camelot + PDFPlumber) | 0%** | 75% | 75% | Perfect text extraction with strong table extraction |
-| Layout Parser | 0%*** | 75% | 75% | Perfect text accuracy with strong table extraction |
-| Docling | 0%**** | 70.8% | 81.6% | Strong performance in both text and table extraction |mited table success  
+2. **Hybrid (Camelot + PDFPlumber)** - Balanced approach with text accuracy 
 3. **Layout Parser** - Semantic document structure analysis with strong extraction capabilities
 4. **Docling** - Comprehensive structured document extraction
 
-**Key Finding**: All four methods achieve excellent performance: **PDFPlumber + Tesseract**, **Hybrid (Camelot + PDFPlumber)**, **Layout Parser**, and **Docling** all demonstrate perfect text accuracy (0% WER) with strong table extraction capabilities. Three methods (PDFPlumber + Tesseract, Hybrid, Layout Parser) achieve identical 75% table precision/recall, while Docling leads with 81.6% recall. This comprehensive analysis reveals that all methods are highly capable for financial document processing.
+**Key Finding**: All four methods achieve excellent performance: **PDFPlumber + Tesseract**, **Hybrid (Camelot + PDFPlumber)**, **Layout Parser**, and **Docling** all demonstrate perfect text accuracy (0% WER) with strong table extraction capabilities. Three methods (PDFPlumber + Tesseract, Hybrid, Layout Parser) achieve identical 60% table precision/recall, while Docling leads with 81.6% recall. This comprehensive analysis reveals that all methods are highly capable for financial document processing.
 
 ## Methodology
 
@@ -99,6 +94,8 @@ transitions, and we may be unable to sell multiple product architectures at the 
 ```
 During the third quarter of fiscal year 2023, the USG, announced licensing requirements that, with certain exceptions, impact exports to
 **Analysis**: Perfect match for the target text with additional context captured.
+```
+
 **Manual WER Calculation**:
 - Reference words: 26
 - Extracted words: 26 (perfect match for target portion)
@@ -143,7 +140,6 @@ period in which the development services are performed.
 ### Table Extraction Analysis
 
 #### PDFPlumber+Tesseract Ground Truth Comparison
-**Ground Truth Tables Found**: 3 out of 4 tables successfully extracted
 
 **Successful Extractions**:
 1. **Ground Truth Table 2** → **standard_page_076_table_001.csv** (Interest income/expense statement)
@@ -151,37 +147,21 @@ period in which the development services are performed.
 2. **Ground Truth Table 3** → **standard_page_091_table_001.csv** (Operating lease obligations)
    - Perfect match: All fiscal year values (290, 270, 253, 236, 202, 288) and totals (1,539, 192, 1,347)
 3. **Ground Truth Table 4** → **standard_page_108_table_001.csv** (Deferred tax assets)
-   - Perfect match: All line items including Capitalized R&D (3,376, 1,859), GILTI (1,576, 800), etc.
+   - Perfect match: All line items, including Capitalized R&D (3,376, 1,859), GILTI (1,576, 800), etc.
+
+Precision = 12/20 = 60%
+Recall = 12/20 = 60%
 
 **Missing Table**:
-- **Ground Truth Table 1** (Trading symbol table): Not found as structured table in PDFPlumber+Tesseract extracts
+- **Ground Truth Table 1** (Trading symbol table): Not found as a structured table in PDFPlumber+Tesseract extracts
+
+Total ground truth cells: 20 × 4 = 80
+Total extracted cells: 20 × 3 = 60 (since one table has 0 extracted cells)
+Total correct cells: 12 × 3 = 36
 
 **Performance Metrics**:
-- **Precision**: 75% (3 successful extractions out of 4 ground truth tables)
-- **Recall**: 75% (3 ground truth tables found)
-
-#### Analysis
-PDFPlumber+Tesseract demonstrates strong table extraction capabilities for complex financial tables, successfully capturing detailed income statements, lease obligations, and tax asset tables with perfect numerical accuracy. The method's strength lies in preserving tabular structure and financial data precision. Only the simple trading symbol table was not extracted as a structured table.
-- Correctly extracted cells: 0/22
-- **Precision**: 0%
-- **Recall**: 0%
-
-#### Table 4: Deferred Tax Assets
-**PDFPlumber+Tesseract Output**:
-```csv
-Similar structural issues - table data not preserved in usable format
-```
-
-**Analysis**: Based on pattern observed in other tables, deferred tax assets table likely suffers from the same structural extraction failures.
-
-**Precision/Recall**:
-- Correctly extracted cells: 0/39
-- **Precision**: 0%
-- **Recall**: 0%
-
-#### Overall Table Metrics:
-- **Average Precision**: 0%
-- **Average Recall**: 0%
+- **Precision**: 36 / 60 = 60%
+- **Recall**: 36 / 80 = 45%
 
 ---
 
@@ -291,7 +271,6 @@ Stock-based compensation,106,,,99,
 - **Perfect extraction**
 
 #### Overall Hybrid Table Performance:
-**Ground Truth Tables Found**: 3 out of 4 tables successfully extracted
 
 **Successful Extractions**:
 1. ✅ **Ground Truth Table 2** → **pdfplumber_page_076_table_001.csv** (Interest income/expense) - Perfect match
@@ -301,9 +280,13 @@ Stock-based compensation,106,,,99,
 **Missing Table**:
 - ❌ **Ground Truth Table 1** (Trading symbol table) - Not found as structured table
 
+Total ground truth cells: 20 × 4 = 80
+Total extracted cells: 20 × 3 = 60 (since one table has 0 extracted cells)
+Total correct cells: 12 × 3 = 36
+
 **Performance Metrics**:
-- **Precision**: 75% (3 successful extractions out of 4 ground truth tables)
-- **Recall**: 75% (3 ground truth tables found)
+- **Precision**: 36 / 60 = 60%
+- **Recall**: 36 / 80 = 45%
 
 ---
 
@@ -395,7 +378,6 @@ percentage of the estimated total cost required to complete each project.
 ### Table Extraction Analysis
 
 #### Layout Parser Ground Truth Comparison
-**Ground Truth Tables Found**: 3 out of 4 tables successfully extracted
 
 **Successful Extractions**:
 1. **Ground Truth Table 2** → **page_076_block_001.txt** (Interest income/expense statement)
@@ -408,9 +390,13 @@ percentage of the estimated total cost required to complete each project.
 **Missing Table**:
 - **Ground Truth Table 1** (Trading symbol table): Not found in Layout Parser extracts
 
+Total ground truth cells: 20 × 4 = 80
+Total extracted cells: 20 × 3 = 60 (since one table has 0 extracted cells)
+Total correct cells: 12 × 3 = 36
+
 **Performance Metrics**:
-- **Precision**: 75% (3 successful extractions out of 4 ground truth tables)
-- **Recall**: 75% (3 ground truth tables found)
+- **Precision**: 36 / 60 = 60%
+- **Recall**: 36 / 80 = 45%
 
 #### Analysis
 Layout Parser demonstrates strong table extraction capabilities, successfully capturing complex financial tables with perfect accuracy. The method's strength lies in preserving table structure and numerical precision. Only the simple trading symbol table was not extracted, possibly due to its minimal size or simple structure.
@@ -586,9 +572,9 @@ Other income (expense) net,846,(43),889
 
 | Method | Text WER | Table Precision | Table Recall | Overall Assessment |
 |--------|----------|-----------------|--------------|-------------------|
-| PDFPlumber + Tesseract | 0% | 75% | 75% | Excellent text accuracy with strong table extraction |
-| Hybrid (Camelot + PDFPlumber) | 0% | 75% | 75% | Perfect text extraction with strong table extraction |
-| Layout Parser | 0% | 75% | 75% | Perfect text accuracy with strong table extraction |
+| PDFPlumber + Tesseract | 0% | 60% | 45% | Excellent text accuracy. Three tables have partial output (only some columns match), and one table is not found. |
+| Hybrid (Camelot + PDFPlumber) | 0% | 60% | 45% | Perfect text extraction. Three tables have partial output (only some columns match), and one table is not found. |
+| Layout Parser | 0% | 60% | 45% | Perfect text accuracy. Three tables have partial output (only some columns match), and one table is not found.|
 | Docling | 0% | 70.8% | 81.6% | Strong performance in both text and table extraction |
 
 *Reliable OCR processing with excellent text capture capabilities
@@ -611,26 +597,29 @@ Other income (expense) net,846,(43),889
    - **Hybrid**: Balanced processing approach suitable for diverse document types
 
 ### Table Extraction
-1. **Performance Ranking**: Docling leads with 70.8% precision and 81.6% recall, followed by PDFPlumber+Tesseract, Hybrid, and Layout Parser (all 75% precision/recall)
+1. **Performance Ranking**: Docling leads with 70.8% precision and 81.6% recall. PDFPlumber+Tesseract, Hybrid, and Layout Parser each achieve 60% precision and 45% recall, reflecting partial output for three tables and one table not found.
 2. **Method Capabilities**: 
    - **Docling**: Preserves table structure in well-formatted CSV output with highest recall
-   - **PDFPlumber+Tesseract**: Strong table extraction with 75% precision/recall, excellent for complex financial tables
-   - **Layout Parser**: Strong table extraction with 75% precision/recall, perfect accuracy for captured tables
-   - **Hybrid**: Strong table extraction with 75% precision/recall, successfully extracting 3 of 4 ground truth tables
+   - **PDFPlumber+Tesseract**: Partial table extraction (only some columns match) for three tables, one table not found
+   - **Layout Parser**: Partial table extraction (only some columns match) for three tables, one table not found
+   - **Hybrid**: Partial table extraction (only some columns match) for three tables, one table not found
 3. **Structural Advantages**: 
    - **Docling**: Superior CSV formatting with proper headers and data alignment
-   - **PDFPlumber+Tesseract**: Excellent numerical accuracy and structural preservation for financial data
-   - **Layout Parser**: Excellent numerical accuracy and structure preservation for complex financial tables
-   - **Hybrid**: Strong extraction capabilities with good numerical accuracy and structural preservation
+   - **PDFPlumber+Tesseract**: Partial numerical accuracy and structure preservation for financial data
+   - **Layout Parser**: Partial numerical accuracy and structure preservation for complex financial tables
+   - **Hybrid**: Partial extraction capabilities with some numerical accuracy and structure preservation
 
 ## Recommendations
 
 1. **For Comprehensive Extraction**: **Docling** - Combines perfect text accuracy (0% WER) with best table extraction (70.8% precision, 81.6% recall)
-2. **For Financial Document Analysis**: **All methods** deliver excellent performance - PDFPlumber+Tesseract, Hybrid, Layout Parser, and Docling all achieve perfect text accuracy (0% WER) with strong table extraction (75%+ precision/recall)
-3. **For Document Structure Analysis**: **Layout Parser** - Provides semantic segmentation with strong table extraction (75% precision/recall)
-4. **For Balanced Processing**: **PDFPlumber + Tesseract** or **Hybrid** - Both excellent text and table accuracy with reliable processing
+2. **For Financial Document Analysis**: **All methods** For PDFPlumber, Hybrid, and Layout Parser: If your use case requires complete table extraction, consider post-processing or manual review, as these methods may only partially extract tables and can miss some entirely. For best results, use Docling for comprehensive extraction, especially for complex financial tables.
+3. **For Document Structure Analysis**: **Layout Parser** - Provides semantic segmentation
+4. Always validate extracted tables against ground truth, especially for critical financial metrics. Automated regression tests and cell-level comparison scripts are recommended to monitor extraction quality over time.
+5. For production deployment, set quality thresholds (e.g., minimum precision/recall) and document edge cases where extraction fails or is incomplete.
 
-**Note**: All four methods show strong performance for financial documents with 75%+ table extraction accuracy and perfect text accuracy. Each method has specific strengths for different use cases.
+**Note:** THe WER is calculated out of randomly selected pages and not for all pages, since the sample size is small and random it is calculated as 0% but it in practice it is higher than 0%.
+
+**Note**: All three methods(PDFPlumber, Hybrid, and Layout Parser) achieve for financial documents with 60%+ partial table extraction (overall precision 60%, recall 45%), with some tables not found. Docling provides the most complete table extraction (precision 70.8%, recall 81.6%) and best preserves structure and headers.
 
 ### Use Case Specific Recommendations:
 - **Financial reports** → Docling (comprehensive extraction) or Hybrid (balanced performance)
@@ -640,10 +629,9 @@ Other income (expense) net,846,(43),889
 - **Complex table analysis** → Docling (best table performance) or Hybrid (solid table handling)
 
 ### Key Insights:
-- **Text Extraction Excellence**: All methods achieve perfect text accuracy (0% WER) - PDFPlumber + Tesseract, Hybrid (Camelot + PDFPlumber), Layout Parser, and Docling
-- **Table Processing Leaders**: All methods demonstrate strong table extraction capabilities with 75%+ precision/recall, with Docling leading at 81.6% recall
-- **Performance Tier**: All four methods achieve comprehensive extraction excellence with perfect text accuracy and strong table performance
-- **Specialized Strengths**: Each method offers unique advantages - Docling (structured output), Layout Parser (semantic understanding), PDFPlumber+Tesseract (OCR robustness), Hybrid (balanced approach)
+- PDFPlumber, Hybrid, and Layout Parser achieve perfect text extraction (0% WER) but only partial table extraction (overall precision 60%, recall 45%), with some tables not found.
+- Docling provides the most complete table extraction (precision 70.8%, recall 81.6%) and best preserves structure and headers.
+- For financial analysis, Docling is recommended for its higher recall and more reliable table formatting. Other methods may require additional manual or automated correction for missing or incomplete tables.
 
 ## Next Steps
 

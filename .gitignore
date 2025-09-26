@@ -83,6 +83,8 @@ data/metadata/quality_reports
 
 data/staged/schemas
 
+data/downloads
+
 data/analysis
 data/staged
 data/metadata
@@ -97,3 +99,6 @@ data/validation
 # Allow DVC files
 !data/*.dvc
 !data/**/*.dvc
+
+# Allow architecture diagram 
+!setup/lantern_arch.png

@@ -94,7 +94,7 @@ class XBRLValidator:
             "Operating profit": "Operating Income",
             "Operating income (loss)": "Operating Income",
             "Income (loss) from operations": "Operating Income",
-            # "Operating expenses": "Operating Income",  # REMOVED - expenses are not income!
+            # "Operating expenses": "Operating Income",  # Removed: expenses are not income
             "Income before income tax": "Operating Income",  # Close to operating income
             "Operating margin": "Operating Income",
             "Income from continuing operations": "Operating Income",
@@ -145,9 +145,7 @@ class XBRLValidator:
             "Other": "Revenue",
             
             # Additional mappings based on automap analysis
-            # "Gross profit": "Operating Income",  # REMOVED - incorrect mapping!
-            # "Gross Profit": "Operating Income",  # REMOVED - incorrect mapping!
-            # "Gross margin": "Operating Income",  # REMOVED - incorrect mapping!
+            # Removed gross profit/margin mappings to avoid incorrect mapping to Operating Income.
             "Operating leases": "Operating Income",
             "Other comprehensive income": "Net Income",
             "Accumulated other comprehensive income (loss)": "Net Income",

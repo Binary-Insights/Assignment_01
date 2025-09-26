@@ -3,7 +3,7 @@ import os
 
 # Get absolute path to Assignment_01/data/raw
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-download_dir = os.path.join(project_root, "data", "raw")
+download_dir = os.path.join(project_root, "data", "downloads")
 
 # Ensure the directory exists
 os.makedirs(download_dir, exist_ok=True)

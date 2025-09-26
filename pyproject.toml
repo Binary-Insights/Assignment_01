@@ -25,6 +25,8 @@ dependencies = [
     "pydantic>=2.0.0",
     "beautifulsoup4",
     "lxml",
+    "streamlit",
+
     # AI/ML dependencies for Docling
     "transformers",
     "torch",
@@ -32,6 +34,8 @@ dependencies = [
     "accelerate",
     "sentencepiece",
     "dvc>=3.63.0",
+    "dvc-s3",
+
     # "detectron2@git+
     "detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2 --no-build-isolation", # Required for LayoutParser
 ]

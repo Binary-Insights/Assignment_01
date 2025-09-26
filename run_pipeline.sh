@@ -56,9 +56,8 @@ echo "Choose execution mode:"
 echo "1) Run full pipeline (dvc repro)"
 echo "2) Run specific stage"
 echo "3) Force rebuild all stages"
-echo "4) Show pipeline metrics"
-echo "5) Launch Streamlit exports viewer"
-echo "6) Exit"
+echo "4) Launch Streamlit exports viewer"
+echo "5) Exit"
 
 read -p "Enter choice (1-6): " choice
 
